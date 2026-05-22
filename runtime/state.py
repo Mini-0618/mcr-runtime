@@ -75,6 +75,7 @@ class SystemState:
         # across Python sessions (unlike built-in hash() which is per-process salted).
         raw = (
             self.tick,
+            self.wal_length,
             tuple(sorted(self.memory.keys())),
             len(self.access_history),
             coaccess_edges,
