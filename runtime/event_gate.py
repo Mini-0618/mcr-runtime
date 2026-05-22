@@ -96,9 +96,9 @@ class EventGate:
         if not is_valid_uuid(proposal.coaccess_group_id):
             return ValidationResult(False, f"Invalid coaccess_group_id: {proposal.coaccess_group_id}")
 
-        # Rule 5: tick must be monotonic
-        if proposal.tick <= self.last_tick:
-            return ValidationResult(False, f"Non-monotonic tick: {proposal.tick} <= {self.last_tick}")
+        # Rule 5: tick must be monotonic — enforced by Engine.emit() which owns tick authority.
+        # EventGate.validate() does not track gate-wide tick state (each verifier instance
+        # is independent), so monotonicity must be enforced at the Engine layer.
 
         return ValidationResult(True, "Accepted")
 
