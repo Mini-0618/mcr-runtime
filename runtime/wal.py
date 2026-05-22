@@ -53,6 +53,23 @@ class Event:
             return False
         return self.replay_hash == self._compute_replay_hash()
 
+    def equals(self, other: 'Event') -> bool:
+        """
+        Compare two events for content equality, excluding replay_hash.
+        replay_hash is computed at write time and may differ for
+        otherwise-identical events written at different times. Excluding
+        it lets callers compare event content across WAL loads.
+        """
+        return (
+            self.event_id == other.event_id
+            and self.event_type == other.event_type
+            and self.tick == other.tick
+            and self.memory_id == other.memory_id
+            and self.coaccess_group_id == other.coaccess_group_id
+            and self.payload == other.payload
+            and abs(self.timestamp - other.timestamp) < 1e-6
+        )
+
 
 class WAL:
     def __init__(self, path: str = "/home/minimak/mcr/.wal/events.jsonl"):
@@ -104,3 +121,7 @@ class WAL:
 
     def len(self) -> int:
         return len(self._events)
+
+    def is_empty(self) -> bool:
+        """True if WAL has no events. Useful for asserting clean slate."""
+        return len(self._events) == 0

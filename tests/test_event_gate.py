@@ -246,6 +246,36 @@ def test_event_gate_validation():
     print(f"[14b] wal_hash stable across multiple calls: {stable_ok} — "
           f"first={hash_first[:16]}..., second={hash_second[:16]}...")
 
+    # Test 15: WAL.is_empty() returns True for fresh empty WAL, False after events.
+    # Confirms the convenience method works correctly.
+    from runtime.wal import WAL
+    tmp15 = "/home/minimak/mcr/.wal/test_is_empty.jsonl"
+    if os.path.exists(tmp15):
+        os.unlink(tmp15)
+    w15 = WAL(tmp15)
+    empty_ok = w15.is_empty()
+    w15.append(Event(event_id='x', event_type='memory_store', tick=1,
+                     memory_id='m', coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+                     payload={'content': 'c'}, timestamp=1.0, replay_hash=''))
+    not_empty_ok = not w15.is_empty()
+    os.unlink(tmp15)
+    print(f"[15] WAL.is_empty() fresh={empty_ok}, after_append={not_empty_ok} — {'OK' if empty_ok and not_empty_ok else 'FAIL'}")
+
+    # Test 16: Event.equals() compares content excluding replay_hash.
+    # Two events with identical content but different replay_hash are equal.
+    # Events with different content are not equal.
+    e1 = Event(event_id='id1', event_type='memory_store', tick=1,
+               memory_id='m', coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+               payload={'content': 'c'}, timestamp=1.0, replay_hash='old')
+    e2 = Event(event_id='id1', event_type='memory_store', tick=1,
+               memory_id='m', coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+               payload={'content': 'c'}, timestamp=1.0, replay_hash='new')  # different hash
+    e3 = Event(event_id='id1', event_type='memory_store', tick=2,  # different tick
+               memory_id='m', coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+               payload={'content': 'c'}, timestamp=1.0, replay_hash='')
+    eq_ok = e1.equals(e2) and not e1.equals(e3)
+    print(f"[16] Event.equals() same_content_different_hash={e1.equals(e2)}, different_content={e1.equals(e3)} — {'OK' if eq_ok else 'FAIL'}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
