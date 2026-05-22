@@ -22,7 +22,6 @@ class HermesBridge:
     def __init__(self, engine: MCRRuntimeEngine):
         self.engine = engine
         self.gate = EventGate()
-        self.pending_proposals: List[EventProposal] = []
 
     def create_proposal(
         self,
