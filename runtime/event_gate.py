@@ -101,7 +101,7 @@ class EventGate:
         # Catch this at the gate rather than letting state diverge from WAL.
         MEMORY_OPS = {'memory_store', 'memory_access', 'memory_archive', 'memory_purge'}
         if proposal.event_type in MEMORY_OPS:
-            if not proposal.memory_id or not proposal.memory_id.strip():
+            if not proposal.memory_id or not str(proposal.memory_id).strip():
                 return ValidationResult(False, f"memory_id required for {proposal.event_type}")
 
         # Rule 6: tick must be monotonic — enforced by Engine.emit() which owns tick authority.

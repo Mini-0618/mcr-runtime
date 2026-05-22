@@ -87,6 +87,17 @@ def test_event_gate_validation():
     result6 = gate.validate(empty_mem)
     print(f"[6] Empty memory_id: {result6.accepted} — {result6.reason}")
 
+    # Test 7: None memory_id on memory operation (AttributeError guard + explicit rejection)
+    none_mem = EventProposal(
+        event_type="memory_access",
+        tick=7,
+        memory_id=None,
+        coaccess_group_id="550e8400-e29b-41d4-a716-446655440000",
+        payload={},
+    )
+    result7 = gate.validate(none_mem)
+    print(f"[7] None memory_id: {result7.accepted} — {result7.reason}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
