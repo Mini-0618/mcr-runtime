@@ -18,8 +18,15 @@ class ReplayVerifier:
             state = self.reducer.reduce(event, state)
         return state
 
-    def _wal_hash(self, wal: WAL) -> str:
-        """SHA-256 over canonical JSON lines, in order. Empty string if WAL is empty."""
+    def wal_hash(self, wal: WAL) -> str:
+        """
+        Compute SHA-256 WAL integrity hash over canonical JSON event lines, in order.
+        Empty string if WAL is empty.
+
+        This hash is deterministic across Python sessions (uses sorted JSON keys
+        and fixed separator) — the same WAL always produces the same hash.
+        Call this to verify WAL integrity without running a full G2 state verification.
+        """
         if wal.len() == 0:
             return ""
         lines = []
@@ -34,7 +41,7 @@ class ReplayVerifier:
         # Note: state.hash() returns SHA-256 hex str (was int with per-process salted
         # built-in hash). All hash fields below are now deterministic hex strings.
         wal_len = wal.len()
-        wal_hash = self._wal_hash(wal)
+        wal_hash = self.wal_hash(wal)
         try:
             # Clone initial_state before replay to prevent mutation of the caller's
             # object. reduce() sets new_state.wal_length = state.wal_length + 1 on
