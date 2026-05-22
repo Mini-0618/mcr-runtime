@@ -49,6 +49,10 @@ class WAL:
         self._events.append(event)
         with open(self.path, 'a') as f:
             f.write(json.dumps(event.to_dict()) + '\n')
+            f.flush()
+        # Note: os.fsync() is needed for power-failure durability.
+        # flush() ensures the event survives normal process exit (SIGTERM,
+        # normal termination, OOM before final write).
 
     def get_all(self) -> List[Event]:
         return list(self._events)
