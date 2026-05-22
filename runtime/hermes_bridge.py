@@ -64,6 +64,17 @@ class HermesBridge:
         """
         Parse LLM text output into EventProposal list.
         Expected format: JSON array or line-delimited JSON
+
+        LLM constraints — violations cause silent rejection at EventGate:
+        - event_type must be one of: memory_store, memory_access, memory_archive,
+          memory_purge, policy_update, curriculum_task_create, curriculum_task_complete, failure_record
+        - memory_id is REQUIRED and non-empty for memory_store, memory_access,
+          memory_archive, memory_purge; omitting it produces a rejected proposal
+        - tick is IGNORED — engine assigns all ticks; any LLM-provided tick
+          value is overwritten by emit_raw()
+        - coaccess_group_id must be a valid UUID (not a bare integer)
+        - payload fields must match the schema for that event_type
+        - Forbidden payload fields: state, timestamp, replay_hash, _coaccess, _access_history
         """
         proposals = []
         try:
