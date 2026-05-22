@@ -98,6 +98,24 @@ def test_event_gate_validation():
     result7 = gate.validate(none_mem)
     print(f"[7] None memory_id: {result7.accepted} — {result7.reason}")
 
+    # Test 8: coaccess_graph isolation — clone() must deep-copy set values so mutations
+    # on a cloned state cannot leak back to the original. This catches shallow-copy
+    # bugs where set(v) shares mutable references between original and clone.
+    from runtime.state import SystemState
+    s1 = SystemState.empty()
+    s1.coaccess_graph['mem_A'] = {'mem_B', 'mem_C'}
+    s1.access_history.append({'memory_id': 'mem_A', 'tick': 1, 'coaccess_group_id': 'g1'})
+
+    s2 = s1.clone()
+    s2.coaccess_graph['mem_A'].add('mem_D')  # mutate cloned graph
+    s2.access_history.append({'memory_id': 'mem_X', 'tick': 2, 'coaccess_group_id': 'g2'})
+
+    # Original state must be unaffected by mutation on clone
+    s1_has_D = 'mem_D' in s1.coaccess_graph.get('mem_A', set())
+    s1_history_len = len(s1.access_history)
+    result8 = not s1_has_D and s1_history_len == 1
+    print(f"[8] coaccess_graph isolation: {result8} — clone mutation leaked: {s1_has_D}, history leaked: {s1_history_len != 1}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
