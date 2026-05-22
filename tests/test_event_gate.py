@@ -6,7 +6,7 @@ Event Gate + Hermes Bridge Integration Test
 3. Accepted events go through reducer → WAL
 4. Rejected events are blocked
 """
-import sys, os
+import sys, os, uuid
 sys.path.insert(0, '/home/minimak/mcr')
 
 from runtime import (
@@ -196,6 +196,26 @@ def test_event_gate_validation():
         result = gate.validate(proposal)
         ok = (result.accepted == False) == expected_reject
         print(f"[12] payload={type(bad_payload).__name__}: {result.accepted} — {'OK' if ok else 'FAIL'}")
+
+    # Test 13: get_state_snapshot() caps access_history to MAX_SNAPSHOT_ACCESS_HISTORY (20).
+    # WAL has unbounded access_history but snapshot is context-only and must not grow unboundedly.
+    from runtime.hermes_bridge import HermesBridge
+    wal_path13 = "/home/minimak/mcr/.wal/test_snapshot_cap.jsonl"
+    if os.path.exists(wal_path13):
+        os.remove(wal_path13)
+    eng13 = MCRRuntimeEngine(wal_path=wal_path13)
+    br13 = HermesBridge(eng13)
+    # Generate 50 ticks of events (same pattern as test_g2_replay)
+    import random
+    random.seed(42)
+    mem_ids = [f"mem_{i:03d}" for i in range(50)]
+    for i in range(50):
+        group = str(uuid.uuid4())
+        eng13.emit("memory_store", mem_ids[i], group, {"content": f"content_{i}", "tier": "episodic"})
+        eng13.emit("memory_access", mem_ids[random.randint(0, i)], group, {})
+    snap = br13.get_state_snapshot()
+    ok13 = len(snap["access_history"]) <= HermesBridge.MAX_SNAPSHOT_ACCESS_HISTORY
+    print(f"[13] snapshot access_history cap: {len(snap['access_history'])} <= {HermesBridge.MAX_SNAPSHOT_ACCESS_HISTORY} — {'OK' if ok13 else 'FAIL'}")
 
 
 def test_hermes_bridge():

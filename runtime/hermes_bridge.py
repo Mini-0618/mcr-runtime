@@ -19,6 +19,10 @@ class HermesBridge:
     LLM generates proposals; system executes deterministically.
     """
 
+    # Snapshot caps access_history to prevent unbounded LLM context growth.
+    # Does not affect WAL replay — snapshot is for context only.
+    MAX_SNAPSHOT_ACCESS_HISTORY = 20
+
     def __init__(self, engine: MCRRuntimeEngine):
         self.engine = engine
         self.gate = EventGate()
@@ -117,11 +121,18 @@ class HermesBridge:
         return proposals
 
     def get_state_snapshot(self) -> Dict[str, Any]:
-        """Get current state for LLM context"""
+        """Get current state for LLM context.
+
+        access_history is truncated to MAX_SNAPSHOT_ACCESS_HISTORY entries
+        to bound LLM context size. WAL replay is unaffected — snapshot is
+        context-only and does not feed back into engine state.
+        """
+        access_history = self.engine.state.access_history[-self.MAX_SNAPSHOT_ACCESS_HISTORY:]
         return {
             "tick": self.engine.state.tick,
             "memory_count": len(self.engine.state.memory),
             "access_history_count": len(self.engine.state.access_history),
+            "access_history": access_history,
             "wal_length": self.engine.wal.len(),
             "memory_items": list(self.engine.state.memory.keys())[:10],
         }
