@@ -87,6 +87,12 @@ class EventGate:
         if proposal.event_type not in ALLOWED_EVENT_TYPES:
             return ValidationResult(False, f"Unknown event type: {proposal.event_type}")
 
+        # Rule 7: payload must be a dict, not None or non-dict.
+        # Checked early because Rule 2 iterates over payload. If payload is None,
+        # "field_name in None" raises TypeError. Must come before Rule 2.
+        if not isinstance(proposal.payload, dict):
+            return ValidationResult(False, f"payload must be a dict, got {type(proposal.payload).__name__}")
+
         # Rule 2: required fields must be present
         required = EVENT_SCHEMAS.get(proposal.event_type, [])
         for field_name in required:

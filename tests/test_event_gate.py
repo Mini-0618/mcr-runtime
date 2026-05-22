@@ -184,6 +184,19 @@ def test_event_gate_validation():
         s = reducer.reduce(evt, SystemState.empty())
         print(f"[11] {evt_type}: gate={vr.accepted}, reducer_tick={s.tick}")
 
+    # Test 12: payload must be a dict — reject None and non-dict payloads cleanly.
+    # If LLM produces "payload": null, item.get("payload", {}) returns None and
+    # Event(payload=None) raises TypeError. Rule 7 rejects None/list/primitive payloads.
+    for bad_payload, expected_reject in [(None, True), ([], True), ("str", True), (123, True)]:
+        proposal = EventProposal(
+            event_type="memory_store", tick=12,
+            memory_id="mem_012", coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+            payload=bad_payload,
+        )
+        result = gate.validate(proposal)
+        ok = (result.accepted == False) == expected_reject
+        print(f"[12] payload={type(bad_payload).__name__}: {result.accepted} — {'OK' if ok else 'FAIL'}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
