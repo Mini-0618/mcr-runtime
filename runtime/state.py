@@ -2,8 +2,16 @@
 State — Immutable Clone Model
 """
 import copy
+import hashlib
 from dataclasses import dataclass, field
 from typing import Dict, List, Any, Optional
+
+# Fixed salt makes state.hash() deterministic across Python sessions.
+# Python's built-in hash() uses a random per-process seed (PYTHONHASHSEED),
+# so the same state produces different ints in different sessions — fine for
+# in-session G2 comparison, but fragile for reproducible artifacts, logs,
+# and cross-process verification. SHA-256 with a fixed salt is stable.
+_STATE_HASH_SALT = b"MCR_STATE_v1"
 
 
 @dataclass
@@ -53,7 +61,7 @@ class SystemState:
                 return False
         return True
 
-    def hash(self) -> int:
+    def hash(self) -> str:
         # Include edge structure (not just keys) so that two states with the
         # same coaccess_graph keys but different edges produce different hashes.
         # Without this, the ReplayVerifier's hash fast-path would skip equals()
@@ -61,10 +69,13 @@ class SystemState:
         coaccess_edges = tuple(
             sorted((k, tuple(sorted(v))) for k, v in self.coaccess_graph.items())
         )
-        h = hash((
+        # Fixed salt ensures the same state always produces the same hash
+        # across Python sessions (unlike built-in hash() which is per-process salted).
+        raw = (
             self.tick,
             tuple(sorted(self.memory.keys())),
             len(self.access_history),
             coaccess_edges,
-        ))
-        return h
+        )
+        serialized = str(raw).encode()
+        return hashlib.sha256(_STATE_HASH_SALT + serialized).hexdigest()

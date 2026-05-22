@@ -31,6 +31,8 @@ class ReplayVerifier:
         return hashlib.sha256(combined).hexdigest()
 
     def verify(self, runtime_state: SystemState, initial_state: SystemState, wal: WAL) -> dict:
+        # Note: state.hash() returns SHA-256 hex str (was int with per-process salted
+        # built-in hash). All hash fields below are now deterministic hex strings.
         wal_len = wal.len()
         wal_hash = self._wal_hash(wal)
         try:
