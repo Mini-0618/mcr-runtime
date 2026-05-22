@@ -17,7 +17,7 @@ class MCRRuntimeEngine:
         self.reducer = DeterministicReducer()
         self.verifier = ReplayVerifier()
         self.tick_count = 0
-        self.tick_interval = 20  # verify every N ticks
+        self.tick_interval = 10  # verify every N ticks; must align with test checkpoints (10,20,30,40,50)
 
     def emit(self, event_type: str, memory_id: str, coaccess_group_id: str, payload: dict):
         self.tick_count += 1
