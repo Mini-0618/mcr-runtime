@@ -492,6 +492,12 @@ class SemanticCompaction:
             m = self._find_memory_by_id(self._lm.archive, mid)
             if m:
                 self._lm.archive.remove(m)
+                # Remove from ALL layers — an item can be in multiple layers
+                # simultaneously (e.g., episodic and archive) due to compaction
+                # migration. Tombstoning must clean all locations.
+                for layer_name in ("working", "episodic", "semantic", "archive"):
+                    layer = getattr(self._lm, layer_name, [])
+                    layer[:] = [x for x in layer if x.get("id") != mid]
                 self._tombstones[mid] = {
                     "tombstoned_at": self._tick,
                     "reason": "decay_below_threshold",
@@ -572,8 +578,14 @@ class SemanticCompaction:
         Called when a CompactionRuntime is re-opened from an existing root.
 
         Replaying in tick order ensures deterministic state reconstruction:
-        archive_tombstone → adds to _tombstones
+        archive_tombstone → adds to _tombstones, removes from all layers
         archive_purge     → removes from _tombstones, cleans coaccess
+
+        NOTE: Layer transitions (episodic→semantic, etc.) are already reflected
+        in the persisted storage state — storage is the ground truth for memory
+        locations. We do NOT replay 'transition' events as that would cause
+        double-transition (storage already contains the post-transition state).
+        We only replay tombstone/purge to reconstruct the deletion path.
         """
         tombstones_applied = 0
         purges_applied = 0

@@ -89,13 +89,31 @@ def populate(cr: CompactionRuntime):
     cr._lm.try_flush(tick)
 
 def snapshot_state(cr: CompactionRuntime) -> dict:
-    """Take a state snapshot for comparison."""
+    """Take a state snapshot for comparison.
+
+    CRITICAL: Must be called on a CR that has NO subsequent operations.
+    The snapshot must reflect the EXACT state in storage, not include any
+    in-memory changes that haven't been flushed yet.
+
+    This means: snapshot only after a known-flush boundary (e.g. compaction
+    boundary at tick % 200 == 0), or force-flush AND ensure no subsequent
+    tick() calls happen that could mutate state.
+    """
+    # Force flush by calling try_flush() with NO tick argument.
+    # try_flush(tick) skips when _flush_tick == tick (0 >= _flush_interval = 100 is False).
+    # try_flush() with no args has no rate-limit check — it always flushes.
+    cr._lm.try_flush()
+
+    # Also force index rebuild
+    cr._lm._rebuild_index()
+    cr._lm._save_index()
+
     return {
         "working_ids": sorted(m["id"] for m in cr.working),
         "episodic_ids": sorted(m["id"] for m in cr.episodic),
         "semantic_ids": sorted(m["id"] for m in cr.semantic),
         "archive_ids": sorted(m["id"] for m in cr.archive),
-        "tombstones": {k: dict(v) for k, v in cr._compaction._tombstones.items()},  # deep copy
+        "tombstones": {k: dict(v) for k, v in cr._compaction._tombstones.items()},
         "compaction_metrics": cr.get_compaction_metrics(),
         "tick": cr._tick,
     }
