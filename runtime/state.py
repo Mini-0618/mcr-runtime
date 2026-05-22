@@ -54,10 +54,17 @@ class SystemState:
         return True
 
     def hash(self) -> int:
+        # Include edge structure (not just keys) so that two states with the
+        # same coaccess_graph keys but different edges produce different hashes.
+        # Without this, the ReplayVerifier's hash fast-path would skip equals()
+        # on a collision, masking a state divergence that equals() would catch.
+        coaccess_edges = tuple(
+            sorted((k, tuple(sorted(v))) for k, v in self.coaccess_graph.items())
+        )
         h = hash((
             self.tick,
             tuple(sorted(self.memory.keys())),
             len(self.access_history),
-            tuple(sorted(self.coaccess_graph.keys()))
+            coaccess_edges,
         ))
         return h
