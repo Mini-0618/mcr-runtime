@@ -73,8 +73,7 @@ class EventGate:
     """
 
     def __init__(self):
-        self.last_tick = 0
-        self._counter = 0
+        pass
 
     def validate(self, proposal: EventProposal) -> ValidationResult:
         # Rule 1: event type must be allowed
@@ -105,8 +104,6 @@ class EventGate:
     def apply(self, proposal: EventProposal) -> Any:
         """Convert validated proposal to deterministic event"""
         from .wal import Event
-        self._counter += 1
-        self.last_tick = proposal.tick
 
         return Event(
             event_id=str(uuid.uuid4()),
