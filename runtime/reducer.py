@@ -15,6 +15,9 @@ class DeterministicReducer:
             'memory_archive': self._handle_archive,
             'memory_purge': self._handle_purge,
             'policy_update': self._handle_policy,
+            'curriculum_task_create': self._handle_noop,
+            'curriculum_task_complete': self._handle_noop,
+            'failure_record': self._handle_noop,
         }
 
     def reduce(self, event: Event, state: SystemState) -> SystemState:
@@ -78,4 +81,11 @@ class DeterministicReducer:
         return state
 
     def _handle_policy(self, event: Event, state: SystemState) -> SystemState:
+        return state
+
+    # No-op handler for event types that are validated by EventGate but have
+    # no state-side effect yet (curriculum_task_create, curriculum_task_complete,
+    # failure_record). Defined in ALLOWED_EVENT_TYPES and EVENT_SCHEMAS; must
+    # be in handlers to avoid silent fall-through.
+    def _handle_noop(self, event: Event, state: SystemState) -> SystemState:
         return state

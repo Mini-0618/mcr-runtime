@@ -159,6 +159,31 @@ def test_event_gate_validation():
     result10 = gate.validate(none_uuid)
     print(f"[10] None coaccess_group_id: {result10.accepted} — {result10.reason}")
 
+    # Test 11: unimplemented event types must not fall through silently.
+    # curriculum_task_create, curriculum_task_complete, failure_record are in
+    # ALLOWED_EVENT_TYPES and EVENT_SCHEMAS but were absent from reducer.handlers.
+    # They now map to _handle_noop. Verify gate accepts and reducer handles them.
+    from runtime.reducer import DeterministicReducer
+    reducer = DeterministicReducer()
+    for evt_type, schema_fields in [
+        ('curriculum_task_create', {'task_id': 't1', 'difficulty': 1, 'family': 'f1'}),
+        ('curriculum_task_complete', {'task_id': 't1', 'reward': 1.0, 'success': True}),
+        ('failure_record', {'failure_type': 'type', 'context': 'ctx', 'proposed_fix': 'fix'}),
+    ]:
+        proposal = EventProposal(
+            event_type=evt_type, tick=11,
+            memory_id=None, coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+            payload=schema_fields,
+        )
+        vr = gate.validate(proposal)
+        # apply through reducer to confirm no KeyError or AttributeError
+        from runtime.wal import Event
+        evt = Event(event_id='x', event_type=evt_type, tick=11,
+                    memory_id=None, coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+                    payload=schema_fields, timestamp=1.0, replay_hash='')
+        s = reducer.reduce(evt, SystemState.empty())
+        print(f"[11] {evt_type}: gate={vr.accepted}, reducer_tick={s.tick}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
