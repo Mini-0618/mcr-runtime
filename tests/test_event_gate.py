@@ -146,6 +146,19 @@ def test_event_gate_validation():
     result9 = len(events) == 2 and events[0].memory_id == 'm1' and events[1].memory_id == 'm2'
     print(f"[9] WAL corrupted load: {result9} — loaded {len(events)}/2 events, skipped 2 malformed lines")
 
+    # Test 10: None coaccess_group_id — is_valid_uuid must not raise TypeError on None.
+    # LLM can produce "coaccess_group_id": null in JSON. EventGate should reject
+    # cleanly, not crash. Guard added in is_valid_uuid() for None/non-string input.
+    none_uuid = EventProposal(
+        event_type="memory_store",
+        tick=10,
+        memory_id="mem_010",
+        coaccess_group_id=None,
+        payload={"content": "test", "tier": "episodic"},
+    )
+    result10 = gate.validate(none_uuid)
+    print(f"[10] None coaccess_group_id: {result10.accepted} — {result10.reason}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")

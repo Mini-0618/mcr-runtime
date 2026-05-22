@@ -58,11 +58,18 @@ class ValidationResult:
     event: Optional[Any] = None  # Event type, set at runtime
 
 
-def is_valid_uuid(s: str) -> bool:
+def is_valid_uuid(s) -> bool:
+    # Defensively handle None and non-string types before uuid.UUID() call.
+    # None can arrive here if LLM provides "coaccess_group_id": null in JSON
+    # and bridge passes it through without auto-generating a UUID.
+    if s is None:
+        return False
+    if not isinstance(s, str):
+        return False
     try:
         uuid.UUID(s)
         return True
-    except (ValueError, AttributeError):
+    except (ValueError, AttributeError, TypeError):
         return False
 
 
