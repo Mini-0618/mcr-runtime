@@ -26,7 +26,11 @@ class SystemState:
             tick=self.tick,
             memory=copy.deepcopy(self.memory),
             access_history=copy.deepcopy(self.access_history),
-            coaccess_graph={k: set(v) for k, v in self.coaccess_graph.items()},
+            # Deep-copy set values so mutations on the cloned coaccess_graph
+            # cannot leak back to the original state. Shallow copy (set(v))
+            # shares mutable set references with the original, violating the
+            # immutable clone invariant that underpins G2 verification.
+            coaccess_graph={k: copy.deepcopy(set(v)) for k, v in self.coaccess_graph.items()},
             wal_length=self.wal_length,
             _initial=self._initial
         )
