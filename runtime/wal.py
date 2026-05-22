@@ -42,8 +42,13 @@ class WAL:
             with open(self.path) as f:
                 for line in f:
                     if line.strip():
-                        d = json.loads(line)
-                        self._events.append(Event.from_dict(d))
+                        try:
+                            d = json.loads(line)
+                            self._events.append(Event.from_dict(d))
+                        except (json.JSONDecodeError, KeyError, ValueError):
+                            # Skip malformed or incomplete lines. A corrupted WAL must not
+                            # prevent startup; the system recovers via replay from valid prefix.
+                            pass
 
     def append(self, event: Event):
         self._events.append(event)

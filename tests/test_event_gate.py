@@ -116,6 +116,23 @@ def test_event_gate_validation():
     result8 = not s1_has_D and s1_history_len == 1
     print(f"[8] coaccess_graph isolation: {result8} — clone mutation leaked: {s1_has_D}, history leaked: {s1_history_len != 1}")
 
+    # Test 9: WAL skips malformed lines silently — verify load() on corrupted WAL
+    # produces partial event list without raising. WAL._load() must not raise on
+    # bad JSON; truncateTest WAL must produce a recoverable partial state.
+    import tempfile, os
+    from runtime.wal import WAL
+    tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.jsonl', delete=False)
+    tmp.write('{"_event_type":"memory_store","event_id":"e1","tick":1,"memory_id":"m1","coaccess_group_id":"550e8400-e29b-41d4-a716-446655440000","payload":{"content":"a"},"timestamp":1.0,"replay_hash":""}\n')
+    tmp.write('this is not json\n')
+    tmp.write('{"_event_type":"memory_store","event_id":"e2","tick":2,"memory_id":"m2","coaccess_group_id":"550e8400-e29b-41d4-a716-446655440000","payload":{"content":"b"},"timestamp":2.0,"replay_hash":""}\n')
+    tmp.write('{"broken')
+    tmp.close()
+    w = WAL(tmp.name)
+    events = w.get_all()
+    os.unlink(tmp.name)
+    result9 = len(events) == 2 and events[0].memory_id == 'm1' and events[1].memory_id == 'm2'
+    print(f"[9] WAL corrupted load: {result9} — loaded {len(events)}/2 events, skipped 2 malformed lines")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
