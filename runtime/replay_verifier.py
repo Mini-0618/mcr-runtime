@@ -1,6 +1,8 @@
 """
 ReplayVerifier — G2 Core: verify runtime_state == replay(WAL)
 """
+import hashlib
+import json
 from .reducer import DeterministicReducer
 from .state import SystemState
 from .wal import Event, WAL
@@ -16,7 +18,21 @@ class ReplayVerifier:
             state = self.reducer.reduce(event, state)
         return state
 
+    def _wal_hash(self, wal: WAL) -> str:
+        """SHA-256 over canonical JSON lines, in order. Empty string if WAL is empty."""
+        if wal.len() == 0:
+            return ""
+        lines = []
+        for evt in wal.get_all():
+            d = evt.to_dict()
+            d.pop('replay_hash', None)
+            lines.append(json.dumps(d, sort_keys=True, separators=(',', ':')))
+        combined = '|'.join(lines).encode()
+        return hashlib.sha256(combined).hexdigest()
+
     def verify(self, runtime_state: SystemState, initial_state: SystemState, wal: WAL) -> dict:
+        wal_len = wal.len()
+        wal_hash = self._wal_hash(wal)
         try:
             replayed = self.replay(initial_state, wal)
         except Exception as exc:
@@ -26,10 +42,12 @@ class ReplayVerifier:
                 'detail': str(exc),
                 'runtime_hash': runtime_state.hash(),
                 'replay_hash': None,
-                'replay_tick': None,
                 'runtime_tick': runtime_state.tick,
+                'replay_tick': None,
                 'runtime_mem': len(runtime_state.memory),
                 'replay_mem': None,
+                'wal_length': wal_len,
+                'wal_hash': wal_hash,
             }
         match = runtime_state.equals(replayed)
         if not match:
@@ -54,6 +72,8 @@ class ReplayVerifier:
                 'replay_tick': replayed.tick,
                 'runtime_mem': len(runtime_state.memory),
                 'replay_mem': len(replayed.memory),
+                'wal_length': wal_len,
+                'wal_hash': wal_hash,
             }
         return {
             'match': True,
@@ -64,4 +84,6 @@ class ReplayVerifier:
             'replay_tick': replayed.tick,
             'runtime_mem': len(runtime_state.memory),
             'replay_mem': len(replayed.memory),
+            'wal_length': wal_len,
+            'wal_hash': wal_hash,
         }

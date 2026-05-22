@@ -83,6 +83,8 @@ def test_g2_replay():
     print(f"match: {result['match']}")
     print(f"runtime_hash: {result['runtime_hash']}")
     print(f"replay_hash:  {result['replay_hash']}")
+    print(f"wal_length: {result['wal_length']}")
+    print(f"wal_hash:   {result['wal_hash']}")
 
     if result['match']:
         print("\n✅ G2-COMPLETE: runtime_state == replay(WAL)")
