@@ -108,14 +108,17 @@ class EventGate:
         if not is_valid_uuid(proposal.coaccess_group_id):
             return ValidationResult(False, f"Invalid coaccess_group_id: {proposal.coaccess_group_id}")
 
-        # Rule 5: memory_id must be present and non-empty for memory operations.
+        # Rule 5: memory_id must be a non-empty string for memory operations.
         # Reducer silently ignores empty memory_id (store does nothing, access
         # returns early), producing a no-op event that still increments wal_length.
         # Catch this at the gate rather than letting state diverge from WAL.
+        # Non-string types (int, float, list, etc.) are also rejected — the
+        # reducer stores memory_id as-is in WAL and access_history; type
+        # inconsistency (int in WAL, str elsewhere) breaks G2 replay.
         MEMORY_OPS = {'memory_store', 'memory_access', 'memory_archive', 'memory_purge'}
         if proposal.event_type in MEMORY_OPS:
-            if not proposal.memory_id or not str(proposal.memory_id).strip():
-                return ValidationResult(False, f"memory_id required for {proposal.event_type}")
+            if not isinstance(proposal.memory_id, str) or not proposal.memory_id.strip():
+                return ValidationResult(False, f"memory_id must be a non-empty string for {proposal.event_type}, got {type(proposal.memory_id).__name__}")
 
         # Rule 6: tick must be monotonic — enforced by Engine.emit() which owns tick authority.
         # EventGate.validate() does not track gate-wide tick state (each verifier instance
