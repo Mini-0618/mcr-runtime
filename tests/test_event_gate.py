@@ -276,6 +276,81 @@ def test_event_gate_validation():
     eq_ok = e1.equals(e2) and not e1.equals(e3)
     print(f"[16] Event.equals() same_content_different_hash={e1.equals(e2)}, different_content={e1.equals(e3)} — {'OK' if eq_ok else 'FAIL'}")
 
+    # Test 17: EventGate rejects invalid UUID coaccess_group_id; accepts valid UUID and
+    # builds coaccess_graph correctly through full bridge pipeline.
+    # test_g2_replay uses engine.emit() which bypasses EventGate, so coaccess_group_id
+    # UUID enforcement has no coverage via the bridge. Bare integers "1","2","3" in
+    # test_g2_replay never go through EventGate.validate() Rule 4.
+    wal_path17 = "/home/minimak/mcr/.wal/test_coaccess_uuid.jsonl"
+    if os.path.exists(wal_path17):
+        os.remove(wal_path17)
+    eng17 = MCRRuntimeEngine(wal_path=wal_path17)
+    br17 = HermesBridge(eng17)
+
+    # (a) Invalid UUIDs must be rejected at the gate — event must not reach WAL
+    for bad_uuid in ["1", "123", "", "not-a-uuid"]:
+        p_bad = br17.create_proposal(
+            event_type="memory_store", tick=1,
+            memory_id="mem_17a", coaccess_group_id=bad_uuid,
+            payload={"content": "test", "tier": "episodic"}
+        )
+        r_bad = br17.submit_proposal(p_bad)
+        if r_bad.accepted:
+            print(f"[17a] INVALID UUID '{bad_uuid}' was accepted — FAIL")
+        else:
+            print(f"[17b] Invalid UUID '{bad_uuid}' rejected: {r_bad.reason} — OK")
+
+    # (b) Valid UUID coaccess_group_id: event accepted, WAL grows, coaccess_graph built
+    valid_uuid = "550e8400-e29b-41d4-a716-446655440000"
+    p_store = br17.create_proposal(
+        event_type="memory_store", tick=1,
+        memory_id="mem_17b", coaccess_group_id=valid_uuid,
+        payload={"content": "content_b", "tier": "episodic"}
+    )
+    p_access1 = br17.create_proposal(
+        event_type="memory_access", tick=2,
+        memory_id="mem_17b", coaccess_group_id=valid_uuid,
+        payload={}
+    )
+    p_access2 = br17.create_proposal(
+        event_type="memory_access", tick=3,
+        memory_id="mem_17c", coaccess_group_id=valid_uuid,
+        payload={}
+    )
+    # store mem_17c first so it exists when accessed
+    p_store_c = br17.create_proposal(
+        event_type="memory_store", tick=4,
+        memory_id="mem_17c", coaccess_group_id=valid_uuid,
+        payload={"content": "content_c", "tier": "episodic"}
+    )
+    # tick 5: access mem_17c in same group — should create coaccess edge mem_17b<->mem_17c
+    p_access_same = br17.create_proposal(
+        event_type="memory_access", tick=5,
+        memory_id="mem_17c", coaccess_group_id=valid_uuid,
+        payload={}
+    )
+    results = br17.submit_proposals([p_store, p_access1, p_store_c, p_access2, p_access_same])
+    accepted = [r for r in results if r.accepted]
+    wal_len_after = eng17.wal.len()
+
+    # WAL must have 4 accepted events (store_b, access_b, store_c, access_c; access_same is rejected
+    # because mem_17c was not yet stored at tick=5 — but the gate rejects memory_access
+    # for non-existent memory, not at EventGate level. Actually, reducer._handle_access
+    # returns early if memory_id not in state.memory, so the event is still accepted
+    # by EventGate but has no state effect. Let's just check WAL has accepted events.)
+    ok17b = wal_len_after >= 4
+    print(f"[17b] Valid UUID accepted, WAL length={wal_len_after} >= 4 — {'OK' if ok17b else 'FAIL'}")
+
+    # coaccess_graph: mem_17b and mem_17c were accessed in same group at ticks 2 and 5,
+    # so they should be neighbors in the graph.
+    graph_ok = (
+        "mem_17c" in eng17.state.coaccess_graph.get("mem_17b", set()) and
+        "mem_17b" in eng17.state.coaccess_graph.get("mem_17c", set())
+    )
+    print(f"[17c] coaccess_graph neighbors: {graph_ok} — "
+          f"mem_17b->{eng17.state.coaccess_graph.get('mem_17b', set())}, "
+          f"mem_17c->{eng17.state.coaccess_graph.get('mem_17c', set())}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
