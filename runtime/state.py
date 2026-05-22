@@ -47,6 +47,8 @@ class SystemState:
     def equals(self, other: 'SystemState') -> bool:
         if self.tick != other.tick:
             return False
+        if self.wal_length != other.wal_length:
+            return False
         if set(self.memory.keys()) != set(other.memory.keys()):
             return False
         for k, v in self.memory.items():
