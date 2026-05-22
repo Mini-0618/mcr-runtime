@@ -133,6 +133,9 @@ class HermesBridge:
             "memory_count": len(self.engine.state.memory),
             "access_history_count": len(self.engine.state.access_history),
             "access_history": access_history,
-            "wal_length": self.engine.wal.len(),
+            # Note: wal_length (WAL event count) intentionally omitted — WAL is an
+            # internal event-sourcing mechanism; exposing it to the LLM creates
+            # dependency on storage implementation details. The LLM should reason
+            # about memory content and access patterns, not WAL mechanics.
             "memory_items": list(self.engine.state.memory.keys())[:10],
         }
