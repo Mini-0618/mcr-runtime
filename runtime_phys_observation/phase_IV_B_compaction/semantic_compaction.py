@@ -590,6 +590,14 @@ class SemanticCompaction:
                 tombstone_types_seen.add(event.type)
                 mid = event.memory_id
                 if mid not in self._tombstones:
+                    # Remove from ALL memory layers — this mirrors run_tombstone_check().
+                    # Initial run removes item from archive when tombstoning.
+                    # WAL replay must do the same, otherwise item stays in layers → ghost.
+                    # Use list comprehension rebuild (avoids list.remove indirect-lookup failure).
+                    self._lm.working  = [m for m in self._lm.working  if m.get("id") != mid]
+                    self._lm.episodic = [m for m in self._lm.episodic if m.get("id") != mid]
+                    self._lm.archive  = [m for m in self._lm.archive  if m.get("id") != mid]
+                    self._lm.semantic = [m for m in self._lm.semantic if m.get("id") != mid]
                     self._tombstones[mid] = {
                         "tombstoned_at": event.tick,
                         "reason": event.reason,
