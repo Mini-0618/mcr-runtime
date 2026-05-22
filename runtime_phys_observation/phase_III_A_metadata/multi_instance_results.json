@@ -1,0 +1,20 @@
+{
+  "experiment": "WAL_Isolation",
+  "ARCH_FIND_001_resolved": true,
+  "g1": true,
+  "g2": true,
+  "g3": true,
+  "g4": true,
+  "g5": true,
+  "perf": true,
+  "wal_a_metrics": {
+    "instance_id": "DESKTOP-M58UITB-4229-1779262728-419ff0",
+    "wal_dir": "/tmp/mcr_wal_ok/A/runtime_logs/wal/DESKTOP-M58UITB-4229-1779262728-419ff0",
+    "wal_file_count": 0,
+    "current_seq": 580,
+    "current_wal_size_bytes": 148712,
+    "entries_written": 580,
+    "bytes_written": 148712,
+    "rotation_count": 1
+  }
+}

@@ -1,0 +1,36 @@
+[
+  {
+    "id": "sem_f70b9d3ea20c",
+    "content": "",
+    "tags": [
+      "compaction_test",
+      "database",
+      "http",
+      "network",
+      "python"
+    ],
+    "importance": 0.5999999999999999,
+    "access_weight": 1.0,
+    "access_count": 2.4,
+    "source_memory_ids": [
+      "10f4aba6",
+      "18e9b8d9",
+      "605442a6",
+      "612f5b2b",
+      "83b93d09",
+      "9916fc7d",
+      "ab750f28",
+      "b160e835",
+      "be1b35a0",
+      "fa3e43be"
+    ],
+    "source_count": 10,
+    "compression_ratio": 10.0,
+    "retrieval_hit_rate": 0.0,
+    "entropy_delta": -3.321928094887362,
+    "tick_created": 13000,
+    "last_access_tick": 13000,
+    "state": "semantic",
+    "memory_type": "semantic_summary"
+  }
+]

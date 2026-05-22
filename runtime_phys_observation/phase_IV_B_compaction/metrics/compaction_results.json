@@ -1,0 +1,49 @@
+{
+  "experiment": "PHASE_IV_B_Semantic_Compaction",
+  "LKG": "637a11c907e8a889b909513522dfab8c",
+  "workload_ticks": 10000,
+  "seed": 2025,
+  "baseline": {
+    "elapsed_s": 0.3713257329982298,
+    "memory_counts": {
+      "working": 10,
+      "episodic": 5,
+      "semantic": 0,
+      "archive": 6
+    }
+  },
+  "compaction": {
+    "elapsed_s": 1.8213249449981959,
+    "memory_counts": {
+      "working": 10,
+      "episodic": 40,
+      "semantic": 2,
+      "archive": 165
+    },
+    "metrics": {
+      "compaction_count": 67,
+      "total_memories_compacted": 846,
+      "total_summaries_created": 67,
+      "avg_compression_ratio": 17.0,
+      "max_compression_ratio": 17.0,
+      "avg_entropy_delta": -4.08746284125034,
+      "retrieval_hit_rate": 0.0
+    },
+    "summary_count": 2,
+    "coaccess_edges": 6330
+  },
+  "classification": {
+    "CLASS_E": [
+      "G5: overhead=4.90x>3x"
+    ],
+    "CLASS_F": [
+      "G1: summaries=67",
+      "G2: semantic_summary nodes=2",
+      "G3: archive=165 \u2014 originals preserved",
+      "G4: entropy_delta=-4.087 bounded",
+      "G6: merge_ratio=12.6:1 memories per summary"
+    ]
+  },
+  "all_expected": false,
+  "overhead": 4.904925199479451
+}

@@ -1,0 +1,263 @@
+[
+  {
+    "id": "09a5c74f",
+    "content": "Python collector tuning for service 820",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9913,
+    "last_access_tick": 9915,
+    "last_state_change_tick": 9913,
+    "access_count": 1,
+    "access_history": [
+      9915
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "93adb267",
+    "content": "Rewrote index with subquery for set 873",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9915,
+    "last_access_tick": 9915,
+    "last_state_change_tick": 9915,
+    "access_count": 1,
+    "access_history": [
+      9915
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5d9e9f29",
+    "content": "Analyzed table performance for report 762",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9916,
+    "last_access_tick": 9924,
+    "last_state_change_tick": 9916,
+    "access_count": 6,
+    "access_history": [
+      9922,
+      9924,
+      9924,
+      9924,
+      9924,
+      9924
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "47fc2014",
+    "content": "Embedding search drift in production 552",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9917,
+    "last_access_tick": 9922,
+    "last_state_change_tick": 9917,
+    "access_count": 1,
+    "access_history": [
+      9922
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5270ab00",
+    "content": "Semantic index latency exceeding SLO for 984",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9918,
+    "last_access_tick": 9922,
+    "last_state_change_tick": 9918,
+    "access_count": 1,
+    "access_history": [
+      9922
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4748a728",
+    "content": "Image volume taking too long to pull in 320",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9919,
+    "last_access_tick": 9922,
+    "last_state_change_tick": 9919,
+    "access_count": 1,
+    "access_history": [
+      9922
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1b0c98ca",
+    "content": "Rewrote lookup with subquery for set 698",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9922,
+    "last_access_tick": 9922,
+    "last_state_change_tick": 9922,
+    "access_count": 1,
+    "access_history": [
+      9922
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d7294316",
+    "content": "ANN approximate recall degradation for query 907",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9923,
+    "last_access_tick": 9924,
+    "last_state_change_tick": 9923,
+    "access_count": 5,
+    "access_history": [
+      9924,
+      9924,
+      9924,
+      9924,
+      9924
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8833af9e",
+    "content": "Python weakref pause blocking service 841",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9924,
+    "last_access_tick": 9924,
+    "last_state_change_tick": 9924,
+    "access_count": 5,
+    "access_history": [
+      9924,
+      9924,
+      9924,
+      9924,
+      9924
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fc91cfd3",
+    "content": "Python weakref issue at application 289",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "working",
+    "created_tick": 9925,
+    "last_access_tick": 9925,
+    "last_state_change_tick": 9925,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

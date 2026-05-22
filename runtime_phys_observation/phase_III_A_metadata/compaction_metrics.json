@@ -1,0 +1,46 @@
+{
+  "max_tick": 10000,
+  "strategies": {
+    "NONE": {
+      "entries": 49,
+      "bytes": 4283868.004672105,
+      "compactions": 0,
+      "cpu_cost": 0.0,
+      "bytes_compacted": 0.0,
+      "alpha": 1.003909378261308
+    },
+    "PERIODIC_10K": {
+      "entries": 40,
+      "bytes": 4266772.040758622,
+      "compactions": 1,
+      "cpu_cost": 0.0,
+      "bytes_compacted": 800.0,
+      "alpha": 1.001126864871263
+    },
+    "PERIODIC_5K": {
+      "entries": 40,
+      "bytes": 4268746.517921185,
+      "compactions": 2,
+      "cpu_cost": 0.0,
+      "bytes_compacted": 1600.0,
+      "alpha": 0.9965767090202297
+    },
+    "LEVELED_L2": {
+      "entries": 42,
+      "bytes": 4275278.443258695,
+      "compactions": 2,
+      "cpu_cost": 2.9112181583517707,
+      "bytes_compacted": 1120.0,
+      "alpha": 0.9996038085481449
+    },
+    "TIERED_L3": {
+      "entries": 44,
+      "bytes": 4262421.168401529,
+      "compactions": 5,
+      "cpu_cost": 11.645290259881964,
+      "bytes_compacted": 2800.0,
+      "alpha": 1.0007076915888526
+    }
+  },
+  "conclusion": "linear"
+}

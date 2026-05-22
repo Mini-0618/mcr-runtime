@@ -1,0 +1,152 @@
+[
+  {
+    "id": "7039f4d0",
+    "content": "SQL foreign key",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9992,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9996,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 9996,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9996
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9ffba1d5",
+    "content": "SQL NOT NULL",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9993,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9997,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 9997,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9997
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4e477ec2",
+    "content": "HTTP 301",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9994,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9998,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 9998,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9998
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "92adda5f",
+    "content": "Unix controlling terminal",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9995,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9999,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 9999,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9999
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "54264c6f",
+    "content": "HTTP session",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9996,
+    "last_access_tick": 0,
+    "last_state_change_tick": 10000,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 10000,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 10000
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

@@ -1,0 +1,1272 @@
+[
+  {
+    "id": "33b489fb",
+    "content": "SQL deadlock",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9774,
+    "last_access_tick": 9879,
+    "last_state_change_tick": 9782,
+    "access_count": 4,
+    "access_history": [
+      9774,
+      9846,
+      9876,
+      9879
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9782,
+        "reason": "access_weight=489.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fa7dbd31",
+    "content": "Python bytecode",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9797,
+    "last_access_tick": 9843,
+    "last_state_change_tick": 9812,
+    "access_count": 5,
+    "access_history": [
+      9801,
+      9804,
+      9813,
+      9825,
+      9843
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9812,
+        "reason": "access_weight=982.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "48c36898",
+    "content": "HTTP cache control",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9816,
+    "last_access_tick": 9885,
+    "last_state_change_tick": 9825,
+    "access_count": 3,
+    "access_history": [
+      9816,
+      9873,
+      9885
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9825,
+        "reason": "access_weight=491.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e0241a72",
+    "content": "SQL lock",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9822,
+    "last_access_tick": 9846,
+    "last_state_change_tick": 9836,
+    "access_count": 3,
+    "access_history": [
+      9822,
+      9828,
+      9846
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9836,
+        "reason": "access_weight=984.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b92acdba",
+    "content": "HTTP cache",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9833,
+    "last_access_tick": 9873,
+    "last_state_change_tick": 9842,
+    "access_count": 2,
+    "access_history": [
+      9834,
+      9873
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9842,
+        "reason": "access_weight=492.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "91aaa15b",
+    "content": "VLAN tag",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9834,
+    "last_access_tick": 9834,
+    "last_state_change_tick": 9843,
+    "access_count": 1,
+    "access_history": [
+      9834
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9843,
+        "reason": "access_weight=492.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d16a0739",
+    "content": "HTTP cookie",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9837,
+    "last_access_tick": 9837,
+    "last_state_change_tick": 9845,
+    "access_count": 1,
+    "access_history": [
+      9837
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9845,
+        "reason": "access_weight=492.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "df752320",
+    "content": "HTTP session",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9832,
+    "last_access_tick": 9855,
+    "last_state_change_tick": 9848,
+    "access_count": 4,
+    "access_history": [
+      9834,
+      9837,
+      9840,
+      9855
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9848,
+        "reason": "access_weight=1478.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9414ad61",
+    "content": "HTTP cookie",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9835,
+    "last_access_tick": 9855,
+    "last_state_change_tick": 9849,
+    "access_count": 3,
+    "access_history": [
+      9837,
+      9840,
+      9855
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9849,
+        "reason": "access_weight=985.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "96a29d59",
+    "content": "HTTP request",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9840,
+    "last_access_tick": 9840,
+    "last_state_change_tick": 9850,
+    "access_count": 1,
+    "access_history": [
+      9840
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9850,
+        "reason": "access_weight=493.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "68017d8f",
+    "content": "Python GC tuning",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9842,
+    "last_access_tick": 9888,
+    "last_state_change_tick": 9851,
+    "access_count": 2,
+    "access_history": [
+      9843,
+      9888
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9851,
+        "reason": "access_weight=493.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "938f4f43",
+    "content": "Python heap allocation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9843,
+    "last_access_tick": 9843,
+    "last_state_change_tick": 9852,
+    "access_count": 1,
+    "access_history": [
+      9843
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9852,
+        "reason": "access_weight=493.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7726accc",
+    "content": "SQL deadlock",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9846,
+    "last_access_tick": 9846,
+    "last_state_change_tick": 9855,
+    "access_count": 1,
+    "access_history": [
+      9846
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9855,
+        "reason": "access_weight=493.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "24d184fe",
+    "content": "Unix epoll",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9841,
+    "last_access_tick": 9858,
+    "last_state_change_tick": 9856,
+    "access_count": 2,
+    "access_history": [
+      9849,
+      9858
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9856,
+        "reason": "access_weight=493.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0f372b6d",
+    "content": "Unix inode table",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9847,
+    "last_access_tick": 9900,
+    "last_state_change_tick": 9857,
+    "access_count": 4,
+    "access_history": [
+      9849,
+      9882,
+      9891,
+      9900
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9857,
+        "reason": "access_weight=493.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9aeef485",
+    "content": "Unix mount",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9849,
+    "last_access_tick": 9849,
+    "last_state_change_tick": 9858,
+    "access_count": 1,
+    "access_history": [
+      9849
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9858,
+        "reason": "access_weight=493.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6b15a91a",
+    "content": "DNS A record",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9848,
+    "last_access_tick": 9852,
+    "last_state_change_tick": 9860,
+    "access_count": 1,
+    "access_history": [
+      9852
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9860,
+        "reason": "access_weight=493.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3f1c6b24",
+    "content": "Python dict implementation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9851,
+    "last_access_tick": 9897,
+    "last_state_change_tick": 9861,
+    "access_count": 2,
+    "access_history": [
+      9852,
+      9897
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9861,
+        "reason": "access_weight=493.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1bbba2e3",
+    "content": "DNS query",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9852,
+    "last_access_tick": 9852,
+    "last_state_change_tick": 9862,
+    "access_count": 1,
+    "access_history": [
+      9852
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9862,
+        "reason": "access_weight=493.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c6326371",
+    "content": "HTTP keep-alive",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9855,
+    "last_access_tick": 9855,
+    "last_state_change_tick": 9864,
+    "access_count": 1,
+    "access_history": [
+      9855
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9864,
+        "reason": "access_weight=493.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4da94018",
+    "content": "Unix session leader",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9854,
+    "last_access_tick": 9861,
+    "last_state_change_tick": 9869,
+    "access_count": 2,
+    "access_history": [
+      9858,
+      9861
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9869,
+        "reason": "access_weight=987.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a29d1e15",
+    "content": "Unix process group",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9858,
+    "last_access_tick": 9861,
+    "last_state_change_tick": 9870,
+    "access_count": 2,
+    "access_history": [
+      9858,
+      9861
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9870,
+        "reason": "access_weight=987.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a098bea2",
+    "content": "Unix systemd",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9861,
+    "last_access_tick": 9861,
+    "last_state_change_tick": 9871,
+    "access_count": 1,
+    "access_history": [
+      9861
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9871,
+        "reason": "access_weight=494.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "09314a58",
+    "content": "Python unicode",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9862,
+    "last_access_tick": 9864,
+    "last_state_change_tick": 13200,
+    "access_count": 1,
+    "access_history": [
+      9864
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9872,
+        "reason": "access_weight=494.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c19361c9",
+    "content": "SQL EXPLAIN",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9863,
+    "last_access_tick": 9876,
+    "last_state_change_tick": 9873,
+    "access_count": 2,
+    "access_history": [
+      9864,
+      9876
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9873,
+        "reason": "access_weight=494.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "aebeef73",
+    "content": "IP routing",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9864,
+    "last_access_tick": 9864,
+    "last_state_change_tick": 9874,
+    "access_count": 1,
+    "access_history": [
+      9864
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9874,
+        "reason": "access_weight=494.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0eba12a5",
+    "content": "TLS handshake",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9865,
+    "last_access_tick": 9867,
+    "last_state_change_tick": 9875,
+    "access_count": 1,
+    "access_history": [
+      9867
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9875,
+        "reason": "access_weight=494.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4c9b78b9",
+    "content": "Python import system",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9866,
+    "last_access_tick": 9888,
+    "last_state_change_tick": 9876,
+    "access_count": 2,
+    "access_history": [
+      9867,
+      9888
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9876,
+        "reason": "access_weight=494.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7f8cf88c",
+    "content": "Switch port",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9867,
+    "last_access_tick": 9867,
+    "last_state_change_tick": 9877,
+    "access_count": 1,
+    "access_history": [
+      9867
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9877,
+        "reason": "access_weight=494.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "906f8f21",
+    "content": "ICMP ping",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9868,
+    "last_access_tick": 9894,
+    "last_state_change_tick": 9878,
+    "access_count": 2,
+    "access_history": [
+      9870,
+      9894
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9878,
+        "reason": "access_weight=494.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "378a3ce8",
+    "content": "TCP connection",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9869,
+    "last_access_tick": 9870,
+    "last_state_change_tick": 9879,
+    "access_count": 1,
+    "access_history": [
+      9870
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9879,
+        "reason": "access_weight=494.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "133e01ac",
+    "content": "TCP SYN",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9870,
+    "last_access_tick": 9870,
+    "last_state_change_tick": 9880,
+    "access_count": 1,
+    "access_history": [
+      9870
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9880,
+        "reason": "access_weight=494.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2c2a2f40",
+    "content": "HTTP cache",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9873,
+    "last_access_tick": 9873,
+    "last_state_change_tick": 9883,
+    "access_count": 1,
+    "access_history": [
+      9873
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9883,
+        "reason": "access_weight=494.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "71afcd1f",
+    "content": "SQL index",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9876,
+    "last_access_tick": 9879,
+    "last_state_change_tick": 9887,
+    "access_count": 2,
+    "access_history": [
+      9876,
+      9879
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9887,
+        "reason": "access_weight=989.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "84da66dd",
+    "content": "SQL rollback",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9879,
+    "last_access_tick": 9879,
+    "last_state_change_tick": 9888,
+    "access_count": 1,
+    "access_history": [
+      9879
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9888,
+        "reason": "access_weight=494.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "073e8337",
+    "content": "Unix fork",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9874,
+    "last_access_tick": 9882,
+    "last_state_change_tick": 9890,
+    "access_count": 1,
+    "access_history": [
+      9882
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9890,
+        "reason": "access_weight=495.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "313bdcca",
+    "content": "Unix inode",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9882,
+    "last_access_tick": 9891,
+    "last_state_change_tick": 9891,
+    "access_count": 2,
+    "access_history": [
+      9882,
+      9891
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9891,
+        "reason": "access_weight=495.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1cdf8c50",
+    "content": "HTTP Bearer token",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9880,
+    "last_access_tick": 9885,
+    "last_state_change_tick": 9894,
+    "access_count": 1,
+    "access_history": [
+      9885
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9894,
+        "reason": "access_weight=495.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "09cfb80c",
+    "content": "HTTP 500",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9885,
+    "last_access_tick": 9885,
+    "last_state_change_tick": 9895,
+    "access_count": 1,
+    "access_history": [
+      9885
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9895,
+        "reason": "access_weight=495.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3ebf5454",
+    "content": "Python GC tuning",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "episodic",
+    "created_tick": 9888,
+    "last_access_tick": 9888,
+    "last_state_change_tick": 9898,
+    "access_count": 1,
+    "access_history": [
+      9888
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9898,
+        "reason": "access_weight=495.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

@@ -1,0 +1,43 @@
+[
+  {
+    "id": "sem_f30cbaf39b9d",
+    "content": "network_protocol ",
+    "tags": [
+      "network_protocol",
+      "phase_vi"
+    ],
+    "topic": "network_protocol",
+    "members": [
+      "a12bad78",
+      "ba4d2e9d",
+      "dcad4a92",
+      "f3efeda5"
+    ],
+    "centroid_vector": {
+      "importance": 0.5,
+      "access_weight": 1.0,
+      "access_count": 7.0
+    },
+    "representative_terms": [
+      "network_protocol",
+      "phase_vi"
+    ],
+    "importance": 0.5,
+    "access_weight": 1.0,
+    "access_count": 7.0,
+    "source_memory_ids": [
+      "a12bad78",
+      "ba4d2e9d",
+      "dcad4a92",
+      "f3efeda5"
+    ],
+    "source_count": 4,
+    "compression_ratio": 4.0,
+    "retrieval_hit_rate": 0.0,
+    "entropy_delta": -2.0,
+    "tick_created": 9800,
+    "last_access_tick": 9800,
+    "state": "semantic",
+    "memory_type": "semantic_summary"
+  }
+]

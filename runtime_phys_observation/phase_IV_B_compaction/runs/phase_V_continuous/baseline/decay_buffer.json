@@ -1,0 +1,142 @@
+[
+  {
+    "id": "8a249f34",
+    "content": "semantic_search cache miss rate 34% at tick 4986",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "semantic_search",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4986,
+    "last_access_tick": 4986,
+    "last_state_change_tick": 4996,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 4996,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 4996
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "235dfdc6",
+    "content": "file_system worker thread 4987 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4987,
+    "last_access_tick": 4987,
+    "last_state_change_tick": 4997,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 4997,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 4997
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dac87d62",
+    "content": "api_gateway worker thread 4988 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "api_gateway",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4988,
+    "last_access_tick": 4988,
+    "last_state_change_tick": 4998,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 4998,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 4998
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3b9f65db",
+    "content": "wal_replay cache miss rate 23% at tick 4989",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "wal_replay",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4989,
+    "last_access_tick": 4989,
+    "last_state_change_tick": 4999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 4999,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 4999
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6cf2a005",
+    "content": "file_system batch 4990 failed with error code 500",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4990,
+    "last_access_tick": 4990,
+    "last_state_change_tick": 5000,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 5000,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 5000
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

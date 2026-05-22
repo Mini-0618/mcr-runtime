@@ -1,0 +1,48 @@
+{
+  "tick_id": "791efc9d",
+  "cycle": 169,
+  "timestamp": "2026-05-12T01:01:55.467386",
+  "observed_events": [],
+  "event_count": 0,
+  "activated_memories": [
+    {
+      "id": "dcd17cd6",
+      "content": "想起高中数学老师说过的一句话",
+      "score": 0.5
+    },
+    {
+      "id": "264fe49b",
+      "content": "想到上周看到的一部电视剧",
+      "score": 0.5
+    },
+    {
+      "id": "6027f401",
+      "content": "记得小时候养过一只猫叫阿花",
+      "score": 0.5
+    },
+    {
+      "id": "105f3d81",
+      "content": "想起高中数学老师说过的一句话",
+      "score": 0.5
+    },
+    {
+      "id": "3163fddc",
+      "content": "突然想到三年前去过的一个城市",
+      "score": 0.5
+    }
+  ],
+  "memory_activation_count": 5,
+  "state_diff": {
+    "goal_changed": false,
+    "plan_changed": false,
+    "observation_delta": 0,
+    "goal_stability_delta": 0.0
+  },
+  "drift_report": {
+    "overall_score": 0.04999999999999999,
+    "detected_types": []
+  },
+  "plan_summary": "Continuing plan: 研究区块链",
+  "compression_actions": [],
+  "reasoning_summary": "Activated 5 relevant memories"
+}

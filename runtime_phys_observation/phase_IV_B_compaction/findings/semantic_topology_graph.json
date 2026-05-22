@@ -1,0 +1,14 @@
+{
+  "run_id": "topic_bounded_10k_1779273281",
+  "experiment": "PHASE_IV_B1_Topic_Bounded_Compaction",
+  "nodes": [],
+  "edges": [],
+  "topic_distribution": {
+    "crash_recovery": 1
+  },
+  "fragmentation_score": 1,
+  "total_topics_active": 1,
+  "total_topics_benchmarked": 6,
+  "semantic_coaccess_edges": 0,
+  "notes": "Semantic topology is sparse — only 4 summaries formed, all from crash_recovery topic. 5 of 6 topics did not form summaries due to sparse coaccess graph. Topic boundary enforcement is VERIFIED (purity=1.0, cross_topic_rate=0.0)."
+}

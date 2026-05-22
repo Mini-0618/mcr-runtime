@@ -1,0 +1,3304 @@
+{
+  "history": [
+    {
+      "timestamp": "2026-05-12T01:01:55.280710",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 5,
+        "has_summary": false,
+        "message": "Raw obs: 5, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.284043",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 5,
+        "has_summary": false,
+        "message": "Raw obs: 5, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.286949",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 5,
+        "has_summary": false,
+        "message": "Raw obs: 5, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.289616",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 5,
+        "has_summary": false,
+        "message": "Raw obs: 5, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.292493",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.295622",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.298734",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.301539",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.304408",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.306947",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.309377",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.311932",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.314785",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.317343",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.3,
+        "goal_stability": 1.0,
+        "goal_change_count": 3,
+        "message": "Goal stability: 1.00, changes: 3"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.0,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.319914",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.322911",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.325717",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.328351",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.331063",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 6,
+        "has_summary": false,
+        "message": "Raw obs: 6, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.333836",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.336946",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.339578",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.342545",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.345706",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.348600",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.351165",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.353961",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.356547",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.359095",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.362216",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.364780",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.367323",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.370146",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.372947",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 7,
+        "has_summary": false,
+        "message": "Raw obs: 7, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.375782",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.378743",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.381658",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.384281",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.387488",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.390346",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.393240",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.396142",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.399274",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.402435",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.405190",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.408017",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.410851",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.414322",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.417065",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.420073",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.422965",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.425865",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.429263",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.432136",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.09999999999999998,
+        "threshold": 0.3,
+        "goal_stability": 0.9,
+        "goal_change_count": 4,
+        "message": "Goal stability: 0.90, changes: 4"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.024999999999999994,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.435439",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.438273",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.441602",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.444716",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.447534",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.450826",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.453899",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.456811",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.459789",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.462583",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.465723",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.468902",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.472043",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.475310",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.478241",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.481379",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.484235",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.487207",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.490130",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.493050",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.496175",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.499301",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.502524",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.505631",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.508585",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.511715",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.514734",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.517617",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.520574",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.523499",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.526433",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.529311",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.532714",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.535842",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.538853",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.541994",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.544857",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.547819",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.550652",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.554038",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.557350",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.560484",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.563681",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.567029",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.570243",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    },
+    {
+      "timestamp": "2026-05-12T01:01:55.573708",
+      "goal_drift": {
+        "detected": false,
+        "score": 0.19999999999999996,
+        "threshold": 0.3,
+        "goal_stability": 0.8,
+        "goal_change_count": 5,
+        "message": "Goal stability: 0.80, changes: 5"
+      },
+      "reasoning_drift": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.4,
+        "chain_length": 20,
+        "contradictions": 0,
+        "message": "Reasoning chain: 20, contradictions: 0"
+      },
+      "context_pollution": {
+        "detected": false,
+        "score": 0.0,
+        "threshold": 0.5,
+        "raw_observations": 8,
+        "has_summary": false,
+        "message": "Raw obs: 8, summary: no"
+      },
+      "execution_divergence": {
+        "detected": false,
+        "score": 0.0
+      },
+      "overall_drift_score": 0.04999999999999999,
+      "drifts_detected": []
+    }
+  ]
+}

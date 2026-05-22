@@ -1,0 +1,22 @@
+[
+  {
+    "scenario": 100,
+    "speedup_tick_latency": 0.845951840472117,
+    "speedup_retrieval": 1.0015635642640661,
+    "memory_delta": 34.0,
+    "noise_delta": -0.43937728937728937,
+    "p95_speedup": 0.7049770055630272,
+    "spike_rate_new": 0.1,
+    "semantic_activations": 257
+  },
+  {
+    "scenario": 1000,
+    "speedup_tick_latency": 1.5380506067678732,
+    "speedup_retrieval": 1.6099535204715734,
+    "memory_delta": -54.5,
+    "noise_delta": -0.6216670374490174,
+    "p95_speedup": 1.7962292948750813,
+    "spike_rate_new": 0.0995,
+    "semantic_activations": 8969
+  }
+]

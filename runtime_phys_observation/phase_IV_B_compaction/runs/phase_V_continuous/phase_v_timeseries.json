@@ -1,0 +1,437 @@
+{
+  "windows": [
+    {
+      "window": 1,
+      "tick_start": 1,
+      "tick_end": 5000,
+      "elapsed_s": 0.888649009000801,
+      "W": 10,
+      "E": 40,
+      "S": 0,
+      "A": 202,
+      "total": 252,
+      "promotions": 0,
+      "demotions": 0,
+      "gc_ops": 0,
+      "compaction_ops": 10,
+      "avg_latency_ms": 0.14977020420337794,
+      "p99_latency_ms": 0.3148559990222566,
+      "max_latency_ms": 22.054009001294617,
+      "entropy": 2.5809585306045855,
+      "entropy_drift": 0.2577388582690774,
+      "archive_ratio": 4.04,
+      "overhead_ratio": 7.2612839634957504,
+      "snapshots": [
+        {
+          "tick": 1000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 82,
+          "entropy": 2.614086410872244,
+          "state_hash": "b74f4a17216c7efa",
+          "wal_ok": true
+        },
+        {
+          "tick": 2000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 132,
+          "entropy": 2.7115724704907884,
+          "state_hash": "9916ecd8d97e2c4a",
+          "wal_ok": true
+        },
+        {
+          "tick": 3000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 154,
+          "entropy": 2.6905738157896897,
+          "state_hash": "7e145260664b507c",
+          "wal_ok": true
+        },
+        {
+          "tick": 4000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 191,
+          "entropy": 2.707927190724786,
+          "state_hash": "b7cc90c6c05309d6",
+          "wal_ok": true
+        },
+        {
+          "tick": 5000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 202,
+          "entropy": 2.5809585306045855,
+          "state_hash": "751331810bd36ce3",
+          "wal_ok": true
+        }
+      ],
+      "entropy_timeline": [
+        2.614086410872244,
+        2.7115724704907884,
+        2.6905738157896897,
+        2.707927190724786,
+        2.5809585306045855
+      ],
+      "wal_ok": true,
+      "state_hash_timeline": [
+        "b74f4a17216c7efa",
+        "9916ecd8d97e2c4a",
+        "7e145260664b507c",
+        "b7cc90c6c05309d6",
+        "751331810bd36ce3"
+      ]
+    },
+    {
+      "window": 2,
+      "tick_start": 5001,
+      "tick_end": 10000,
+      "elapsed_s": 1.6477444209958776,
+      "W": 10,
+      "E": 40,
+      "S": 0,
+      "A": 101,
+      "total": 151,
+      "promotions": 0,
+      "demotions": 0,
+      "gc_ops": 0,
+      "compaction_ops": 10,
+      "avg_latency_ms": 0.24568044674524572,
+      "p99_latency_ms": 0.37947800592519343,
+      "max_latency_ms": 43.77139200369129,
+      "entropy": 2.6613769704042496,
+      "entropy_drift": 0.3381572980687415,
+      "archive_ratio": 2.02,
+      "overhead_ratio": 13.463966109150492,
+      "snapshots": [
+        {
+          "tick": 6000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 233,
+          "entropy": 2.671181470317711,
+          "state_hash": "fa6b0f67bbeba2e6",
+          "wal_ok": true
+        },
+        {
+          "tick": 7000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 262,
+          "entropy": 2.7154760657464205,
+          "state_hash": "fdac58e00607c123",
+          "wal_ok": true
+        },
+        {
+          "tick": 8000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 299,
+          "entropy": 2.6314123461807535,
+          "state_hash": "6da4809a66397b6d",
+          "wal_ok": true
+        },
+        {
+          "tick": 9000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 315,
+          "entropy": 2.7469285360236873,
+          "state_hash": "e326cd1fdade9612",
+          "wal_ok": true
+        },
+        {
+          "tick": 10000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 364,
+          "entropy": 2.6613769704042496,
+          "state_hash": "ed5ee3b13b0d1bbf",
+          "wal_ok": true
+        }
+      ],
+      "entropy_timeline": [
+        2.671181470317711,
+        2.7154760657464205,
+        2.6314123461807535,
+        2.7469285360236873,
+        2.6613769704042496
+      ],
+      "wal_ok": true,
+      "state_hash_timeline": [
+        "fa6b0f67bbeba2e6",
+        "fdac58e00607c123",
+        "6da4809a66397b6d",
+        "e326cd1fdade9612",
+        "ed5ee3b13b0d1bbf"
+      ]
+    },
+    {
+      "window": 3,
+      "tick_start": 10001,
+      "tick_end": 15000,
+      "elapsed_s": 2.3600606010004412,
+      "W": 10,
+      "E": 40,
+      "S": 0,
+      "A": 209,
+      "total": 259,
+      "promotions": 0,
+      "demotions": 0,
+      "gc_ops": 0,
+      "compaction_ops": 10,
+      "avg_latency_ms": 0.34389813515590506,
+      "p99_latency_ms": 0.36784800613531843,
+      "max_latency_ms": 65.09832099982304,
+      "entropy": 2.6811894064676283,
+      "entropy_drift": 0.3579697341321202,
+      "archive_ratio": 4.18,
+      "overhead_ratio": 19.284408153666437,
+      "snapshots": [
+        {
+          "tick": 11000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 93,
+          "entropy": 2.614100057305254,
+          "state_hash": "1f8a082ea3326004",
+          "wal_ok": true
+        },
+        {
+          "tick": 12000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 111,
+          "entropy": 2.6532478804811803,
+          "state_hash": "f734ee002efbbe9e",
+          "wal_ok": true
+        },
+        {
+          "tick": 13000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 129,
+          "entropy": 2.6893442852255487,
+          "state_hash": "32bc57a42d371804",
+          "wal_ok": true
+        },
+        {
+          "tick": 14000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 174,
+          "entropy": 2.6620262860669563,
+          "state_hash": "23569bf46c248a06",
+          "wal_ok": true
+        },
+        {
+          "tick": 15000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 209,
+          "entropy": 2.6811894064676283,
+          "state_hash": "8d393c30cd7641c2",
+          "wal_ok": true
+        }
+      ],
+      "entropy_timeline": [
+        2.614100057305254,
+        2.6532478804811803,
+        2.6893442852255487,
+        2.6620262860669563,
+        2.6811894064676283
+      ],
+      "wal_ok": true,
+      "state_hash_timeline": [
+        "1f8a082ea3326004",
+        "f734ee002efbbe9e",
+        "32bc57a42d371804",
+        "23569bf46c248a06",
+        "8d393c30cd7641c2"
+      ]
+    },
+    {
+      "window": 4,
+      "tick_start": 15001,
+      "tick_end": 20000,
+      "elapsed_s": 3.2644217340057367,
+      "W": 10,
+      "E": 40,
+      "S": 0,
+      "A": 68,
+      "total": 118,
+      "promotions": 0,
+      "demotions": 0,
+      "gc_ops": 0,
+      "compaction_ops": 10,
+      "avg_latency_ms": 0.4533526888902998,
+      "p99_latency_ms": 0.38159800169523805,
+      "max_latency_ms": 84.94075400085421,
+      "entropy": 2.639379661002052,
+      "entropy_drift": 0.31615998866654405,
+      "archive_ratio": 1.36,
+      "overhead_ratio": 26.674078232389586,
+      "snapshots": [
+        {
+          "tick": 16000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 245,
+          "entropy": 2.7367330359371485,
+          "state_hash": "3010a26ff7da564c",
+          "wal_ok": true
+        },
+        {
+          "tick": 17000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 249,
+          "entropy": 2.639582522163419,
+          "state_hash": "76b83ba2c9bf5801",
+          "wal_ok": true
+        },
+        {
+          "tick": 18000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 310,
+          "entropy": 2.6918307859804176,
+          "state_hash": "69b4669b795ad7dd",
+          "wal_ok": true
+        },
+        {
+          "tick": 19000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 309,
+          "entropy": 2.605253126033295,
+          "state_hash": "0ef267a07567f9db",
+          "wal_ok": true
+        },
+        {
+          "tick": 20000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 333,
+          "entropy": 2.639379661002052,
+          "state_hash": "a458f716672cf268",
+          "wal_ok": true
+        }
+      ],
+      "entropy_timeline": [
+        2.7367330359371485,
+        2.639582522163419,
+        2.6918307859804176,
+        2.605253126033295,
+        2.639379661002052
+      ],
+      "wal_ok": true,
+      "state_hash_timeline": [
+        "3010a26ff7da564c",
+        "76b83ba2c9bf5801",
+        "69b4669b795ad7dd",
+        "0ef267a07567f9db",
+        "a458f716672cf268"
+      ]
+    }
+  ],
+  "baseline": {
+    "working": 10,
+    "episodic": 0,
+    "semantic": 0,
+    "archive": 0,
+    "total": 10,
+    "elapsed_s": 0.12238180099666351,
+    "entropy": 2.323219672335508
+  },
+  "summary": {
+    "total_ticks": 20000,
+    "elapsed_total_s": 8.162858009338379,
+    "windows_run": 4,
+    "stopped_early": true,
+    "stop_reason": "Window 4: OVERHEAD 26.67x",
+    "memory_bounded": true,
+    "entropy_bounded": true,
+    "overhead_bounded": false,
+    "wal_valid_rate": 1.0,
+    "verdicts": {
+      "memory_bounded": true,
+      "entropy_bounded": true,
+      "overhead_bounded": false,
+      "wal_healthy": true,
+      "overall": false
+    },
+    "latency_trend": [
+      0.14977020420337794,
+      0.24568044674524572,
+      0.34389813515590506,
+      0.4533526888902998
+    ],
+    "p99_latency_trend": [
+      0.3148559990222566,
+      0.37947800592519343,
+      0.36784800613531843,
+      0.38159800169523805
+    ],
+    "memory_trend": [
+      252,
+      151,
+      259,
+      118
+    ],
+    "overhead_trend": [
+      7.2612839634957504,
+      13.463966109150492,
+      19.284408153666437,
+      26.674078232389586
+    ],
+    "entropy_timeline": [
+      2.614086410872244,
+      2.7115724704907884,
+      2.6905738157896897,
+      2.707927190724786,
+      2.5809585306045855,
+      2.671181470317711,
+      2.7154760657464205,
+      2.6314123461807535,
+      2.7469285360236873,
+      2.6613769704042496,
+      2.614100057305254,
+      2.6532478804811803,
+      2.6893442852255487,
+      2.6620262860669563,
+      2.6811894064676283,
+      2.7367330359371485,
+      2.639582522163419,
+      2.6918307859804176,
+      2.605253126033295,
+      2.639379661002052
+    ],
+    "total_promotions": 0,
+    "total_demotions": 0,
+    "total_gc_ops": 0,
+    "total_compaction_ops": 40
+  }
+}

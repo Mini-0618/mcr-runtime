@@ -1,0 +1,2943 @@
+[
+  {
+    "id": "2980363c",
+    "content": "Recovery backup taking 734s exceeding RTO",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9706,
+    "last_access_tick": 9709,
+    "last_state_change_tick": 9779,
+    "access_count": 6,
+    "access_history": [
+      9709,
+      9709,
+      9709,
+      9709,
+      9709,
+      9709
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9723,
+        "reason": "access_weight=2918.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ec7be472",
+    "content": "Docker container consuming excessive disk on host 352",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9712,
+    "last_access_tick": 9715,
+    "last_state_change_tick": 9781,
+    "access_count": 1,
+    "access_history": [
+      9715
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9725,
+        "reason": "access_weight=486.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5e8461b4",
+    "content": "Vector vector index growing unbounded in 910",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9686,
+    "last_access_tick": 9723,
+    "last_state_change_tick": 9782,
+    "access_count": 14,
+    "access_history": [
+      9686,
+      9686,
+      9693,
+      9699,
+      9700,
+      9700,
+      9700,
+      9720,
+      9722,
+      9723
+    ],
+    "activation_count": 14,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9708,
+        "reason": "access_weight=4856.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9e0055bf",
+    "content": "Docker compose consuming excessive disk on host 395",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9695,
+    "last_access_tick": 9728,
+    "last_state_change_tick": 9783,
+    "access_count": 7,
+    "access_history": [
+      9699,
+      9699,
+      9699,
+      9699,
+      9699,
+      9726,
+      9728
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9705,
+        "reason": "access_weight=2429.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0e812476",
+    "content": "Python gc pause blocking service 764",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9714,
+    "last_access_tick": 9728,
+    "last_state_change_tick": 9786,
+    "access_count": 2,
+    "access_history": [
+      9715,
+      9728
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9727,
+        "reason": "access_weight=486.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8e410949",
+    "content": "Service assert crash-loop after deployment 691",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9727,
+    "last_access_tick": 9728,
+    "last_state_change_tick": 9790,
+    "access_count": 4,
+    "access_history": [
+      9728,
+      9728,
+      9728,
+      9728
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9734,
+        "reason": "access_weight=1949.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a6e3b7bb",
+    "content": "Added WHERE index to improve query 297",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9725,
+    "last_access_tick": 9732,
+    "last_state_change_tick": 9792,
+    "access_count": 1,
+    "access_history": [
+      9732
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9737,
+        "reason": "access_weight=487.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b33972e0",
+    "content": "WAL flush blocking on 992 during heavy write",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9732,
+    "last_access_tick": 9732,
+    "last_state_change_tick": 9793,
+    "access_count": 1,
+    "access_history": [
+      9732
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9744,
+        "reason": "access_weight=487.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "22228d81",
+    "content": "Embedding neighbor drift in production 210",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9693,
+    "last_access_tick": 9734,
+    "last_state_change_tick": 9794,
+    "access_count": 5,
+    "access_history": [
+      9693,
+      9721,
+      9721,
+      9734,
+      9734
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9704,
+        "reason": "access_weight=485.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3122e4c5",
+    "content": "WAL LSN segment accumulation on 718",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9734,
+    "last_access_tick": 9734,
+    "last_state_change_tick": 9795,
+    "access_count": 2,
+    "access_history": [
+      9734,
+      9734
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9747,
+        "reason": "access_weight=975.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5bd2259a",
+    "content": "Python reachability pause blocking service 277",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9736,
+    "last_access_tick": 9737,
+    "last_state_change_tick": 9796,
+    "access_count": 1,
+    "access_history": [
+      9737
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9748,
+        "reason": "access_weight=487.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dc07c9cc",
+    "content": "Replay redo slower than expected on 200",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9737,
+    "last_access_tick": 9737,
+    "last_state_change_tick": 9797,
+    "access_count": 1,
+    "access_history": [
+      9737
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9749,
+        "reason": "access_weight=487.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a60cbb59",
+    "content": "Python Garbage tuning for service 848",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9717,
+    "last_access_tick": 9740,
+    "last_state_change_tick": 9802,
+    "access_count": 13,
+    "access_history": [
+      9732,
+      9732,
+      9732,
+      9732,
+      9734,
+      9734,
+      9734,
+      9734,
+      9737,
+      9740
+    ],
+    "activation_count": 13,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9752,
+        "reason": "access_weight=4877.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "12560d87",
+    "content": "Checkpoint LSN taking 374s causing replication lag",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9741,
+    "last_access_tick": 9741,
+    "last_state_change_tick": 9803,
+    "access_count": 1,
+    "access_history": [
+      9741
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9754,
+        "reason": "access_weight=488.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "437e13f7",
+    "content": "Python collector issue at application 155",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9749,
+    "last_access_tick": 9750,
+    "last_state_change_tick": 9804,
+    "access_count": 3,
+    "access_history": [
+      9750,
+      9750,
+      9750
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9761,
+        "reason": "access_weight=1465.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0b9c38bd",
+    "content": "Vector index index growing unbounded in 382",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9738,
+    "last_access_tick": 9756,
+    "last_state_change_tick": 9833,
+    "access_count": 20,
+    "access_history": [
+      9751,
+      9751,
+      9755,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756
+    ],
+    "activation_count": 20,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9769,
+        "reason": "access_weight=4887.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "62ede95c",
+    "content": "Recovery leader taking 35s exceeding RTO",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9750,
+    "last_access_tick": 9750,
+    "last_state_change_tick": 9819,
+    "access_count": 1,
+    "access_history": [
+      9750
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9762,
+        "reason": "access_weight=488.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5bf475a1",
+    "content": "ANN embedding recall degradation for query 457",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9711,
+    "last_access_tick": 9751,
+    "last_state_change_tick": 9821,
+    "access_count": 7,
+    "access_history": [
+      9715,
+      9721,
+      9721,
+      9721,
+      9751,
+      9751,
+      9751
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9730,
+        "reason": "access_weight=1947.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ce74a68d",
+    "content": "Image image taking too long to pull in 61",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9720,
+    "last_access_tick": 9751,
+    "last_state_change_tick": 9822,
+    "access_count": 4,
+    "access_history": [
+      9721,
+      9721,
+      9721,
+      9751
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9732,
+        "reason": "access_weight=1461.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "395a9631",
+    "content": "Analyzed scan performance for report 419",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9748,
+    "last_access_tick": 9751,
+    "last_state_change_tick": 9823,
+    "access_count": 11,
+    "access_history": [
+      9750,
+      9750,
+      9750,
+      9750,
+      9750,
+      9751,
+      9751,
+      9751,
+      9751,
+      9751
+    ],
+    "activation_count": 11,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9765,
+        "reason": "access_weight=4885.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dad5e70f",
+    "content": "Split-brain core detected in cluster 487",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9586,
+    "last_access_tick": 9753,
+    "last_state_change_tick": 9825,
+    "access_count": 24,
+    "access_history": [
+      9699,
+      9699,
+      9726,
+      9728,
+      9728,
+      9728,
+      9728,
+      9741,
+      9751,
+      9753
+    ],
+    "activation_count": 24,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9601,
+        "reason": "access_weight=480.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b2ede682",
+    "content": "Container swarm failing health check in cluster 707",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9708,
+    "last_access_tick": 9753,
+    "last_state_change_tick": 9826,
+    "access_count": 10,
+    "access_history": [
+      9709,
+      9709,
+      9709,
+      9709,
+      9709,
+      9709,
+      9726,
+      9741,
+      9751,
+      9753
+    ],
+    "activation_count": 10,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9724,
+        "reason": "access_weight=2918.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ad005647",
+    "content": "Split-brain backup detected in cluster 800",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9723,
+    "last_access_tick": 9753,
+    "last_state_change_tick": 9827,
+    "access_count": 12,
+    "access_history": [
+      9728,
+      9728,
+      9728,
+      9732,
+      9732,
+      9732,
+      9732,
+      9741,
+      9751,
+      9753
+    ],
+    "activation_count": 12,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9736,
+        "reason": "access_weight=4387.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "87c65e6d",
+    "content": "Checkpoint replay taking 500s causing replication lag",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9752,
+    "last_access_tick": 9753,
+    "last_state_change_tick": 9828,
+    "access_count": 1,
+    "access_history": [
+      9753
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9766,
+        "reason": "access_weight=488.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f81447f0",
+    "content": "Semantic approximate returning irrelevant results for 413",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9733,
+    "last_access_tick": 9756,
+    "last_state_change_tick": 9831,
+    "access_count": 8,
+    "access_history": [
+      9734,
+      9734,
+      9734,
+      9734,
+      9751,
+      9751,
+      9756,
+      9756
+    ],
+    "activation_count": 8,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9746,
+        "reason": "access_weight=1950.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0b9c38bd",
+    "content": "Vector index index growing unbounded in 382",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9738,
+    "last_access_tick": 9756,
+    "last_state_change_tick": 9833,
+    "access_count": 20,
+    "access_history": [
+      9751,
+      9751,
+      9755,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756
+    ],
+    "activation_count": 20,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9769,
+        "reason": "access_weight=4887.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5ed84ea3",
+    "content": "Embedding cosine drift in production 955",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9755,
+    "last_access_tick": 9756,
+    "last_state_change_tick": 9834,
+    "access_count": 6,
+    "access_history": [
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9770,
+        "reason": "access_weight=2932.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d04b1499",
+    "content": "Container image failing health check in cluster 578",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9756,
+    "last_access_tick": 9756,
+    "last_state_change_tick": 9835,
+    "access_count": 6,
+    "access_history": [
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9771,
+        "reason": "access_weight=2932.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ca0b2ee5",
+    "content": "Optimized JOIN plan for dashboard 611",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9715,
+    "last_access_tick": 9759,
+    "last_state_change_tick": 9836,
+    "access_count": 17,
+    "access_history": [
+      9734,
+      9734,
+      9734,
+      9734,
+      9737,
+      9740,
+      9750,
+      9750,
+      9750,
+      9759
+    ],
+    "activation_count": 17,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9750,
+        "reason": "access_weight=4875.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7ef1004a",
+    "content": "Added JOIN index to improve query 521",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9710,
+    "last_access_tick": 9759,
+    "last_state_change_tick": 9837,
+    "access_count": 37,
+    "access_history": [
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9756,
+      9759,
+      9759,
+      9759
+    ],
+    "activation_count": 37,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9772,
+        "reason": "access_weight=4888.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2c004d33",
+    "content": "Rewrote lookup with subquery for set 877",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9754,
+    "last_access_tick": 9759,
+    "last_state_change_tick": 9838,
+    "access_count": 2,
+    "access_history": [
+      9759,
+      9759
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9773,
+        "reason": "access_weight=977.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4a566243",
+    "content": "Container docker failing health check in cluster 842",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9658,
+    "last_access_tick": 9764,
+    "last_state_change_tick": 9839,
+    "access_count": 12,
+    "access_history": [
+      9686,
+      9700,
+      9726,
+      9728,
+      9728,
+      9728,
+      9741,
+      9751,
+      9753,
+      9764
+    ],
+    "activation_count": 12,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9667,
+        "reason": "access_weight=483.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "18468ab1",
+    "content": "Slow scan on table 236 causing latency",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9638,
+    "last_access_tick": 9765,
+    "last_state_change_tick": 9841,
+    "access_count": 26,
+    "access_history": [
+      9740,
+      9748,
+      9750,
+      9755,
+      9756,
+      9756,
+      9756,
+      9756,
+      9764,
+      9765
+    ],
+    "activation_count": 26,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9652,
+        "reason": "access_weight=1449.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ebee4fb0",
+    "content": "Docker swarm network latency to 709",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9642,
+    "last_access_tick": 9765,
+    "last_state_change_tick": 9843,
+    "access_count": 17,
+    "access_history": [
+      9648,
+      9648,
+      9671,
+      9675,
+      9679,
+      9700,
+      9700,
+      9732,
+      9764,
+      9765
+    ],
+    "activation_count": 17,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9655,
+        "reason": "access_weight=4350.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a80d7e68",
+    "content": "Python allocation pause blocking service 517",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9771,
+    "last_access_tick": 9771,
+    "last_state_change_tick": 9844,
+    "access_count": 2,
+    "access_history": [
+      9771,
+      9771
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9779,
+        "reason": "access_weight=979.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "eb3ebf87",
+    "content": "Container build failing health check in cluster 123",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9769,
+    "last_access_tick": 9772,
+    "last_state_change_tick": 9845,
+    "access_count": 8,
+    "access_history": [
+      9771,
+      9771,
+      9772,
+      9772,
+      9772,
+      9772,
+      9772,
+      9772
+    ],
+    "activation_count": 8,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9781,
+        "reason": "access_weight=3916.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ca1af542",
+    "content": "Python memory issue at application 245",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9770,
+    "last_access_tick": 9772,
+    "last_state_change_tick": 9847,
+    "access_count": 8,
+    "access_history": [
+      9771,
+      9771,
+      9772,
+      9772,
+      9772,
+      9772,
+      9772,
+      9772
+    ],
+    "activation_count": 8,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9782,
+        "reason": "access_weight=3916.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "87824201",
+    "content": "Rewrote SELECT with subquery for set 254",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9772,
+    "last_access_tick": 9772,
+    "last_state_change_tick": 9851,
+    "access_count": 6,
+    "access_history": [
+      9772,
+      9772,
+      9772,
+      9772,
+      9772,
+      9772
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9783,
+        "reason": "access_weight=2937.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fcd66111",
+    "content": "Embedding HNSW drift in production 70",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9797,
+    "last_access_tick": 9824,
+    "last_state_change_tick": 9893,
+    "access_count": 13,
+    "access_history": [
+      9808,
+      9808,
+      9808,
+      9808,
+      9813,
+      9813,
+      9813,
+      9813,
+      9813,
+      9824
+    ],
+    "activation_count": 13,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9823,
+        "reason": "access_weight=4915.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7341d1d0",
+    "content": "Slow table on table 725 causing latency",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9637,
+    "last_access_tick": 9777,
+    "last_state_change_tick": 9852,
+    "access_count": 22,
+    "access_history": [
+      9709,
+      9709,
+      9709,
+      9709,
+      9723,
+      9732,
+      9732,
+      9765,
+      9768,
+      9777
+    ],
+    "activation_count": 22,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9651,
+        "reason": "access_weight=2898.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f9bcf9a5",
+    "content": "Durable durable latency spike in 17",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9697,
+    "last_access_tick": 9777,
+    "last_state_change_tick": 9853,
+    "access_count": 7,
+    "access_history": [
+      9699,
+      9699,
+      9699,
+      9699,
+      9732,
+      9768,
+      9777
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9706,
+        "reason": "access_weight=1943.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "64ddd843",
+    "content": "Durable fsync latency spike in 899",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9730,
+    "last_access_tick": 9777,
+    "last_state_change_tick": 9854,
+    "access_count": 5,
+    "access_history": [
+      9732,
+      9732,
+      9732,
+      9768,
+      9777
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9741,
+        "reason": "access_weight=1462.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3ca8ee4f",
+    "content": "Semantic semantic latency exceeding SLO for 311",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9760,
+    "last_access_tick": 9777,
+    "last_state_change_tick": 9860,
+    "access_count": 12,
+    "access_history": [
+      9768,
+      9771,
+      9771,
+      9772,
+      9772,
+      9772,
+      9772,
+      9772,
+      9772,
+      9777
+    ],
+    "activation_count": 12,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9786,
+        "reason": "access_weight=4895.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f2079bf4",
+    "content": "ANN rank recall degradation for query 681",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9779,
+    "last_access_tick": 9787,
+    "last_state_change_tick": 9861,
+    "access_count": 3,
+    "access_history": [
+      9787,
+      9787,
+      9787
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9792,
+        "reason": "access_weight=1471.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "66e65fcf",
+    "content": "ANN rank recall degradation for query 583",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9781,
+    "last_access_tick": 9787,
+    "last_state_change_tick": 9864,
+    "access_count": 3,
+    "access_history": [
+      9787,
+      9787,
+      9787
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9793,
+        "reason": "access_weight=1471.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bf80c715",
+    "content": "Container network failing health check in cluster 72",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9783,
+    "last_access_tick": 9787,
+    "last_state_change_tick": 9865,
+    "access_count": 5,
+    "access_history": [
+      9787,
+      9787,
+      9787,
+      9787,
+      9787
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9794,
+        "reason": "access_weight=2451.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "896de88c",
+    "content": "Docker network network latency to 724",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9784,
+    "last_access_tick": 9787,
+    "last_state_change_tick": 9866,
+    "access_count": 4,
+    "access_history": [
+      9787,
+      9787,
+      9787,
+      9787
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9795,
+        "reason": "access_weight=1961.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1e90548a",
+    "content": "Slow WHERE on table 299 causing latency",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9786,
+    "last_access_tick": 9787,
+    "last_state_change_tick": 9867,
+    "access_count": 2,
+    "access_history": [
+      9787,
+      9787
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9797,
+        "reason": "access_weight=980.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "43954f2d",
+    "content": "Rewrote query with subquery for set 668",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9793,
+    "last_access_tick": 9794,
+    "last_state_change_tick": 9868,
+    "access_count": 4,
+    "access_history": [
+      9793,
+      9793,
+      9793,
+      9794
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9803,
+        "reason": "access_weight=1962.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "37402170",
+    "content": "Leader backup election timeout in 631",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9794,
+    "last_access_tick": 9794,
+    "last_state_change_tick": 9871,
+    "access_count": 1,
+    "access_history": [
+      9794
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9804,
+        "reason": "access_weight=490.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "631cf0c2",
+    "content": "Python generation pause blocking service 824",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9804,
+    "last_access_tick": 9808,
+    "last_state_change_tick": 9872,
+    "access_count": 7,
+    "access_history": [
+      9806,
+      9808,
+      9808,
+      9808,
+      9808,
+      9808,
+      9808
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9821,
+        "reason": "access_weight=3439.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "00890005",
+    "content": "ANN embedding recall degradation for query 645",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9806,
+    "last_access_tick": 9808,
+    "last_state_change_tick": 9873,
+    "access_count": 7,
+    "access_history": [
+      9806,
+      9808,
+      9808,
+      9808,
+      9808,
+      9808,
+      9808
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9822,
+        "reason": "access_weight=3439.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1a276bce",
+    "content": "Core assert dump analysis for incident 860",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9812,
+    "last_access_tick": 9813,
+    "last_state_change_tick": 9874,
+    "access_count": 5,
+    "access_history": [
+      9813,
+      9813,
+      9813,
+      9813,
+      9813
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9827,
+        "reason": "access_weight=2458.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d051a4d6",
+    "content": "Python generation pause blocking service 418",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9813,
+    "last_access_tick": 9813,
+    "last_state_change_tick": 9876,
+    "access_count": 5,
+    "access_history": [
+      9813,
+      9813,
+      9813,
+      9813,
+      9813
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9828,
+        "reason": "access_weight=2458.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6527d84c",
+    "content": "Slow SELECT on table 813 causing latency",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9761,
+    "last_access_tick": 9818,
+    "last_state_change_tick": 9888,
+    "access_count": 16,
+    "access_history": [
+      9772,
+      9772,
+      9772,
+      9772,
+      9772,
+      9777,
+      9787,
+      9808,
+      9808,
+      9818
+    ],
+    "activation_count": 16,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9790,
+        "reason": "access_weight=4896.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4fa09951",
+    "content": "Added SELECT index to improve query 232",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9837,
+    "last_access_tick": 9837,
+    "last_state_change_tick": 9909,
+    "access_count": 1,
+    "access_history": [
+      9837
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9847,
+        "reason": "access_weight=492.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2ba30ca4",
+    "content": "ANN HNSW recall degradation for query 53",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9667,
+    "last_access_tick": 9824,
+    "last_state_change_tick": 9892,
+    "access_count": 23,
+    "access_history": [
+      9751,
+      9759,
+      9759,
+      9787,
+      9806,
+      9808,
+      9808,
+      9808,
+      9808,
+      9824
+    ],
+    "activation_count": 23,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9683,
+        "reason": "access_weight=3391.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fcd66111",
+    "content": "Embedding HNSW drift in production 70",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9797,
+    "last_access_tick": 9824,
+    "last_state_change_tick": 9893,
+    "access_count": 13,
+    "access_history": [
+      9808,
+      9808,
+      9808,
+      9808,
+      9813,
+      9813,
+      9813,
+      9813,
+      9813,
+      9824
+    ],
+    "activation_count": 13,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9823,
+        "reason": "access_weight=4915.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c4a6debb",
+    "content": "Python allocation tuning for service 580",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9819,
+    "last_access_tick": 9824,
+    "last_state_change_tick": 9896,
+    "access_count": 5,
+    "access_history": [
+      9824,
+      9824,
+      9824,
+      9824,
+      9824
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9831,
+        "reason": "access_weight=2461.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f306b9ec",
+    "content": "Rewrote index with subquery for set 114",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9823,
+    "last_access_tick": 9824,
+    "last_state_change_tick": 9898,
+    "access_count": 4,
+    "access_history": [
+      9824,
+      9824,
+      9824,
+      9824
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9834,
+        "reason": "access_weight=1968.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "90e262e5",
+    "content": "Analyzed query performance for report 398",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9822,
+    "last_access_tick": 9828,
+    "last_state_change_tick": 9899,
+    "access_count": 7,
+    "access_history": [
+      9824,
+      9824,
+      9824,
+      9824,
+      9824,
+      9825,
+      9828
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9835,
+        "reason": "access_weight=3445.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "aad1696e",
+    "content": "Leader election election timeout in 187",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9825,
+    "last_access_tick": 9828,
+    "last_state_change_tick": 9900,
+    "access_count": 1,
+    "access_history": [
+      9828
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9836,
+        "reason": "access_weight=492.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "18bfc59e",
+    "content": "Replay checkpoint slower than expected on 446",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9827,
+    "last_access_tick": 9828,
+    "last_state_change_tick": 9903,
+    "access_count": 1,
+    "access_history": [
+      9828
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9838,
+        "reason": "access_weight=492.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fb9bb48f",
+    "content": "Service leader crash-loop after deployment 5",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "crash_recovery",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9828,
+    "last_access_tick": 9828,
+    "last_state_change_tick": 9904,
+    "access_count": 1,
+    "access_history": [
+      9828
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9839,
+        "reason": "access_weight=492.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7f3913e2",
+    "content": "Python refcount configuration at container 488",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9803,
+    "last_access_tick": 9835,
+    "last_state_change_tick": 9905,
+    "access_count": 8,
+    "access_history": [
+      9806,
+      9808,
+      9808,
+      9808,
+      9808,
+      9808,
+      9808,
+      9835
+    ],
+    "activation_count": 8,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9819,
+        "reason": "access_weight=3439.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f6d7ce73",
+    "content": "Container swarm failing health check in cluster 164",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9811,
+    "last_access_tick": 9835,
+    "last_state_change_tick": 9906,
+    "access_count": 7,
+    "access_history": [
+      9813,
+      9813,
+      9813,
+      9813,
+      9813,
+      9835,
+      9835
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9826,
+        "reason": "access_weight=2458.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a0f34610",
+    "content": "Slow scan on table 141 causing latency",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9830,
+    "last_access_tick": 9835,
+    "last_state_change_tick": 9907,
+    "access_count": 6,
+    "access_history": [
+      9835,
+      9835,
+      9835,
+      9835,
+      9835,
+      9835
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9841,
+        "reason": "access_weight=2956.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d30baf95",
+    "content": "Embedding cosine drift in production 479",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9833,
+    "last_access_tick": 9835,
+    "last_state_change_tick": 9908,
+    "access_count": 5,
+    "access_history": [
+      9835,
+      9835,
+      9835,
+      9835,
+      9835
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9843,
+        "reason": "access_weight=2463.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4fa09951",
+    "content": "Added SELECT index to improve query 232",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9837,
+    "last_access_tick": 9837,
+    "last_state_change_tick": 9909,
+    "access_count": 1,
+    "access_history": [
+      9837
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9847,
+        "reason": "access_weight=492.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "080212e2",
+    "content": "WAL undo blocking on 807 during heavy write",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "wal_replay",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9826,
+    "last_access_tick": 9841,
+    "last_state_change_tick": 9910,
+    "access_count": 7,
+    "access_history": [
+      9828,
+      9841,
+      9841,
+      9841,
+      9841,
+      9841,
+      9841
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9837,
+        "reason": "access_weight=492.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "12d94166",
+    "content": "Investigated Python refcount behavior in deployment 957",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9841,
+    "last_access_tick": 9841,
+    "last_state_change_tick": 9911,
+    "access_count": 6,
+    "access_history": [
+      9841,
+      9841,
+      9841,
+      9841,
+      9841,
+      9841
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9854,
+        "reason": "access_weight=2958.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3974947e",
+    "content": "Added sort index to improve query 586",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9630,
+    "last_access_tick": 9847,
+    "last_state_change_tick": 9912,
+    "access_count": 46,
+    "access_history": [
+      9793,
+      9794,
+      9818,
+      9824,
+      9824,
+      9824,
+      9824,
+      9825,
+      9837,
+      9847
+    ],
+    "activation_count": 46,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9654,
+        "reason": "access_weight=4833.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d161130d",
+    "content": "Added query index to improve query 308",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9655,
+    "last_access_tick": 9847,
+    "last_state_change_tick": 9913,
+    "access_count": 21,
+    "access_history": [
+      9759,
+      9759,
+      9793,
+      9793,
+      9793,
+      9794,
+      9818,
+      9825,
+      9837,
+      9847
+    ],
+    "activation_count": 21,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9665,
+        "reason": "access_weight=483.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d40179f4",
+    "content": "Added JOIN index to improve query 115",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "sql_query",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9729,
+    "last_access_tick": 9847,
+    "last_state_change_tick": 9915,
+    "access_count": 17,
+    "access_history": [
+      9755,
+      9756,
+      9759,
+      9793,
+      9793,
+      9793,
+      9818,
+      9825,
+      9837,
+      9847
+    ],
+    "activation_count": 17,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9738,
+        "reason": "access_weight=2438.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "762b54a8",
+    "content": "Embedding index drift in production 724",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9845,
+    "last_access_tick": 9847,
+    "last_state_change_tick": 9916,
+    "access_count": 1,
+    "access_history": [
+      9847
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9860,
+        "reason": "access_weight=493.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4a8b8c1e",
+    "content": "Docker network OOM killed in orchestration 267",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9834,
+    "last_access_tick": 9857,
+    "last_state_change_tick": 9917,
+    "access_count": 7,
+    "access_history": [
+      9835,
+      9835,
+      9835,
+      9835,
+      9835,
+      9857,
+      9857
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9844,
+        "reason": "access_weight=2463.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "60bfc6c1",
+    "content": "Docker volume OOM killed in orchestration 91",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9839,
+    "last_access_tick": 9857,
+    "last_state_change_tick": 9919,
+    "access_count": 7,
+    "access_history": [
+      9841,
+      9841,
+      9841,
+      9841,
+      9841,
+      9841,
+      9857
+    ],
+    "activation_count": 7,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9852,
+        "reason": "access_weight=2958.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7150b3a4",
+    "content": "Python cycle pause blocking service 750",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python_gc",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9856,
+    "last_access_tick": 9857,
+    "last_state_change_tick": 9922,
+    "access_count": 1,
+    "access_history": [
+      9857
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9865,
+        "reason": "access_weight=493.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e6464f95",
+    "content": "Image network taking too long to pull in 500",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9821,
+    "last_access_tick": 9858,
+    "last_state_change_tick": 9923,
+    "access_count": 12,
+    "access_history": [
+      9824,
+      9824,
+      9824,
+      9835,
+      9857,
+      9858,
+      9858,
+      9858,
+      9858,
+      9858
+    ],
+    "activation_count": 12,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9833,
+        "reason": "access_weight=2461.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a65d5e24",
+    "content": "Docker registry consuming excessive disk on host 45",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9847,
+    "last_access_tick": 9858,
+    "last_state_change_tick": 9924,
+    "access_count": 8,
+    "access_history": [
+      9857,
+      9857,
+      9857,
+      9858,
+      9858,
+      9858,
+      9858,
+      9858
+    ],
+    "activation_count": 8,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9866,
+        "reason": "access_weight=3951.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e329d9b9",
+    "content": "Docker image network latency to 333",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "docker_runtime",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9810,
+    "last_access_tick": 9859,
+    "last_state_change_tick": 9925,
+    "access_count": 14,
+    "access_history": [
+      9813,
+      9835,
+      9857,
+      9857,
+      9858,
+      9858,
+      9858,
+      9858,
+      9858,
+      9859
+    ],
+    "activation_count": 14,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9825,
+        "reason": "access_weight=2458.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "557ef3cd",
+    "content": "ANN retrieval recall degradation for query 194",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "semantic_search",
+      "topic_benchmark"
+    ],
+    "state": "archive",
+    "created_tick": 9892,
+    "last_access_tick": 9910,
+    "last_state_change_tick": 13200,
+    "access_count": 5,
+    "access_history": [
+      9893,
+      9893,
+      9893,
+      9910,
+      9910
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9905,
+        "reason": "access_weight=1486.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

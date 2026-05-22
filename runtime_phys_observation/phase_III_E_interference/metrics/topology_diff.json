@@ -1,0 +1,19 @@
+{
+  "topology_preserved": true,
+  "working_diff": 0,
+  "episodic_diff": 0,
+  "semantic_diff": 0,
+  "archive_diff": 0,
+  "off_state": {
+    "working": 10,
+    "episodic": 0,
+    "semantic": 0,
+    "archive": 0
+  },
+  "on_state": {
+    "working": 10,
+    "episodic": 0,
+    "semantic": 0,
+    "archive": 0
+  }
+}

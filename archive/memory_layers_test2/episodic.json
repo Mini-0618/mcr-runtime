@@ -1,0 +1,131 @@
+[
+  {
+    "id": "9e16e177",
+    "content": "记忆0",
+    "type": "signal",
+    "importance": 0.8,
+    "tags": [
+      "test"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 10,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 10,
+        "reason": "importance=0.80>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fad715f5",
+    "content": "记忆3",
+    "type": "signal",
+    "importance": 0.8,
+    "tags": [
+      "test"
+    ],
+    "state": "episodic",
+    "created_tick": 3,
+    "last_access_tick": 3,
+    "last_state_change_tick": 101,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 101,
+        "reason": "importance=0.80>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e5b7ebab",
+    "content": "记忆6",
+    "type": "signal",
+    "importance": 0.8,
+    "tags": [
+      "test"
+    ],
+    "state": "episodic",
+    "created_tick": 6,
+    "last_access_tick": 6,
+    "last_state_change_tick": 104,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 104,
+        "reason": "importance=0.80>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2d7d256f",
+    "content": "记忆9",
+    "type": "signal",
+    "importance": 0.8,
+    "tags": [
+      "test"
+    ],
+    "state": "episodic",
+    "created_tick": 9,
+    "last_access_tick": 9,
+    "last_state_change_tick": 107,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 107,
+        "reason": "importance=0.80>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "test123",
+    "content": "high value episodic",
+    "type": "signal",
+    "importance": 0.8,
+    "access_count": 5,
+    "state": "episodic",
+    "last_access_tick": 50,
+    "last_state_change_tick": 50,
+    "access_history": [
+      51,
+      52,
+      53,
+      54,
+      55
+    ]
+  }
+]

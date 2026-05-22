@@ -1,0 +1,195 @@
+[
+  {
+    "id": "0b3d1afd",
+    "content": "Python bytearray",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 6,
+    "last_access_tick": 0,
+    "last_state_change_tick": 10000,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 16,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f2400ac7",
+    "content": "Python object",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 8,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9850,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 18,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2e13a4b2",
+    "content": "Python string intern",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 10,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9900,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 20,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2cb39cde",
+    "content": "Python heapq module",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 12,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9900,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 22,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "91df85e3",
+    "content": "Unix poll",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 29,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9950,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 34,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0b3d1afd",
+    "content": "Python bytearray",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 6,
+    "last_access_tick": 0,
+    "last_state_change_tick": 10000,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 16,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

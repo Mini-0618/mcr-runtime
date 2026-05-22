@@ -1,0 +1,238 @@
+[
+  {
+    "id": "edd41e2a",
+    "content": "memory_allocator operation 19988 completed in 630ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "memory_allocator",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19988,
+    "last_access_tick": 19992,
+    "last_state_change_tick": 19988,
+    "access_count": 1,
+    "access_history": [
+      19992
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "98b2a655",
+    "content": "sql_query worker thread 19992 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19992,
+    "last_access_tick": 19992,
+    "last_state_change_tick": 19992,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "97fefbc8",
+    "content": "wal_replay cache miss rate 89% at tick 19993",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "wal_replay",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19993,
+    "last_access_tick": 19993,
+    "last_state_change_tick": 19993,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d0dbed70",
+    "content": "wal_replay worker thread 19994 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "wal_replay",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19994,
+    "last_access_tick": 19994,
+    "last_state_change_tick": 19994,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "578887ef",
+    "content": "wal_replay cache miss rate 89% at tick 19995",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "wal_replay",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19995,
+    "last_access_tick": 19995,
+    "last_state_change_tick": 19995,
+    "access_count": 1,
+    "access_history": [
+      19995
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6531de1b",
+    "content": "python_gc operation 19996 completed in 189ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "python_gc",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19996,
+    "last_access_tick": 19998,
+    "last_state_change_tick": 19996,
+    "access_count": 1,
+    "access_history": [
+      19998
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4f624416",
+    "content": "network_protocol operation 19997 completed in 819ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "network_protocol",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19997,
+    "last_access_tick": 19997,
+    "last_state_change_tick": 19997,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d3b301ec",
+    "content": "docker_runtime batch 19998 failed with error code 500",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "docker_runtime",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19998,
+    "last_access_tick": 19998,
+    "last_state_change_tick": 19998,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3dfcc4f8",
+    "content": "wal_replay operation 19999 completed in 999ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "wal_replay",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 19999,
+    "last_access_tick": 19999,
+    "last_state_change_tick": 19999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "165bf8e7",
+    "content": "crash_recovery operation 20000 completed in 896ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_v"
+    ],
+    "state": "working",
+    "created_tick": 20000,
+    "last_access_tick": 20000,
+    "last_state_change_tick": 20000,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

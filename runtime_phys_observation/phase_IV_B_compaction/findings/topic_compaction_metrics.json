@@ -1,0 +1,66 @@
+{
+  "run_id": "topic_bounded_10k_1779273281",
+  "experiment": "PHASE_IV_B1_Topic_Bounded_Compaction",
+  "LKG": "637a11c907e8a889b909513522dfab8c",
+  "workload_ticks": 10000,
+  "seed": 2025,
+  "topics": [
+    "python_gc",
+    "sql_query",
+    "docker_runtime",
+    "wal_replay",
+    "semantic_search",
+    "crash_recovery"
+  ],
+  "elapsed_s": 2.21,
+  "final_memory": {
+    "working": 10,
+    "episodic": 40,
+    "semantic": 0,
+    "archive": 117
+  },
+  "compaction_metrics": {
+    "total_memories_compacted": 15,
+    "total_summaries_created": 4,
+    "avg_compression_ratio": 3.0,
+    "max_compression_ratio": 3.0,
+    "avg_entropy_delta": 0.0,
+    "cross_topic_merge_count": 0,
+    "same_topic_merge_count": 4,
+    "cross_topic_merge_rate": 0.0,
+    "semantic_purity": 1.0,
+    "empty_summary_count": 3,
+    "empty_summary_rate": 0.75,
+    "topology_fragmentation": 1,
+    "topic_summary_counts": {
+      "crash_recovery": 1
+    }
+  },
+  "G_results": {
+    "G1_compression": {"avg": 3.0, "max": 3.0, "total_compacted": 15, "PASS": true},
+    "G2_monopoly": {"detected": false, "topic": null, "topic_counts": {}, "PASS": true},
+    "G3_info_preservation": {"archive_ratio": 0.89, "PASS": true},
+    "G4_entropy": {"delta": 0.0, "min": 0.0, "max": 0.0, "PASS": true},
+    "G5_retrieval_econ": {"p99_ms": 0.286, "avg_ms": 0.155, "PASS": true},
+    "G6_merge_purity": {"cross_topic_rate": 0.0, "PASS": true},
+    "G7_topic_boundary": {"fragmentation": 1, "topic_counts": {}, "PASS": false}
+  },
+  "classification": {
+    "CLASS_E": ["G7: topic boundary COLLAPSED fragmentation=1"],
+    "CLASS_F": [
+      "G1: avg_compression=3.00x",
+      "G2: no semantic monopoly",
+      "G3: archive_ratio=0.89",
+      "G4: entropy bounded delta=0.000",
+      "G5: p99=0.3ms",
+      "G6: cross_topic_rate=0.000"
+    ]
+  },
+  "all_passed": false,
+  "key_findings": {
+    "topic_boundary_fix": "VERIFIED — cross_topic_rate dropped from 1.0 to 0.0 after excluding generic tags from topic_overlap",
+    "semantic_topology": "Sparse — only 4 summaries formed across 6 topics; coaccess graph too sparse for clique formation",
+    "stable_semantic_tier": "NOT YET — requires denser retrieval patterns for multi-topic summary formation",
+    "next_phase": "Tombstone Lifecycle (PHASE V) — archive_ratio=0.89 with no cleanup mechanism"
+  }
+}

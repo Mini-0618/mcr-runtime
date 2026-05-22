@@ -1,0 +1,49 @@
+{
+  "experiment": "PHASE_III_C_Crash_Recovery",
+  "LKG": "637a11c907e8a889b909513522dfab8c",
+  "all_pass": true,
+  "tests": [
+    {
+      "test": "TEST1_hard_crash",
+      "pass": true,
+      "recovery_latency_ms": 0.255,
+      "runtime_survived": true,
+      "ghost_state_detected": false
+    },
+    {
+      "test": "TEST2_partial_wal",
+      "pass": true,
+      "recovery_latency_ms": 0.264,
+      "runtime_survived": true,
+      "ghost_state_detected": false
+    },
+    {
+      "test": "TEST3_snapshot_interrupt",
+      "pass": true,
+      "recovery_latency_ms": 0.379,
+      "runtime_survived": true,
+      "ghost_state_detected": false
+    },
+    {
+      "test": "TEST4_replay_determinism",
+      "pass": true,
+      "recovery_latency_ms": "N/A",
+      "runtime_survived": "N/A",
+      "ghost_state_detected": false
+    },
+    {
+      "test": "TEST5_corrupted_event",
+      "pass": true,
+      "recovery_latency_ms": 0.221,
+      "runtime_survived": true,
+      "ghost_state_detected": false
+    },
+    {
+      "test": "TEST6_wal_rotation",
+      "pass": true,
+      "recovery_latency_ms": 1.622,
+      "runtime_survived": true,
+      "ghost_state_detected": false
+    }
+  ]
+}

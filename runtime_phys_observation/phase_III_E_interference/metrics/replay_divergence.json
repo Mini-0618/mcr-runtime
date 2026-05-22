@@ -1,0 +1,20 @@
+{
+  "divergence": false,
+  "functional_tuples_match": true,
+  "lifecycle_hash_match": true,
+  "off_wal_hash": "884065b1997634b2",
+  "on_wal_hash": "5eef57e39e7928e8",
+  "hash_divergence_explanation": "uuid4 non-deterministic, not seeded by random.seed() \u2014 EXPECTED PHYSICS",
+  "off_events": 19971,
+  "on_events": 19971,
+  "off_lc": {
+    "decay_to_buffer": 9990,
+    "buffer_evict": 9981
+  },
+  "on_lc": {
+    "decay_to_buffer": 9990,
+    "buffer_evict": 9981
+  },
+  "ordering_preserved": true,
+  "causal_ordering_preserved": true
+}

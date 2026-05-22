@@ -1,0 +1,65 @@
+{
+  "experiment": "PHASE_III_D_Event_Ordering",
+  "LKG": "637a11c907e8a889b909513522dfab8c",
+  "all_pass": true,
+  "tests": [
+    {
+      "test": "T1_sequential_ordering",
+      "pass": true,
+      "events": 380,
+      "seq_ok": true,
+      "gaps": 0,
+      "dups": 0,
+      "oh_det": true,
+      "lifecycle_ok": true,
+      "lc_viol": 0
+    },
+    {
+      "test": "T2_concurrent_isolation",
+      "pass": true,
+      "A_events": 180,
+      "B_events": 180,
+      "cross_contamination": false,
+      "seqA_ok": true,
+      "seqB_ok": true
+    },
+    {
+      "test": "T3_replay_determinism",
+      "pass": true,
+      "unique_hashes": 1,
+      "all_same": true
+    },
+    {
+      "test": "T4_temporal_violation_injection",
+      "pass": true,
+      "corruption_detected": true,
+      "checksum_errors": 1,
+      "injected_entry_quarantined": true,
+      "replay_deterministic_after_violation": true,
+      "runtime_survived": true,
+      "note": "Corrupted entry quarantined by checksum check; replay consistent; runtime survives"
+    },
+    {
+      "test": "T5_future_state_leak",
+      "pass": true,
+      "events": 91,
+      "lifecycle_ok": true,
+      "no_leak": true,
+      "lc_viol": 0,
+      "nfl_viol": 0
+    },
+    {
+      "test": "T6_lifecycle_causality",
+      "pass": true,
+      "events": 180,
+      "seq_ok": true,
+      "lifecycle_ok": true,
+      "lc_viol": 0,
+      "no_leak": false,
+      "transitions": {
+        "working\u2192decay_buffer": 90,
+        "decay_buffer\u2192DELETED": 90
+      }
+    }
+  ]
+}

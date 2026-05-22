@@ -1,0 +1,7 @@
+failure_mode,corruption_detected,runtime_survived,ghost_state,lost_events,seq_gaps,recovery_latency_ms,notes
+WAL_truncation_last_entry,TRUE,TRUE,FALSE,0-1,1-2,0.38,Truncated last 10 bytes — entry lost, seq gap flagged, runtime survived
+WAL_truncation_mid_entry,TRUE,TRUE,FALSE,0-1,1,0.51,Truncated mid-entry (5 bytes before newline) — partial entry dropped, runtime survived
+corrupt_snapshot_newest,FALSE,TRUE,FALSE,0,0,0.34,Snapshots exist but are not auto-loaded; no impact on runtime
+corrupt_snapshot_multiple,FALSE,TRUE,FALSE,0,0,0.34,2 corrupt snapshots present, ignored by runtime
+checksum_corruption_DEADBEEF,TRUE,TRUE,FALSE,0,0,0.26,Single corrupted entry quarantined, replay continues, verify() flags it
+WAL_rotation_crash,TRUE,TRUE,FALSE,0-1,1,1.74,180 WAL files, truncation in last segment, seq continuity preserved across all segments

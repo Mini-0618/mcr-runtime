@@ -1,0 +1,1493 @@
+[
+  {
+    "id": "4e05d38a",
+    "content": "updated project_beta documentation for release 399",
+    "type": "general",
+    "importance": 0.9498785447178117,
+    "tags": [
+      "project_beta"
+    ],
+    "state": "semantic",
+    "created_tick": 9840,
+    "last_access_tick": 10000,
+    "last_state_change_tick": 9978,
+    "access_count": 81,
+    "access_history": [
+      9987,
+      9989,
+      9990,
+      9991,
+      9992,
+      9993,
+      9994,
+      9996,
+      9997,
+      10000
+    ],
+    "activation_count": 81,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9846,
+        "reason": "access_weight=493.05>=2.0; importance=0.95>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9847,
+        "reason": "importance=0.9498785447178117, access=3"
+      },
+      {
+        "to": "semantic",
+        "tick": 9866,
+        "reason": "importance=0.9498785447178117, access=15"
+      },
+      {
+        "to": "semantic",
+        "tick": 9914,
+        "reason": "importance=0.9498785447178117, access=37"
+      },
+      {
+        "to": "semantic",
+        "tick": 9944,
+        "reason": "importance=0.9498785447178117, access=55"
+      },
+      {
+        "to": "semantic",
+        "tick": 9978,
+        "reason": "importance=0.9498785447178117, access=65"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d2affbbb",
+    "content": "deployed bug_report version 174 to staging",
+    "type": "general",
+    "importance": 0.9457057974229715,
+    "tags": [
+      "bug_report"
+    ],
+    "state": "semantic",
+    "created_tick": 9852,
+    "last_access_tick": 9980,
+    "last_state_change_tick": 9979,
+    "access_count": 48,
+    "access_history": [
+      9967,
+      9968,
+      9969,
+      9970,
+      9973,
+      9974,
+      9976,
+      9978,
+      9979,
+      9980
+    ],
+    "activation_count": 48,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9862,
+        "reason": "access_weight=2468.65>=2.0; importance=0.95>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9891,
+        "reason": "importance=0.9457057974229715, access=13"
+      },
+      {
+        "to": "semantic",
+        "tick": 9916,
+        "reason": "importance=0.9457057974229715, access=27"
+      },
+      {
+        "to": "semantic",
+        "tick": 9945,
+        "reason": "importance=0.9457057974229715, access=31"
+      },
+      {
+        "to": "semantic",
+        "tick": 9979,
+        "reason": "importance=0.9457057974229715, access=47"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b930aa7c",
+    "content": "deployed project_beta version 839 to production",
+    "type": "general",
+    "importance": 0.8521197615601086,
+    "tags": [
+      "project_beta"
+    ],
+    "state": "semantic",
+    "created_tick": 9876,
+    "last_access_tick": 9997,
+    "last_state_change_tick": 9981,
+    "access_count": 18,
+    "access_history": [
+      9954,
+      9961,
+      9964,
+      9972,
+      9975,
+      9981,
+      9982,
+      9990,
+      9996,
+      9997
+    ],
+    "activation_count": 18,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9879,
+        "reason": "importance=0.85>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9898,
+        "reason": "importance=0.8521197615601086, access=3"
+      },
+      {
+        "to": "semantic",
+        "tick": 9921,
+        "reason": "importance=0.8521197615601086, access=5"
+      },
+      {
+        "to": "semantic",
+        "tick": 9949,
+        "reason": "importance=0.8521197615601086, access=7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9981,
+        "reason": "importance=0.8521197615601086, access=14"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fdf02022",
+    "content": "resolved bug_report critical issue in component cache",
+    "type": "general",
+    "importance": 0.9364308095130585,
+    "tags": [
+      "bug_report"
+    ],
+    "state": "semantic",
+    "created_tick": 9890,
+    "last_access_tick": 9979,
+    "last_state_change_tick": 9982,
+    "access_count": 22,
+    "access_history": [
+      9945,
+      9947,
+      9951,
+      9959,
+      9965,
+      9967,
+      9968,
+      9970,
+      9973,
+      9979
+    ],
+    "activation_count": 22,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9896,
+        "reason": "access_weight=991.25>=2.0; importance=0.94>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9905,
+        "reason": "importance=0.9364308095130585, access=8"
+      },
+      {
+        "to": "semantic",
+        "tick": 9952,
+        "reason": "importance=0.9364308095130585, access=15"
+      },
+      {
+        "to": "semantic",
+        "tick": 9982,
+        "reason": "importance=0.9364308095130585, access=22"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "00db23ee",
+    "content": "deployed project_beta version 718 to qa",
+    "type": "general",
+    "importance": 0.9296022283591956,
+    "tags": [
+      "project_beta"
+    ],
+    "state": "semantic",
+    "created_tick": 9918,
+    "last_access_tick": 9997,
+    "last_state_change_tick": 9983,
+    "access_count": 22,
+    "access_history": [
+      9981,
+      9982,
+      9985,
+      9986,
+      9987,
+      9989,
+      9990,
+      9993,
+      9996,
+      9997
+    ],
+    "activation_count": 22,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9924,
+        "reason": "access_weight=1491.05>=2.0; importance=0.93>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9935,
+        "reason": "importance=0.9296022283591956, access=3"
+      },
+      {
+        "to": "semantic",
+        "tick": 9983,
+        "reason": "importance=0.9296022283591956, access=14"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7f96f8ce",
+    "content": "resolved project_beta critical issue in component cache",
+    "type": "general",
+    "importance": 0.9296310288758303,
+    "tags": [
+      "project_beta"
+    ],
+    "state": "semantic",
+    "created_tick": 9920,
+    "last_access_tick": 9997,
+    "last_state_change_tick": 9984,
+    "access_count": 27,
+    "access_history": [
+      9982,
+      9985,
+      9986,
+      9987,
+      9989,
+      9990,
+      9993,
+      9994,
+      9996,
+      9997
+    ],
+    "activation_count": 27,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9932,
+        "reason": "access_weight=2982.90>=2.0; importance=0.93>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9937,
+        "reason": "importance=0.9296310288758303, access=9"
+      },
+      {
+        "to": "semantic",
+        "tick": 9958,
+        "reason": "importance=0.9296310288758303, access=12"
+      },
+      {
+        "to": "semantic",
+        "tick": 9984,
+        "reason": "importance=0.9296310288758303, access=18"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e6244efe",
+    "content": "reviewed bug_report PR #193 from contributor charlie",
+    "type": "general",
+    "importance": 0.92847166595448,
+    "tags": [
+      "bug_report"
+    ],
+    "state": "semantic",
+    "created_tick": 9929,
+    "last_access_tick": 9979,
+    "last_state_change_tick": 9985,
+    "access_count": 8,
+    "access_history": [
+      9933,
+      9945,
+      9951,
+      9959,
+      9965,
+      9967,
+      9973,
+      9979
+    ],
+    "activation_count": 8,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9933,
+        "reason": "importance=0.93>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9959,
+        "reason": "importance=0.92847166595448, access=4"
+      },
+      {
+        "to": "semantic",
+        "tick": 9985,
+        "reason": "importance=0.92847166595448, access=8"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4d9a6d0e",
+    "content": "updated bug_report documentation for release 878",
+    "type": "general",
+    "importance": 0.937475939452038,
+    "tags": [
+      "bug_report"
+    ],
+    "state": "semantic",
+    "created_tick": 9945,
+    "last_access_tick": 9980,
+    "last_state_change_tick": 9986,
+    "access_count": 12,
+    "access_history": [
+      9951,
+      9959,
+      9965,
+      9967,
+      9968,
+      9970,
+      9973,
+      9974,
+      9979,
+      9980
+    ],
+    "activation_count": 12,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9950,
+        "reason": "access_weight=996.60>=2.0; importance=0.94>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9962,
+        "reason": "importance=0.937475939452038, access=4"
+      },
+      {
+        "to": "semantic",
+        "tick": 9986,
+        "reason": "importance=0.937475939452038, access=12"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "00e990d2",
+    "content": "updated project_beta documentation for release 895",
+    "type": "general",
+    "importance": 0.7927323255785625,
+    "tags": [
+      "project_beta"
+    ],
+    "state": "semantic",
+    "created_tick": 9948,
+    "last_access_tick": 9997,
+    "last_state_change_tick": 9987,
+    "access_count": 11,
+    "access_history": [
+      9954,
+      9961,
+      9964,
+      9972,
+      9975,
+      9981,
+      9982,
+      9990,
+      9996,
+      9997
+    ],
+    "activation_count": 11,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9952,
+        "reason": "importance=0.79>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9987,
+        "reason": "importance=0.7927323255785625, access=8"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9db81397",
+    "content": "updated bug_report documentation for release 673",
+    "type": "general",
+    "importance": 0.9213652851777776,
+    "tags": [
+      "bug_report"
+    ],
+    "state": "semantic",
+    "created_tick": 9958,
+    "last_access_tick": 9979,
+    "last_state_change_tick": 9988,
+    "access_count": 4,
+    "access_history": [
+      9965,
+      9967,
+      9973,
+      9979
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9962,
+        "reason": "importance=0.92>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9988,
+        "reason": "importance=0.9213652851777776, access=4"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "18090137",
+    "content": "completed test_results milestone 164 with status partial",
+    "type": "general",
+    "importance": 0.9381447270782137,
+    "tags": [
+      "test_results"
+    ],
+    "state": "semantic",
+    "created_tick": 9958,
+    "last_access_tick": 9978,
+    "last_state_change_tick": 9989,
+    "access_count": 6,
+    "access_history": [
+      9960,
+      9968,
+      9970,
+      9974,
+      9976,
+      9978
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9963,
+        "reason": "access_weight=499.00>=2.0; importance=0.94>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9989,
+        "reason": "importance=0.9381447270782137, access=6"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e38f830a",
+    "content": "updated feature_request documentation for release 384",
+    "type": "general",
+    "importance": 0.8226670669533949,
+    "tags": [
+      "feature_request"
+    ],
+    "state": "episodic",
+    "created_tick": 9961,
+    "last_access_tick": 10000,
+    "last_state_change_tick": 9964,
+    "access_count": 3,
+    "access_history": [
+      9980,
+      9995,
+      10000
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9964,
+        "reason": "importance=0.82>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0ccbf665",
+    "content": "deployed deployment_log version 524 to qa",
+    "type": "general",
+    "importance": 0.7917210975873854,
+    "tags": [
+      "deployment_log"
+    ],
+    "state": "semantic",
+    "created_tick": 9962,
+    "last_access_tick": 9988,
+    "last_state_change_tick": 9990,
+    "access_count": 3,
+    "access_history": [
+      9977,
+      9983,
+      9988
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9965,
+        "reason": "importance=0.79>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9990,
+        "reason": "importance=0.7917210975873854, access=3"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "01b7cc86",
+    "content": "completed risk_register milestone 323 with status partial",
+    "type": "general",
+    "importance": 0.3664268707278708,
+    "tags": [
+      "risk_register"
+    ],
+    "state": "episodic",
+    "created_tick": 9962,
+    "last_access_tick": 9991,
+    "last_state_change_tick": 9965,
+    "access_count": 3,
+    "access_history": [
+      9963,
+      9984,
+      9991
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9965,
+        "reason": "access_weight=499.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "17277833",
+    "content": "deployed risk_register version 255 to staging",
+    "type": "general",
+    "importance": 0.5389915255190102,
+    "tags": [
+      "risk_register"
+    ],
+    "state": "episodic",
+    "created_tick": 9963,
+    "last_access_tick": 9991,
+    "last_state_change_tick": 9966,
+    "access_count": 3,
+    "access_history": [
+      9963,
+      9984,
+      9991
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9966,
+        "reason": "access_weight=499.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "12935bd7",
+    "content": "resolved risk_register critical issue in component cache",
+    "type": "general",
+    "importance": 0.8369914670407665,
+    "tags": [
+      "risk_register"
+    ],
+    "state": "episodic",
+    "created_tick": 9966,
+    "last_access_tick": 9991,
+    "last_state_change_tick": 9970,
+    "access_count": 2,
+    "access_history": [
+      9984,
+      9991
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9970,
+        "reason": "importance=0.84>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "79b60390",
+    "content": "deployed risk_register version 503 to staging",
+    "type": "general",
+    "importance": 0.8680735553150927,
+    "tags": [
+      "risk_register"
+    ],
+    "state": "episodic",
+    "created_tick": 9967,
+    "last_access_tick": 9991,
+    "last_state_change_tick": 9971,
+    "access_count": 2,
+    "access_history": [
+      9984,
+      9991
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9971,
+        "reason": "importance=0.87>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1ce42cc0",
+    "content": "updated user_feedback documentation for release 123",
+    "type": "general",
+    "importance": 0.8820766766608561,
+    "tags": [
+      "user_feedback"
+    ],
+    "state": "episodic",
+    "created_tick": 9969,
+    "last_access_tick": 9986,
+    "last_state_change_tick": 9973,
+    "access_count": 1,
+    "access_history": [
+      9986
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9973,
+        "reason": "importance=0.88>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9f615075",
+    "content": "resolved project_alpha critical issue in component db",
+    "type": "general",
+    "importance": 0.9454789758696167,
+    "tags": [
+      "project_alpha"
+    ],
+    "state": "semantic",
+    "created_tick": 9965,
+    "last_access_tick": 10000,
+    "last_state_change_tick": 9993,
+    "access_count": 11,
+    "access_history": [
+      9968,
+      9969,
+      9970,
+      9974,
+      9976,
+      9978,
+      9995,
+      9998,
+      9999,
+      10000
+    ],
+    "activation_count": 11,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9974,
+        "reason": "access_weight=1997.65>=2.0; importance=0.95>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9975,
+        "reason": "importance=0.9454789758696167, access=5"
+      },
+      {
+        "to": "semantic",
+        "tick": 9993,
+        "reason": "importance=0.9454789758696167, access=7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8ee53d39",
+    "content": "completed feature_request milestone 579 with status complete",
+    "type": "general",
+    "importance": 0.7355999738902786,
+    "tags": [
+      "feature_request"
+    ],
+    "state": "episodic",
+    "created_tick": 9973,
+    "last_access_tick": 10000,
+    "last_state_change_tick": 9978,
+    "access_count": 3,
+    "access_history": [
+      9980,
+      9995,
+      10000
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9978,
+        "reason": "importance=0.74>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "be6a4441",
+    "content": "reviewed user_feedback PR #929 from contributor bob",
+    "type": "general",
+    "importance": 0.836920700905289,
+    "tags": [
+      "user_feedback"
+    ],
+    "state": "episodic",
+    "created_tick": 9974,
+    "last_access_tick": 9986,
+    "last_state_change_tick": 9978,
+    "access_count": 1,
+    "access_history": [
+      9986
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9978,
+        "reason": "importance=0.84>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8c397740",
+    "content": "resolved code_review critical issue in component cache",
+    "type": "general",
+    "importance": 0.788585143854797,
+    "tags": [
+      "code_review"
+    ],
+    "state": "semantic",
+    "created_tick": 9975,
+    "last_access_tick": 9994,
+    "last_state_change_tick": 9994,
+    "access_count": 4,
+    "access_history": [
+      9985,
+      9989,
+      9992,
+      9994
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9979,
+        "reason": "importance=0.79>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9994,
+        "reason": "importance=0.788585143854797, access=4"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a8537fd5",
+    "content": "completed deployment_log milestone 623 with status complete",
+    "type": "general",
+    "importance": 0.7466614142377541,
+    "tags": [
+      "deployment_log"
+    ],
+    "state": "semantic",
+    "created_tick": 9975,
+    "last_access_tick": 9988,
+    "last_state_change_tick": 9995,
+    "access_count": 3,
+    "access_history": [
+      9977,
+      9983,
+      9988
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9980,
+        "reason": "access_weight=499.85>=2.0; importance=0.75>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 9995,
+        "reason": "importance=0.7466614142377541, access=3"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3d71d4cc",
+    "content": "reviewed deployment_log PR #593 from contributor charlie",
+    "type": "general",
+    "importance": 0.5395334346461519,
+    "tags": [
+      "deployment_log"
+    ],
+    "state": "episodic",
+    "created_tick": 9976,
+    "last_access_tick": 9988,
+    "last_state_change_tick": 9981,
+    "access_count": 3,
+    "access_history": [
+      9977,
+      9983,
+      9988
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9981,
+        "reason": "access_weight=499.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2e25a02e",
+    "content": "completed deployment_log milestone 715 with status pending",
+    "type": "general",
+    "importance": 0.4162073910574089,
+    "tags": [
+      "deployment_log"
+    ],
+    "state": "episodic",
+    "created_tick": 9977,
+    "last_access_tick": 9988,
+    "last_state_change_tick": 9982,
+    "access_count": 3,
+    "access_history": [
+      9977,
+      9983,
+      9988
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9982,
+        "reason": "access_weight=499.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4910fad0",
+    "content": "resolved test_results critical issue in component db",
+    "type": "general",
+    "importance": 0.5857918119716085,
+    "tags": [
+      "test_results"
+    ],
+    "state": "episodic",
+    "created_tick": 9975,
+    "last_access_tick": 9978,
+    "last_state_change_tick": 9982,
+    "access_count": 2,
+    "access_history": [
+      9976,
+      9978
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9982,
+        "reason": "access_weight=999.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "54305114",
+    "content": "deployed bug_report version 358 to development",
+    "type": "general",
+    "importance": 0.7123086601069529,
+    "tags": [
+      "bug_report"
+    ],
+    "state": "episodic",
+    "created_tick": 9978,
+    "last_access_tick": 9978,
+    "last_state_change_tick": 9983,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9983,
+        "reason": "importance=0.71>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "453485e9",
+    "content": "completed meeting_notes milestone 107 with status complete",
+    "type": "general",
+    "importance": 0.7998664483914821,
+    "tags": [
+      "meeting_notes"
+    ],
+    "state": "episodic",
+    "created_tick": 9979,
+    "last_access_tick": 9999,
+    "last_state_change_tick": 9985,
+    "access_count": 1,
+    "access_history": [
+      9999
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9985,
+        "reason": "importance=0.80>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "42bed9fb",
+    "content": "resolved project_alpha critical issue in component api",
+    "type": "general",
+    "importance": 0.7613729072949451,
+    "tags": [
+      "project_alpha"
+    ],
+    "state": "episodic",
+    "created_tick": 9980,
+    "last_access_tick": 9998,
+    "last_state_change_tick": 9985,
+    "access_count": 2,
+    "access_history": [
+      9995,
+      9998
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9985,
+        "reason": "importance=0.76>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5dcd5015",
+    "content": "updated project_alpha documentation for release 402",
+    "type": "general",
+    "importance": 0.9044275654014102,
+    "tags": [
+      "project_alpha"
+    ],
+    "state": "episodic",
+    "created_tick": 9982,
+    "last_access_tick": 9998,
+    "last_state_change_tick": 9986,
+    "access_count": 2,
+    "access_history": [
+      9995,
+      9998
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9986,
+        "reason": "importance=0.90>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8012fcb8",
+    "content": "deployed decision_log version 637 to staging",
+    "type": "general",
+    "importance": 0.7344585749106757,
+    "tags": [
+      "decision_log"
+    ],
+    "state": "episodic",
+    "created_tick": 9982,
+    "last_access_tick": 9982,
+    "last_state_change_tick": 9987,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9987,
+        "reason": "importance=0.73>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f0441c36",
+    "content": "updated deployment_log documentation for release 175",
+    "type": "general",
+    "importance": 0.7524713352640837,
+    "tags": [
+      "deployment_log"
+    ],
+    "state": "episodic",
+    "created_tick": 9978,
+    "last_access_tick": 9988,
+    "last_state_change_tick": 9987,
+    "access_count": 2,
+    "access_history": [
+      9983,
+      9988
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9987,
+        "reason": "access_weight=500.15>=2.0; importance=0.75>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "87c50f16",
+    "content": "deployed code_review version 444 to development",
+    "type": "general",
+    "importance": 0.8634429268330643,
+    "tags": [
+      "code_review"
+    ],
+    "state": "semantic",
+    "created_tick": 9984,
+    "last_access_tick": 9994,
+    "last_state_change_tick": 10000,
+    "access_count": 5,
+    "access_history": [
+      9985,
+      9989,
+      9992,
+      9993,
+      9994
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9989,
+        "reason": "access_weight=500.25>=2.0; importance=0.86>=0.7"
+      },
+      {
+        "to": "semantic",
+        "tick": 10000,
+        "reason": "importance=0.8634429268330643, access=5"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3b376480",
+    "content": "deployed test_results version 560 to staging",
+    "type": "general",
+    "importance": 0.900080070643128,
+    "tags": [
+      "test_results"
+    ],
+    "state": "episodic",
+    "created_tick": 9986,
+    "last_access_tick": 9987,
+    "last_state_change_tick": 9992,
+    "access_count": 1,
+    "access_history": [
+      9987
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9992,
+        "reason": "access_weight=500.35>=2.0; importance=0.90>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e7e50af8",
+    "content": "updated project_beta documentation for release 6",
+    "type": "general",
+    "importance": 0.7027005156765802,
+    "tags": [
+      "project_beta"
+    ],
+    "state": "episodic",
+    "created_tick": 9987,
+    "last_access_tick": 9987,
+    "last_state_change_tick": 9992,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9992,
+        "reason": "importance=0.70>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4b0f4d9b",
+    "content": "reviewed meeting_notes PR #145 from contributor charlie",
+    "type": "general",
+    "importance": 0.9196037752899913,
+    "tags": [
+      "meeting_notes"
+    ],
+    "state": "episodic",
+    "created_tick": 9987,
+    "last_access_tick": 9999,
+    "last_state_change_tick": 9993,
+    "access_count": 3,
+    "access_history": [
+      9987,
+      9998,
+      9999
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9993,
+        "reason": "access_weight=500.35>=2.0; importance=0.92>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "216e02e1",
+    "content": "resolved project_beta critical issue in component api",
+    "type": "general",
+    "importance": 0.7193274860549422,
+    "tags": [
+      "project_beta"
+    ],
+    "state": "episodic",
+    "created_tick": 9988,
+    "last_access_tick": 9988,
+    "last_state_change_tick": 9994,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9994,
+        "reason": "importance=0.72>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ae3cb192",
+    "content": "reviewed meeting_notes PR #257 from contributor bob",
+    "type": "general",
+    "importance": 0.9144695649055494,
+    "tags": [
+      "meeting_notes"
+    ],
+    "state": "episodic",
+    "created_tick": 9992,
+    "last_access_tick": 9999,
+    "last_state_change_tick": 9998,
+    "access_count": 4,
+    "access_history": [
+      9992,
+      9993,
+      9998,
+      9999
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9998,
+        "reason": "access_weight=1001.25>=2.0; importance=0.91>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "93db3a32",
+    "content": "deployed bug_report version 576 to staging",
+    "type": "general",
+    "importance": 0.7816266828716658,
+    "tags": [
+      "bug_report"
+    ],
+    "state": "episodic",
+    "created_tick": 9993,
+    "last_access_tick": 9993,
+    "last_state_change_tick": 9999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9999,
+        "reason": "importance=0.78>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b1538d3c",
+    "content": "reviewed code_review PR #663 from contributor alice",
+    "type": "general",
+    "importance": 0.7485080929025891,
+    "tags": [
+      "code_review"
+    ],
+    "state": "episodic",
+    "created_tick": 9991,
+    "last_access_tick": 9994,
+    "last_state_change_tick": 10000,
+    "access_count": 2,
+    "access_history": [
+      9992,
+      9994
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 10000,
+        "reason": "access_weight=1001.30>=2.0; importance=0.75>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

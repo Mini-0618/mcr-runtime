@@ -1,0 +1,164 @@
+[
+  {
+    "id": "38bf1cca",
+    "content": "记忆1",
+    "type": "signal",
+    "importance": 0.4,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 1,
+    "last_access_tick": 1,
+    "last_state_change_tick": 11,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 11,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 11
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "36523e31",
+    "content": "记忆2",
+    "type": "signal",
+    "importance": 0.4,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 2,
+    "last_access_tick": 2,
+    "last_state_change_tick": 100,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 100,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 100
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ac78b90b",
+    "content": "记忆4",
+    "type": "signal",
+    "importance": 0.4,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4,
+    "last_access_tick": 4,
+    "last_state_change_tick": 102,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 102,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 102
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9c6bbed8",
+    "content": "记忆5",
+    "type": "signal",
+    "importance": 0.4,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 5,
+    "last_access_tick": 5,
+    "last_state_change_tick": 103,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 103,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 103
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2a4e5188",
+    "content": "记忆7",
+    "type": "signal",
+    "importance": 0.4,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 7,
+    "last_access_tick": 7,
+    "last_state_change_tick": 105,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 105,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 105
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3a258303",
+    "content": "记忆8",
+    "type": "signal",
+    "importance": 0.4,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 8,
+    "last_access_tick": 8,
+    "last_state_change_tick": 106,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 106,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 106
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

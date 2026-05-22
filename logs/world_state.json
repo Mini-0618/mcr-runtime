@@ -1,0 +1,271 @@
+{
+  "current_goal": "去睡觉",
+  "active_tasks": [],
+  "recent_decisions": [
+    {
+      "type": "goal_change",
+      "from": null,
+      "to": "验证 MCR 认知闭环是否成立",
+      "reason": "goal_created",
+      "timestamp": "2026-05-12T00:41:12.400783"
+    },
+    {
+      "type": "goal_change",
+      "from": "MCR 认知稳定性实验 - 100 tick 混沌演化",
+      "to": "改做 Python 项目",
+      "reason": "chaos_injection",
+      "timestamp": "2026-05-12T00:46:22.245186"
+    },
+    {
+      "type": "goal_change",
+      "from": "改做 Python 项目",
+      "to": "去睡觉",
+      "reason": "chaos_injection",
+      "timestamp": "2026-05-12T00:46:22.332649"
+    },
+    {
+      "type": "goal_change",
+      "from": "稳定性机制验证 - 100 tick 对比实验",
+      "to": "研究区块链",
+      "reason": "chaos",
+      "timestamp": "2026-05-12T01:01:55.319478"
+    },
+    {
+      "type": "goal_change",
+      "from": "研究区块链",
+      "to": "去睡觉",
+      "reason": "chaos",
+      "timestamp": "2026-05-12T01:01:55.434494"
+    }
+  ],
+  "observations": [
+    {
+      "content": "感觉有点困",
+      "source": "chaos",
+      "timestamp": "2026-05-12T00:46:22.196463"
+    },
+    {
+      "content": "手机屏幕有点脏",
+      "source": "chaos",
+      "timestamp": "2026-05-12T00:46:22.209281"
+    },
+    {
+      "content": "空调好像有点吵",
+      "source": "chaos",
+      "timestamp": "2026-05-12T00:46:22.214444"
+    },
+    {
+      "content": "空调好像有点吵",
+      "source": "chaos",
+      "timestamp": "2026-05-12T00:46:22.238447"
+    },
+    {
+      "content": "手机屏幕有点脏",
+      "source": "chaos",
+      "timestamp": "2026-05-12T00:46:22.310670"
+    },
+    {
+      "content": "手机屏幕有点脏",
+      "source": "chaos",
+      "timestamp": "2026-05-12T01:01:55.291645"
+    },
+    {
+      "content": "好像听到窗外有鸟叫",
+      "source": "chaos",
+      "timestamp": "2026-05-12T01:01:55.333175"
+    },
+    {
+      "content": "感觉有点困",
+      "source": "chaos",
+      "timestamp": "2026-05-12T01:01:55.375323"
+    }
+  ],
+  "constraints": [],
+  "active_plan": {
+    "goal": "去睡觉",
+    "steps": [],
+    "created_at": "2026-05-12T01:01:55.525982"
+  },
+  "plan_history": [],
+  "reasoning_chain": [
+    {
+      "cycle": 185,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.514309"
+    },
+    {
+      "cycle": 186,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.517216"
+    },
+    {
+      "cycle": 187,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.520088"
+    },
+    {
+      "cycle": 188,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.523078"
+    },
+    {
+      "cycle": 189,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.525979"
+    },
+    {
+      "cycle": 190,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.528933"
+    },
+    {
+      "cycle": 191,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.532214"
+    },
+    {
+      "cycle": 192,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.535341"
+    },
+    {
+      "cycle": 193,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.538389"
+    },
+    {
+      "cycle": 194,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.541495"
+    },
+    {
+      "cycle": 195,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.544450"
+    },
+    {
+      "cycle": 196,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.547372"
+    },
+    {
+      "cycle": 197,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.550270"
+    },
+    {
+      "cycle": 198,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.553553"
+    },
+    {
+      "cycle": 199,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.556873"
+    },
+    {
+      "cycle": 200,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.560002"
+    },
+    {
+      "cycle": 201,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.563201"
+    },
+    {
+      "cycle": 202,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.566598"
+    },
+    {
+      "cycle": 203,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.569764"
+    },
+    {
+      "cycle": 204,
+      "summary": "Activated 5 relevant memories",
+      "timestamp": "2026-05-12T01:01:55.573255"
+    }
+  ],
+  "context_summary": "",
+  "metadata": {
+    "created_at": "2026-05-12T00:39:19.585738",
+    "tick_count": 204,
+    "goal_stability_score": 0.8
+  },
+  "last_updated": "2026-05-12T01:01:55.573529",
+  "_vaccine_log": [
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.544678",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.547626",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.550475",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.553835",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.557154",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.560280",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.563490",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.566835",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.570041",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    },
+    {
+      "type": "vaccine_injected",
+      "timestamp": "2026-05-12T01:01:55.573515",
+      "reason": "reasoning_template_detected",
+      "recommendation": "diversify_reasoning",
+      "last_summary": "Activated 5 relevant memories"
+    }
+  ]
+}

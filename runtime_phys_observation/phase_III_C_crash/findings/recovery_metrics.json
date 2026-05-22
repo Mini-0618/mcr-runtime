@@ -1,0 +1,149 @@
+{
+  "experiment": "PHASE_III_C_Crash_Recovery",
+  "LKG": "637a11c907e8a889b909513522dfab8c",
+  "all_pass": false,
+  "tests": [
+    {
+      "test": "TEST1_hard_crash_replay",
+      "pass": false,
+      "pre_hash": "3b0dcd4a198edaa3",
+      "post_hash": "3b0dcd4a198edaa3",
+      "hash_match": true,
+      "pre_counts": {
+        "working": 10,
+        "episodic": 0,
+        "semantic": 0,
+        "archive": 0,
+        "decay_buffer": 0,
+        "total": 10
+      },
+      "post_counts": {
+        "working": 10,
+        "episodic": 0,
+        "semantic": 0,
+        "archive": 0,
+        "decay_buffer": 0,
+        "total": 10
+      },
+      "counts_match": true,
+      "recovery_latency_ms": 0.42,
+      "wal_entries_before": 180,
+      "wal_entries_after": 180,
+      "lost_events": 0,
+      "wal_verify_passed": false,
+      "wal_checksum_errors": 0,
+      "wal_seq_gaps": 0,
+      "runtime_survived": true,
+      "ghost_state_detected": false
+    },
+    {
+      "test": "TEST2_partial_wal_write",
+      "pass": false,
+      "wal_entries_before": 80,
+      "wal_entries_after": 80,
+      "corruption_detected": true,
+      "recovery_latency_ms": 0.249,
+      "wal_verify_passed_after": false,
+      "checksum_errors_after": 0,
+      "lost_events": 0,
+      "runtime_survived": true,
+      "pre_counts": {
+        "working": 10,
+        "episodic": 0,
+        "semantic": 0,
+        "archive": 0,
+        "decay_buffer": 0,
+        "total": 10
+      },
+      "post_counts": {
+        "working": 10,
+        "episodic": 0,
+        "semantic": 0,
+        "archive": 0,
+        "decay_buffer": 0,
+        "total": 10
+      }
+    },
+    {
+      "test": "TEST3_snapshot_interruption",
+      "pass": true,
+      "pre_hash": "d8ae6f4f5cb7edb3",
+      "post_hash": "d8ae6f4f5cb7edb3",
+      "hash_match": true,
+      "pre_counts": {
+        "working": 10,
+        "episodic": 0,
+        "semantic": 0,
+        "archive": 0,
+        "decay_buffer": 0,
+        "total": 10
+      },
+      "post_counts": {
+        "working": 10,
+        "episodic": 0,
+        "semantic": 0,
+        "archive": 0,
+        "decay_buffer": 0,
+        "total": 10
+      },
+      "counts_match": true,
+      "recovery_latency_ms": 0.375,
+      "corrupt_snapshot_count": 2,
+      "runtime_survived": true,
+      "snapshot_recovery_success": true,
+      "ghost_state_detected": false
+    },
+    {
+      "test": "TEST4_replay_determinism",
+      "pass": true,
+      "entries_match": true,
+      "seqs_match": true,
+      "all_hashes_equal": true,
+      "pre_hash": "b25b80d80596737a",
+      "post_replay_hash": "b25b80d80596737a",
+      "consistent_across_replays": true
+    },
+    {
+      "test": "TEST5_corrupted_event",
+      "pass": false,
+      "wal_entries_before": 40,
+      "corruption_detected": true,
+      "checksum_errors_found": 1,
+      "recovery_latency_ms": 0.345,
+      "runtime_survived": true,
+      "wal_verify_passed_after": false
+    },
+    {
+      "test": "TEST6_wal_rotation_recovery",
+      "pass": false,
+      "wal_file_count": 180,
+      "wal_entries_before": 180,
+      "wal_entries_after": 180,
+      "lost_events": 0,
+      "recovery_latency_ms": 1.761,
+      "hash_match": true,
+      "pre_counts": {
+        "working": 10,
+        "episodic": 0,
+        "semantic": 0,
+        "archive": 0,
+        "decay_buffer": 0,
+        "total": 10
+      },
+      "post_counts": {
+        "working": 10,
+        "episodic": 0,
+        "semantic": 0,
+        "archive": 0,
+        "decay_buffer": 0,
+        "total": 10
+      },
+      "counts_match": true,
+      "seqs_monotonic": true,
+      "seqs_unique": true,
+      "seq_continuous": true,
+      "wal_verify_passed": false,
+      "runtime_survived": true
+    }
+  ]
+}

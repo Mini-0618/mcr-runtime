@@ -1,0 +1,114 @@
+{
+  "graph_summary": {
+    "total_events": 380,
+    "unique_memories": 190,
+    "ordering_hash": "72042ab26beedb5d",
+    "causally_coherent": true,
+    "violation_count": 0
+  },
+  "event_count_by_type": {
+    "store": 380
+  },
+  "transition_types": {
+    "working\u2192decay_buffer": 190,
+    "decay_buffer\u2192DELETED": 190
+  },
+  "lifecycle_chain_samples": {
+    "833d022a": {
+      "events": [
+        {
+          "seq": 1,
+          "type": "store",
+          "from": "working",
+          "to": "decay_buffer"
+        },
+        {
+          "seq": 2,
+          "type": "store",
+          "from": "decay_buffer",
+          "to": "DELETED"
+        }
+      ],
+      "causal_chain": [
+        1
+      ]
+    },
+    "37e1af52": {
+      "events": [
+        {
+          "seq": 3,
+          "type": "store",
+          "from": "working",
+          "to": "decay_buffer"
+        },
+        {
+          "seq": 4,
+          "type": "store",
+          "from": "decay_buffer",
+          "to": "DELETED"
+        }
+      ],
+      "causal_chain": [
+        3
+      ]
+    },
+    "c5dbffff": {
+      "events": [
+        {
+          "seq": 5,
+          "type": "store",
+          "from": "working",
+          "to": "decay_buffer"
+        },
+        {
+          "seq": 6,
+          "type": "store",
+          "from": "decay_buffer",
+          "to": "DELETED"
+        }
+      ],
+      "causal_chain": [
+        5
+      ]
+    },
+    "4499eceb": {
+      "events": [
+        {
+          "seq": 7,
+          "type": "store",
+          "from": "working",
+          "to": "decay_buffer"
+        },
+        {
+          "seq": 8,
+          "type": "store",
+          "from": "decay_buffer",
+          "to": "DELETED"
+        }
+      ],
+      "causal_chain": [
+        7
+      ]
+    },
+    "3818a90c": {
+      "events": [
+        {
+          "seq": 9,
+          "type": "store",
+          "from": "working",
+          "to": "decay_buffer"
+        },
+        {
+          "seq": 10,
+          "type": "store",
+          "from": "decay_buffer",
+          "to": "DELETED"
+        }
+      ],
+      "causal_chain": [
+        9
+      ]
+    }
+  },
+  "violations": []
+}

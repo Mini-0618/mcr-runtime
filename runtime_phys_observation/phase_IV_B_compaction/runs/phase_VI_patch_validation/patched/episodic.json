@@ -1,0 +1,1367 @@
+[
+  {
+    "id": "f8a34a29",
+    "content": "sql_query worker thread 9694 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9694,
+    "last_access_tick": 9999,
+    "last_state_change_tick": 9706,
+    "access_count": 16,
+    "access_history": [
+      9810,
+      9828,
+      9885,
+      9927,
+      9933,
+      9945,
+      9951,
+      9957,
+      9990,
+      9999
+    ],
+    "activation_count": 16,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9706,
+        "reason": "access_weight=971.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2ec82a9c",
+    "content": "sql_query operation 9709 completed in 572ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9709,
+    "last_access_tick": 9951,
+    "last_state_change_tick": 9721,
+    "access_count": 10,
+    "access_history": [
+      9714,
+      9747,
+      9750,
+      9810,
+      9828,
+      9885,
+      9927,
+      9933,
+      9945,
+      9951
+    ],
+    "activation_count": 10,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9721,
+        "reason": "access_weight=486.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ddec9d41",
+    "content": "crash_recovery operation 9800 completed in 666ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9800,
+    "last_access_tick": 9969,
+    "last_state_change_tick": 9810,
+    "access_count": 9,
+    "access_history": [
+      9801,
+      9849,
+      9855,
+      9876,
+      9888,
+      9912,
+      9915,
+      9936,
+      9969
+    ],
+    "activation_count": 9,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9810,
+        "reason": "access_weight=491.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "809c5902",
+    "content": "python_gc queue depth 9812 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "python_gc",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9812,
+    "last_access_tick": 9993,
+    "last_state_change_tick": 9825,
+    "access_count": 10,
+    "access_history": [
+      9819,
+      9864,
+      9891,
+      9906,
+      9909,
+      9924,
+      9942,
+      9960,
+      9966,
+      9993
+    ],
+    "activation_count": 10,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9825,
+        "reason": "access_weight=491.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d7d15dbc",
+    "content": "python_gc queue depth 9817 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "python_gc",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9817,
+    "last_access_tick": 9993,
+    "last_state_change_tick": 9827,
+    "access_count": 10,
+    "access_history": [
+      9819,
+      9864,
+      9891,
+      9906,
+      9909,
+      9924,
+      9942,
+      9960,
+      9966,
+      9993
+    ],
+    "activation_count": 10,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9827,
+        "reason": "access_weight=491.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6acc0b82",
+    "content": "sql_query batch 9819 failed with error code 400",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9819,
+    "last_access_tick": 9945,
+    "last_state_change_tick": 9835,
+    "access_count": 6,
+    "access_history": [
+      9819,
+      9828,
+      9885,
+      9927,
+      9933,
+      9945
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9835,
+        "reason": "access_weight=984.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bc4fe316",
+    "content": "file_system worker thread 9830 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9830,
+    "last_access_tick": 9975,
+    "last_state_change_tick": 9849,
+    "access_count": 8,
+    "access_history": [
+      9837,
+      9843,
+      9861,
+      9867,
+      9918,
+      9930,
+      9972,
+      9975
+    ],
+    "activation_count": 8,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9849,
+        "reason": "access_weight=986.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "38808035",
+    "content": "file_system operation 9836 completed in 633ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9836,
+    "last_access_tick": 9975,
+    "last_state_change_tick": 9850,
+    "access_count": 8,
+    "access_history": [
+      9837,
+      9843,
+      9861,
+      9867,
+      9918,
+      9930,
+      9972,
+      9975
+    ],
+    "activation_count": 8,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9850,
+        "reason": "access_weight=986.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5ac019c8",
+    "content": "crash_recovery queue depth 9842 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9842,
+    "last_access_tick": 9969,
+    "last_state_change_tick": 9861,
+    "access_count": 9,
+    "access_history": [
+      9843,
+      9849,
+      9855,
+      9876,
+      9888,
+      9912,
+      9915,
+      9936,
+      9969
+    ],
+    "activation_count": 9,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9861,
+        "reason": "access_weight=1480.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0ce29fcb",
+    "content": "sql_query queue depth 9863 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9863,
+    "last_access_tick": 9945,
+    "last_state_change_tick": 9872,
+    "access_count": 5,
+    "access_history": [
+      9864,
+      9885,
+      9927,
+      9933,
+      9945
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9872,
+        "reason": "access_weight=494.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ed422990",
+    "content": "file_system batch 9861 failed with error code 404",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9861,
+    "last_access_tick": 9975,
+    "last_state_change_tick": 9875,
+    "access_count": 6,
+    "access_history": [
+      9861,
+      9867,
+      9918,
+      9930,
+      9972,
+      9975
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9875,
+        "reason": "access_weight=988.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b3899b3b",
+    "content": "file_system queue depth 9865 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9865,
+    "last_access_tick": 9975,
+    "last_state_change_tick": 9876,
+    "access_count": 5,
+    "access_history": [
+      9867,
+      9918,
+      9930,
+      9972,
+      9975
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9876,
+        "reason": "access_weight=494.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "378dca29",
+    "content": "python_gc operation 9883 completed in 393ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "python_gc",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9883,
+    "last_access_tick": 9960,
+    "last_state_change_tick": 9899,
+    "access_count": 6,
+    "access_history": [
+      9891,
+      9906,
+      9909,
+      9924,
+      9942,
+      9960
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9899,
+        "reason": "access_weight=495.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ced968ba",
+    "content": "network_protocol worker thread 9918 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "network_protocol",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9918,
+    "last_access_tick": 9981,
+    "last_state_change_tick": 9926,
+    "access_count": 5,
+    "access_history": [
+      9918,
+      9948,
+      9954,
+      9978,
+      9981
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9926,
+        "reason": "access_weight=496.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "511323f9",
+    "content": "semantic_search cache miss rate 89% at tick 9947",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "semantic_search",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9947,
+    "last_access_tick": 9996,
+    "last_state_change_tick": 9955,
+    "access_count": 2,
+    "access_history": [
+      9948,
+      9996
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9955,
+        "reason": "access_weight=498.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0e1ce07c",
+    "content": "semantic_search batch 9948 failed with error code 500",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "semantic_search",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9948,
+    "last_access_tick": 9996,
+    "last_state_change_tick": 9956,
+    "access_count": 2,
+    "access_history": [
+      9948,
+      9996
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9956,
+        "reason": "access_weight=498.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5bff9600",
+    "content": "network_protocol batch 9944 failed with error code 500",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "network_protocol",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9944,
+    "last_access_tick": 9981,
+    "last_state_change_tick": 9958,
+    "access_count": 4,
+    "access_history": [
+      9948,
+      9954,
+      9978,
+      9981
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9958,
+        "reason": "access_weight=997.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fbdcb375",
+    "content": "file_system operation 9952 completed in 220ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9952,
+    "last_access_tick": 9975,
+    "last_state_change_tick": 9959,
+    "access_count": 3,
+    "access_history": [
+      9954,
+      9972,
+      9975
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9959,
+        "reason": "access_weight=498.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5c6e7a99",
+    "content": "crash_recovery operation 9954 completed in 446ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9954,
+    "last_access_tick": 9969,
+    "last_state_change_tick": 9960,
+    "access_count": 2,
+    "access_history": [
+      9954,
+      9969
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9960,
+        "reason": "access_weight=498.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "805df0e4",
+    "content": "sql_query operation 9946 completed in 415ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9946,
+    "last_access_tick": 9999,
+    "last_state_change_tick": 9962,
+    "access_count": 5,
+    "access_history": [
+      9948,
+      9951,
+      9957,
+      9990,
+      9999
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9962,
+        "reason": "access_weight=1495.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1e3c7e12",
+    "content": "sql_query worker thread 9950 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9950,
+    "last_access_tick": 9999,
+    "last_state_change_tick": 9963,
+    "access_count": 4,
+    "access_history": [
+      9951,
+      9957,
+      9990,
+      9999
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9963,
+        "reason": "access_weight=997.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fe6bceb2",
+    "content": "sql_query cache miss rate 91% at tick 9951",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9951,
+    "last_access_tick": 9957,
+    "last_state_change_tick": 9964,
+    "access_count": 2,
+    "access_history": [
+      9951,
+      9957
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9964,
+        "reason": "access_weight=997.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "03e789b5",
+    "content": "sql_query cache miss rate 91% at tick 9953",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9953,
+    "last_access_tick": 9957,
+    "last_state_change_tick": 9965,
+    "access_count": 2,
+    "access_history": [
+      9954,
+      9957
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9965,
+        "reason": "access_weight=997.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "241aecaf",
+    "content": "docker_runtime batch 9957 failed with error code 400",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "docker_runtime",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9957,
+    "last_access_tick": 9963,
+    "last_state_change_tick": 9968,
+    "access_count": 1,
+    "access_history": [
+      9963
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9968,
+        "reason": "access_weight=499.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8a05b4cc",
+    "content": "network_protocol worker thread 9961 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "network_protocol",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9961,
+    "last_access_tick": 9981,
+    "last_state_change_tick": 9969,
+    "access_count": 3,
+    "access_history": [
+      9963,
+      9978,
+      9981
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9969,
+        "reason": "access_weight=499.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f9b70cbf",
+    "content": "sql_query cache miss rate 89% at tick 9963",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9963,
+    "last_access_tick": 9990,
+    "last_state_change_tick": 9970,
+    "access_count": 2,
+    "access_history": [
+      9963,
+      9990
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9970,
+        "reason": "access_weight=499.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "da59ad31",
+    "content": "python_gc worker thread 9955 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "python_gc",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9955,
+    "last_access_tick": 9993,
+    "last_state_change_tick": 9973,
+    "access_count": 4,
+    "access_history": [
+      9960,
+      9963,
+      9966,
+      9993
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9973,
+        "reason": "access_weight=1497.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "edb5060e",
+    "content": "python_gc worker thread 9959 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "python_gc",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9959,
+    "last_access_tick": 9966,
+    "last_state_change_tick": 9974,
+    "access_count": 2,
+    "access_history": [
+      9960,
+      9966
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9974,
+        "reason": "access_weight=998.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4c53ce54",
+    "content": "python_gc cache miss rate 91% at tick 9966",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "python_gc",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9966,
+    "last_access_tick": 9966,
+    "last_state_change_tick": 9975,
+    "access_count": 1,
+    "access_history": [
+      9966
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9975,
+        "reason": "access_weight=499.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5a963e8a",
+    "content": "crash_recovery cache miss rate 89% at tick 9962",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9962,
+    "last_access_tick": 9969,
+    "last_state_change_tick": 9978,
+    "access_count": 2,
+    "access_history": [
+      9963,
+      9969
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9978,
+        "reason": "access_weight=998.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b976a5b2",
+    "content": "crash_recovery operation 9969 completed in 784ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9969,
+    "last_access_tick": 9969,
+    "last_state_change_tick": 9979,
+    "access_count": 1,
+    "access_history": [
+      9969
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9979,
+        "reason": "access_weight=499.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "48d3d563",
+    "content": "docker_runtime batch 9978 failed with error code 500",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "docker_runtime",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9978,
+    "last_access_tick": 9978,
+    "last_state_change_tick": 9987,
+    "access_count": 1,
+    "access_history": [
+      9978
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9987,
+        "reason": "access_weight=499.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "75f9c03d",
+    "content": "network_protocol batch 9980 failed with error code 504",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "network_protocol",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9980,
+    "last_access_tick": 9984,
+    "last_state_change_tick": 9990,
+    "access_count": 2,
+    "access_history": [
+      9981,
+      9984
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9990,
+        "reason": "access_weight=1000.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "aea49d8e",
+    "content": "crash_recovery queue depth 9983 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9983,
+    "last_access_tick": 9984,
+    "last_state_change_tick": 9991,
+    "access_count": 1,
+    "access_history": [
+      9984
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9991,
+        "reason": "access_weight=500.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "09da92fc",
+    "content": "network_protocol queue depth 9973 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "network_protocol",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9973,
+    "last_access_tick": 9987,
+    "last_state_change_tick": 9992,
+    "access_count": 4,
+    "access_history": [
+      9978,
+      9981,
+      9984,
+      9987
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9992,
+        "reason": "access_weight=2000.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "76f93494",
+    "content": "wal_replay worker thread 9982 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "wal_replay",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9982,
+    "last_access_tick": 9987,
+    "last_state_change_tick": 9993,
+    "access_count": 2,
+    "access_history": [
+      9984,
+      9987
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9993,
+        "reason": "access_weight=1000.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c59905c1",
+    "content": "file_system batch 9985 failed with error code 404",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9985,
+    "last_access_tick": 9987,
+    "last_state_change_tick": 9994,
+    "access_count": 1,
+    "access_history": [
+      9987
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9994,
+        "reason": "access_weight=500.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "42b2a06e",
+    "content": "crash_recovery operation 9986 completed in 756ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9986,
+    "last_access_tick": 9987,
+    "last_state_change_tick": 9995,
+    "access_count": 1,
+    "access_history": [
+      9987
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9995,
+        "reason": "access_weight=500.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "37bc3321",
+    "content": "sql_query batch 9984 failed with error code 503",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9984,
+    "last_access_tick": 9990,
+    "last_state_change_tick": 9998,
+    "access_count": 2,
+    "access_history": [
+      9984,
+      9990
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9998,
+        "reason": "access_weight=1000.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5f50189f",
+    "content": "python_gc queue depth 9987 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "python_gc",
+      "phase_vi"
+    ],
+    "state": "episodic",
+    "created_tick": 9987,
+    "last_access_tick": 9993,
+    "last_state_change_tick": 10000,
+    "access_count": 2,
+    "access_history": [
+      9987,
+      9993
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 10000,
+        "reason": "access_weight=1001.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

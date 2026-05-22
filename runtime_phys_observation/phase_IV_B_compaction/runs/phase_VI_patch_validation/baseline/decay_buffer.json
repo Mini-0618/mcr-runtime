@@ -1,0 +1,142 @@
+[
+  {
+    "id": "bb651259",
+    "content": "file_system cache miss rate 78% at tick 4986",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_vi"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4986,
+    "last_access_tick": 4986,
+    "last_state_change_tick": 4996,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 4996,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 4996
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "12467c1e",
+    "content": "file_system batch 4987 failed with error code 404",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_vi"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4987,
+    "last_access_tick": 4987,
+    "last_state_change_tick": 4997,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 4997,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 4997
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9398a219",
+    "content": "wal_replay queue depth 4988 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "wal_replay",
+      "phase_vi"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4988,
+    "last_access_tick": 4988,
+    "last_state_change_tick": 4998,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 4998,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 4998
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "19c1bf42",
+    "content": "sql_query queue depth 4989 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "sql_query",
+      "phase_vi"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4989,
+    "last_access_tick": 4989,
+    "last_state_change_tick": 4999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 4999,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 4999
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dc2faf24",
+    "content": "wal_replay worker thread 4990 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "wal_replay",
+      "phase_vi"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 4990,
+    "last_access_tick": 4990,
+    "last_state_change_tick": 5000,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 5000,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 5000
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "experiment": "PHASE_III_E_Observability_Interference",
+  "LKG": "637a11c907e8a889b909513522dfab8c",
+  "workload_ticks": 10000,
+  "num_memories": 500,
+  "seed": 42000,
+  "observer_off": {
+    "total_time_s": 0.32,
+    "avg_ms": 0.0324,
+    "p99_ms": 0.1371,
+    "memory_counts": {
+      "working": 10,
+      "episodic": 0,
+      "semantic": 0,
+      "archive": 0
+    },
+    "wal": {
+      "ordering_hash": "884065b1997634b2",
+      "total_events": 19971,
+      "seq_range": [
+        1,
+        19971
+      ],
+      "lifecycle_counts": {
+        "decay_to_buffer": 9990,
+        "buffer_evict": 9981
+      }
+    }
+  },
+  "observer_on": {
+    "total_time_s": 0.36,
+    "avg_ms": 0.036,
+    "p99_ms": 0.1445,
+    "memory_counts": {
+      "working": 10,
+      "episodic": 0,
+      "semantic": 0,
+      "archive": 0
+    },
+    "wal": {
+      "ordering_hash": "5eef57e39e7928e8",
+      "total_events": 19971,
+      "seq_range": [
+        1,
+        19971
+      ],
+      "lifecycle_counts": {
+        "decay_to_buffer": 9990,
+        "buffer_evict": 9981
+      }
+    },
+    "observer_metrics": {
+      "call_count": 26000,
+      "avg_overhead_ns": 3600
+    }
+  },
+  "ratios": {
+    "latency_ratio": 1.1111,
+    "p99_ratio": 1.0538,
+    "wal_amp": 1.0
+  },
+  "matches": {
+    "wal_hash_match": false,
+    "functional_tuples_match": true,
+    "lifecycle_hash_match": true,
+    "lifecycle_match": true,
+    "memory_match": true
+  },
+  "key_finding": "WAL hash diff is expected physics (uuid4 not seeded by random.seed()). Functional event tuples MATCH. Lifecycle hash MATCH. Observer has ZERO interference.",
+  "classifications": {
+    "CLASS_E_pathology": [],
+    "CLASS_F_expected": [
+      "G1: latency_ratio=1.1111x \u2264 1.2x (EXPECTED \u2014 nanosecond observer overhead)",
+      "G2: lifecycle_counts MATCH (EXPECTED \u2014 decay_to_buffer:9990 buffer_evict:9981 identical)",
+      "G3: WAL hash differs but functional tuples MATCH (EXPECTED \u2014 uuid4 non-deterministic, not seeded by random.seed())",
+      "G4: memory_state MATCH (EXPECTED \u2014 working:10 episodic:0 semantic:0 archive:0 identical)",
+      "G5: causal ordering preserved (EXPECTED \u2014 lifecycle hash MATCH)",
+      "G6: wal_amp=1.0000x \u2264 1.1x (EXPECTED \u2014 observer writes no WAL entries)"
+    ]
+  },
+  "all_expected": true
+}

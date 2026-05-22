@@ -1,0 +1,3106 @@
+[
+  {
+    "id": "sem_ddd2894161b8",
+    "content": "",
+    "tags": [
+      "compaction_test",
+      "database",
+      "http",
+      "network",
+      "python"
+    ],
+    "importance": 0.5999999999999999,
+    "access_weight": 1.0,
+    "access_count": 2.8181818181818183,
+    "source_memory_ids": [
+      "048060b0",
+      "2cfc63c8",
+      "3af9701f",
+      "5d0de7c4",
+      "7b115790",
+      "906f3b5a",
+      "9851ba2b",
+      "9f307579",
+      "c4e022b5",
+      "f0a164ca",
+      "f205bf8f"
+    ],
+    "source_count": 11,
+    "compression_ratio": 11.0,
+    "retrieval_hit_rate": 0.0,
+    "entropy_delta": -3.459431618637298,
+    "tick_created": 12800,
+    "last_access_tick": 12800,
+    "state": "archive",
+    "memory_type": "semantic_summary",
+    "last_state_change_tick": 13000
+  },
+  {
+    "id": "10f4aba6",
+    "content": "Python import system",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9647,
+    "last_access_tick": 9708,
+    "last_state_change_tick": 13000,
+    "access_count": 4,
+    "access_history": [
+      9648,
+      9693,
+      9699,
+      9708
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9657,
+        "reason": "access_weight=483.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "9916fc7d",
+    "content": "Python import system",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9693,
+    "last_access_tick": 9699,
+    "last_state_change_tick": 13000,
+    "access_count": 2,
+    "access_history": [
+      9693,
+      9699
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9707,
+        "reason": "access_weight=971.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "fa3e43be",
+    "content": "SQL WHERE clause",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9692,
+    "last_access_tick": 9723,
+    "last_state_change_tick": 13000,
+    "access_count": 4,
+    "access_history": [
+      9696,
+      9702,
+      9714,
+      9723
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9710,
+        "reason": "access_weight=971.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "be1b35a0",
+    "content": "SQL deadlock",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9700,
+    "last_access_tick": 9714,
+    "last_state_change_tick": 13000,
+    "access_count": 2,
+    "access_history": [
+      9702,
+      9714
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9711,
+        "reason": "access_weight=486.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "b160e835",
+    "content": "Python list implementation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9708,
+    "last_access_tick": 9726,
+    "last_state_change_tick": 13000,
+    "access_count": 3,
+    "access_history": [
+      9708,
+      9717,
+      9726
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9724,
+        "reason": "access_weight=973.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "605442a6",
+    "content": "Python dict implementation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9710,
+    "last_access_tick": 9717,
+    "last_state_change_tick": 13000,
+    "access_count": 2,
+    "access_history": [
+      9711,
+      9717
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9725,
+        "reason": "access_weight=973.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "612f5b2b",
+    "content": "HTTP Bearer token",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9724,
+    "last_access_tick": 9738,
+    "last_state_change_tick": 13000,
+    "access_count": 2,
+    "access_history": [
+      9729,
+      9738
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9737,
+        "reason": "access_weight=487.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "18e9b8d9",
+    "content": "HTTP Bearer token",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9729,
+    "last_access_tick": 9738,
+    "last_state_change_tick": 13000,
+    "access_count": 2,
+    "access_history": [
+      9729,
+      9738
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9746,
+        "reason": "access_weight=975.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "ab750f28",
+    "content": "TCP handshake",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9735,
+    "last_access_tick": 9741,
+    "last_state_change_tick": 13000,
+    "access_count": 2,
+    "access_history": [
+      9735,
+      9741
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9749,
+        "reason": "access_weight=975.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "83b93d09",
+    "content": "TCP slow start",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9741,
+    "last_access_tick": 9741,
+    "last_state_change_tick": 13000,
+    "access_count": 1,
+    "access_history": [
+      9741
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9750,
+        "reason": "access_weight=488.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0,
+    "summary_id": "sem_f70b9d3ea20c"
+  },
+  {
+    "id": "046dcad4",
+    "content": "HTTP chunked",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9673,
+    "last_access_tick": 9690,
+    "last_state_change_tick": 9762,
+    "access_count": 3,
+    "access_history": [
+      9675,
+      9684,
+      9690
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9681,
+        "reason": "access_weight=484.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fd7c00d4",
+    "content": "HTTP 500",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9683,
+    "last_access_tick": 9690,
+    "last_state_change_tick": 9766,
+    "access_count": 3,
+    "access_history": [
+      9684,
+      9687,
+      9690
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9699,
+        "reason": "access_weight=1456.05>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "00473328",
+    "content": "HTTP chunked",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9690,
+    "last_access_tick": 9690,
+    "last_state_change_tick": 9767,
+    "access_count": 1,
+    "access_history": [
+      9690
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9700,
+        "reason": "access_weight=485.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "28185897",
+    "content": "Python import system",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9670,
+    "last_access_tick": 9693,
+    "last_state_change_tick": 9768,
+    "access_count": 2,
+    "access_history": [
+      9678,
+      9693
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9685,
+        "reason": "access_weight=484.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "79ca949b",
+    "content": "SQL CHECK constraint",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9675,
+    "last_access_tick": 9696,
+    "last_state_change_tick": 9770,
+    "access_count": 2,
+    "access_history": [
+      9675,
+      9696
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9683,
+        "reason": "access_weight=484.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e74a8dae",
+    "content": "SQL view",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9696,
+    "last_access_tick": 9696,
+    "last_state_change_tick": 9771,
+    "access_count": 1,
+    "access_history": [
+      9696
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9704,
+        "reason": "access_weight=485.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "86468f41",
+    "content": "Python generation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9699,
+    "last_access_tick": 9699,
+    "last_state_change_tick": 9774,
+    "access_count": 1,
+    "access_history": [
+      9699
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9708,
+        "reason": "access_weight=485.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "31843eae",
+    "content": "SQL isolation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9702,
+    "last_access_tick": 9702,
+    "last_state_change_tick": 9775,
+    "access_count": 1,
+    "access_history": [
+      9702
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9712,
+        "reason": "access_weight=486.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "cc692928",
+    "content": "Unix FIFO",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9703,
+    "last_access_tick": 9705,
+    "last_state_change_tick": 9776,
+    "access_count": 1,
+    "access_history": [
+      9705
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9713,
+        "reason": "access_weight=486.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5105c398",
+    "content": "Unix process state",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9704,
+    "last_access_tick": 9705,
+    "last_state_change_tick": 9777,
+    "access_count": 1,
+    "access_history": [
+      9705
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9714,
+        "reason": "access_weight=486.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8c7a9721",
+    "content": "IP NAT",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9705,
+    "last_access_tick": 9705,
+    "last_state_change_tick": 9779,
+    "access_count": 1,
+    "access_history": [
+      9705
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9715,
+        "reason": "access_weight=486.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0f5dff6d",
+    "content": "Python set implementation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9706,
+    "last_access_tick": 9708,
+    "last_state_change_tick": 9780,
+    "access_count": 1,
+    "access_history": [
+      9708
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9717,
+        "reason": "access_weight=486.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "88cbd934",
+    "content": "Unix exec",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9709,
+    "last_access_tick": 9711,
+    "last_state_change_tick": 9781,
+    "access_count": 1,
+    "access_history": [
+      9711
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9718,
+        "reason": "access_weight=486.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a8ddcc81",
+    "content": "ICMP ping",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9711,
+    "last_access_tick": 9711,
+    "last_state_change_tick": 9782,
+    "access_count": 1,
+    "access_history": [
+      9711
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9719,
+        "reason": "access_weight=486.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f1155ca7",
+    "content": "SQL foreign key",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9714,
+    "last_access_tick": 9714,
+    "last_state_change_tick": 9784,
+    "access_count": 1,
+    "access_history": [
+      9714
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9722,
+        "reason": "access_weight=486.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3700a285",
+    "content": "Python allocator",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9717,
+    "last_access_tick": 9717,
+    "last_state_change_tick": 9785,
+    "access_count": 1,
+    "access_history": [
+      9717
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9726,
+        "reason": "access_weight=486.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3326abb6",
+    "content": "Unix FIFO",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9718,
+    "last_access_tick": 9720,
+    "last_state_change_tick": 9786,
+    "access_count": 1,
+    "access_history": [
+      9720
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9727,
+        "reason": "access_weight=487.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d7d6eab1",
+    "content": "Unix child process",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9719,
+    "last_access_tick": 9720,
+    "last_state_change_tick": 9787,
+    "access_count": 1,
+    "access_history": [
+      9720
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9728,
+        "reason": "access_weight=487.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "72836a1d",
+    "content": "DHCP renew",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9720,
+    "last_access_tick": 9720,
+    "last_state_change_tick": 9788,
+    "access_count": 1,
+    "access_history": [
+      9720
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9729,
+        "reason": "access_weight=487.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0b766100",
+    "content": "HTTP cache",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9752,
+    "last_access_tick": 9765,
+    "last_state_change_tick": 9836,
+    "access_count": 2,
+    "access_history": [
+      9753,
+      9765
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9761,
+        "reason": "access_weight=488.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "15ee47a2",
+    "content": "SQL transaction",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9716,
+    "last_access_tick": 9723,
+    "last_state_change_tick": 9790,
+    "access_count": 1,
+    "access_history": [
+      9723
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9731,
+        "reason": "access_weight=487.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "68593d5c",
+    "content": "SQL query",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9723,
+    "last_access_tick": 9723,
+    "last_state_change_tick": 9793,
+    "access_count": 1,
+    "access_history": [
+      9723
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9732,
+        "reason": "access_weight=487.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0a9f84ff",
+    "content": "Python frame",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9722,
+    "last_access_tick": 9726,
+    "last_state_change_tick": 9794,
+    "access_count": 1,
+    "access_history": [
+      9726
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9734,
+        "reason": "access_weight=487.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "65df153d",
+    "content": "Python memory overhead",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9726,
+    "last_access_tick": 9726,
+    "last_state_change_tick": 9797,
+    "access_count": 1,
+    "access_history": [
+      9726
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9735,
+        "reason": "access_weight=487.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "58292e4b",
+    "content": "HTTP 404",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9728,
+    "last_access_tick": 9729,
+    "last_state_change_tick": 9800,
+    "access_count": 1,
+    "access_history": [
+      9729
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9738,
+        "reason": "access_weight=487.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8cd290e9",
+    "content": "Python tuple implementation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9730,
+    "last_access_tick": 9732,
+    "last_state_change_tick": 9801,
+    "access_count": 1,
+    "access_history": [
+      9732
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9739,
+        "reason": "access_weight=487.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "47986e86",
+    "content": "SQL cursor",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9731,
+    "last_access_tick": 9732,
+    "last_state_change_tick": 9802,
+    "access_count": 1,
+    "access_history": [
+      9732
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9740,
+        "reason": "access_weight=487.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "52877381",
+    "content": "Unix ioctl",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9733,
+    "last_access_tick": 9735,
+    "last_state_change_tick": 9805,
+    "access_count": 1,
+    "access_history": [
+      9735
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9742,
+        "reason": "access_weight=487.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "68531a4f",
+    "content": "HTTP session",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9738,
+    "last_access_tick": 9738,
+    "last_state_change_tick": 9806,
+    "access_count": 1,
+    "access_history": [
+      9738
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9747,
+        "reason": "access_weight=487.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d801aeaf",
+    "content": "HTTP Basic auth",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9740,
+    "last_access_tick": 9744,
+    "last_state_change_tick": 9807,
+    "access_count": 2,
+    "access_history": [
+      9741,
+      9744
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9752,
+        "reason": "access_weight=976.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6478c1a7",
+    "content": "HTTP 404",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9743,
+    "last_access_tick": 9744,
+    "last_state_change_tick": 9812,
+    "access_count": 1,
+    "access_history": [
+      9744
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9753,
+        "reason": "access_weight=488.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "831ba431",
+    "content": "HTTP chunked",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9744,
+    "last_access_tick": 9744,
+    "last_state_change_tick": 9813,
+    "access_count": 1,
+    "access_history": [
+      9744
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9754,
+        "reason": "access_weight=488.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ceb98761",
+    "content": "SQL index hash",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9745,
+    "last_access_tick": 9747,
+    "last_state_change_tick": 9816,
+    "access_count": 1,
+    "access_history": [
+      9747
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9755,
+        "reason": "access_weight=488.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6428aaea",
+    "content": "SQL outer join",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9746,
+    "last_access_tick": 9747,
+    "last_state_change_tick": 9819,
+    "access_count": 1,
+    "access_history": [
+      9747
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9756,
+        "reason": "access_weight=488.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8dc4c38f",
+    "content": "SQL ACID",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9747,
+    "last_access_tick": 9747,
+    "last_state_change_tick": 9820,
+    "access_count": 1,
+    "access_history": [
+      9747
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9757,
+        "reason": "access_weight=488.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e2f3018d",
+    "content": "Unix parent process",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9749,
+    "last_access_tick": 9750,
+    "last_state_change_tick": 9821,
+    "access_count": 1,
+    "access_history": [
+      9750
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9759,
+        "reason": "access_weight=488.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5c1f130f",
+    "content": "Router forwarding",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9750,
+    "last_access_tick": 9750,
+    "last_state_change_tick": 9823,
+    "access_count": 1,
+    "access_history": [
+      9750
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9760,
+        "reason": "access_weight=488.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "71a6d663",
+    "content": "DNS MX",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9732,
+    "last_access_tick": 9753,
+    "last_state_change_tick": 9824,
+    "access_count": 2,
+    "access_history": [
+      9732,
+      9753
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9741,
+        "reason": "access_weight=487.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "31cb3748",
+    "content": "DNS CNAME",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9753,
+    "last_access_tick": 9753,
+    "last_state_change_tick": 9825,
+    "access_count": 1,
+    "access_history": [
+      9753
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9762,
+        "reason": "access_weight=488.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7cf67a36",
+    "content": "HTTP 500",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9783,
+    "last_access_tick": 9783,
+    "last_state_change_tick": 9855,
+    "access_count": 1,
+    "access_history": [
+      9783
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9790,
+        "reason": "access_weight=490.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "382f4293",
+    "content": "Python object",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9734,
+    "last_access_tick": 9756,
+    "last_state_change_tick": 9826,
+    "access_count": 2,
+    "access_history": [
+      9735,
+      9756
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9743,
+        "reason": "access_weight=487.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "12558e63",
+    "content": "Python closure",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9751,
+    "last_access_tick": 9759,
+    "last_state_change_tick": 9829,
+    "access_count": 2,
+    "access_history": [
+      9756,
+      9759
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9766,
+        "reason": "access_weight=977.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0855ae8e",
+    "content": "Python globals",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9759,
+    "last_access_tick": 9759,
+    "last_state_change_tick": 9830,
+    "access_count": 1,
+    "access_history": [
+      9759
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9768,
+        "reason": "access_weight=488.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f2ebdb61",
+    "content": "SQL window function",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9761,
+    "last_access_tick": 9762,
+    "last_state_change_tick": 9832,
+    "access_count": 1,
+    "access_history": [
+      9762
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9770,
+        "reason": "access_weight=489.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bfaac4e6",
+    "content": "SQL sequence",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9762,
+    "last_access_tick": 9762,
+    "last_state_change_tick": 9833,
+    "access_count": 1,
+    "access_history": [
+      9762
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9771,
+        "reason": "access_weight=489.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0b766100",
+    "content": "HTTP cache",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9752,
+    "last_access_tick": 9765,
+    "last_state_change_tick": 9836,
+    "access_count": 2,
+    "access_history": [
+      9753,
+      9765
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9761,
+        "reason": "access_weight=488.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "55022724",
+    "content": "HTTP Bearer token",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9758,
+    "last_access_tick": 9765,
+    "last_state_change_tick": 9837,
+    "access_count": 1,
+    "access_history": [
+      9765
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9774,
+        "reason": "access_weight=489.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2a560989",
+    "content": "HTTP compression",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9765,
+    "last_access_tick": 9765,
+    "last_state_change_tick": 9838,
+    "access_count": 1,
+    "access_history": [
+      9765
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9775,
+        "reason": "access_weight=489.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0c7595af",
+    "content": "HTTP cache",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9767,
+    "last_access_tick": 9768,
+    "last_state_change_tick": 9841,
+    "access_count": 1,
+    "access_history": [
+      9768
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9776,
+        "reason": "access_weight=489.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "19573693",
+    "content": "IP packet",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9768,
+    "last_access_tick": 9768,
+    "last_state_change_tick": 9842,
+    "access_count": 1,
+    "access_history": [
+      9768
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9777,
+        "reason": "access_weight=489.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "318031db",
+    "content": "Unix character device",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9769,
+    "last_access_tick": 9771,
+    "last_state_change_tick": 9843,
+    "access_count": 1,
+    "access_history": [
+      9771
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9780,
+        "reason": "access_weight=489.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "53cfacc5",
+    "content": "SQL DEFAULT value",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9748,
+    "last_access_tick": 9774,
+    "last_state_change_tick": 9845,
+    "access_count": 3,
+    "access_history": [
+      9750,
+      9762,
+      9774
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9758,
+        "reason": "access_weight=488.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e0ae0572",
+    "content": "SQL CHECK constraint",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9773,
+    "last_access_tick": 9774,
+    "last_state_change_tick": 9848,
+    "access_count": 1,
+    "access_history": [
+      9774
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9781,
+        "reason": "access_weight=489.70>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6e41507f",
+    "content": "Python memory overhead",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9772,
+    "last_access_tick": 9777,
+    "last_state_change_tick": 9849,
+    "access_count": 1,
+    "access_history": [
+      9777
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9784,
+        "reason": "access_weight=489.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "858d26a6",
+    "content": "Python frame",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9776,
+    "last_access_tick": 9777,
+    "last_state_change_tick": 9850,
+    "access_count": 1,
+    "access_history": [
+      9777
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9785,
+        "reason": "access_weight=489.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "26845b1b",
+    "content": "Python import system",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9777,
+    "last_access_tick": 9777,
+    "last_state_change_tick": 9851,
+    "access_count": 1,
+    "access_history": [
+      9777
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9786,
+        "reason": "access_weight=489.85>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "63674585",
+    "content": "Unix exec",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9771,
+    "last_access_tick": 9780,
+    "last_state_change_tick": 9852,
+    "access_count": 2,
+    "access_history": [
+      9771,
+      9780
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9787,
+        "reason": "access_weight=979.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7cf67a36",
+    "content": "HTTP 500",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9783,
+    "last_access_tick": 9783,
+    "last_state_change_tick": 9855,
+    "access_count": 1,
+    "access_history": [
+      9783
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9790,
+        "reason": "access_weight=490.15>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2b97745f",
+    "content": "Unix inode table",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9766,
+    "last_access_tick": 9786,
+    "last_state_change_tick": 9856,
+    "access_count": 4,
+    "access_history": [
+      9768,
+      9771,
+      9780,
+      9786
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9779,
+        "reason": "access_weight=978.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bbc5f36d",
+    "content": "SQL stored procedure",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9782,
+    "last_access_tick": 9786,
+    "last_state_change_tick": 9857,
+    "access_count": 1,
+    "access_history": [
+      9786
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9793,
+        "reason": "access_weight=490.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ed48ad92",
+    "content": "SQL CREATE TABLE",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9786,
+    "last_access_tick": 9786,
+    "last_state_change_tick": 9858,
+    "access_count": 1,
+    "access_history": [
+      9786
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9794,
+        "reason": "access_weight=490.30>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9bc35271",
+    "content": "HTTP chunked",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9789,
+    "last_access_tick": 9789,
+    "last_state_change_tick": 9860,
+    "access_count": 1,
+    "access_history": [
+      9789
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9797,
+        "reason": "access_weight=490.45>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "db926158",
+    "content": "HTTP Basic auth",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9792,
+    "last_access_tick": 9792,
+    "last_state_change_tick": 9861,
+    "access_count": 1,
+    "access_history": [
+      9792
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9802,
+        "reason": "access_weight=490.60>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "72a87d5f",
+    "content": "Unix socket",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9780,
+    "last_access_tick": 9795,
+    "last_state_change_tick": 9862,
+    "access_count": 2,
+    "access_history": [
+      9780,
+      9795
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9788,
+        "reason": "access_weight=490.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2646be10",
+    "content": "SQL FETCH",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9823,
+    "last_access_tick": 9828,
+    "last_state_change_tick": 9890,
+    "access_count": 1,
+    "access_history": [
+      9828
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9837,
+        "reason": "access_weight=492.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a82b4287",
+    "content": "Unix pipe buffer",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9798,
+    "last_access_tick": 9798,
+    "last_state_change_tick": 9864,
+    "access_count": 1,
+    "access_history": [
+      9798
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9807,
+        "reason": "access_weight=490.90>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "edff7c12",
+    "content": "Python unicode",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9804,
+    "last_access_tick": 9804,
+    "last_state_change_tick": 9869,
+    "access_count": 1,
+    "access_history": [
+      9804
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9813,
+        "reason": "access_weight=491.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "94b4c1f3",
+    "content": "Python GC algorithm",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9756,
+    "last_access_tick": 9807,
+    "last_state_change_tick": 9870,
+    "access_count": 4,
+    "access_history": [
+      9756,
+      9759,
+      9801,
+      9807
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9767,
+        "reason": "access_weight=977.75>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c22e87f9",
+    "content": "Python GC algorithm",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9807,
+    "last_access_tick": 9807,
+    "last_state_change_tick": 9871,
+    "access_count": 1,
+    "access_history": [
+      9807
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9816,
+        "reason": "access_weight=491.35>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3837c804",
+    "content": "HTTP 500",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9778,
+    "last_access_tick": 9810,
+    "last_state_change_tick": 9872,
+    "access_count": 4,
+    "access_history": [
+      9783,
+      9789,
+      9792,
+      9810
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9800,
+        "reason": "access_weight=1471.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ca32ea69",
+    "content": "HTTP 301",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9779,
+    "last_access_tick": 9810,
+    "last_state_change_tick": 9873,
+    "access_count": 4,
+    "access_history": [
+      9783,
+      9789,
+      9792,
+      9810
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9801,
+        "reason": "access_weight=1471.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5e76c1c4",
+    "content": "Python GC algorithm",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9801,
+    "last_access_tick": 9813,
+    "last_state_change_tick": 9874,
+    "access_count": 4,
+    "access_history": [
+      9801,
+      9804,
+      9807,
+      9813
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9820,
+        "reason": "access_weight=1965.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "311378c4",
+    "content": "Python bytecode",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9813,
+    "last_access_tick": 9813,
+    "last_state_change_tick": 9875,
+    "access_count": 1,
+    "access_history": [
+      9813
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9821,
+        "reason": "access_weight=491.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c5ab4131",
+    "content": "HTTP method GET",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9812,
+    "last_access_tick": 9816,
+    "last_state_change_tick": 9876,
+    "access_count": 1,
+    "access_history": [
+      9816
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9824,
+        "reason": "access_weight=491.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0409304d",
+    "content": "Unix userspace",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9794,
+    "last_access_tick": 9819,
+    "last_state_change_tick": 9877,
+    "access_count": 3,
+    "access_history": [
+      9795,
+      9798,
+      9819
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9805,
+        "reason": "access_weight=981.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3f79a849",
+    "content": "Unix socket",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9795,
+    "last_access_tick": 9819,
+    "last_state_change_tick": 9878,
+    "access_count": 3,
+    "access_history": [
+      9795,
+      9798,
+      9819
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9806,
+        "reason": "access_weight=981.65>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c0dc8beb",
+    "content": "Unix umount",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9819,
+    "last_access_tick": 9819,
+    "last_state_change_tick": 9879,
+    "access_count": 1,
+    "access_history": [
+      9819
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9826,
+        "reason": "access_weight=491.95>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9ba665ef",
+    "content": "SQL ALTER TABLE",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9815,
+    "last_access_tick": 9822,
+    "last_state_change_tick": 9880,
+    "access_count": 1,
+    "access_history": [
+      9822
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9829,
+        "reason": "access_weight=492.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7d089d6f",
+    "content": "SQL view",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9817,
+    "last_access_tick": 9822,
+    "last_state_change_tick": 9883,
+    "access_count": 1,
+    "access_history": [
+      9822
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9830,
+        "reason": "access_weight=492.10>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e7058a48",
+    "content": "Python generation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9818,
+    "last_access_tick": 9825,
+    "last_state_change_tick": 9887,
+    "access_count": 1,
+    "access_history": [
+      9825
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9832,
+        "reason": "access_weight=492.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "36d2f4b5",
+    "content": "Python list implementation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9825,
+    "last_access_tick": 9825,
+    "last_state_change_tick": 9888,
+    "access_count": 1,
+    "access_history": [
+      9825
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9833,
+        "reason": "access_weight=492.25>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2646be10",
+    "content": "SQL FETCH",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9823,
+    "last_access_tick": 9828,
+    "last_state_change_tick": 9890,
+    "access_count": 1,
+    "access_history": [
+      9828
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9837,
+        "reason": "access_weight=492.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "37b2c096",
+    "content": "SQL lock",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9828,
+    "last_access_tick": 9828,
+    "last_state_change_tick": 9891,
+    "access_count": 1,
+    "access_history": [
+      9828
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9838,
+        "reason": "access_weight=492.40>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c4a21c15",
+    "content": "HTTP response",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9810,
+    "last_access_tick": 9831,
+    "last_state_change_tick": 9894,
+    "access_count": 2,
+    "access_history": [
+      9810,
+      9831
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9819,
+        "reason": "access_weight=491.50>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3fdf3b83",
+    "content": "HTTP chunked",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9811,
+    "last_access_tick": 9831,
+    "last_state_change_tick": 9895,
+    "access_count": 2,
+    "access_history": [
+      9816,
+      9831
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9823,
+        "reason": "access_weight=491.80>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "32089cfa",
+    "content": "HTTP response",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9831,
+    "last_access_tick": 9831,
+    "last_state_change_tick": 9898,
+    "access_count": 1,
+    "access_history": [
+      9831
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9841,
+        "reason": "access_weight=492.55>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "09314a58",
+    "content": "Python unicode",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "archive",
+    "created_tick": 9862,
+    "last_access_tick": 9864,
+    "last_state_change_tick": 13200,
+    "access_count": 1,
+    "access_history": [
+      9864
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 9872,
+        "reason": "access_weight=494.20>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

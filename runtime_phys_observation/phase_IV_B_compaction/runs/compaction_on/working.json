@@ -1,0 +1,245 @@
+[
+  {
+    "id": "9bc1197e",
+    "content": "Unix inode",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9891,
+    "last_access_tick": 9900,
+    "last_state_change_tick": 9891,
+    "access_count": 2,
+    "access_history": [
+      9891,
+      9900
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "850c8197",
+    "content": "SQL transaction",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9892,
+    "last_access_tick": 9892,
+    "last_state_change_tick": 9892,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ed634dec",
+    "content": "Switch port",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9893,
+    "last_access_tick": 9894,
+    "last_state_change_tick": 9893,
+    "access_count": 1,
+    "access_history": [
+      9894
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "62127f3c",
+    "content": "ICMP ping",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "network",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9894,
+    "last_access_tick": 9894,
+    "last_state_change_tick": 9894,
+    "access_count": 1,
+    "access_history": [
+      9894
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "40177a34",
+    "content": "Python set implementation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9895,
+    "last_access_tick": 9897,
+    "last_state_change_tick": 9895,
+    "access_count": 1,
+    "access_history": [
+      9897
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "512e244c",
+    "content": "Python frame",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9896,
+    "last_access_tick": 9896,
+    "last_state_change_tick": 9896,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5cc25603",
+    "content": "Python dict implementation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "python",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9897,
+    "last_access_tick": 9897,
+    "last_state_change_tick": 9897,
+    "access_count": 1,
+    "access_history": [
+      9897
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5ca7562a",
+    "content": "SQL isolation",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "database",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9898,
+    "last_access_tick": 9898,
+    "last_state_change_tick": 9898,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7410277e",
+    "content": "HTTP Basic auth",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "http",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9899,
+    "last_access_tick": 9899,
+    "last_state_change_tick": 9899,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5c1be325",
+    "content": "Unix controlling terminal",
+    "type": "general",
+    "importance": 0.6,
+    "tags": [
+      "unix",
+      "compaction_test"
+    ],
+    "state": "working",
+    "created_tick": 9900,
+    "last_access_tick": 9900,
+    "last_state_change_tick": 9900,
+    "access_count": 1,
+    "access_history": [
+      9900
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

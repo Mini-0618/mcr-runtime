@@ -1,0 +1,59 @@
+{
+  "episodic": [
+    {
+      "id": "e_001",
+      "content": "User asked about MCR retrieval physics",
+      "tick": 1,
+      "access_count": 5
+    },
+    {
+      "id": "e_002",
+      "content": "Benchmark run started",
+      "tick": 10,
+      "access_count": 3
+    },
+    {
+      "id": "e_003",
+      "content": "GC cleanup triggered",
+      "tick": 25,
+      "access_count": 1
+    }
+  ],
+  "semantic": [
+    {
+      "id": "s_001",
+      "content": "MCR_retrieval_physics",
+      "tick": 50,
+      "access_count": 12,
+      "confidence": 0.85
+    },
+    {
+      "id": "s_002",
+      "content": "benchmark_seed_42",
+      "tick": 100,
+      "access_count": 8,
+      "confidence": 0.72
+    }
+  ],
+  "bridges": [
+    {
+      "id": "b_001",
+      "episodic": [
+        "e_001"
+      ],
+      "semantic": "s_001",
+      "coherence": 0.9,
+      "status": "active"
+    },
+    {
+      "id": "b_002",
+      "episodic": [
+        "e_002",
+        "e_003"
+      ],
+      "semantic": "s_002",
+      "coherence": 0.7,
+      "status": "dormant"
+    }
+  ]
+}

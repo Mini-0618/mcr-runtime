@@ -1,0 +1,30 @@
+{
+  "tick_id": "39f7ea26",
+  "cycle": 29,
+  "timestamp": "2026-05-12T00:46:22.210020",
+  "observed_events": [
+    "OBSERVATION_ADDED"
+  ],
+  "event_count": 1,
+  "activated_memories": [
+    {
+      "id": "dcd17cd6",
+      "content": "想起高中数学老师说过的一句话",
+      "score": 0.29000000000000004
+    }
+  ],
+  "memory_activation_count": 1,
+  "state_diff": {
+    "goal_changed": false,
+    "plan_changed": false,
+    "observation_delta": 1,
+    "goal_stability_delta": 0.0
+  },
+  "drift_report": {
+    "overall_score": 0.0,
+    "detected_types": []
+  },
+  "plan_summary": "Continuing plan: MCR 认知稳定性实验 - 100 tick 混沌演化",
+  "compression_actions": [],
+  "reasoning_summary": "Activated 1 relevant memories; Processed 1 events"
+}

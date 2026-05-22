@@ -1,0 +1,223 @@
+{
+  "phase": "PHASE_VI_PATCH_RUN",
+  "lkq": "637a11c907e8a889b909513522dfab8c",
+  "total_ticks": 10000,
+  "elapsed_s": 6.3389809131622314,
+  "windows_run": 2,
+  "stopped_early": true,
+  "stop_reason": "Window 2: OVERHEAD 35.17x > 20.0",
+  "baseline": {
+    "working": 10,
+    "episodic": 0,
+    "semantic": 0,
+    "archive": 0,
+    "total": 10,
+    "elapsed_s": 0.12410282399650896
+  },
+  "windows": [
+    {
+      "window": 1,
+      "tick_start": 1,
+      "tick_end": 5000,
+      "elapsed_s": 1.9734663359995466,
+      "W": 10,
+      "E": 40,
+      "S": 0,
+      "A": 166,
+      "total": 216,
+      "compaction_ops": 1,
+      "summaries_this_window": 1,
+      "total_summaries": 9,
+      "avg_latency_ms": 0.39392762295901773,
+      "p99_latency_ms": 1.0826500001712702,
+      "entropy": 2.4496026007151777,
+      "overhead_ratio": 15.901864860505194,
+      "coaccess_edges": 213,
+      "snapshots": [
+        {
+          "tick": 1000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 75,
+          "entropy": 2.4245122117467366,
+          "coaccess_edges": 226
+        },
+        {
+          "tick": 2000,
+          "W": 10,
+          "E": 36,
+          "S": 1,
+          "A": 114,
+          "entropy": 2.446457816173132,
+          "coaccess_edges": 208
+        },
+        {
+          "tick": 3000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 110,
+          "entropy": 2.361257932153811,
+          "coaccess_edges": 192
+        },
+        {
+          "tick": 4000,
+          "W": 10,
+          "E": 37,
+          "S": 1,
+          "A": 142,
+          "entropy": 2.356019730557144,
+          "coaccess_edges": 184
+        },
+        {
+          "tick": 5000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 166,
+          "entropy": 2.4496026007151777,
+          "coaccess_edges": 213
+        }
+      ],
+      "entropy_timeline": [
+        2.4245122117467366,
+        2.446457816173132,
+        2.361257932153811,
+        2.356019730557144,
+        2.4496026007151777
+      ],
+      "edge_timeline": [
+        226,
+        208,
+        192,
+        184,
+        213
+      ]
+    },
+    {
+      "window": 2,
+      "tick_start": 5001,
+      "tick_end": 10000,
+      "elapsed_s": 4.364382154002669,
+      "W": 10,
+      "E": 40,
+      "S": 0,
+      "A": 62,
+      "total": 112,
+      "compaction_ops": 0,
+      "summaries_this_window": 0,
+      "total_summaries": 14,
+      "avg_latency_ms": 0.8714107844294631,
+      "p99_latency_ms": 2.4303000027430244,
+      "entropy": 2.3904136914796545,
+      "overhead_ratio": 35.16746850277509,
+      "coaccess_edges": 230,
+      "snapshots": [
+        {
+          "tick": 6000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 161,
+          "entropy": 2.466928536023687,
+          "coaccess_edges": 198
+        },
+        {
+          "tick": 7000,
+          "W": 10,
+          "E": 40,
+          "S": 1,
+          "A": 224,
+          "entropy": 2.4822155007953133,
+          "coaccess_edges": 236
+        },
+        {
+          "tick": 8000,
+          "W": 10,
+          "E": 40,
+          "S": 0,
+          "A": 241,
+          "entropy": 2.355085065573343,
+          "coaccess_edges": 245
+        },
+        {
+          "tick": 9000,
+          "W": 10,
+          "E": 35,
+          "S": 1,
+          "A": 281,
+          "entropy": 2.358217070502825,
+          "coaccess_edges": 205
+        },
+        {
+          "tick": 10000,
+          "W": 10,
+          "E": 40,
+          "S": 1,
+          "A": 272,
+          "entropy": 2.3904136914796545,
+          "coaccess_edges": 230
+        }
+      ],
+      "entropy_timeline": [
+        2.466928536023687,
+        2.4822155007953133,
+        2.355085065573343,
+        2.358217070502825,
+        2.3904136914796545
+      ],
+      "edge_timeline": [
+        198,
+        236,
+        245,
+        205,
+        230
+      ]
+    }
+  ],
+  "thresholds": {
+    "MAX_OVERHEAD_RATIO": 20.0,
+    "MAX_ARCHIVE_OSCILLATION": 5.0,
+    "MIN_SEMANTIC_SUMMARIES": 1,
+    "EDGE_CAP": 500
+  },
+  "verification": {
+    "T1_compaction_complexity": {
+      "overhead_trajectory": [
+        15.901864860505194,
+        35.16746850277509
+      ],
+      "growth_ratio": 2.2115310884146098,
+      "pass": true
+    },
+    "T2_archive_steady_state": {
+      "archive_values": [
+        166,
+        62
+      ],
+      "oscillation_ratio": 2.6774193548387095,
+      "pass": true
+    },
+    "T3_semantic_promotion": {
+      "total_summaries": 14,
+      "pass": true
+    },
+    "T4_coaccess_edge_cap": {
+      "edge_counts": [
+        213,
+        230
+      ],
+      "max_edges": 230,
+      "cap": 500,
+      "pass": true
+    },
+    "overall_pass": true,
+    "verdicts": {
+      "T1_compaction_complexity": true,
+      "T2_archive_steady_state": true,
+      "T3_semantic_promotion": true,
+      "T4_coaccess_edge_cap": true
+    }
+  }
+}

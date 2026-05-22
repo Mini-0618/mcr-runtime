@@ -1,0 +1,114 @@
+[
+  {
+    "id": "986c3cab",
+    "content": "network_protocol queue depth 19987 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "network_protocol",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 19987,
+    "last_access_tick": 19987,
+    "last_state_change_tick": 19997,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 19997,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 19997
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "68837548",
+    "content": "file_system operation 19989 completed in 67ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 19989,
+    "last_access_tick": 19989,
+    "last_state_change_tick": 19998,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 19998,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 19998
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f379c0d4",
+    "content": "process_scheduler operation 19990 completed in 113ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "process_scheduler",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 19990,
+    "last_access_tick": 19990,
+    "last_state_change_tick": 19999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 19999,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 19999
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8541aad8",
+    "content": "file_system operation 19991 completed in 499ms",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "file_system",
+      "phase_v"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 19991,
+    "last_access_tick": 19991,
+    "last_state_change_tick": 20000,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 20000,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 20000
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

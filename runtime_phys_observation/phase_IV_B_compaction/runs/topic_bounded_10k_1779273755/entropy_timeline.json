@@ -1,0 +1,314 @@
+{
+  "entropy_timeline": [
+    {
+      "tick": 200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 1800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 2000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 2200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 2400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 2600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 2600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 2800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 2800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 3000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 3600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 4200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 4400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 4600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 4800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 5000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 5200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 5400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 5600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 6800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7600,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 7800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 8000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 8400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 8400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 8400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 8400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 8800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 9000,
+      "entropy": 0.0
+    },
+    {
+      "tick": 9200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 9200,
+      "entropy": 0.0
+    },
+    {
+      "tick": 9400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 9400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 9400,
+      "entropy": 0.0
+    },
+    {
+      "tick": 9800,
+      "entropy": 0.0
+    },
+    {
+      "tick": 10000,
+      "entropy": 0.0
+    }
+  ],
+  "stats": {
+    "delta": 0.0,
+    "bounded": true,
+    "min": 0.0,
+    "max": 0.0
+  }
+}

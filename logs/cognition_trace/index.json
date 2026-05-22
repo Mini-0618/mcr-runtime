@@ -1,0 +1,1621 @@
+{
+  "ticks": [
+    {
+      "tick_id": "d2d2941f",
+      "cycle": 2,
+      "timestamp": "2026-05-12T00:39:25.704787",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d2d2941f.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "947ae90d",
+      "cycle": 4,
+      "timestamp": "2026-05-12T00:41:47.409040",
+      "path": "/home/minimak/mcr/cognition_trace/tick_947ae90d.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "8b89b58c",
+      "cycle": 5,
+      "timestamp": "2026-05-12T00:46:22.191405",
+      "path": "/home/minimak/mcr/cognition_trace/tick_8b89b58c.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "62f4cdb3",
+      "cycle": 6,
+      "timestamp": "2026-05-12T00:46:22.191850",
+      "path": "/home/minimak/mcr/cognition_trace/tick_62f4cdb3.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "16c46ce2",
+      "cycle": 7,
+      "timestamp": "2026-05-12T00:46:22.192443",
+      "path": "/home/minimak/mcr/cognition_trace/tick_16c46ce2.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "d489729c",
+      "cycle": 8,
+      "timestamp": "2026-05-12T00:46:22.192849",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d489729c.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "8acb8737",
+      "cycle": 9,
+      "timestamp": "2026-05-12T00:46:22.193677",
+      "path": "/home/minimak/mcr/cognition_trace/tick_8acb8737.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "41fc9fb4",
+      "cycle": 10,
+      "timestamp": "2026-05-12T00:46:22.194233",
+      "path": "/home/minimak/mcr/cognition_trace/tick_41fc9fb4.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "847b14c6",
+      "cycle": 11,
+      "timestamp": "2026-05-12T00:46:22.194775",
+      "path": "/home/minimak/mcr/cognition_trace/tick_847b14c6.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "08ba16f2",
+      "cycle": 12,
+      "timestamp": "2026-05-12T00:46:22.195759",
+      "path": "/home/minimak/mcr/cognition_trace/tick_08ba16f2.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "2ad1e484",
+      "cycle": 13,
+      "timestamp": "2026-05-12T00:46:22.196331",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2ad1e484.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "eb099528",
+      "cycle": 14,
+      "timestamp": "2026-05-12T00:46:22.196948",
+      "path": "/home/minimak/mcr/cognition_trace/tick_eb099528.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "756e54d3",
+      "cycle": 15,
+      "timestamp": "2026-05-12T00:46:22.197525",
+      "path": "/home/minimak/mcr/cognition_trace/tick_756e54d3.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "63fbb313",
+      "cycle": 16,
+      "timestamp": "2026-05-12T00:46:22.198068",
+      "path": "/home/minimak/mcr/cognition_trace/tick_63fbb313.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "f02d47bd",
+      "cycle": 17,
+      "timestamp": "2026-05-12T00:46:22.198622",
+      "path": "/home/minimak/mcr/cognition_trace/tick_f02d47bd.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "1252bc40",
+      "cycle": 18,
+      "timestamp": "2026-05-12T00:46:22.199269",
+      "path": "/home/minimak/mcr/cognition_trace/tick_1252bc40.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "12ca1483",
+      "cycle": 19,
+      "timestamp": "2026-05-12T00:46:22.199867",
+      "path": "/home/minimak/mcr/cognition_trace/tick_12ca1483.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "7bc8d71d",
+      "cycle": 20,
+      "timestamp": "2026-05-12T00:46:22.200543",
+      "path": "/home/minimak/mcr/cognition_trace/tick_7bc8d71d.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "6b8d0f9f",
+      "cycle": 21,
+      "timestamp": "2026-05-12T00:46:22.201396",
+      "path": "/home/minimak/mcr/cognition_trace/tick_6b8d0f9f.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "1c329132",
+      "cycle": 22,
+      "timestamp": "2026-05-12T00:46:22.202058",
+      "path": "/home/minimak/mcr/cognition_trace/tick_1c329132.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "5cab96c2",
+      "cycle": 23,
+      "timestamp": "2026-05-12T00:46:22.202725",
+      "path": "/home/minimak/mcr/cognition_trace/tick_5cab96c2.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "385fe648",
+      "cycle": 24,
+      "timestamp": "2026-05-12T00:46:22.203463",
+      "path": "/home/minimak/mcr/cognition_trace/tick_385fe648.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "b63afe84",
+      "cycle": 25,
+      "timestamp": "2026-05-12T00:46:22.204475",
+      "path": "/home/minimak/mcr/cognition_trace/tick_b63afe84.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "88dc21fe",
+      "cycle": 26,
+      "timestamp": "2026-05-12T00:46:22.206162",
+      "path": "/home/minimak/mcr/cognition_trace/tick_88dc21fe.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "d0d41255",
+      "cycle": 27,
+      "timestamp": "2026-05-12T00:46:22.207382",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d0d41255.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "c2ba0818",
+      "cycle": 28,
+      "timestamp": "2026-05-12T00:46:22.209070",
+      "path": "/home/minimak/mcr/cognition_trace/tick_c2ba0818.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "39f7ea26",
+      "cycle": 29,
+      "timestamp": "2026-05-12T00:46:22.210107",
+      "path": "/home/minimak/mcr/cognition_trace/tick_39f7ea26.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "c4225dc9",
+      "cycle": 30,
+      "timestamp": "2026-05-12T00:46:22.210970",
+      "path": "/home/minimak/mcr/cognition_trace/tick_c4225dc9.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "919b822e",
+      "cycle": 31,
+      "timestamp": "2026-05-12T00:46:22.211937",
+      "path": "/home/minimak/mcr/cognition_trace/tick_919b822e.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "fece2649",
+      "cycle": 32,
+      "timestamp": "2026-05-12T00:46:22.213105",
+      "path": "/home/minimak/mcr/cognition_trace/tick_fece2649.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "3e90fa4f",
+      "cycle": 33,
+      "timestamp": "2026-05-12T00:46:22.214226",
+      "path": "/home/minimak/mcr/cognition_trace/tick_3e90fa4f.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "d5271516",
+      "cycle": 34,
+      "timestamp": "2026-05-12T00:46:22.215519",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d5271516.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "cca8a27d",
+      "cycle": 35,
+      "timestamp": "2026-05-12T00:46:22.216743",
+      "path": "/home/minimak/mcr/cognition_trace/tick_cca8a27d.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "74422e2c",
+      "cycle": 36,
+      "timestamp": "2026-05-12T00:46:22.217726",
+      "path": "/home/minimak/mcr/cognition_trace/tick_74422e2c.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "8bbefa6e",
+      "cycle": 37,
+      "timestamp": "2026-05-12T00:46:22.219046",
+      "path": "/home/minimak/mcr/cognition_trace/tick_8bbefa6e.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "0ffac2c5",
+      "cycle": 38,
+      "timestamp": "2026-05-12T00:46:22.220044",
+      "path": "/home/minimak/mcr/cognition_trace/tick_0ffac2c5.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "31337e8a",
+      "cycle": 39,
+      "timestamp": "2026-05-12T00:46:22.221213",
+      "path": "/home/minimak/mcr/cognition_trace/tick_31337e8a.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "9db01e1a",
+      "cycle": 40,
+      "timestamp": "2026-05-12T00:46:22.222312",
+      "path": "/home/minimak/mcr/cognition_trace/tick_9db01e1a.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "bde9e568",
+      "cycle": 41,
+      "timestamp": "2026-05-12T00:46:22.223420",
+      "path": "/home/minimak/mcr/cognition_trace/tick_bde9e568.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "bae81265",
+      "cycle": 42,
+      "timestamp": "2026-05-12T00:46:22.224457",
+      "path": "/home/minimak/mcr/cognition_trace/tick_bae81265.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "38282ca1",
+      "cycle": 43,
+      "timestamp": "2026-05-12T00:46:22.225565",
+      "path": "/home/minimak/mcr/cognition_trace/tick_38282ca1.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "45189bbd",
+      "cycle": 44,
+      "timestamp": "2026-05-12T00:46:22.226836",
+      "path": "/home/minimak/mcr/cognition_trace/tick_45189bbd.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "7273fc1f",
+      "cycle": 45,
+      "timestamp": "2026-05-12T00:46:22.227980",
+      "path": "/home/minimak/mcr/cognition_trace/tick_7273fc1f.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "5f7453e8",
+      "cycle": 46,
+      "timestamp": "2026-05-12T00:46:22.229114",
+      "path": "/home/minimak/mcr/cognition_trace/tick_5f7453e8.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "ddf14069",
+      "cycle": 47,
+      "timestamp": "2026-05-12T00:46:22.230701",
+      "path": "/home/minimak/mcr/cognition_trace/tick_ddf14069.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "90b04378",
+      "cycle": 48,
+      "timestamp": "2026-05-12T00:46:22.231900",
+      "path": "/home/minimak/mcr/cognition_trace/tick_90b04378.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "9533877b",
+      "cycle": 49,
+      "timestamp": "2026-05-12T00:46:22.233091",
+      "path": "/home/minimak/mcr/cognition_trace/tick_9533877b.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "edfc1021",
+      "cycle": 50,
+      "timestamp": "2026-05-12T00:46:22.234317",
+      "path": "/home/minimak/mcr/cognition_trace/tick_edfc1021.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "2110f034",
+      "cycle": 51,
+      "timestamp": "2026-05-12T00:46:22.235635",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2110f034.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "a87af626",
+      "cycle": 52,
+      "timestamp": "2026-05-12T00:46:22.236885",
+      "path": "/home/minimak/mcr/cognition_trace/tick_a87af626.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "2c3c55d7",
+      "cycle": 53,
+      "timestamp": "2026-05-12T00:46:22.238161",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2c3c55d7.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "b30eb358",
+      "cycle": 54,
+      "timestamp": "2026-05-12T00:46:22.239669",
+      "path": "/home/minimak/mcr/cognition_trace/tick_b30eb358.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "4be2fa91",
+      "cycle": 55,
+      "timestamp": "2026-05-12T00:46:22.241059",
+      "path": "/home/minimak/mcr/cognition_trace/tick_4be2fa91.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "813dad0d",
+      "cycle": 56,
+      "timestamp": "2026-05-12T00:46:22.242332",
+      "path": "/home/minimak/mcr/cognition_trace/tick_813dad0d.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "0e111e95",
+      "cycle": 57,
+      "timestamp": "2026-05-12T00:46:22.243582",
+      "path": "/home/minimak/mcr/cognition_trace/tick_0e111e95.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "79d97258",
+      "cycle": 58,
+      "timestamp": "2026-05-12T00:46:22.244923",
+      "path": "/home/minimak/mcr/cognition_trace/tick_79d97258.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "c7ccf9fe",
+      "cycle": 59,
+      "timestamp": "2026-05-12T00:46:22.246271",
+      "path": "/home/minimak/mcr/cognition_trace/tick_c7ccf9fe.json",
+      "goal_changed": true,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "048011c6",
+      "cycle": 60,
+      "timestamp": "2026-05-12T00:46:22.247730",
+      "path": "/home/minimak/mcr/cognition_trace/tick_048011c6.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "047caafa",
+      "cycle": 61,
+      "timestamp": "2026-05-12T00:46:22.249309",
+      "path": "/home/minimak/mcr/cognition_trace/tick_047caafa.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "ee87eb5f",
+      "cycle": 62,
+      "timestamp": "2026-05-12T00:46:22.250775",
+      "path": "/home/minimak/mcr/cognition_trace/tick_ee87eb5f.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "9942ba47",
+      "cycle": 63,
+      "timestamp": "2026-05-12T00:46:22.252247",
+      "path": "/home/minimak/mcr/cognition_trace/tick_9942ba47.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "3370187d",
+      "cycle": 64,
+      "timestamp": "2026-05-12T00:46:22.253698",
+      "path": "/home/minimak/mcr/cognition_trace/tick_3370187d.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "0e30c20e",
+      "cycle": 65,
+      "timestamp": "2026-05-12T00:46:22.255126",
+      "path": "/home/minimak/mcr/cognition_trace/tick_0e30c20e.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "1a7e67d2",
+      "cycle": 66,
+      "timestamp": "2026-05-12T00:46:22.256724",
+      "path": "/home/minimak/mcr/cognition_trace/tick_1a7e67d2.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "274383a2",
+      "cycle": 67,
+      "timestamp": "2026-05-12T00:46:22.258255",
+      "path": "/home/minimak/mcr/cognition_trace/tick_274383a2.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "ad64eebf",
+      "cycle": 68,
+      "timestamp": "2026-05-12T00:46:22.259749",
+      "path": "/home/minimak/mcr/cognition_trace/tick_ad64eebf.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "0678a71a",
+      "cycle": 69,
+      "timestamp": "2026-05-12T00:46:22.261571",
+      "path": "/home/minimak/mcr/cognition_trace/tick_0678a71a.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "2f8ab60b",
+      "cycle": 70,
+      "timestamp": "2026-05-12T00:46:22.263237",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2f8ab60b.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "450a1709",
+      "cycle": 71,
+      "timestamp": "2026-05-12T00:46:22.265199",
+      "path": "/home/minimak/mcr/cognition_trace/tick_450a1709.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "11eafb03",
+      "cycle": 72,
+      "timestamp": "2026-05-12T00:46:22.267046",
+      "path": "/home/minimak/mcr/cognition_trace/tick_11eafb03.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "bac1b899",
+      "cycle": 73,
+      "timestamp": "2026-05-12T00:46:22.268936",
+      "path": "/home/minimak/mcr/cognition_trace/tick_bac1b899.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "0b555f94",
+      "cycle": 74,
+      "timestamp": "2026-05-12T00:46:22.270728",
+      "path": "/home/minimak/mcr/cognition_trace/tick_0b555f94.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "72f0cf8e",
+      "cycle": 75,
+      "timestamp": "2026-05-12T00:46:22.273472",
+      "path": "/home/minimak/mcr/cognition_trace/tick_72f0cf8e.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "689990ad",
+      "cycle": 76,
+      "timestamp": "2026-05-12T00:46:22.275301",
+      "path": "/home/minimak/mcr/cognition_trace/tick_689990ad.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "ddd93898",
+      "cycle": 77,
+      "timestamp": "2026-05-12T00:46:22.277089",
+      "path": "/home/minimak/mcr/cognition_trace/tick_ddd93898.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "ab43daed",
+      "cycle": 78,
+      "timestamp": "2026-05-12T00:46:22.278845",
+      "path": "/home/minimak/mcr/cognition_trace/tick_ab43daed.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "432fa35e",
+      "cycle": 79,
+      "timestamp": "2026-05-12T00:46:22.280698",
+      "path": "/home/minimak/mcr/cognition_trace/tick_432fa35e.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "559d4ffe",
+      "cycle": 80,
+      "timestamp": "2026-05-12T00:46:22.282483",
+      "path": "/home/minimak/mcr/cognition_trace/tick_559d4ffe.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "00e63a3b",
+      "cycle": 81,
+      "timestamp": "2026-05-12T00:46:22.284605",
+      "path": "/home/minimak/mcr/cognition_trace/tick_00e63a3b.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "9f1ca50a",
+      "cycle": 82,
+      "timestamp": "2026-05-12T00:46:22.286586",
+      "path": "/home/minimak/mcr/cognition_trace/tick_9f1ca50a.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "ff660de9",
+      "cycle": 83,
+      "timestamp": "2026-05-12T00:46:22.288617",
+      "path": "/home/minimak/mcr/cognition_trace/tick_ff660de9.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "cb47e3ce",
+      "cycle": 84,
+      "timestamp": "2026-05-12T00:46:22.290672",
+      "path": "/home/minimak/mcr/cognition_trace/tick_cb47e3ce.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "e81366c0",
+      "cycle": 85,
+      "timestamp": "2026-05-12T00:46:22.292770",
+      "path": "/home/minimak/mcr/cognition_trace/tick_e81366c0.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "55ccbff8",
+      "cycle": 86,
+      "timestamp": "2026-05-12T00:46:22.294840",
+      "path": "/home/minimak/mcr/cognition_trace/tick_55ccbff8.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "7e987075",
+      "cycle": 87,
+      "timestamp": "2026-05-12T00:46:22.296880",
+      "path": "/home/minimak/mcr/cognition_trace/tick_7e987075.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "a143fdf1",
+      "cycle": 88,
+      "timestamp": "2026-05-12T00:46:22.298925",
+      "path": "/home/minimak/mcr/cognition_trace/tick_a143fdf1.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "a398673c",
+      "cycle": 89,
+      "timestamp": "2026-05-12T00:46:22.301298",
+      "path": "/home/minimak/mcr/cognition_trace/tick_a398673c.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "51c8b941",
+      "cycle": 90,
+      "timestamp": "2026-05-12T00:46:22.303383",
+      "path": "/home/minimak/mcr/cognition_trace/tick_51c8b941.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "bd18e7ef",
+      "cycle": 91,
+      "timestamp": "2026-05-12T00:46:22.305674",
+      "path": "/home/minimak/mcr/cognition_trace/tick_bd18e7ef.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "c2f21b70",
+      "cycle": 92,
+      "timestamp": "2026-05-12T00:46:22.307759",
+      "path": "/home/minimak/mcr/cognition_trace/tick_c2f21b70.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "796b0403",
+      "cycle": 93,
+      "timestamp": "2026-05-12T00:46:22.310254",
+      "path": "/home/minimak/mcr/cognition_trace/tick_796b0403.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "8a563367",
+      "cycle": 94,
+      "timestamp": "2026-05-12T00:46:22.312393",
+      "path": "/home/minimak/mcr/cognition_trace/tick_8a563367.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "bf3524ab",
+      "cycle": 95,
+      "timestamp": "2026-05-12T00:46:22.314460",
+      "path": "/home/minimak/mcr/cognition_trace/tick_bf3524ab.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "5a694c51",
+      "cycle": 96,
+      "timestamp": "2026-05-12T00:46:22.316625",
+      "path": "/home/minimak/mcr/cognition_trace/tick_5a694c51.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "5f63e279",
+      "cycle": 97,
+      "timestamp": "2026-05-12T00:46:22.318848",
+      "path": "/home/minimak/mcr/cognition_trace/tick_5f63e279.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "73479c66",
+      "cycle": 98,
+      "timestamp": "2026-05-12T00:46:22.321035",
+      "path": "/home/minimak/mcr/cognition_trace/tick_73479c66.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "3b544ae2",
+      "cycle": 99,
+      "timestamp": "2026-05-12T00:46:22.323245",
+      "path": "/home/minimak/mcr/cognition_trace/tick_3b544ae2.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "aeb306bf",
+      "cycle": 100,
+      "timestamp": "2026-05-12T00:46:22.325447",
+      "path": "/home/minimak/mcr/cognition_trace/tick_aeb306bf.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "02d714de",
+      "cycle": 101,
+      "timestamp": "2026-05-12T00:46:22.327807",
+      "path": "/home/minimak/mcr/cognition_trace/tick_02d714de.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "65816ecd",
+      "cycle": 102,
+      "timestamp": "2026-05-12T00:46:22.330014",
+      "path": "/home/minimak/mcr/cognition_trace/tick_65816ecd.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "54afae3b",
+      "cycle": 103,
+      "timestamp": "2026-05-12T00:46:22.332207",
+      "path": "/home/minimak/mcr/cognition_trace/tick_54afae3b.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "caa8689a",
+      "cycle": 104,
+      "timestamp": "2026-05-12T00:46:22.334800",
+      "path": "/home/minimak/mcr/cognition_trace/tick_caa8689a.json",
+      "goal_changed": true,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "02535676",
+      "cycle": 105,
+      "timestamp": "2026-05-12T01:01:55.282702",
+      "path": "/home/minimak/mcr/cognition_trace/tick_02535676.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "a352aaf3",
+      "cycle": 106,
+      "timestamp": "2026-05-12T01:01:55.285828",
+      "path": "/home/minimak/mcr/cognition_trace/tick_a352aaf3.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "c4324bc6",
+      "cycle": 107,
+      "timestamp": "2026-05-12T01:01:55.288626",
+      "path": "/home/minimak/mcr/cognition_trace/tick_c4324bc6.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "da51bf93",
+      "cycle": 108,
+      "timestamp": "2026-05-12T01:01:55.291196",
+      "path": "/home/minimak/mcr/cognition_trace/tick_da51bf93.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "836e42da",
+      "cycle": 109,
+      "timestamp": "2026-05-12T01:01:55.294478",
+      "path": "/home/minimak/mcr/cognition_trace/tick_836e42da.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "c393af96",
+      "cycle": 110,
+      "timestamp": "2026-05-12T01:01:55.297341",
+      "path": "/home/minimak/mcr/cognition_trace/tick_c393af96.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "d75672d7",
+      "cycle": 111,
+      "timestamp": "2026-05-12T01:01:55.300481",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d75672d7.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "d87d5e7e",
+      "cycle": 112,
+      "timestamp": "2026-05-12T01:01:55.303190",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d87d5e7e.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "b546be58",
+      "cycle": 113,
+      "timestamp": "2026-05-12T01:01:55.305975",
+      "path": "/home/minimak/mcr/cognition_trace/tick_b546be58.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "8e546f01",
+      "cycle": 114,
+      "timestamp": "2026-05-12T01:01:55.308500",
+      "path": "/home/minimak/mcr/cognition_trace/tick_8e546f01.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "cc1f3d59",
+      "cycle": 115,
+      "timestamp": "2026-05-12T01:01:55.311042",
+      "path": "/home/minimak/mcr/cognition_trace/tick_cc1f3d59.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "2375a12a",
+      "cycle": 116,
+      "timestamp": "2026-05-12T01:01:55.313522",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2375a12a.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "ff91d43e",
+      "cycle": 117,
+      "timestamp": "2026-05-12T01:01:55.316444",
+      "path": "/home/minimak/mcr/cognition_trace/tick_ff91d43e.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "f2056b35",
+      "cycle": 118,
+      "timestamp": "2026-05-12T01:01:55.318972",
+      "path": "/home/minimak/mcr/cognition_trace/tick_f2056b35.json",
+      "goal_changed": false,
+      "drift_score": 0.0
+    },
+    {
+      "tick_id": "00eb20a1",
+      "cycle": 119,
+      "timestamp": "2026-05-12T01:01:55.321494",
+      "path": "/home/minimak/mcr/cognition_trace/tick_00eb20a1.json",
+      "goal_changed": true,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "e921ae73",
+      "cycle": 120,
+      "timestamp": "2026-05-12T01:01:55.324600",
+      "path": "/home/minimak/mcr/cognition_trace/tick_e921ae73.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "a076826b",
+      "cycle": 121,
+      "timestamp": "2026-05-12T01:01:55.327425",
+      "path": "/home/minimak/mcr/cognition_trace/tick_a076826b.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "a4567750",
+      "cycle": 122,
+      "timestamp": "2026-05-12T01:01:55.330054",
+      "path": "/home/minimak/mcr/cognition_trace/tick_a4567750.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "f1472167",
+      "cycle": 123,
+      "timestamp": "2026-05-12T01:01:55.332685",
+      "path": "/home/minimak/mcr/cognition_trace/tick_f1472167.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "d4e92a9a",
+      "cycle": 124,
+      "timestamp": "2026-05-12T01:01:55.335898",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d4e92a9a.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "0413703a",
+      "cycle": 125,
+      "timestamp": "2026-05-12T01:01:55.338505",
+      "path": "/home/minimak/mcr/cognition_trace/tick_0413703a.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "f7af1eab",
+      "cycle": 126,
+      "timestamp": "2026-05-12T01:01:55.341272",
+      "path": "/home/minimak/mcr/cognition_trace/tick_f7af1eab.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "fd212f91",
+      "cycle": 127,
+      "timestamp": "2026-05-12T01:01:55.344477",
+      "path": "/home/minimak/mcr/cognition_trace/tick_fd212f91.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "df2e701c",
+      "cycle": 128,
+      "timestamp": "2026-05-12T01:01:55.347375",
+      "path": "/home/minimak/mcr/cognition_trace/tick_df2e701c.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "bfe6fdea",
+      "cycle": 129,
+      "timestamp": "2026-05-12T01:01:55.350155",
+      "path": "/home/minimak/mcr/cognition_trace/tick_bfe6fdea.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "531ebd33",
+      "cycle": 130,
+      "timestamp": "2026-05-12T01:01:55.352828",
+      "path": "/home/minimak/mcr/cognition_trace/tick_531ebd33.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "3c95ecbe",
+      "cycle": 131,
+      "timestamp": "2026-05-12T01:01:55.355552",
+      "path": "/home/minimak/mcr/cognition_trace/tick_3c95ecbe.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "9cf12a05",
+      "cycle": 132,
+      "timestamp": "2026-05-12T01:01:55.358105",
+      "path": "/home/minimak/mcr/cognition_trace/tick_9cf12a05.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "c5b31098",
+      "cycle": 133,
+      "timestamp": "2026-05-12T01:01:55.361198",
+      "path": "/home/minimak/mcr/cognition_trace/tick_c5b31098.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "aedcb938",
+      "cycle": 134,
+      "timestamp": "2026-05-12T01:01:55.363792",
+      "path": "/home/minimak/mcr/cognition_trace/tick_aedcb938.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "ed8b7ca9",
+      "cycle": 135,
+      "timestamp": "2026-05-12T01:01:55.366376",
+      "path": "/home/minimak/mcr/cognition_trace/tick_ed8b7ca9.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "444f6196",
+      "cycle": 136,
+      "timestamp": "2026-05-12T01:01:55.369144",
+      "path": "/home/minimak/mcr/cognition_trace/tick_444f6196.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "384117af",
+      "cycle": 137,
+      "timestamp": "2026-05-12T01:01:55.371758",
+      "path": "/home/minimak/mcr/cognition_trace/tick_384117af.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "52773c22",
+      "cycle": 138,
+      "timestamp": "2026-05-12T01:01:55.374750",
+      "path": "/home/minimak/mcr/cognition_trace/tick_52773c22.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "d5658bfc",
+      "cycle": 139,
+      "timestamp": "2026-05-12T01:01:55.377568",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d5658bfc.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "347f06c3",
+      "cycle": 140,
+      "timestamp": "2026-05-12T01:01:55.380272",
+      "path": "/home/minimak/mcr/cognition_trace/tick_347f06c3.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "4d1a0687",
+      "cycle": 141,
+      "timestamp": "2026-05-12T01:01:55.383279",
+      "path": "/home/minimak/mcr/cognition_trace/tick_4d1a0687.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "e6d5ed91",
+      "cycle": 142,
+      "timestamp": "2026-05-12T01:01:55.386206",
+      "path": "/home/minimak/mcr/cognition_trace/tick_e6d5ed91.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "1a426aad",
+      "cycle": 143,
+      "timestamp": "2026-05-12T01:01:55.389229",
+      "path": "/home/minimak/mcr/cognition_trace/tick_1a426aad.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "d7dd6c73",
+      "cycle": 144,
+      "timestamp": "2026-05-12T01:01:55.391982",
+      "path": "/home/minimak/mcr/cognition_trace/tick_d7dd6c73.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "66a33272",
+      "cycle": 145,
+      "timestamp": "2026-05-12T01:01:55.395028",
+      "path": "/home/minimak/mcr/cognition_trace/tick_66a33272.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "56725490",
+      "cycle": 146,
+      "timestamp": "2026-05-12T01:01:55.398174",
+      "path": "/home/minimak/mcr/cognition_trace/tick_56725490.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "7ede8076",
+      "cycle": 147,
+      "timestamp": "2026-05-12T01:01:55.401272",
+      "path": "/home/minimak/mcr/cognition_trace/tick_7ede8076.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "e022192c",
+      "cycle": 148,
+      "timestamp": "2026-05-12T01:01:55.404117",
+      "path": "/home/minimak/mcr/cognition_trace/tick_e022192c.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "bfc74d3a",
+      "cycle": 149,
+      "timestamp": "2026-05-12T01:01:55.406848",
+      "path": "/home/minimak/mcr/cognition_trace/tick_bfc74d3a.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "16e4325a",
+      "cycle": 150,
+      "timestamp": "2026-05-12T01:01:55.409631",
+      "path": "/home/minimak/mcr/cognition_trace/tick_16e4325a.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "a7d12090",
+      "cycle": 151,
+      "timestamp": "2026-05-12T01:01:55.412725",
+      "path": "/home/minimak/mcr/cognition_trace/tick_a7d12090.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "106bc40d",
+      "cycle": 152,
+      "timestamp": "2026-05-12T01:01:55.415983",
+      "path": "/home/minimak/mcr/cognition_trace/tick_106bc40d.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "68238dc6",
+      "cycle": 153,
+      "timestamp": "2026-05-12T01:01:55.418850",
+      "path": "/home/minimak/mcr/cognition_trace/tick_68238dc6.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "a3c2023c",
+      "cycle": 154,
+      "timestamp": "2026-05-12T01:01:55.421701",
+      "path": "/home/minimak/mcr/cognition_trace/tick_a3c2023c.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "da4f91c2",
+      "cycle": 155,
+      "timestamp": "2026-05-12T01:01:55.424616",
+      "path": "/home/minimak/mcr/cognition_trace/tick_da4f91c2.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "dc1870ab",
+      "cycle": 156,
+      "timestamp": "2026-05-12T01:01:55.427727",
+      "path": "/home/minimak/mcr/cognition_trace/tick_dc1870ab.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "f544c311",
+      "cycle": 157,
+      "timestamp": "2026-05-12T01:01:55.430914",
+      "path": "/home/minimak/mcr/cognition_trace/tick_f544c311.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "45757ecc",
+      "cycle": 158,
+      "timestamp": "2026-05-12T01:01:55.433862",
+      "path": "/home/minimak/mcr/cognition_trace/tick_45757ecc.json",
+      "goal_changed": false,
+      "drift_score": 0.024999999999999994
+    },
+    {
+      "tick_id": "8ac4a581",
+      "cycle": 159,
+      "timestamp": "2026-05-12T01:01:55.437109",
+      "path": "/home/minimak/mcr/cognition_trace/tick_8ac4a581.json",
+      "goal_changed": true,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "4c48abdb",
+      "cycle": 160,
+      "timestamp": "2026-05-12T01:01:55.440104",
+      "path": "/home/minimak/mcr/cognition_trace/tick_4c48abdb.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "7b568222",
+      "cycle": 161,
+      "timestamp": "2026-05-12T01:01:55.443254",
+      "path": "/home/minimak/mcr/cognition_trace/tick_7b568222.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "1d2ba3f8",
+      "cycle": 162,
+      "timestamp": "2026-05-12T01:01:55.446357",
+      "path": "/home/minimak/mcr/cognition_trace/tick_1d2ba3f8.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "261fc195",
+      "cycle": 163,
+      "timestamp": "2026-05-12T01:01:55.449465",
+      "path": "/home/minimak/mcr/cognition_trace/tick_261fc195.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "2431a62c",
+      "cycle": 164,
+      "timestamp": "2026-05-12T01:01:55.452611",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2431a62c.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "6d6f04cf",
+      "cycle": 165,
+      "timestamp": "2026-05-12T01:01:55.455439",
+      "path": "/home/minimak/mcr/cognition_trace/tick_6d6f04cf.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "6e40ceab",
+      "cycle": 166,
+      "timestamp": "2026-05-12T01:01:55.458489",
+      "path": "/home/minimak/mcr/cognition_trace/tick_6e40ceab.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "f7c0b2e2",
+      "cycle": 167,
+      "timestamp": "2026-05-12T01:01:55.461460",
+      "path": "/home/minimak/mcr/cognition_trace/tick_f7c0b2e2.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "578a3c42",
+      "cycle": 168,
+      "timestamp": "2026-05-12T01:01:55.464396",
+      "path": "/home/minimak/mcr/cognition_trace/tick_578a3c42.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "791efc9d",
+      "cycle": 169,
+      "timestamp": "2026-05-12T01:01:55.467453",
+      "path": "/home/minimak/mcr/cognition_trace/tick_791efc9d.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "4a75c13f",
+      "cycle": 170,
+      "timestamp": "2026-05-12T01:01:55.470580",
+      "path": "/home/minimak/mcr/cognition_trace/tick_4a75c13f.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "2c5038c9",
+      "cycle": 171,
+      "timestamp": "2026-05-12T01:01:55.473811",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2c5038c9.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "5ca1480d",
+      "cycle": 172,
+      "timestamp": "2026-05-12T01:01:55.476986",
+      "path": "/home/minimak/mcr/cognition_trace/tick_5ca1480d.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "7ec726c9",
+      "cycle": 173,
+      "timestamp": "2026-05-12T01:01:55.479952",
+      "path": "/home/minimak/mcr/cognition_trace/tick_7ec726c9.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "815baba4",
+      "cycle": 174,
+      "timestamp": "2026-05-12T01:01:55.482987",
+      "path": "/home/minimak/mcr/cognition_trace/tick_815baba4.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "b70a9890",
+      "cycle": 175,
+      "timestamp": "2026-05-12T01:01:55.485986",
+      "path": "/home/minimak/mcr/cognition_trace/tick_b70a9890.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "e44e2a21",
+      "cycle": 176,
+      "timestamp": "2026-05-12T01:01:55.488902",
+      "path": "/home/minimak/mcr/cognition_trace/tick_e44e2a21.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "f7e6668f",
+      "cycle": 177,
+      "timestamp": "2026-05-12T01:01:55.491783",
+      "path": "/home/minimak/mcr/cognition_trace/tick_f7e6668f.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "593eda2c",
+      "cycle": 178,
+      "timestamp": "2026-05-12T01:01:55.494845",
+      "path": "/home/minimak/mcr/cognition_trace/tick_593eda2c.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "3431a57a",
+      "cycle": 179,
+      "timestamp": "2026-05-12T01:01:55.497997",
+      "path": "/home/minimak/mcr/cognition_trace/tick_3431a57a.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "92c28994",
+      "cycle": 180,
+      "timestamp": "2026-05-12T01:01:55.501086",
+      "path": "/home/minimak/mcr/cognition_trace/tick_92c28994.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "09c195d9",
+      "cycle": 181,
+      "timestamp": "2026-05-12T01:01:55.504379",
+      "path": "/home/minimak/mcr/cognition_trace/tick_09c195d9.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "67ca58d7",
+      "cycle": 182,
+      "timestamp": "2026-05-12T01:01:55.507322",
+      "path": "/home/minimak/mcr/cognition_trace/tick_67ca58d7.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "b00faa77",
+      "cycle": 183,
+      "timestamp": "2026-05-12T01:01:55.510347",
+      "path": "/home/minimak/mcr/cognition_trace/tick_b00faa77.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "82053b6c",
+      "cycle": 184,
+      "timestamp": "2026-05-12T01:01:55.513381",
+      "path": "/home/minimak/mcr/cognition_trace/tick_82053b6c.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "3929f7b1",
+      "cycle": 185,
+      "timestamp": "2026-05-12T01:01:55.516414",
+      "path": "/home/minimak/mcr/cognition_trace/tick_3929f7b1.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "54428ef0",
+      "cycle": 186,
+      "timestamp": "2026-05-12T01:01:55.519295",
+      "path": "/home/minimak/mcr/cognition_trace/tick_54428ef0.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "823232a3",
+      "cycle": 187,
+      "timestamp": "2026-05-12T01:01:55.522189",
+      "path": "/home/minimak/mcr/cognition_trace/tick_823232a3.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "2717e1a6",
+      "cycle": 188,
+      "timestamp": "2026-05-12T01:01:55.525167",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2717e1a6.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "2bf2ae7b",
+      "cycle": 189,
+      "timestamp": "2026-05-12T01:01:55.528108",
+      "path": "/home/minimak/mcr/cognition_trace/tick_2bf2ae7b.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "b1297492",
+      "cycle": 190,
+      "timestamp": "2026-05-12T01:01:55.531196",
+      "path": "/home/minimak/mcr/cognition_trace/tick_b1297492.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "24e58c54",
+      "cycle": 191,
+      "timestamp": "2026-05-12T01:01:55.534317",
+      "path": "/home/minimak/mcr/cognition_trace/tick_24e58c54.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "01af69eb",
+      "cycle": 192,
+      "timestamp": "2026-05-12T01:01:55.537472",
+      "path": "/home/minimak/mcr/cognition_trace/tick_01af69eb.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "05747971",
+      "cycle": 193,
+      "timestamp": "2026-05-12T01:01:55.540553",
+      "path": "/home/minimak/mcr/cognition_trace/tick_05747971.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "1cbc9c6e",
+      "cycle": 194,
+      "timestamp": "2026-05-12T01:01:55.543604",
+      "path": "/home/minimak/mcr/cognition_trace/tick_1cbc9c6e.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "68afea67",
+      "cycle": 195,
+      "timestamp": "2026-05-12T01:01:55.546437",
+      "path": "/home/minimak/mcr/cognition_trace/tick_68afea67.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "3a93682c",
+      "cycle": 196,
+      "timestamp": "2026-05-12T01:01:55.549416",
+      "path": "/home/minimak/mcr/cognition_trace/tick_3a93682c.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "8b1ceb43",
+      "cycle": 197,
+      "timestamp": "2026-05-12T01:01:55.552579",
+      "path": "/home/minimak/mcr/cognition_trace/tick_8b1ceb43.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "b489743f",
+      "cycle": 198,
+      "timestamp": "2026-05-12T01:01:55.555683",
+      "path": "/home/minimak/mcr/cognition_trace/tick_b489743f.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "6dd8c6cd",
+      "cycle": 199,
+      "timestamp": "2026-05-12T01:01:55.559093",
+      "path": "/home/minimak/mcr/cognition_trace/tick_6dd8c6cd.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "464f6bca",
+      "cycle": 200,
+      "timestamp": "2026-05-12T01:01:55.562160",
+      "path": "/home/minimak/mcr/cognition_trace/tick_464f6bca.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "7190681c",
+      "cycle": 201,
+      "timestamp": "2026-05-12T01:01:55.565726",
+      "path": "/home/minimak/mcr/cognition_trace/tick_7190681c.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "8af3f538",
+      "cycle": 202,
+      "timestamp": "2026-05-12T01:01:55.568863",
+      "path": "/home/minimak/mcr/cognition_trace/tick_8af3f538.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "6fb02e14",
+      "cycle": 203,
+      "timestamp": "2026-05-12T01:01:55.572011",
+      "path": "/home/minimak/mcr/cognition_trace/tick_6fb02e14.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    },
+    {
+      "tick_id": "5f3e14de",
+      "cycle": 204,
+      "timestamp": "2026-05-12T01:01:55.575412",
+      "path": "/home/minimak/mcr/cognition_trace/tick_5f3e14de.json",
+      "goal_changed": false,
+      "drift_score": 0.04999999999999999
+    }
+  ],
+  "count": 202
+}

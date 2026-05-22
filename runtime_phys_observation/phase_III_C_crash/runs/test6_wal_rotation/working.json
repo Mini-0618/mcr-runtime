@@ -1,0 +1,222 @@
+[
+  {
+    "id": "b822f106",
+    "content": "rot_91",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e75376cd",
+    "content": "rot_92",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2624b77b",
+    "content": "rot_93",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "08e03631",
+    "content": "rot_94",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "63cf3a2e",
+    "content": "rot_95",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8fe2972f",
+    "content": "rot_96",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d20a92f5",
+    "content": "rot_97",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2139bee4",
+    "content": "rot_98",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "90eda961",
+    "content": "rot_99",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "66a3f199",
+    "content": "rot_100",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "working",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

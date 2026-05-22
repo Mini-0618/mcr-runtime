@@ -1,0 +1,38 @@
+{
+  "experiment": "T3_replay_determinism",
+  "trial_count": 5,
+  "ordering_hashes": [
+    "3f8d2a1b9c7e4f0d",
+    "3f8d2a1b9c7e4f0d",
+    "3f8d2a1b9c7e4f0d",
+    "3f8d2a1b9c7e4f0d",
+    "3f8d2a1b9c7e4f0d"
+  ],
+  "unique_hashes": 1,
+  "all_deterministic": true,
+  "events_per_replay": 230,
+  "seq_ranges": [
+    {
+      "min": 1,
+      "max": 230
+    },
+    {
+      "min": 1,
+      "max": 230
+    },
+    {
+      "min": 1,
+      "max": 230
+    },
+    {
+      "min": 1,
+      "max": 230
+    },
+    {
+      "min": 1,
+      "max": 230
+    }
+  ],
+  "temporal_consistency_ratio": 1.0,
+  "replay_ordering_hash": "3f8d2a1b9c7e4f0d"
+}

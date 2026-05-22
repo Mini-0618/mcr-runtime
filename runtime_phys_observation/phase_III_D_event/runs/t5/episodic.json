@@ -1,0 +1,1362 @@
+[
+  {
+    "id": "5cd8e632",
+    "content": "L26",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "70af7393",
+    "content": "L27",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bd492e01",
+    "content": "L28",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1dab1653",
+    "content": "L29",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1e40db3b",
+    "content": "L30",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "898a91ae",
+    "content": "L31",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1b6e5982",
+    "content": "L32",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d9e89fe0",
+    "content": "L33",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "42194f9f",
+    "content": "L34",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "433a677a",
+    "content": "L35",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6c4f9d59",
+    "content": "L36",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a0fa8942",
+    "content": "L37",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4646932e",
+    "content": "L38",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4dfd5944",
+    "content": "L39",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5270b0a9",
+    "content": "L40",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2983191e",
+    "content": "L41",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "09031c3f",
+    "content": "L42",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "00978aa5",
+    "content": "L43",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5993010d",
+    "content": "L44",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e4dd08ba",
+    "content": "L45",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bca20c69",
+    "content": "L46",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "18880288",
+    "content": "L47",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6103e90f",
+    "content": "L48",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5ef15828",
+    "content": "L49",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "07742db7",
+    "content": "L50",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b83678ac",
+    "content": "L51",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2b1a3dad",
+    "content": "L52",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d07bcf22",
+    "content": "L53",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "94630191",
+    "content": "L54",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1b3d6e67",
+    "content": "L55",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bcad5151",
+    "content": "L56",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5cc516da",
+    "content": "L57",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "961b1c75",
+    "content": "L58",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3062f47a",
+    "content": "L59",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f609a2aa",
+    "content": "L60",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "efef9196",
+    "content": "L61",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c55034cb",
+    "content": "L62",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "afc00685",
+    "content": "L63",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2e316762",
+    "content": "L64",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "924995dd",
+    "content": "L65",
+    "type": "t",
+    "importance": 0.5,
+    "tags": [
+      "t"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

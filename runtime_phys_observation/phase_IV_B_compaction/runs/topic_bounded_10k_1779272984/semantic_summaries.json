@@ -1,0 +1,77 @@
+[
+  {
+    "id": "sem_975b5035faef",
+    "topic": "docker_runtime",
+    "content": "topic_benchmark",
+    "members": [
+      "959df250",
+      "ea6a31aa",
+      "ec862e27"
+    ],
+    "compression_ratio": 3.0,
+    "entropy_delta": -1.584962500721156,
+    "tick_created": 13000
+  },
+  {
+    "id": "sem_29461ffcb994",
+    "topic": "crash_recovery",
+    "content": "topic_benchmark",
+    "members": [
+      "02f33dc8",
+      "0d98eac0",
+      "1b3430f7",
+      "2561a2e4",
+      "26981aad",
+      "443ffb66",
+      "4828b462",
+      "5e9148f8",
+      "6603760b",
+      "6be8186d",
+      "6da0e7f1",
+      "8397283f",
+      "97e03d0a",
+      "d51f6937",
+      "fcb03a6d",
+      "fced5924"
+    ],
+    "compression_ratio": 16.0,
+    "entropy_delta": -4.0,
+    "tick_created": 13000
+  },
+  {
+    "id": "sem_d568677f2ade",
+    "topic": "sql_query",
+    "content": "topic_benchmark",
+    "members": [
+      "36a6a830",
+      "38f73d5a",
+      "9e1419b7",
+      "b049154e"
+    ],
+    "compression_ratio": 4.0,
+    "entropy_delta": -2.0,
+    "tick_created": 13000
+  },
+  {
+    "id": "sem_09ffb2e99e2a",
+    "topic": "crash_recovery",
+    "content": "topic_benchmark",
+    "members": [
+      "13015065",
+      "15ea3c0d",
+      "42cfc325",
+      "43ec408a",
+      "5faa9970",
+      "69cf5779",
+      "a5664a9a",
+      "a8dcd541",
+      "d0e067f3",
+      "d4832385",
+      "e665eeaf",
+      "f58e33ba"
+    ],
+    "compression_ratio": 12.0,
+    "entropy_delta": -3.584962500721156,
+    "tick_created": 13200
+  }
+]

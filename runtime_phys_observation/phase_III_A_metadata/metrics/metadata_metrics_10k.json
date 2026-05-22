@@ -1,0 +1,33 @@
+{
+  "experiment": "Phase III-A Metadata Physics 10k",
+  "ticks": 10000,
+  "elapsed_seconds": 3.405198097229004,
+  "memory_final": {
+    "W": 10,
+    "E": 40,
+    "S": 0,
+    "A": 0
+  },
+  "transitions_actual": {
+    "lines": 130117,
+    "bytes": 19636813
+  },
+  "transitions_estimated": {
+    "entries": 22512.73592743004,
+    "bytes": 2701528.311291605
+  },
+  "snapshot_overhead": {
+    "count": 2,
+    "bytes": 867.6080939247531
+  },
+  "asymptotic_alpha": {
+    "metadata": 0.9793424892978412,
+    "memory": -0.08325895958264673
+  },
+  "latency_ratio": 1.0497846168470508,
+  "verdicts": {
+    "G1_bounded": true,
+    "G2_latency_ok": true,
+    "G3_no_leak": false
+  }
+}

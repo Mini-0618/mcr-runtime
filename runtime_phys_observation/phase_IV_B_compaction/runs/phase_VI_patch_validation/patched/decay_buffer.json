@@ -1,0 +1,86 @@
+[
+  {
+    "id": "41ee0eee",
+    "content": "crash_recovery cache miss rate 23% at tick 9988",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9988,
+    "last_access_tick": 9988,
+    "last_state_change_tick": 9996,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 9996,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9996
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "93ebb32d",
+    "content": "crash_recovery worker thread 9989 blocked on lock",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9989,
+    "last_access_tick": 9989,
+    "last_state_change_tick": 9997,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 9997,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9997
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e360aae7",
+    "content": "crash_recovery queue depth 9990 exceeded threshold",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "crash_recovery",
+      "phase_vi"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9990,
+    "last_access_tick": 9990,
+    "last_state_change_tick": 9999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 9999,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9999
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

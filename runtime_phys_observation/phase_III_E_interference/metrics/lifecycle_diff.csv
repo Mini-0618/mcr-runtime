@@ -1,0 +1,5 @@
+metric,off,on,match
+buffer_evict,9981,9981,True
+decay_to_buffer,9990,9990,True
+total_events,19971,19971,True
+ordering_hash,884065b1997634b2,5eef57e39e7928e8,False

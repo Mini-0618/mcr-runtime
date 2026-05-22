@@ -1,0 +1,9471 @@
+[
+  {
+    "id": "f567504a",
+    "content": "memory 1",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bafda743",
+    "content": "memory 1",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "692e813c",
+    "content": "memory 1",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5e27bd45",
+    "content": "memory 1",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "de6d0b8d",
+    "content": "memory 1",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "60fe89a9",
+    "content": "memory 2",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bf1a3c52",
+    "content": "memory 2",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "71b17b23",
+    "content": "memory 5",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6b51e5e8",
+    "content": "memory 5",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a93d613a",
+    "content": "memory 5",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1fe15e3d",
+    "content": "memory 5",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a9861681",
+    "content": "memory 5",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1bdd7cc6",
+    "content": "memory 7",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5b3702dc",
+    "content": "memory 7",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5fcc9b50",
+    "content": "memory 7",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4c8bae2b",
+    "content": "memory 7",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "629c5db7",
+    "content": "memory 7",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3cabcd4a",
+    "content": "memory 8",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e20166f9",
+    "content": "memory 8",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c53664cd",
+    "content": "memory 8",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e374f7f9",
+    "content": "memory 9",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5a82963f",
+    "content": "memory 9",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0f4fa77a",
+    "content": "memory 9",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ecd9611b",
+    "content": "memory 10",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9764302a",
+    "content": "memory 13",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fd0fb426",
+    "content": "memory 13",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a069ad20",
+    "content": "memory 13",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "39556c6a",
+    "content": "memory 13",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b8390c9d",
+    "content": "memory 13",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "74e663d5",
+    "content": "memory 14",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "40f922ae",
+    "content": "memory 14",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e76cb6ee",
+    "content": "memory 14",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9f880a3b",
+    "content": "memory 14",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a8dd7dc3",
+    "content": "memory 14",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "605975cc",
+    "content": "memory 15",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "615a5cc4",
+    "content": "memory 15",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "782569dc",
+    "content": "memory 16",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6de0e3e8",
+    "content": "memory 16",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "36d80580",
+    "content": "memory 16",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7b54e79d",
+    "content": "memory 17",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1924a390",
+    "content": "memory 17",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9bc8e599",
+    "content": "memory 17",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3ddce201",
+    "content": "memory 18",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8e5eed52",
+    "content": "memory 18",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "91905cf3",
+    "content": "memory 18",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0a58e832",
+    "content": "memory 18",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "60565512",
+    "content": "memory 19",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4bfec564",
+    "content": "memory 19",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "706cd4b7",
+    "content": "memory 20",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bd49e5e8",
+    "content": "memory 20",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7deef56e",
+    "content": "memory 20",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "afdb8475",
+    "content": "memory 21",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1037d6ba",
+    "content": "memory 21",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f4d33dc7",
+    "content": "memory 22",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ce501746",
+    "content": "memory 23",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "84a4af98",
+    "content": "memory 23",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "680391c9",
+    "content": "memory 24",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d4da6ee1",
+    "content": "memory 24",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4b5bcf1c",
+    "content": "memory 24",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "21ba235c",
+    "content": "memory 24",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d63c667a",
+    "content": "memory 25",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ae731a4d",
+    "content": "memory 25",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "551897c2",
+    "content": "memory 25",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "15ab77a2",
+    "content": "memory 25",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e211194f",
+    "content": "memory 26",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "88867236",
+    "content": "memory 26",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f4f7d2ae",
+    "content": "memory 26",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3ff8fd0e",
+    "content": "memory 26",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "75c37e73",
+    "content": "memory 26",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e4010d07",
+    "content": "memory 27",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ee1869b8",
+    "content": "memory 27",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d392677d",
+    "content": "memory 27",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6f0048c9",
+    "content": "memory 28",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "269780ed",
+    "content": "memory 28",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6a224fe1",
+    "content": "memory 28",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8eb298f6",
+    "content": "memory 28",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e028b592",
+    "content": "memory 29",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6dc1bb35",
+    "content": "memory 29",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e9ca9928",
+    "content": "memory 29",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3ac931c2",
+    "content": "memory 30",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e3927cf9",
+    "content": "memory 30",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "75640dce",
+    "content": "memory 30",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "805bcbdd",
+    "content": "memory 31",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "42dd10d3",
+    "content": "memory 31",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "59e6b129",
+    "content": "memory 31",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "369685d9",
+    "content": "memory 31",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "011a238f",
+    "content": "memory 33",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "42110236",
+    "content": "memory 33",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8a49770e",
+    "content": "memory 34",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "eae91451",
+    "content": "memory 34",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "84b4dc88",
+    "content": "memory 34",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f7cef37a",
+    "content": "memory 34",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "28293e1b",
+    "content": "memory 34",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9572c8d1",
+    "content": "memory 35",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ca2a0618",
+    "content": "memory 35",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "cab93e16",
+    "content": "memory 36",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d7bbaba7",
+    "content": "memory 36",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1a04c348",
+    "content": "memory 36",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4685a9fc",
+    "content": "memory 39",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ad7a8478",
+    "content": "memory 37",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e9bd61ba",
+    "content": "memory 37",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1affe0e2",
+    "content": "memory 37",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4bd7914c",
+    "content": "memory 38",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4de4952f",
+    "content": "memory 38",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "16c3e25c",
+    "content": "memory 42",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b57d67c8",
+    "content": "memory 42",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "af464c35",
+    "content": "memory 38",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d00b4869",
+    "content": "memory 39",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "56d391e1",
+    "content": "memory 39",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8d2d0a3e",
+    "content": "memory 43",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4685a9fc",
+    "content": "memory 39",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f36971d6",
+    "content": "memory 39",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "eddacbad",
+    "content": "memory 43",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3109de91",
+    "content": "memory 40",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "097fbf12",
+    "content": "memory 40",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a8871048",
+    "content": "memory 40",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2068eaca",
+    "content": "memory 41",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c2e476b0",
+    "content": "memory 45",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "16c3e25c",
+    "content": "memory 42",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b57d67c8",
+    "content": "memory 42",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0636ec17",
+    "content": "memory 42",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "89b1b887",
+    "content": "memory 47",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "15ffdad1",
+    "content": "memory 42",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d44775a4",
+    "content": "memory 43",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c0676a45",
+    "content": "memory 48",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8d2d0a3e",
+    "content": "memory 43",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6b582abb",
+    "content": "memory 43",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3ce1b1a3",
+    "content": "memory 43",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "eddacbad",
+    "content": "memory 43",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f0ab35e6",
+    "content": "memory 49",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "10af3ca8",
+    "content": "memory 45",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f05bee3f",
+    "content": "memory 50",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ad0999c5",
+    "content": "memory 45",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "87a18088",
+    "content": "memory 45",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4afa6250",
+    "content": "memory 45",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c2e476b0",
+    "content": "memory 45",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "767308ed",
+    "content": "memory 52",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3e740857",
+    "content": "memory 46",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7ae7ed47",
+    "content": "memory 46",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6ebab28f",
+    "content": "memory 46",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "89b1b887",
+    "content": "memory 47",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "43903c16",
+    "content": "memory 53",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5b0f1121",
+    "content": "memory 47",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "93c1f7b7",
+    "content": "memory 53",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6f9ec52e",
+    "content": "memory 48",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1ec2f853",
+    "content": "memory 54",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c0676a45",
+    "content": "memory 48",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "96be268b",
+    "content": "memory 48",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "07a289a2",
+    "content": "memory 48",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "988d5e03",
+    "content": "memory 48",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "65e87830",
+    "content": "memory 49",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ec969316",
+    "content": "memory 57",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f0ab35e6",
+    "content": "memory 49",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c76f997a",
+    "content": "memory 49",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f05bee3f",
+    "content": "memory 50",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a689adb1",
+    "content": "memory 50",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "332b2a02",
+    "content": "memory 59",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "14a0ca3f",
+    "content": "memory 50",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "83a2dbba",
+    "content": "memory 50",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7c3e3979",
+    "content": "memory 52",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "767308ed",
+    "content": "memory 52",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5b13d18d",
+    "content": "memory 52",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "59d22166",
+    "content": "memory 60",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "57984ef7",
+    "content": "memory 52",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b81b9d25",
+    "content": "memory 52",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "116135ad",
+    "content": "memory 53",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "43903c16",
+    "content": "memory 53",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bc430683",
+    "content": "memory 53",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8e3a6e98",
+    "content": "memory 63",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "93c1f7b7",
+    "content": "memory 53",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "55f8c2a5",
+    "content": "memory 54",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1ec2f853",
+    "content": "memory 54",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "56925fc2",
+    "content": "memory 54",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0a4eda41",
+    "content": "memory 64",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "467a9539",
+    "content": "memory 55",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e7dc6b39",
+    "content": "memory 65",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a681e8aa",
+    "content": "memory 55",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a78a4b4d",
+    "content": "memory 56",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "bff45d3f",
+    "content": "memory 56",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ec969316",
+    "content": "memory 57",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e4457b0d",
+    "content": "memory 66",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8b72a8d9",
+    "content": "memory 57",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7a972c98",
+    "content": "memory 66",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a39a0d55",
+    "content": "memory 57",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3be77883",
+    "content": "memory 58",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a1d754e1",
+    "content": "memory 67",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "23103210",
+    "content": "memory 59",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "332b2a02",
+    "content": "memory 59",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9e25523c",
+    "content": "memory 59",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "82bd4bc1",
+    "content": "memory 68",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3c2b90c1",
+    "content": "memory 59",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a16c51a9",
+    "content": "memory 60",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ea19e2cb",
+    "content": "memory 60",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f557de95",
+    "content": "memory 60",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "cc495c1a",
+    "content": "memory 70",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "59d22166",
+    "content": "memory 60",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3a124e52",
+    "content": "memory 61",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d634d06e",
+    "content": "memory 62",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4163b624",
+    "content": "memory 71",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "5c4dc000",
+    "content": "memory 62",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c4349607",
+    "content": "memory 62",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "2a2cf60a",
+    "content": "memory 63",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8e3a6e98",
+    "content": "memory 63",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ba6dd3c3",
+    "content": "memory 73",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ffc90568",
+    "content": "memory 63",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "47191436",
+    "content": "memory 63",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "55095f15",
+    "content": "memory 64",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4d3345e0",
+    "content": "memory 64",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a84cec3f",
+    "content": "memory 75",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0a4eda41",
+    "content": "memory 64",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "60293ff2",
+    "content": "memory 65",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e7dc6b39",
+    "content": "memory 65",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7783775f",
+    "content": "memory 65",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "42b2d87d",
+    "content": "memory 76",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "479971e4",
+    "content": "memory 65",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8938d4ab",
+    "content": "memory 65",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9aa60bdb",
+    "content": "memory 66",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f06a5437",
+    "content": "memory 77",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e4457b0d",
+    "content": "memory 66",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dc6f628e",
+    "content": "memory 66",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7a972c98",
+    "content": "memory 66",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "394f2119",
+    "content": "memory 67",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "718825cd",
+    "content": "memory 67",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "cd203557",
+    "content": "memory 79",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dd49ba0a",
+    "content": "memory 79",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a1d754e1",
+    "content": "memory 67",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "6c15a633",
+    "content": "memory 67",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8ed8b64e",
+    "content": "memory 67",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e6fe72ab",
+    "content": "memory 68",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "82bd4bc1",
+    "content": "memory 68",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "82bd4bc1",
+    "content": "memory 68",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a397e0c1",
+    "content": "memory 68",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "1a83bd57",
+    "content": "memory 69",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b37516a3",
+    "content": "memory 69",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "cc495c1a",
+    "content": "memory 70",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c42e8291",
+    "content": "memory 70",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b5a00879",
+    "content": "memory 71",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "cc495c1a",
+    "content": "memory 70",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fc449c75",
+    "content": "memory 71",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b5a00879",
+    "content": "memory 71",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7ff71398",
+    "content": "memory 72",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b1ba9889",
+    "content": "memory 71",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4163b624",
+    "content": "memory 71",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "43ad9843",
+    "content": "memory 72",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ebe2d508",
+    "content": "memory 73",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7ff71398",
+    "content": "memory 72",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "fca184af",
+    "content": "memory 72",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0b8f2380",
+    "content": "memory 73",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ba6dd3c3",
+    "content": "memory 73",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ebe2d508",
+    "content": "memory 73",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f8e0f86b",
+    "content": "memory 75",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "99f63657",
+    "content": "memory 74",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "66b389b6",
+    "content": "memory 74",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "109f40ae",
+    "content": "memory 74",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a84cec3f",
+    "content": "memory 75",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "da7030e4",
+    "content": "memory 75",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dc0b5d32",
+    "content": "memory 77",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f06a5437",
+    "content": "memory 77",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "95a2c982",
+    "content": "memory 77",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f8e0f86b",
+    "content": "memory 75",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3e005da7",
+    "content": "memory 75",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "27aace9e",
+    "content": "memory 76",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "42b2d87d",
+    "content": "memory 76",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7dcbe21c",
+    "content": "memory 76",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dd49ba0a",
+    "content": "memory 79",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "95cd7654",
+    "content": "memory 77",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dc0b5d32",
+    "content": "memory 77",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f06a5437",
+    "content": "memory 77",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "95a2c982",
+    "content": "memory 77",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "91f92d63",
+    "content": "memory 78",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f62406bd",
+    "content": "memory 82",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "61a0baf6",
+    "content": "memory 82",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "815813d9",
+    "content": "memory 78",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "858ba8b1",
+    "content": "memory 78",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "a1537e61",
+    "content": "memory 78",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c64bbf06",
+    "content": "memory 83",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "cd203557",
+    "content": "memory 79",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dd49ba0a",
+    "content": "memory 79",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "dc47956b",
+    "content": "memory 81",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9d2a9429",
+    "content": "memory 81",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e9cf73d3",
+    "content": "memory 81",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "4ca9cd97",
+    "content": "memory 85",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 96,
+    "access_count": 5,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 5,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=5.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "8335bbdc",
+    "content": "memory 85",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 97,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "06da6a5e",
+    "content": "memory 81",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "3310d179",
+    "content": "memory 81",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 6,
+    "access_history": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 6,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=6.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "f62406bd",
+    "content": "memory 82",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "61a0baf6",
+    "content": "memory 82",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c3e0f0f2",
+    "content": "memory 87",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 98,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7ff38ebd",
+    "content": "memory 82",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d00d7d49",
+    "content": "memory 87",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 99,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "80a5204e",
+    "content": "memory 82",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 4,
+    "access_history": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "activation_count": 4,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=4.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b975b72a",
+    "content": "memory 83",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 3,
+    "access_history": [
+      0,
+      0,
+      0
+    ],
+    "activation_count": 3,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=3.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c64bbf06",
+    "content": "memory 83",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ea55b22a",
+    "content": "memory 84",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 0,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d69f1db0",
+    "content": "memory 90",
+    "type": "test",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "archive",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 100,
+    "access_count": 2,
+    "access_history": [
+      0,
+      0
+    ],
+    "activation_count": 2,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 0,
+        "reason": "access_weight=2.00>=2.0"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "id": "7df0e235",
+    "content": "记忆1",
+    "type": "signal",
+    "importance": 0.4,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 1,
+    "last_access_tick": 1,
+    "last_state_change_tick": 11,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 11,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 11
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

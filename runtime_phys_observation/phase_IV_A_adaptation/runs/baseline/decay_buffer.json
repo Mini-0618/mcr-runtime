@@ -1,0 +1,147 @@
+[
+  {
+    "id": "1000f07e",
+    "content": "mem_186",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9986,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9996,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 9996,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9996
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "ea70697a",
+    "content": "mem_187",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9987,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9997,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 9997,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9997
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "d306d38c",
+    "content": "mem_188",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9988,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9998,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 9998,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9998
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "0ab22699",
+    "content": "mem_189",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9989,
+    "last_access_tick": 0,
+    "last_state_change_tick": 9999,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 9999,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9999
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "04013a9c",
+    "content": "mem_190",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9990,
+    "last_access_tick": 0,
+    "last_state_change_tick": 10000,
+    "access_count": 1,
+    "access_history": [
+      0
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": 10000,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 10000
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

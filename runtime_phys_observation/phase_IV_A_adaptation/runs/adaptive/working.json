@@ -1,0 +1,235 @@
+[
+  {
+    "id": "40ae2856",
+    "content": "{\"retrieval_weights\": {\"semantic\": {\"weight\": 1.058116231319169, \"count\": 15, \"success_rate\": 0.3333333333333333}, \"working\": {\"weight\": 0.9637296952858243, \"count\": 14, \"success_rate\": 0.14285714285714285}, \"episodic\": {\"weight\": 1.106586838142967, \"count\": 14, \"success_rate\": 0.42857142857142855}}, \"habit_sequence\": [\"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\"], \"habit_counts\": {\"retrieve\": 5, \"store\": 15}, \"adaptation_count\": 43, \"tick_of_last_adaptation\": 9995}",
+    "type": "adaptive_state",
+    "importance": 1.0,
+    "tags": [
+      "adaptive",
+      "state"
+    ],
+    "state": "working",
+    "created_tick": 9995,
+    "last_access_tick": 9995,
+    "last_state_change_tick": 9995,
+    "access_count": 1,
+    "access_history": [
+      9995
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "b52a7976",
+    "content": "mem_196",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "working",
+    "created_tick": 9996,
+    "last_access_tick": 9996,
+    "last_state_change_tick": 9996,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "c20eaebb",
+    "content": "{\"retrieval_weights\": {\"semantic\": {\"weight\": 1.048233966861721, \"count\": 16, \"success_rate\": 0.3125}, \"working\": {\"weight\": 0.959481048933436, \"count\": 15, \"success_rate\": 0.13333333333333333}, \"episodic\": {\"weight\": 1.0928143822667693, \"count\": 15, \"success_rate\": 0.4}}, \"habit_sequence\": [\"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\"], \"habit_counts\": {\"store\": 15, \"retrieve\": 5}, \"adaptation_count\": 46, \"tick_of_last_adaptation\": 9996}",
+    "type": "adaptive_state",
+    "importance": 1.0,
+    "tags": [
+      "adaptive",
+      "state"
+    ],
+    "state": "working",
+    "created_tick": 9996,
+    "last_access_tick": 9996,
+    "last_state_change_tick": 9996,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "9449c7cf",
+    "content": "mem_197",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "working",
+    "created_tick": 9997,
+    "last_access_tick": 9997,
+    "last_state_change_tick": 9997,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "508d9f0c",
+    "content": "{\"retrieval_weights\": {\"semantic\": {\"weight\": 1.048233966861721, \"count\": 16, \"success_rate\": 0.3125}, \"working\": {\"weight\": 0.959481048933436, \"count\": 15, \"success_rate\": 0.13333333333333333}, \"episodic\": {\"weight\": 1.0928143822667693, \"count\": 15, \"success_rate\": 0.4}}, \"habit_sequence\": [\"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\"], \"habit_counts\": {\"store\": 15, \"retrieve\": 5}, \"adaptation_count\": 46, \"tick_of_last_adaptation\": 9997}",
+    "type": "adaptive_state",
+    "importance": 1.0,
+    "tags": [
+      "adaptive",
+      "state"
+    ],
+    "state": "working",
+    "created_tick": 9997,
+    "last_access_tick": 9998,
+    "last_state_change_tick": 9997,
+    "access_count": 1,
+    "access_history": [
+      9998
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "522e49d6",
+    "content": "mem_198",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "working",
+    "created_tick": 9998,
+    "last_access_tick": 9998,
+    "last_state_change_tick": 9998,
+    "access_count": 1,
+    "access_history": [
+      9998
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "951eb18a",
+    "content": "{\"retrieval_weights\": {\"semantic\": {\"weight\": 1.048233966861721, \"count\": 16, \"success_rate\": 0.3125}, \"working\": {\"weight\": 0.959481048933436, \"count\": 15, \"success_rate\": 0.13333333333333333}, \"episodic\": {\"weight\": 1.0928143822667693, \"count\": 15, \"success_rate\": 0.4}}, \"habit_sequence\": [\"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\"], \"habit_counts\": {\"retrieve\": 5, \"store\": 15}, \"adaptation_count\": 46, \"tick_of_last_adaptation\": 9998}",
+    "type": "adaptive_state",
+    "importance": 1.0,
+    "tags": [
+      "adaptive",
+      "state"
+    ],
+    "state": "working",
+    "created_tick": 9998,
+    "last_access_tick": 9998,
+    "last_state_change_tick": 9998,
+    "access_count": 1,
+    "access_history": [
+      9998
+    ],
+    "activation_count": 1,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "e0fca4a9",
+    "content": "mem_199",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "working",
+    "created_tick": 9999,
+    "last_access_tick": 9999,
+    "last_state_change_tick": 9999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "58d66003",
+    "content": "{\"retrieval_weights\": {\"semantic\": {\"weight\": 1.0385431080265943, \"count\": 17, \"success_rate\": 0.29411764705882354}, \"working\": {\"weight\": 0.9859815687916317, \"count\": 16, \"success_rate\": 0.1875}, \"episodic\": {\"weight\": 1.0797315687916318, \"count\": 16, \"success_rate\": 0.375}}, \"habit_sequence\": [\"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\", \"store\", \"store\", \"retrieve\", \"store\"], \"habit_counts\": {\"store\": 15, \"retrieve\": 5}, \"adaptation_count\": 49, \"tick_of_last_adaptation\": 9999}",
+    "type": "adaptive_state",
+    "importance": 1.0,
+    "tags": [
+      "adaptive",
+      "state"
+    ],
+    "state": "working",
+    "created_tick": 9999,
+    "last_access_tick": 9999,
+    "last_state_change_tick": 9999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "223bcedc",
+    "content": "mem_0",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "working",
+    "created_tick": 10000,
+    "last_access_tick": 10000,
+    "last_state_change_tick": 10000,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

@@ -1,0 +1,54 @@
+{
+  "tick_log": [
+    {
+      "tick": 1,
+      "latency_ms": 42.3,
+      "retrieval_count": 3,
+      "semantic_ratio": 0.15,
+      "gc_ops": 1,
+      "archive_growth": 0
+    },
+    {
+      "tick": 2,
+      "latency_ms": 38.1,
+      "retrieval_count": 5,
+      "semantic_ratio": 0.12,
+      "gc_ops": 0,
+      "archive_growth": 0
+    },
+    {
+      "tick": 3,
+      "latency_ms": 51.7,
+      "retrieval_count": 4,
+      "semantic_ratio": 0.18,
+      "gc_ops": 2,
+      "archive_growth": 1
+    }
+  ],
+  "retrieval_log": [
+    {
+      "tick": 1,
+      "query": "goal_relevance",
+      "results_count": 3,
+      "latency_ms": 12.1,
+      "hit_rate": 0.67,
+      "drift_detected": false
+    },
+    {
+      "tick": 2,
+      "query": "MCR_retrieval",
+      "results_count": 5,
+      "latency_ms": 15.3,
+      "hit_rate": 0.8,
+      "drift_detected": false
+    },
+    {
+      "tick": 3,
+      "query": "semantic_bridge",
+      "results_count": 2,
+      "latency_ms": 9.8,
+      "hit_rate": 0.5,
+      "drift_detected": true
+    }
+  ]
+}

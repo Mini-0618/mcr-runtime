@@ -1,0 +1,9 @@
+{
+  "tick": 20000,
+  "working": 10,
+  "episodic": 40,
+  "semantic": 0,
+  "archive": 0,
+  "metadata_bytes": 34600936.98415086,
+  "metadata_entries": 229205
+}

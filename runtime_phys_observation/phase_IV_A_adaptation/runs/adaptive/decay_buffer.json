@@ -1,0 +1,83 @@
+[
+  {
+    "id": "96f8de14",
+    "content": "mem_191",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9991,
+    "last_access_tick": 9991,
+    "last_state_change_tick": 9996,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 9996,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9996
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "7cd4506a",
+    "content": "mem_193",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9993,
+    "last_access_tick": 9993,
+    "last_state_change_tick": 9998,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 9998,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9998
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  },
+  {
+    "id": "67197738",
+    "content": "mem_194",
+    "type": "general",
+    "importance": 0.5,
+    "tags": [
+      "test"
+    ],
+    "state": "decay_buffer",
+    "created_tick": 9994,
+    "last_access_tick": 9994,
+    "last_state_change_tick": 9999,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": 9999,
+    "promotion_history": [],
+    "demotion_history": [
+      {
+        "to": "decay_buffer",
+        "tick": 9999
+      }
+    ],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

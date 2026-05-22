@@ -1,0 +1,30 @@
+[
+  {
+    "id": "f912436d",
+    "content": "记忆0",
+    "type": "signal",
+    "importance": 0.8,
+    "tags": [
+      "test"
+    ],
+    "state": "episodic",
+    "created_tick": 0,
+    "last_access_tick": 0,
+    "last_state_change_tick": 10,
+    "access_count": 0,
+    "access_history": [],
+    "activation_count": 0,
+    "decay_buffer_entry_tick": null,
+    "promotion_history": [
+      {
+        "to": "episodic",
+        "tick": 10,
+        "reason": "importance=0.80>=0.7"
+      }
+    ],
+    "demotion_history": [],
+    "compressed_from": null,
+    "compression_count": 0,
+    "goal_relevance": 0.0
+  }
+]

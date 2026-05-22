@@ -1,0 +1,30 @@
+{
+  "stopped_early": true,
+  "stop_reason": "Window 4: OVERHEAD 26.67x",
+  "total_ticks": 20000,
+  "elapsed_s": 8.162858009338379,
+  "window_count": 4,
+  "thresholds": {
+    "MAX_MEM_LEAK_PCT": 0.2,
+    "MAX_ENTROPY_DRIFT": 1.0,
+    "MAX_OVERHEAD_RATIO": 20.0,
+    "MIN_REPLAY_VALIDITY_RATE": 0.95
+  },
+  "measured": {
+    "max_archive_ratio": 4.18,
+    "max_entropy_drift": 0.3579697341321202,
+    "max_overhead": 26.674078232389586,
+    "wal_valid_rate": 1.0
+  },
+  "boundary_events": [
+    "overhead_warning@window3",
+    "overhead_warning@window4"
+  ],
+  "verdicts": {
+    "memory_bounded": true,
+    "entropy_bounded": true,
+    "overhead_bounded": false,
+    "wal_healthy": true,
+    "overall": false
+  }
+}

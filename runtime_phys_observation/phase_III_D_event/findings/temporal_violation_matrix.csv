@@ -1,0 +1,7 @@
+test,scenario,violation_type,detected,runtime_survived,seq_gaps,ordering_preserved
+T1,sequential_200_events,none,False,True,0,True
+T2,concurrent_instances,none,False,True,0,True
+T3,5x_replay_same_wal,none,False,True,0,True
+T4,injected_bad_checksum,corruption_in_wal,True,True,0,True
+T5,76_memories_lifecycle,none,False,True,0,True
+T6,100_memories_lifecycle,none,False,True,0,True

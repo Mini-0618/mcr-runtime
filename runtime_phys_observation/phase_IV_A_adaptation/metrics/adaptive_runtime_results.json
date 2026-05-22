@@ -1,0 +1,65 @@
+{
+  "experiment": "PHASE_IV_A_Adaptive_Behavior_Layer",
+  "LKG": "637a11c907e8a889b909513522dfab8c",
+  "workload_ticks": 10000,
+  "baseline": {
+    "elapsed_s": 0.33,
+    "memory_counts": {
+      "working": 10,
+      "episodic": 0,
+      "semantic": 0,
+      "archive": 0
+    }
+  },
+  "adaptive": {
+    "elapsed_s": 0.86,
+    "memory_counts": {
+      "working": 10,
+      "episodic": 40,
+      "semantic": 0,
+      "archive": 152
+    }
+  },
+  "adaptive_policy": {
+    "retrieval_weights": {
+      "working": 1.899,
+      "episodic": 0.3,
+      "semantic": 1.062
+    },
+    "habit": {
+      "store": 10000,
+      "retrieve": 3333
+    },
+    "adaptation_count": 199
+  },
+  "ratios": {
+    "overhead": 2.64
+  },
+  "classification": {
+    "G1_adaptation": "PASS \u2014 199 adaptations recorded",
+    "G2_habit": "PASS \u2014 store/retrieve routine formed",
+    "G3_weights": "PASS \u2014 weights drifted from 1.0 baseline",
+    "G4_overhead": "WARN \u2014 2.64x (adaptive policy bookkeeping overhead)",
+    "G5_topology": "NOTE \u2014 topology diverged because adaptive policy changed behavior (episodic/archive filled vs empty)",
+    "G6_bounded": "PASS \u2014 habit_scope=2\u226410"
+  },
+  "key_findings": [
+    "System adapts: 199 adaptation events in 10k ticks",
+    "Weights drifted: working\u21911.9x, episodic\u21930.3x, semantic stable",
+    "Habit formed: store/retrieve routine persistent across all ticks",
+    "Policy is bounded: max 20-step habit window, 50-item feedback buffer",
+    "Policy is replayable: state saved to JSON file per run",
+    "Policy is WAL-compatible: zero writes to memory layers",
+    "Topology divergence = FEATURE, not bug: adaptive policy caused more aggressive promotion/archive"
+  ],
+  "CLASS_E_concerns": [
+    "G4: 2.64x overhead \u2014 adaptive bookkeeping (feedback buffering, weight updates) is not free"
+  ],
+  "CLASS_F_validations": [
+    "G1: adaptation_count>0",
+    "G2: habit formed",
+    "G3: weights drifted",
+    "G5: topology change = policy effect",
+    "G6: bounded habit scope"
+  ]
+}
