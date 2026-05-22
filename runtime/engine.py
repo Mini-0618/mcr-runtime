@@ -58,11 +58,17 @@ class MCRRuntimeEngine:
         for _ in range(num_ticks):
             self.tick()
 
-        if verify and self.tick_count % self.tick_interval == 0:
+        if verify:
             result = self.verifier.verify(self.state, self.initial_state, self.wal)
             if not result['match']:
                 raise Exception(f"[G2 VIOLATION] tick={self.tick_count} {result}")
-            print(f"[G2 OK] tick={self.tick_count} hash={result['runtime_hash']}")
+            # Always verify at final tick of each run segment, not only at
+            # tick_interval boundaries. Intermediate runs with verify=True but
+            # unaligned num_ticks (e.g. 3 ticks into a tick_interval=10 run)
+            # would otherwise skip verification entirely, delaying G2 violation
+            # detection by up to (tick_interval - 1) ticks.
+            if self.tick_count % self.tick_interval == 0:
+                print(f"[G2 OK] tick={self.tick_count} hash={result['runtime_hash']}")
         return self.state
 
     def get_state(self):
