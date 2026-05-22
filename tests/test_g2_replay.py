@@ -8,12 +8,15 @@ sys.path.insert(0, '/home/minimak/mcr')
 from runtime import MCRRuntimeEngine, SystemState, WAL
 from runtime.replay_verifier import ReplayVerifier
 
+RANDOM_SEED = 42
+
 
 def random_memory_id():
     return f"mem_{random.randint(1000,9999)}"
 
 
 def test_g2_replay():
+    random.seed(RANDOM_SEED)
     print("=== G2 Replay Equivalence Test ===\n")
 
     # fresh WAL
