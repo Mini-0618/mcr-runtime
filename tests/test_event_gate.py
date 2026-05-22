@@ -118,13 +118,26 @@ def test_event_gate_validation():
 
     # Test 9: WAL skips malformed lines silently — verify load() on corrupted WAL
     # produces partial event list without raising. WAL._load() must not raise on
-    # bad JSON; truncateTest WAL must produce a recoverable partial state.
-    import tempfile, os
-    from runtime.wal import WAL
+    # bad JSON; truncated JSON and lines with invalid replay_hash are skipped.
+    import tempfile, os, json, hashlib
+    from runtime.wal import WAL, Event
     tmp = tempfile.NamedTemporaryFile(mode='w', suffix='.jsonl', delete=False)
-    tmp.write('{"_event_type":"memory_store","event_id":"e1","tick":1,"memory_id":"m1","coaccess_group_id":"550e8400-e29b-41d4-a716-446655440000","payload":{"content":"a"},"timestamp":1.0,"replay_hash":""}\n')
+
+    def make_event(event_id, tick, memory_id):
+        e = Event(
+            event_id=event_id, event_type='memory_store', tick=tick,
+            memory_id=memory_id, coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+            payload={'content': f'content_{event_id}'}, timestamp=1.0, replay_hash=''
+        )
+        e.replay_hash = e._compute_replay_hash()
+        return e
+
+    # Two valid events with correct replay_hash
+    for evt in [make_event('e1', 1, 'm1'), make_event('e2', 2, 'm2')]:
+        tmp.write(json.dumps(evt.to_dict()) + '\n')
+    # Malformed JSON line
     tmp.write('this is not json\n')
-    tmp.write('{"_event_type":"memory_store","event_id":"e2","tick":2,"memory_id":"m2","coaccess_group_id":"550e8400-e29b-41d4-a716-446655440000","payload":{"content":"b"},"timestamp":2.0,"replay_hash":""}\n')
+    # Truncated JSON line
     tmp.write('{"broken')
     tmp.close()
     w = WAL(tmp.name)

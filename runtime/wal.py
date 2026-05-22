@@ -1,6 +1,7 @@
 """
 WAL (Write-Ahead Log) — Single Source of Truth
 """
+import hashlib
 import json
 import time
 from dataclasses import dataclass, asdict
@@ -29,6 +30,29 @@ class Event:
         d['event_type'] = d.pop('_event_type')
         return Event(**d)
 
+    def _compute_replay_hash(self) -> str:
+        """
+        Compute integrity hash over the event, excluding replay_hash itself.
+        This is computed at write time and validated at load time to detect
+        post-write corruption (bit flip, truncation, replay attack, etc.).
+        """
+        d = self.to_dict()
+        d.pop('replay_hash', None)
+        # Serialize with sorted keys for deterministic output
+        serialized = json.dumps(d, sort_keys=True, separators=(',', ':'))
+        return hashlib.sha256(serialized.encode()).hexdigest()
+
+    def _validate_replay_hash(self) -> bool:
+        """
+        Validate replay_hash against recomputed hash.
+        Returns True if valid, False if missing or mismatched.
+        An empty string means the field was never set (old WAL format);
+        a mismatch means the event was modified after write.
+        """
+        if not self.replay_hash:
+            return False
+        return self.replay_hash == self._compute_replay_hash()
+
 
 class WAL:
     def __init__(self, path: str = "/home/minimak/mcr/.wal/events.jsonl"):
@@ -44,13 +68,24 @@ class WAL:
                     if line.strip():
                         try:
                             d = json.loads(line)
-                            self._events.append(Event.from_dict(d))
-                        except (json.JSONDecodeError, KeyError, ValueError):
-                            # Skip malformed or incomplete lines. A corrupted WAL must not
-                            # prevent startup; the system recovers via replay from valid prefix.
-                            pass
+                            event = Event.from_dict(d)
+                            # Validate replay_hash integrity. Entries with empty replay_hash
+                            # are old format (pre-migration); entries with mismatched hash
+                            # indicate post-write corruption. Both are skipped so the system
+                            # recovers via replay from the last valid prefix.
+                            if not event._validate_replay_hash():
+                                continue
+                            self._events.append(event)
+                        except (json.JSONDecodeError, KeyError, ValueError, TypeError):
+                            # Malformed JSON or unexpected struct — skip this line.
+                            # Covers corrupted, truncated, or manually edited WAL entries.
+                            continue
 
     def append(self, event: Event):
+        # Compute and store replay_hash before writing. This enables post-write
+        # integrity validation on load: any tampering (bit flip, truncation,
+        # manual edit) will cause _validate_replay_hash() to fail on load.
+        event.replay_hash = event._compute_replay_hash()
         self._events.append(event)
         with open(self.path, 'a') as f:
             f.write(json.dumps(event.to_dict()) + '\n')
