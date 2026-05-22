@@ -43,12 +43,13 @@ class HermesBridge:
         )
 
     def submit_proposal(self, proposal: EventProposal) -> ValidationResult:
-        """Submit a single proposal through the gate"""
+        """Submit a single proposal through the gate — all events route through Engine.emit_raw() to preserve tick authority and WAL consistency."""
         result = self.gate.validate(proposal)
         if result.accepted:
             event = self.gate.apply(proposal)
-            self.engine.state = self.engine.reducer.reduce(event, self.engine.state)
-            self.engine.wal.append(event)
+            # Route through emit_raw() so engine owns tick authority while preserving
+            # the event identity already constructed by EventGate.apply()
+            self.engine.emit_raw(event)
             result.event = event
         return result
 
