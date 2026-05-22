@@ -76,6 +76,17 @@ def test_event_gate_validation():
     result5 = gate.validate(nonmono)
     print(f"[5] Non-monotonic tick: {result5.accepted} — {result5.reason}")
 
+    # Test 6: empty memory_id on memory operation
+    empty_mem = EventProposal(
+        event_type="memory_store",
+        tick=6,
+        memory_id="",
+        coaccess_group_id="550e8400-e29b-41d4-a716-446655440000",
+        payload={"content": "test", "tier": "episodic"},
+    )
+    result6 = gate.validate(empty_mem)
+    print(f"[6] Empty memory_id: {result6.accepted} — {result6.reason}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
