@@ -57,6 +57,19 @@ def test_g2_replay():
     print(f"access_history: {len(runtime_state.access_history)}")
     print(f"WAL events: {wal.len()}")
 
+    # Tick monotonicity: WAL ticks must be strictly 1..N with no gaps.
+    # Engine owns tick authority; if LLM ever assigns ticks directly,
+    # WAL ticks will diverge from engine.tick_count.
+    events = wal.get_all()
+    for i, evt in enumerate(events):
+        expected = i + 1
+        if evt.tick != expected:
+            raise AssertionError(
+                f"TICK MONOTONICITY VIOLATION: WAL event index {i} has tick={evt.tick}, "
+                f"expected {expected}. LLM may be assigning ticks."
+            )
+    print(f"[tick] WAL ticks 1..{len(events)} monotonically sequential — OK")
+
     # G2 verification
     verifier = ReplayVerifier()
     initial = SystemState.empty()
