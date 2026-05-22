@@ -41,12 +41,11 @@ class MCRRuntimeEngine:
     def emit_raw(self, event: Event):
         """
         Process a pre-constructed event through the engine pipeline.
-        Engine still owns tick authority (tick_count still increments) but the
-        event identity (event_id, tick, payload) is preserved as given.
-        Used by HermesBridge to route validated proposals through emit() while
-        preserving the event that was already processed by EventGate.apply().
+        Engine owns tick authority: sets event.tick to current tick_count.
+        Used by HermesBridge to route validated proposals — LLM must not assign ticks.
         """
         self.tick_count += 1
+        event.tick = self.tick_count  # engine enforces tick authority; LLM cannot assign
         self.state = self.reducer.reduce(event, self.state)
         self.wal.append(event)
         return event

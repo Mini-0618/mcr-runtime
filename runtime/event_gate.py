@@ -102,7 +102,13 @@ class EventGate:
         return ValidationResult(True, "Accepted")
 
     def apply(self, proposal: EventProposal) -> Any:
-        """Convert validated proposal to deterministic event"""
+        """Convert validated proposal to deterministic event.
+
+        Note: proposal.tick is used as a placeholder here. Engine.emit_raw()
+        overwrites event.tick with engine-assigned tick_count to enforce
+        LLM-cannot-assign-ticks invariant. proposal.tick may be stale or
+        LLM-provided and must not be trusted.
+        """
         from .wal import Event
 
         return Event(
