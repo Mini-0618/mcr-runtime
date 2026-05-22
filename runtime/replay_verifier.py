@@ -36,7 +36,11 @@ class ReplayVerifier:
         wal_len = wal.len()
         wal_hash = self._wal_hash(wal)
         try:
-            replayed = self.replay(initial_state, wal)
+            # Clone initial_state before replay to prevent mutation of the caller's
+            # object. reduce() sets new_state.wal_length = state.wal_length + 1 on
+            # each event, so replay() would otherwise accumulate wal_length into
+            # initial_state across multiple replay() calls on the same verifier.
+            replayed = self.replay(initial_state.clone(), wal)
         except Exception as exc:
             return {
                 'match': False,
