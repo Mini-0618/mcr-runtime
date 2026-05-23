@@ -95,7 +95,10 @@ class HermesBridge:
                 if isinstance(item, dict):
                         proposal = EventProposal(
                             event_type=item.get("event_type", ""),
-                            tick=item.get("tick", self.engine.tick_count + 1),
+                            # tick is IGNORED — engine assigns all ticks via emit_raw().
+                            # Providing a default here would misleadingly suggest LLM can
+                            # influence tick, which violates engine tick authority.
+                            tick=0,
                             memory_id=item.get("memory_id"),
                             # Do NOT auto-generate a UUID — EventGate Rule 4 will reject
                             # the proposal if coaccess_group_id is missing or invalid.
@@ -115,7 +118,8 @@ class HermesBridge:
                         item = json.loads(line)
                         proposal = EventProposal(
                             event_type=item.get("event_type", ""),
-                            tick=item.get("tick", self.engine.tick_count + 1),
+                            # tick is IGNORED — engine assigns all ticks via emit_raw().
+                            tick=0,
                             memory_id=item.get("memory_id"),
                             # Do NOT auto-generate a UUID — EventGate Rule 4 will reject
                             # the proposal if coaccess_group_id is missing or invalid.
