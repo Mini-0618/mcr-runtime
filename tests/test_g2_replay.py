@@ -70,7 +70,11 @@ def test_g2_replay():
 
     # checkpoint every 10 ticks
     for t in [10, 20, 30, 40, 50]:
-        engine.run(num_ticks=t - engine.tick_count, verify=True)
+        remaining = t - engine.tick_count
+        if remaining > 0:
+            engine.run(num_ticks=remaining, verify=True)
+        # if remaining <= 0, this checkpoint was already passed by the ops loop;
+        # run(-N) is a no-op and would silently skip verification — guard against it
 
     runtime_state = engine.get_state()
     wal = engine.get_wal()
