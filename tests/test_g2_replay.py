@@ -112,12 +112,33 @@ def test_g2_replay():
     print(f"wal_hash:   {result['wal_hash']}")
 
     if result['match']:
+        # Explicit memory content verification.
+        # equals() only compares memory.keys(), not item contents. A reducer bug that
+        # stores wrong values (e.g., swapped content, wrong tier, stale created_tick)
+        # would pass equals() since keys match. Verify exact memory item contents.
+        replayed_state = verifier.replay(initial, wal)
+        memory_ok = True
+        if set(runtime_state.memory.keys()) != set(replayed_state.memory.keys()):
+            memory_ok = False
+        else:
+            for k in runtime_state.memory:
+                if runtime_state.memory[k] != replayed_state.memory[k]:
+                    memory_ok = False
+                    break
+        if not memory_ok:
+            print("\n❌ MEMORY_CONTENT_MISMATCH")
+            raise AssertionError(
+                f"memory item content mismatch: runtime={dict(runtime_state.memory)}, "
+                f"replayed={dict(replayed_state.memory)}"
+            )
+        print("[memory] content integrity: PASS")
+
         # Explicit coaccess_graph edge integrity check.
         # equals() only compares coaccess_graph keys (not edge contents), so a shallow
         # copy bug in clone() or equals() would not be caught by G2 alone.
         # Verify that replayed coaccess_graph has identical edge sets to runtime.
         runtime_graph = runtime_state.coaccess_graph
-        replayed_graph = verifier.replay(initial, wal).coaccess_graph
+        replayed_graph = replayed_state.coaccess_graph
         edges_ok = True
         if set(runtime_graph.keys()) != set(replayed_graph.keys()):
             edges_ok = False
