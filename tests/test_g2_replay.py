@@ -112,6 +112,28 @@ def test_g2_replay():
     print(f"wal_hash:   {result['wal_hash']}")
 
     if result['match']:
+        # Explicit coaccess_graph edge integrity check.
+        # equals() only compares coaccess_graph keys (not edge contents), so a shallow
+        # copy bug in clone() or equals() would not be caught by G2 alone.
+        # Verify that replayed coaccess_graph has identical edge sets to runtime.
+        runtime_graph = runtime_state.coaccess_graph
+        replayed_graph = verifier.replay(initial, wal).coaccess_graph
+        edges_ok = True
+        if set(runtime_graph.keys()) != set(replayed_graph.keys()):
+            edges_ok = False
+        else:
+            for k, runtime_neighbors in runtime_graph.items():
+                replayed_neighbors = replayed_graph.get(k, set())
+                if set(runtime_neighbors) != set(replayed_neighbors):
+                    edges_ok = False
+                    break
+        if not edges_ok:
+            print("\n❌ COACCESS_EDGE_MISMATCH")
+            raise AssertionError(
+                f"coaccess_graph edge divergence: runtime={dict(runtime_graph)}, "
+                f"replayed={dict(replayed_graph)}"
+            )
+        print("[coaccess] edge integrity: PASS")
         print("\n✅ G2-COMPLETE: runtime_state == replay(WAL)")
     else:
         print("\n❌ G2 VIOLATION DETECTED")
