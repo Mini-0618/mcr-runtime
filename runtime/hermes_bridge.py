@@ -69,7 +69,9 @@ class HermesBridge:
         Parse LLM text output into EventProposal list.
         Expected format: JSON array or line-delimited JSON
 
-        LLM constraints — violations cause silent rejection at EventGate:
+        LLM constraints — violations are rejected at EventGate with a reason
+        logged via ValidationResult.reason (not crash, not silent — but the
+        reason is not currently surfaced back to the LLM for self-correction):
         - event_type must be one of: memory_store, memory_access, memory_archive,
           memory_purge, policy_update, curriculum_task_create, curriculum_task_complete, failure_record
         - memory_id is REQUIRED and non-empty for memory_store, memory_access,
