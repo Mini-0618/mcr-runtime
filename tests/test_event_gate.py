@@ -455,6 +455,43 @@ def test_event_gate_validation():
           f"{s20_after.coaccess_graph.get('mem_archive_test', set()) == {'mem_other'}} — "
           f"{'OK' if archive_ok else 'FAIL'}")
 
+    # Test 21: memory_purge behavioral correctness.
+    # Purge must: (a) remove memory entry from dict, (b) NOT clear coaccess_graph
+    # edges (edges are access-history by-product; purge only deletes memory entry).
+    # Gate schema allows the event. Reducer._handle_purge does del from memory dict.
+    gate21 = EventGate()
+    purge_proposal = EventProposal(
+        event_type="memory_purge", tick=21,
+        memory_id="mem_purge_test", coaccess_group_id="550e8400-e29b-41d4-a716-446655440000",
+        payload={},
+    )
+    vr21 = gate21.validate(purge_proposal)
+    evt21 = Event(event_id='x21', event_type='memory_purge', tick=21,
+                  memory_id='mem_purge_test', coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+                  payload={}, timestamp=1.0, replay_hash='')
+    # Build state with coaccess edges before purging
+    s21 = SystemState.empty()
+    s21.memory['mem_purge_test'] = {'content': 'test', 'tier': 'episodic', 'created_tick': 1}
+    s21.coaccess_graph['mem_purge_test'] = {'mem_purge_neighbor'}
+    s21.access_history.append({'memory_id': 'mem_purge_test', 'tick': 1,
+                               'coaccess_group_id': '550e8400-e29b-41d4-a716-446655440000'})
+    s21_after = DeterministicReducer().reduce(evt21, s21)
+    # Memory must be deleted from dict
+    purge_ok = (
+        vr21.accepted == True
+        and 'mem_purge_test' not in s21_after.memory
+        # coaccess_graph edges are NOT cleared by purge — they are access history
+        # by-product; removing them would require scanning all access_history entries
+        and s21_after.coaccess_graph.get('mem_purge_test', set()) == {'mem_purge_neighbor'}
+        and len(s21_after.access_history) == 1
+    )
+    print(f"[21a] memory_purge gate accepted: {vr21.accepted} — {'OK' if vr21.accepted else 'FAIL'}")
+    print(f"[21b] memory removed from dict: {'mem_purge_test' not in s21_after.memory} — "
+          f"{'OK' if 'mem_purge_test' not in s21_after.memory else 'FAIL'}")
+    print(f"[21c] coaccess_graph edges preserved after purge: "
+          f"{s21_after.coaccess_graph.get('mem_purge_test', set()) == {'mem_purge_neighbor'}} — "
+          f"{'OK' if purge_ok else 'FAIL'}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")

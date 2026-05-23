@@ -34,7 +34,7 @@ Also validates:
 
 Three sub-tests covering EventGate and HermesBridge:
 
-**test_event_gate_validation** (tests 1–19):
+**test_event_gate_validation** (tests 1–21):
 - Rule 1: unknown event type → reject
 - Rule 2: missing required payload fields → reject
 - Rule 3: forbidden payload fields (state, timestamp, replay_hash, etc.) → reject
@@ -51,6 +51,8 @@ Three sub-tests covering EventGate and HermesBridge:
 - Tests 17a/17b/17c: EventGate UUID Rule 4 via full HermesBridge pipeline — invalid UUIDs rejected, valid UUID accepted, coaccess_graph built correctly
 - Test 18: policy_update event type — gate accepts with policy_weights+reason, reducer produces no state mutation (noop)
 - Test 19: Rule 8 — payloads with fields outside the event schema are rejected at the gate; payloads with only schema fields are accepted. Prevents LLM from smuggling extraneous fields into WAL.
+- Test 20: memory_archive — gate accepts, reducer retains memory with tier=archive, coaccess_graph edges preserved
+- Test 21: memory_purge — gate accepts, reducer removes memory from dict, coaccess_graph edges preserved (access-history by-product)
 
 **test_hermes_bridge**: LLM JSON parsing → proposals → accepted/rejected counts
 
