@@ -383,6 +383,40 @@ def test_event_gate_validation():
           f"memory={len(s_after.memory)}, wal_length={s_after.wal_length} — "
           f"{'OK' if policy_ok else 'FAIL'}")
 
+    # Test 19: Rule 8 — reject payloads with fields outside the event schema.
+    # LLM may include extra fields that are not in the event's schema. These must
+    # be rejected at the gate (not silently stripped) to make constraint violations
+    # explicit and give the LLM clear feedback for self-correction.
+    gate19 = EventGate()
+    # Extra field "metadata" is not in memory_store schema ["content", "tier"]
+    extra_proposal = EventProposal(
+        event_type="memory_store", tick=19,
+        memory_id="mem_019", coaccess_group_id="550e8400-e29b-41d4-a716-446655440000",
+        payload={"content": "test", "tier": "episodic", "metadata": "extra_value"},
+    )
+    r19a = gate19.validate(extra_proposal)
+    ok19a = r19a.accepted == False and "metadata" in r19a.reason
+    print(f"[19a] extra field rejected: {not r19a.accepted} — {'OK' if ok19a else 'FAIL'} ({r19a.reason})")
+
+    # Extra field "score" is not in memory_access schema (which is empty list)
+    extra_access = EventProposal(
+        event_type="memory_access", tick=19,
+        memory_id="mem_019", coaccess_group_id="550e8400-e29b-41d4-a716-446655440000",
+        payload={"score": 0.9},  # not in empty schema
+    )
+    r19b = gate19.validate(extra_access)
+    ok19b = r19b.accepted == False and "score" in r19b.reason
+    print(f"[19b] extra field on empty-schema event rejected: {not r19b.accepted} — {'OK' if ok19b else 'FAIL'} ({r19b.reason})")
+
+    # Valid proposal with only schema fields — must still be accepted
+    valid_proposal = EventProposal(
+        event_type="memory_store", tick=19,
+        memory_id="mem_019", coaccess_group_id="550e8400-e29b-41d4-a716-446655440000",
+        payload={"content": "test", "tier": "episodic"},  # only schema fields
+    )
+    r19c = gate19.validate(valid_proposal)
+    print(f"[19c] schema-only fields accepted: {r19c.accepted} — {'OK' if r19c.accepted else 'FAIL'}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")

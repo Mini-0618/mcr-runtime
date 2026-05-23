@@ -93,6 +93,19 @@ class EventGate:
         if not isinstance(proposal.payload, dict):
             return ValidationResult(False, f"payload must be a dict, got {type(proposal.payload).__name__}")
 
+        # Rule 8: payload must not contain fields outside the event's schema.
+        # Required fields are enforced by Rule 2. Extraneous fields indicate a malformed
+        # proposal (LLM included fields not in schema). Rejecting here keeps WAL clean
+        # and prevents the LLM from smuggling constraint-violating fields into state.
+        # Reducer already ignores unknown fields, so stripping extras (not rejecting) would
+        # also be safe — but rejecting makes the constraint violation explicit for LLM
+        # self-correction. Empty payload ({}) is valid for event types with no schema fields.
+        schema_fields = set(EVENT_SCHEMAS.get(proposal.event_type, []))
+        payload_fields = set(proposal.payload.keys())
+        extra_fields = payload_fields - schema_fields
+        if extra_fields:
+            return ValidationResult(False, f"Unexpected payload fields for {proposal.event_type}: {sorted(extra_fields)}")
+
         # Rule 2: required fields must be present
         required = EVENT_SCHEMAS.get(proposal.event_type, [])
         for field_name in required:
