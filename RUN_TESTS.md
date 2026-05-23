@@ -34,16 +34,21 @@ Also validates:
 
 Three sub-tests covering EventGate and HermesBridge:
 
-**test_event_gate_validation** (tests 1–13):
+**test_event_gate_validation** (tests 1–17):
 - Rule 1: unknown event type → reject
 - Rule 2: missing required payload fields → reject
 - Rule 3: forbidden payload fields (state, timestamp, replay_hash, etc.) → reject
 - Rule 4: invalid coaccess_group_id (None, non-UUID string) → reject cleanly (no TypeError crash)
 - Rule 5: empty memory_id on memory operations → reject
 - Rule 6: None memory_id on memory operations → reject cleanly
+- Rule 7: payload must be dict (not None, list, or primitive) → reject cleanly
 - Test 8: coaccess_graph isolation — clone mutation must not leak
 - Test 9: WAL skips malformed JSON lines silently
 - Tests 10–13: edge cases (noop handlers, payload type guard, snapshot cap)
+- Tests 14a/14b: ReplayVerifier.wal_hash() public API — matches verify() result and is intra-session stable
+- Test 15: WAL.is_empty() — True for fresh WAL, False after append
+- Test 16: Event.equals() — content equality excluding replay_hash
+- Tests 17a/17b/17c: EventGate UUID Rule 4 via full HermesBridge pipeline — invalid UUIDs rejected, valid UUID accepted, coaccess_graph built correctly
 
 **test_hermes_bridge**: LLM JSON parsing → proposals → accepted/rejected counts
 
