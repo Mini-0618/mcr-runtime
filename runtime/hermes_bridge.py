@@ -91,15 +91,19 @@ class HermesBridge:
 
             for item in data:
                 if isinstance(item, dict):
-                    proposal = EventProposal(
-                        event_type=item.get("event_type", ""),
-                        tick=item.get("tick", self.engine.tick_count + 1),
-                        memory_id=item.get("memory_id"),
-                        coaccess_group_id=item.get("coaccess_group_id", str(uuid.uuid4())),
-                        payload=item.get("payload", {}),
-                        justification=item.get("justification", "")
-                    )
-                    proposals.append(proposal)
+                        proposal = EventProposal(
+                            event_type=item.get("event_type", ""),
+                            tick=item.get("tick", self.engine.tick_count + 1),
+                            memory_id=item.get("memory_id"),
+                            # Do NOT auto-generate a UUID — EventGate Rule 4 will reject
+                            # the proposal if coaccess_group_id is missing or invalid.
+                            # Auto-generation masks an LLM constraint violation and produces
+                            # accepted events even when the LLM failed to provide this field.
+                            coaccess_group_id=item.get("coaccess_group_id", ""),
+                            payload=item.get("payload", {}),
+                            justification=item.get("justification", "")
+                        )
+                        proposals.append(proposal)
         except json.JSONDecodeError:
             # try line-delimited
             for line in llm_output.strip().split('\n'):
@@ -111,7 +115,9 @@ class HermesBridge:
                             event_type=item.get("event_type", ""),
                             tick=item.get("tick", self.engine.tick_count + 1),
                             memory_id=item.get("memory_id"),
-                            coaccess_group_id=item.get("coaccess_group_id", str(uuid.uuid4())),
+                            # Do NOT auto-generate a UUID — EventGate Rule 4 will reject
+                            # the proposal if coaccess_group_id is missing or invalid.
+                            coaccess_group_id=item.get("coaccess_group_id", ""),
                             payload=item.get("payload", {}),
                             justification=item.get("justification", "")
                         )
