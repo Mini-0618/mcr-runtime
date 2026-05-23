@@ -115,9 +115,12 @@ class WAL:
         return list(self._events)
 
     def clear(self):
+        # Unlink file before clearing in-memory list.
+        # If unlink fails (permissions, file not found), the in-memory list
+        # is still intact and matches what reload would produce. Old order
+        # (_events=[] first) would lose in-memory state if unlink() then fails.
+        self.path.unlink(missing_ok=True)
         self._events = []
-        if self.path.exists():
-            self.path.unlink()
 
     def len(self) -> int:
         return len(self._events)
