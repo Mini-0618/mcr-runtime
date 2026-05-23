@@ -1,0 +1,4139 @@
+
+===== SMOKE TEST RESULT =====
+tmux-driven hermes chat smoke test passed.
+Hermes can be externally driven through tmux and can inspect project files.
+Observed issue: Hermes recommended pytest, but pytest is not installed in this environment.
+Correct test runner for current environment:
+python3 tests/test_g2_replay.py
+python3 tests/test_event_gate.py
+
+Conclusion:
+Hermes can serve as an interactive proposal source, but supervisor prompts must include explicit environment constraints.
+===== END SMOKE TEST RESULT =====
+===== MCR 5H SUPERVISED LOOP START Sat May 23 04:43:41 CST 2026 =====
+
+===== CYCLE START Sat May 23 04:43:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 04:48:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 26
+access_history: 0
+WAL events: 50
+
+--- G2 Verification ---
+match: True
+runtime_hash: 4806992701077660491
+replay_hash:  4806992701077660491
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=4683669315234682215, replay_hash=4683669315234682215
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 04:48:11 CST 2026 =====
+ M runtime/event_gate.py
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+7b0773f feat: Event Gate Layer + Hermes Bridge v0.1
+34a705a feat: G2-complete deterministic runtime kernel
+155359b fix: G2 WAL replay correctness — multi-layer tombstone removal
+a302438 fix: G3 ghost retrieval — WAL replay now removes items from all layers
+6ed7c6a feat: full MCR v0.9 — layered memory runtime, observability, physics benchmarks
+===== CYCLE END Sat May 23 04:48:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 04:48:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 04:53:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 22
+access_history: 0
+WAL events: 50
+
+--- G2 Verification ---
+match: True
+runtime_hash: 8793527992930364073
+replay_hash:  8793527992930364073
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=1443197405633181009, replay_hash=1443197405633181009
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 04:53:11 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+fdc58b4 event_gate: remove ineffective tick monotonicity check from validate()
+7b0773f feat: Event Gate Layer + Hermes Bridge v0.1
+34a705a feat: G2-complete deterministic runtime kernel
+155359b fix: G2 WAL replay correctness — multi-layer tombstone removal
+a302438 fix: G3 ghost retrieval — WAL replay now removes items from all layers
+===== CYCLE END Sat May 23 04:53:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 04:53:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 04:58:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 21
+access_history: 0
+WAL events: 50
+
+--- G2 Verification ---
+match: True
+runtime_hash: 6655987562305462720
+replay_hash:  6655987562305462720
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-768216828865556349, replay_hash=-768216828865556349
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 04:58:11 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+92bc258 event_gate: remove dead mutable state (last_tick, _counter) from EventGate
+fdc58b4 event_gate: remove ineffective tick monotonicity check from validate()
+7b0773f feat: Event Gate Layer + Hermes Bridge v0.1
+34a705a feat: G2-complete deterministic runtime kernel
+155359b fix: G2 WAL replay correctness — multi-layer tombstone removal
+===== CYCLE END Sat May 23 04:58:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 04:58:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:03:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 24
+access_history: 0
+WAL events: 50
+
+--- G2 Verification ---
+match: True
+runtime_hash: 6974568845775809269
+replay_hash:  6974568845775809269
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-1676089779163407420, replay_hash=-1676089779163407420
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:03:11 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+71eb3e2 hermes_bridge: route submit_proposal through Engine.emit_raw()
+92bc258 event_gate: remove dead mutable state (last_tick, _counter) from EventGate
+fdc58b4 event_gate: remove ineffective tick monotonicity check from validate()
+7b0773f feat: Event Gate Layer + Hermes Bridge v0.1
+34a705a feat: G2-complete deterministic runtime kernel
+===== CYCLE END Sat May 23 05:03:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:03:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:08:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 25
+access_history: 0
+WAL events: 50
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3896349907158368703
+replay_hash:  3896349907158368703
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-5020118530005867893, replay_hash=-5020118530005867893
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:08:11 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+71eb3e2 hermes_bridge: route submit_proposal through Engine.emit_raw()
+92bc258 event_gate: remove dead mutable state (last_tick, _counter) from EventGate
+fdc58b4 event_gate: remove ineffective tick monotonicity check from validate()
+7b0773f feat: Event Gate Layer + Hermes Bridge v0.1
+34a705a feat: G2-complete deterministic runtime kernel
+===== CYCLE END Sat May 23 05:08:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:08:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:13:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 21
+access_history: 0
+WAL events: 50
+
+--- G2 Verification ---
+match: True
+runtime_hash: 2738658200903979296
+replay_hash:  2738658200903979296
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=3018555073791452961, replay_hash=3018555073791452961
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:13:11 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+1b13cdf replay_verifier: graceful mismatch on replay exception instead of crash
+71eb3e2 hermes_bridge: route submit_proposal through Engine.emit_raw()
+92bc258 event_gate: remove dead mutable state (last_tick, _counter) from EventGate
+fdc58b4 event_gate: remove ineffective tick monotonicity check from validate()
+7b0773f feat: Event Gate Layer + Hermes Bridge v0.1
+===== CYCLE END Sat May 23 05:13:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:13:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:18:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 19
+access_history: 0
+WAL events: 50
+
+--- G2 Verification ---
+match: True
+runtime_hash: 5157682832896225237
+replay_hash:  5157682832896225237
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=7868117961134636457, replay_hash=7868117961134636457
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:18:11 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+26b96e7 engine: enforce tick authority in emit_raw() — LLM cannot assign WAL ticks
+1b13cdf replay_verifier: graceful mismatch on replay exception instead of crash
+71eb3e2 hermes_bridge: route submit_proposal through Engine.emit_raw()
+92bc258 event_gate: remove dead mutable state (last_tick, _counter) from EventGate
+fdc58b4 event_gate: remove ineffective tick monotonicity check from validate()
+===== CYCLE END Sat May 23 05:18:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:18:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:23:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 24
+access_history: 1
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 1162667046560610072
+replay_hash:  1162667046560610072
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-6946262336339621120, replay_hash=-6946262336339621120
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:23:11 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+d903fd3 test_g2_replay: add WAL tick monotonicity check
+26b96e7 engine: enforce tick authority in emit_raw() — LLM cannot assign WAL ticks
+1b13cdf replay_verifier: graceful mismatch on replay exception instead of crash
+71eb3e2 hermes_bridge: route submit_proposal through Engine.emit_raw()
+92bc258 event_gate: remove dead mutable state (last_tick, _counter) from EventGate
+===== CYCLE END Sat May 23 05:23:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:23:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:28:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: -1040310758112614948
+replay_hash:  -1040310758112614948
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-4226216808855723815, replay_hash=-4226216808855723815
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:28:11 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+6485dd2 test_g2_replay: lock random seed to 42 for reproducible runs
+d903fd3 test_g2_replay: add WAL tick monotonicity check
+26b96e7 engine: enforce tick authority in emit_raw() — LLM cannot assign WAL ticks
+1b13cdf replay_verifier: graceful mismatch on replay exception instead of crash
+71eb3e2 hermes_bridge: route submit_proposal through Engine.emit_raw()
+===== CYCLE END Sat May 23 05:28:11 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:28:41 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:33:11 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3965005999143121581
+replay_hash:  3965005999143121581
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-323328501132201268, replay_hash=-323328501132201268
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:33:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+3c73475 wal: flush() after write to ensure events reach the OS
+6485dd2 test_g2_replay: lock random seed to 42 for reproducible runs
+d903fd3 test_g2_replay: add WAL tick monotonicity check
+26b96e7 engine: enforce tick authority in emit_raw() — LLM cannot assign WAL ticks
+1b13cdf replay_verifier: graceful mismatch on replay exception instead of crash
+===== CYCLE END Sat May 23 05:33:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:33:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:38:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: -5067232586914977579
+replay_hash:  -5067232586914977579
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=6233225777857962924, replay_hash=6233225777857962924
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:38:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+8045671 event_gate: add Rule 5 — memory_id required for memory operations
+3c73475 wal: flush() after write to ensure events reach the OS
+6485dd2 test_g2_replay: lock random seed to 42 for reproducible runs
+d903fd3 test_g2_replay: add WAL tick monotonicity check
+26b96e7 engine: enforce tick authority in emit_raw() — LLM cannot assign WAL ticks
+===== CYCLE END Sat May 23 05:38:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:38:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:43:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 7560684087448641037
+replay_hash:  7560684087448641037
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-70221276244045506, replay_hash=-70221276244045506
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:43:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+76a30b0 replay_verifier: add reason/detail fields to verify() result
+8045671 event_gate: add Rule 5 — memory_id required for memory operations
+3c73475 wal: flush() after write to ensure events reach the OS
+6485dd2 test_g2_replay: lock random seed to 42 for reproducible runs
+d903fd3 test_g2_replay: add WAL tick monotonicity check
+===== CYCLE END Sat May 23 05:43:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:43:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:48:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: -1787769313591906425
+replay_hash:  -1787769313591906425
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=7214399943619570651, replay_hash=7214399943619570651
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:48:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+3b2fc42 hermes_bridge: remove dead pending_proposals mutable list
+76a30b0 replay_verifier: add reason/detail fields to verify() result
+8045671 event_gate: add Rule 5 — memory_id required for memory operations
+3c73475 wal: flush() after write to ensure events reach the OS
+6485dd2 test_g2_replay: lock random seed to 42 for reproducible runs
+===== CYCLE END Sat May 23 05:48:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:48:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:53:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 7829346194134939133
+replay_hash:  7829346194134939133
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-7679355781987294498, replay_hash=-7679355781987294498
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:53:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+6c190bb hermes_bridge: document LLM proposal constraints in llm_to_proposals docstring
+3b2fc42 hermes_bridge: remove dead pending_proposals mutable list
+76a30b0 replay_verifier: add reason/detail fields to verify() result
+8045671 event_gate: add Rule 5 — memory_id required for memory operations
+3c73475 wal: flush() after write to ensure events reach the OS
+===== CYCLE END Sat May 23 05:53:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:53:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 05:58:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3621901525248303044
+[G2 OK] tick=50 hash=3621901525248303044
+[G2 OK] tick=50 hash=3621901525248303044
+[G2 OK] tick=50 hash=3621901525248303044
+[G2 OK] tick=50 hash=3621901525248303044
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3621901525248303044
+replay_hash:  3621901525248303044
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=6102550692027487581, replay_hash=6102550692027487581
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 05:58:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+21efbc0 engine: align tick_interval=10 with test checkpoints (10,20,30,40,50)
+6c190bb hermes_bridge: document LLM proposal constraints in llm_to_proposals docstring
+3b2fc42 hermes_bridge: remove dead pending_proposals mutable list
+76a30b0 replay_verifier: add reason/detail fields to verify() result
+8045671 event_gate: add Rule 5 — memory_id required for memory operations
+===== CYCLE END Sat May 23 05:58:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 05:58:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:03:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=-4311578852393501935
+[G2 OK] tick=50 hash=-4311578852393501935
+[G2 OK] tick=50 hash=-4311578852393501935
+[G2 OK] tick=50 hash=-4311578852393501935
+[G2 OK] tick=50 hash=-4311578852393501935
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: -4311578852393501935
+replay_hash:  -4311578852393501935
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=7603206447965654118, replay_hash=7603206447965654118
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:03:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+bb28c45 event_gate: guard Rule 5 against None memory_id; add test case [7]
+21efbc0 engine: align tick_interval=10 with test checkpoints (10,20,30,40,50)
+6c190bb hermes_bridge: document LLM proposal constraints in llm_to_proposals docstring
+3b2fc42 hermes_bridge: remove dead pending_proposals mutable list
+76a30b0 replay_verifier: add reason/detail fields to verify() result
+===== CYCLE END Sat May 23 06:03:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:03:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:08:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=6022809712115609408
+[G2 OK] tick=50 hash=6022809712115609408
+[G2 OK] tick=50 hash=6022809712115609408
+[G2 OK] tick=50 hash=6022809712115609408
+[G2 OK] tick=50 hash=6022809712115609408
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 6022809712115609408
+replay_hash:  6022809712115609408
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-2409611360820084175, replay_hash=-2409611360820084175
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:08:12 CST 2026 =====
+ M runtime/state.py
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+bb28c45 event_gate: guard Rule 5 against None memory_id; add test case [7]
+21efbc0 engine: align tick_interval=10 with test checkpoints (10,20,30,40,50)
+6c190bb hermes_bridge: document LLM proposal constraints in llm_to_proposals docstring
+3b2fc42 hermes_bridge: remove dead pending_proposals mutable list
+76a30b0 replay_verifier: add reason/detail fields to verify() result
+===== CYCLE END Sat May 23 06:08:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:08:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:13:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=8886653637342091216
+[G2 OK] tick=50 hash=8886653637342091216
+[G2 OK] tick=50 hash=8886653637342091216
+[G2 OK] tick=50 hash=8886653637342091216
+[G2 OK] tick=50 hash=8886653637342091216
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 8886653637342091216
+replay_hash:  8886653637342091216
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-6506554876855528757, replay_hash=-6506554876855528757
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:13:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+74b7ed3 test_event_gate: add [8] coaccess_graph isolation regression test
+261c5a4 state: deep-copy coaccess_graph set values in clone() to prevent mutation leakage
+bb28c45 event_gate: guard Rule 5 against None memory_id; add test case [7]
+21efbc0 engine: align tick_interval=10 with test checkpoints (10,20,30,40,50)
+6c190bb hermes_bridge: document LLM proposal constraints in llm_to_proposals docstring
+===== CYCLE END Sat May 23 06:13:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:13:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:18:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=7741029813650914367
+[G2 OK] tick=50 hash=7741029813650914367
+[G2 OK] tick=50 hash=7741029813650914367
+[G2 OK] tick=50 hash=7741029813650914367
+[G2 OK] tick=50 hash=7741029813650914367
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 7741029813650914367
+replay_hash:  7741029813650914367
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=654499781623361887, replay_hash=654499781623361887
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:18:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+79f21cc state: include coaccess_graph edge values in hash() to catch collisions
+74b7ed3 test_event_gate: add [8] coaccess_graph isolation regression test
+261c5a4 state: deep-copy coaccess_graph set values in clone() to prevent mutation leakage
+bb28c45 event_gate: guard Rule 5 against None memory_id; add test case [7]
+21efbc0 engine: align tick_interval=10 with test checkpoints (10,20,30,40,50)
+===== CYCLE END Sat May 23 06:18:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:18:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:23:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=-387534365164475688
+[G2 OK] tick=50 hash=-387534365164475688
+[G2 OK] tick=50 hash=-387534365164475688
+[G2 OK] tick=50 hash=-387534365164475688
+[G2 OK] tick=50 hash=-387534365164475688
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: -387534365164475688
+replay_hash:  -387534365164475688
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=1382554866230059007, replay_hash=1382554866230059007
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:23:12 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+602fa0c wal: add try/except around JSON parse in _load() for crash resilience
+79f21cc state: include coaccess_graph edge values in hash() to catch collisions
+74b7ed3 test_event_gate: add [8] coaccess_graph isolation regression test
+261c5a4 state: deep-copy coaccess_graph set values in clone() to prevent mutation leakage
+bb28c45 event_gate: guard Rule 5 against None memory_id; add test case [7]
+===== CYCLE END Sat May 23 06:23:12 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:23:42 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:28:12 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=330182676365384142
+[G2 OK] tick=50 hash=330182676365384142
+[G2 OK] tick=50 hash=330182676365384142
+[G2 OK] tick=50 hash=330182676365384142
+[G2 OK] tick=50 hash=330182676365384142
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 330182676365384142
+replay_hash:  330182676365384142
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: False — loaded 0/2 events, skipped 2 malformed lines
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=3479117591568030230, replay_hash=3479117591568030230
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:28:13 CST 2026 =====
+ M runtime/wal.py
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+602fa0c wal: add try/except around JSON parse in _load() for crash resilience
+79f21cc state: include coaccess_graph edge values in hash() to catch collisions
+74b7ed3 test_event_gate: add [8] coaccess_graph isolation regression test
+261c5a4 state: deep-copy coaccess_graph set values in clone() to prevent mutation leakage
+bb28c45 event_gate: guard Rule 5 against None memory_id; add test case [7]
+===== CYCLE END Sat May 23 06:28:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:28:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:33:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=-4952449140362108454
+[G2 OK] tick=50 hash=-4952449140362108454
+[G2 OK] tick=50 hash=-4952449140362108454
+[G2 OK] tick=50 hash=-4952449140362108454
+[G2 OK] tick=50 hash=-4952449140362108454
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: -4952449140362108454
+replay_hash:  -4952449140362108454
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-3680562540430121215, replay_hash=-3680562540430121215
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:33:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+2c965d4 wal: compute and validate replay_hash integrity on write/load
+602fa0c wal: add try/except around JSON parse in _load() for crash resilience
+79f21cc state: include coaccess_graph edge values in hash() to catch collisions
+74b7ed3 test_event_gate: add [8] coaccess_graph isolation regression test
+261c5a4 state: deep-copy coaccess_graph set values in clone() to prevent mutation leakage
+===== CYCLE END Sat May 23 06:33:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:33:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:38:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=-2976870041266793689
+[G2 OK] tick=50 hash=-2976870041266793689
+[G2 OK] tick=50 hash=-2976870041266793689
+[G2 OK] tick=50 hash=-2976870041266793689
+[G2 OK] tick=50 hash=-2976870041266793689
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: -2976870041266793689
+replay_hash:  -2976870041266793689
+wal_length: 50
+wal_hash:   be4d64d14379c41170c431414989a4e82797072ea8e37809ff046e1df525c5c5
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-7895542147389875614, replay_hash=-7895542147389875614
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:38:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+f6a6317 replay_verifier: add wal_length and wal_hash to verify() result
+2c965d4 wal: compute and validate replay_hash integrity on write/load
+602fa0c wal: add try/except around JSON parse in _load() for crash resilience
+79f21cc state: include coaccess_graph edge values in hash() to catch collisions
+74b7ed3 test_event_gate: add [8] coaccess_graph isolation regression test
+===== CYCLE END Sat May 23 06:38:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:38:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:43:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=7692569000562933185
+[G2 OK] tick=50 hash=7692569000562933185
+[G2 OK] tick=50 hash=7692569000562933185
+[G2 OK] tick=50 hash=7692569000562933185
+[G2 OK] tick=50 hash=7692569000562933185
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 7692569000562933185
+replay_hash:  7692569000562933185
+wal_length: 50
+wal_hash:   3c41c138fa1cf3c72136a20f3461d7be91f3c0fcf83eac1e79f9dce81e7ef6fa
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=-3604767750721416044, replay_hash=-3604767750721416044
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:43:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+a1eb0d2 event_gate: guard is_valid_uuid against None/non-string input; add test [10]
+f6a6317 replay_verifier: add wal_length and wal_hash to verify() result
+2c965d4 wal: compute and validate replay_hash integrity on write/load
+602fa0c wal: add try/except around JSON parse in _load() for crash resilience
+79f21cc state: include coaccess_graph edge values in hash() to catch collisions
+===== CYCLE END Sat May 23 06:43:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:43:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:48:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=5319395851752175786
+[G2 OK] tick=50 hash=5319395851752175786
+[G2 OK] tick=50 hash=5319395851752175786
+[G2 OK] tick=50 hash=5319395851752175786
+[G2 OK] tick=50 hash=5319395851752175786
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 5319395851752175786
+replay_hash:  5319395851752175786
+wal_length: 50
+wal_hash:   8a136d882910b7806e7eaab85fae363f4511f4c9bdbdc7caa89477394e436128
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=786624320250951124, replay_hash=786624320250951124
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:48:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+4500725 reducer: add _handle_noop for curriculum_task_create/complete/failure_record
+a1eb0d2 event_gate: guard is_valid_uuid against None/non-string input; add test [10]
+f6a6317 replay_verifier: add wal_length and wal_hash to verify() result
+2c965d4 wal: compute and validate replay_hash integrity on write/load
+602fa0c wal: add try/except around JSON parse in _load() for crash resilience
+===== CYCLE END Sat May 23 06:48:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:48:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:53:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   7743c9ec96be6f23a00b4731ce690ef5afb1fdea6aab2b2886a23558932cd255
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:53:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+9f2a112 state: replace per-process hash() with fixed-salt SHA-256 for cross-session reproducibility
+4500725 reducer: add _handle_noop for curriculum_task_create/complete/failure_record
+a1eb0d2 event_gate: guard is_valid_uuid against None/non-string input; add test [10]
+f6a6317 replay_verifier: add wal_length and wal_hash to verify() result
+2c965d4 wal: compute and validate replay_hash integrity on write/load
+===== CYCLE END Sat May 23 06:53:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:53:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 06:58:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   05766899ff136e1c9e0c1c32dd25e33d77e2de55959c6af65c079b69fe6705b2
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 06:58:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+c037cbb event_gate: add Rule 7 — payload must be dict; add test [12]
+9f2a112 state: replace per-process hash() with fixed-salt SHA-256 for cross-session reproducibility
+4500725 reducer: add _handle_noop for curriculum_task_create/complete/failure_record
+a1eb0d2 event_gate: guard is_valid_uuid against None/non-string input; add test [10]
+f6a6317 replay_verifier: add wal_length and wal_hash to verify() result
+===== CYCLE END Sat May 23 06:58:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 06:58:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:03:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   ac040f9ffcaa0ba83224228c225e1700125fc7999d4b073a9fa7a628e910f036
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:03:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+2762caa hermes_bridge: cap access_history in get_state_snapshot() to 20; add test [13]
+c037cbb event_gate: add Rule 7 — payload must be dict; add test [12]
+9f2a112 state: replace per-process hash() with fixed-salt SHA-256 for cross-session reproducibility
+4500725 reducer: add _handle_noop for curriculum_task_create/complete/failure_record
+a1eb0d2 event_gate: guard is_valid_uuid against None/non-string input; add test [10]
+===== CYCLE END Sat May 23 07:03:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:03:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:08:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   d34b7b110e63f2ee40c02c1c2ed40e2a13083ffbc96bd126fcb8e348015f8a04
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:08:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+5c17e9f engine: verify G2 at end of every run(verify=True), not just tick_interval boundaries
+2762caa hermes_bridge: cap access_history in get_state_snapshot() to 20; add test [13]
+c037cbb event_gate: add Rule 7 — payload must be dict; add test [12]
+9f2a112 state: replace per-process hash() with fixed-salt SHA-256 for cross-session reproducibility
+4500725 reducer: add _handle_noop for curriculum_task_create/complete/failure_record
+===== CYCLE END Sat May 23 07:08:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:08:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:13:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   61675c3f8b540931302ef3707897d685045eb5e8e6520d432c41ecfbfbc552aa
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id required for memory_store
+[7] None memory_id: False — memory_id required for memory_access
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:13:13 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+e7f1a92 docs: add RUN_TESTS.md — test runner guide, no pytest, stdlib only
+5c17e9f engine: verify G2 at end of every run(verify=True), not just tick_interval boundaries
+2762caa hermes_bridge: cap access_history in get_state_snapshot() to 20; add test [13]
+c037cbb event_gate: add Rule 7 — payload must be dict; add test [12]
+9f2a112 state: replace per-process hash() with fixed-salt SHA-256 for cross-session reproducibility
+===== CYCLE END Sat May 23 07:13:13 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:13:43 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:18:13 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   c9bcc5b1c01c73c6f2a925da49b89b03dc14cc1ec257b03ed5dc48172fdf65a4
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:18:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+8e62b56 event_gate: Rule 5 explicit str type check for memory_id; reject int/float/non-string before str() coercion
+e7f1a92 docs: add RUN_TESTS.md — test runner guide, no pytest, stdlib only
+5c17e9f engine: verify G2 at end of every run(verify=True), not just tick_interval boundaries
+2762caa hermes_bridge: cap access_history in get_state_snapshot() to 20; add test [13]
+c037cbb event_gate: add Rule 7 — payload must be dict; add test [12]
+===== CYCLE END Sat May 23 07:18:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:18:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:23:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   14f482538e9327e486d3036789e55431b9afb5c6f5985750a7e7e03b2cdac6d5
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:23:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+400cc2d replay_verifier: clone initial_state before replay to prevent caller's state mutation
+8e62b56 event_gate: Rule 5 explicit str type check for memory_id; reject int/float/non-string before str() coercion
+e7f1a92 docs: add RUN_TESTS.md — test runner guide, no pytest, stdlib only
+5c17e9f engine: verify G2 at end of every run(verify=True), not just tick_interval boundaries
+2762caa hermes_bridge: cap access_history in get_state_snapshot() to 20; add test [13]
+===== CYCLE END Sat May 23 07:23:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:23:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:28:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   ab62c8cf8018eaedcdec5c507a7abe5d83dccb978ffbf179610d18786ecfac99
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=03afd1858d05aeac..., verify=03afd1858d05aeac...
+[14b] wal_hash stable across multiple calls: True — first=03afd1858d05aeac..., second=03afd1858d05aeac...
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:28:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+567bf33 replay_verifier: expose wal_hash() as public API; add test [14] for public API correctness and intra-session stability
+400cc2d replay_verifier: clone initial_state before replay to prevent caller's state mutation
+8e62b56 event_gate: Rule 5 explicit str type check for memory_id; reject int/float/non-string before str() coercion
+e7f1a92 docs: add RUN_TESTS.md — test runner guide, no pytest, stdlib only
+5c17e9f engine: verify G2 at end of every run(verify=True), not just tick_interval boundaries
+===== CYCLE END Sat May 23 07:28:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:28:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:33:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   fd8b529ee9dc69de1fe2a10dac0723e26ca33788ea206130b3292d1bdea98578
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=526abc09a12030a7..., verify=526abc09a12030a7...
+[14b] wal_hash stable across multiple calls: True — first=526abc09a12030a7..., second=526abc09a12030a7...
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:33:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+567bf33 replay_verifier: expose wal_hash() as public API; add test [14] for public API correctness and intra-session stability
+400cc2d replay_verifier: clone initial_state before replay to prevent caller's state mutation
+8e62b56 event_gate: Rule 5 explicit str type check for memory_id; reject int/float/non-string before str() coercion
+e7f1a92 docs: add RUN_TESTS.md — test runner guide, no pytest, stdlib only
+5c17e9f engine: verify G2 at end of every run(verify=True), not just tick_interval boundaries
+===== CYCLE END Sat May 23 07:33:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:33:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:38:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   788813f00cb8b251e87c5c1799520dc987dea79b3d16d2be4253cad1b2f9ea5a
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=9540bf026489f334..., verify=9540bf026489f334...
+[14b] wal_hash stable across multiple calls: True — first=9540bf026489f334..., second=9540bf026489f334...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:38:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+7841df0 wal: add WAL.is_empty() and Event.equals(); add tests [15][16]
+567bf33 replay_verifier: expose wal_hash() as public API; add test [14] for public API correctness and intra-session stability
+400cc2d replay_verifier: clone initial_state before replay to prevent caller's state mutation
+8e62b56 event_gate: Rule 5 explicit str type check for memory_id; reject int/float/non-string before str() coercion
+e7f1a92 docs: add RUN_TESTS.md — test runner guide, no pytest, stdlib only
+===== CYCLE END Sat May 23 07:38:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:38:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:43:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   81b7ac33089c43ea969bf2f021436a9e2ea247486e67c88325d8e48f3d4b6189
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=55350ebe77b23314..., verify=55350ebe77b23314...
+[14b] wal_hash stable across multiple calls: True — first=55350ebe77b23314..., second=55350ebe77b23314...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:43:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+97e7cf9 event_gate: add test [17] for coaccess_group_id UUID validation and graph building via bridge pipeline
+7841df0 wal: add WAL.is_empty() and Event.equals(); add tests [15][16]
+567bf33 replay_verifier: expose wal_hash() as public API; add test [14] for public API correctness and intra-session stability
+400cc2d replay_verifier: clone initial_state before replay to prevent caller's state mutation
+8e62b56 event_gate: Rule 5 explicit str type check for memory_id; reject int/float/non-string before str() coercion
+===== CYCLE END Sat May 23 07:43:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:43:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:48:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   fdc0047330ab3f99b7c5fafb7aa2d7ca58d507f59af18abb732d32fa133cc345
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=b039d6d5b0ad79d6..., verify=b039d6d5b0ad79d6...
+[14b] wal_hash stable across multiple calls: True — first=b039d6d5b0ad79d6..., second=b039d6d5b0ad79d6...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:48:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+7a236a8 hermes_bridge: remove wal_length from LLM snapshot — WAL is internal implementation detail
+97e7cf9 event_gate: add test [17] for coaccess_group_id UUID validation and graph building via bridge pipeline
+7841df0 wal: add WAL.is_empty() and Event.equals(); add tests [15][16]
+567bf33 replay_verifier: expose wal_hash() as public API; add test [14] for public API correctness and intra-session stability
+400cc2d replay_verifier: clone initial_state before replay to prevent caller's state mutation
+===== CYCLE END Sat May 23 07:48:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:48:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:53:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+[G2 OK] tick=50 hash=3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+replay_hash:  3ee0769f1e8773f51e0d4f89d8dcd22a0e3708b1e2ddbf5b3f411d7d31b6463b
+wal_length: 50
+wal_hash:   1c20c7e201468e133e84f2e8c29840e5db17439b8e026a71dd52c32046cab8ad
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=801f208bf711e503..., verify=801f208bf711e503...
+[14b] wal_hash stable across multiple calls: True — first=801f208bf711e503..., second=801f208bf711e503...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b, replay_hash=326bafb8760ebf8172cd90bf084bf2e9cc38675f514d36a549aa0cb39a1f8d8b
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:53:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+5e60873 state: add wal_length to equals() field comparison
+7a236a8 hermes_bridge: remove wal_length from LLM snapshot — WAL is internal implementation detail
+97e7cf9 event_gate: add test [17] for coaccess_group_id UUID validation and graph building via bridge pipeline
+7841df0 wal: add WAL.is_empty() and Event.equals(); add tests [15][16]
+567bf33 replay_verifier: expose wal_hash() as public API; add test [14] for public API correctness and intra-session stability
+===== CYCLE END Sat May 23 07:53:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:53:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 07:58:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+replay_hash:  8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+wal_length: 50
+wal_hash:   1d670205f8d107d87ef36dcc1d9909a65bf4853fd295c150a47d9abe414a3f3b
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=9e55f1ff7fc58d6c..., verify=9e55f1ff7fc58d6c...
+[14b] wal_hash stable across multiple calls: True — first=9e55f1ff7fc58d6c..., second=9e55f1ff7fc58d6c...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 07:58:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+6b7290c state: add wal_length to hash() for consistency with equals()
+5e60873 state: add wal_length to equals() field comparison
+7a236a8 hermes_bridge: remove wal_length from LLM snapshot — WAL is internal implementation detail
+97e7cf9 event_gate: add test [17] for coaccess_group_id UUID validation and graph building via bridge pipeline
+7841df0 wal: add WAL.is_empty() and Event.equals(); add tests [15][16]
+===== CYCLE END Sat May 23 07:58:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 07:58:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:03:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+replay_hash:  8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+wal_length: 50
+wal_hash:   18ace4cf15cec1a82dea5963bb9aabd996dc9be5d7a14a0a37ec1824607daf19
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=7f74947f081b4b3b..., verify=7f74947f081b4b3b...
+[14b] wal_hash stable across multiple calls: True — first=7f74947f081b4b3b..., second=7f74947f081b4b3b...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:03:14 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+04feee5 replay_verifier: surface wal_length in mismatch diagnostic alongside equals() fields
+6b7290c state: add wal_length to hash() for consistency with equals()
+5e60873 state: add wal_length to equals() field comparison
+7a236a8 hermes_bridge: remove wal_length from LLM snapshot — WAL is internal implementation detail
+97e7cf9 event_gate: add test [17] for coaccess_group_id UUID validation and graph building via bridge pipeline
+===== CYCLE END Sat May 23 08:03:14 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:03:44 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:08:14 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+[G2 OK] tick=50 hash=8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+
+--- Final State ---
+tick: 50
+memory items: 28
+access_history: 0
+WAL events: 50
+[tick] WAL ticks 1..50 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+replay_hash:  8fa1c6cf70ab130a592d8175b5423c530fa4e88ae785ee829be47724eb244d58
+wal_length: 50
+wal_hash:   85f9c132e8bc2b839204f07ffc6ddaa7a7bffb037a5765477114f7987ba5cf65
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=c9ecaf605bf24a62..., verify=c9ecaf605bf24a62...
+[14b] wal_hash stable across multiple calls: True — first=c9ecaf605bf24a62..., second=c9ecaf605bf24a62...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:08:15 CST 2026 =====
+ M runtime/hermes_bridge.py
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+04feee5 replay_verifier: surface wal_length in mismatch diagnostic alongside equals() fields
+6b7290c state: add wal_length to hash() for consistency with equals()
+5e60873 state: add wal_length to equals() field comparison
+7a236a8 hermes_bridge: remove wal_length from LLM snapshot — WAL is internal implementation detail
+97e7cf9 event_gate: add test [17] for coaccess_group_id UUID validation and graph building via bridge pipeline
+===== CYCLE END Sat May 23 08:08:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:08:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:13:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   87034b7daabef4f582a73571172c1f9dafda81a21dbc839f51f7e18b8a459948
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=30e022b19672b07c..., verify=30e022b19672b07c...
+[14b] wal_hash stable across multiple calls: True — first=30e022b19672b07c..., second=30e022b19672b07c...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:13:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+041b7b7 test_g2_replay: exercise archive and purge handlers in the 50-tick mix
+c4138e2 hermes_bridge: remove auto-UUID for missing coaccess_group_id — let EventGate Rule 4 surface the constraint violation
+04feee5 replay_verifier: surface wal_length in mismatch diagnostic alongside equals() fields
+6b7290c state: add wal_length to hash() for consistency with equals()
+5e60873 state: add wal_length to equals() field comparison
+===== CYCLE END Sat May 23 08:13:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:13:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:18:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   5d9de01046a3e2c42505467aaf0faf96b85f194318db580199a582a55438b8ab
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=440816646b4dd2a9..., verify=440816646b4dd2a9...
+[14b] wal_hash stable across multiple calls: True — first=440816646b4dd2a9..., second=440816646b4dd2a9...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:18:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+eb34b48 docs: update RUN_TESTS.md to cover tests [14]-[17] and Rule 7
+041b7b7 test_g2_replay: exercise archive and purge handlers in the 50-tick mix
+c4138e2 hermes_bridge: remove auto-UUID for missing coaccess_group_id — let EventGate Rule 4 surface the constraint violation
+04feee5 replay_verifier: surface wal_length in mismatch diagnostic alongside equals() fields
+6b7290c state: add wal_length to hash() for consistency with equals()
+===== CYCLE END Sat May 23 08:18:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:18:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:23:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   794a8273d2a67a844f8cfc35fea5e71a1b669dcf0f2b0bc41265e3e2da12d411
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=7ffd5c0e3a55b536..., verify=7ffd5c0e3a55b536...
+[14b] wal_hash stable across multiple calls: True — first=7ffd5c0e3a55b536..., second=7ffd5c0e3a55b536...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:23:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+eb34b48 docs: update RUN_TESTS.md to cover tests [14]-[17] and Rule 7
+041b7b7 test_g2_replay: exercise archive and purge handlers in the 50-tick mix
+c4138e2 hermes_bridge: remove auto-UUID for missing coaccess_group_id — let EventGate Rule 4 surface the constraint violation
+04feee5 replay_verifier: surface wal_length in mismatch diagnostic alongside equals() fields
+6b7290c state: add wal_length to hash() for consistency with equals()
+===== CYCLE END Sat May 23 08:23:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:23:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:28:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   571650200ecf1d14ace7c8d225e8e75e96a8c260e3e3050d702939ceca252509
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=eb63bcc7b1ad93e5..., verify=eb63bcc7b1ad93e5...
+[14b] wal_hash stable across multiple calls: True — first=eb63bcc7b1ad93e5..., second=eb63bcc7b1ad93e5...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:28:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+a20995e hermes_bridge: clarify rejection is logged with reason, not silent
+eb34b48 docs: update RUN_TESTS.md to cover tests [14]-[17] and Rule 7
+041b7b7 test_g2_replay: exercise archive and purge handlers in the 50-tick mix
+c4138e2 hermes_bridge: remove auto-UUID for missing coaccess_group_id — let EventGate Rule 4 surface the constraint violation
+04feee5 replay_verifier: surface wal_length in mismatch diagnostic alongside equals() fields
+===== CYCLE END Sat May 23 08:28:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:28:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:33:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   550459de2fa141b388817b37e19f5b40db2bc21f1b32c6a1c52d74ca36bce78a
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=080c3104e2f3cb42..., verify=080c3104e2f3cb42...
+[14b] wal_hash stable across multiple calls: True — first=080c3104e2f3cb42..., second=080c3104e2f3cb42...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:33:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+a20995e hermes_bridge: clarify rejection is logged with reason, not silent
+eb34b48 docs: update RUN_TESTS.md to cover tests [14]-[17] and Rule 7
+041b7b7 test_g2_replay: exercise archive and purge handlers in the 50-tick mix
+c4138e2 hermes_bridge: remove auto-UUID for missing coaccess_group_id — let EventGate Rule 4 surface the constraint violation
+04feee5 replay_verifier: surface wal_length in mismatch diagnostic alongside equals() fields
+===== CYCLE END Sat May 23 08:33:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:33:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:38:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   a9a2b910a36d3768cd8066cdd1afbcac7c7a45f828d296f84e812698596c788d
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=1507024d2791b2e9..., verify=1507024d2791b2e9...
+[14b] wal_hash stable across multiple calls: True — first=1507024d2791b2e9..., second=1507024d2791b2e9...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:38:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+ac65dde test_g2_replay: guard checkpoint loop against negative num_ticks from ops overshoot
+a20995e hermes_bridge: clarify rejection is logged with reason, not silent
+eb34b48 docs: update RUN_TESTS.md to cover tests [14]-[17] and Rule 7
+041b7b7 test_g2_replay: exercise archive and purge handlers in the 50-tick mix
+c4138e2 hermes_bridge: remove auto-UUID for missing coaccess_group_id — let EventGate Rule 4 surface the constraint violation
+===== CYCLE END Sat May 23 08:38:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:38:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:43:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   0f3b0ba50bdcdeaac6687aa4c4c5f74403c8f84db88e65529b4a7c5307e8f71b
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=81b273aa5a74ef61..., verify=81b273aa5a74ef61...
+[14b] wal_hash stable across multiple calls: True — first=81b273aa5a74ef61..., second=81b273aa5a74ef61...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:43:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+a3926cc test_event_gate: add [18] policy_update coverage — gate acceptance and reducer no-op verification
+ac65dde test_g2_replay: guard checkpoint loop against negative num_ticks from ops overshoot
+a20995e hermes_bridge: clarify rejection is logged with reason, not silent
+eb34b48 docs: update RUN_TESTS.md to cover tests [14]-[17] and Rule 7
+041b7b7 test_g2_replay: exercise archive and purge handlers in the 50-tick mix
+===== CYCLE END Sat May 23 08:43:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:43:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:48:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   b9316e89b0fe1ab4efcea535cab8c1af8b1a8c701bf7222ab046be1be42f1129
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=4fb33cba2997a562..., verify=4fb33cba2997a562...
+[14b] wal_hash stable across multiple calls: True — first=4fb33cba2997a562..., second=4fb33cba2997a562...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:48:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+6d1420d wal: fix WAL.clear() order — unlink before clear, use missing_ok
+a3926cc test_event_gate: add [18] policy_update coverage — gate acceptance and reducer no-op verification
+ac65dde test_g2_replay: guard checkpoint loop against negative num_ticks from ops overshoot
+a20995e hermes_bridge: clarify rejection is logged with reason, not silent
+eb34b48 docs: update RUN_TESTS.md to cover tests [14]-[17] and Rule 7
+===== CYCLE END Sat May 23 08:48:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:48:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:53:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   4bddbe200918e9a3fad758ca56c84c2ac262ea300f362ccf368a1b4d79fa12b1
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=e90a8a71fc32b55e..., verify=e90a8a71fc32b55e...
+[14b] wal_hash stable across multiple calls: True — first=e90a8a71fc32b55e..., second=e90a8a71fc32b55e...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:53:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+d119a89 docs: update RUN_TESTS.md to cover test [18] policy_update
+6d1420d wal: fix WAL.clear() order — unlink before clear, use missing_ok
+a3926cc test_event_gate: add [18] policy_update coverage — gate acceptance and reducer no-op verification
+ac65dde test_g2_replay: guard checkpoint loop against negative num_ticks from ops overshoot
+a20995e hermes_bridge: clarify rejection is logged with reason, not silent
+===== CYCLE END Sat May 23 08:53:15 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:53:45 CST 2026 =====
+===== DRIVER TESTS Sat May 23 08:58:15 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   1c8934b1bea44765d8922e004fb7d5dbb9ee0e36002a2c4fb4fa2de1a4864456
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=8bde6fc9e739a89b..., verify=8bde6fc9e739a89b...
+[14b] wal_hash stable across multiple calls: True — first=8bde6fc9e739a89b..., second=8bde6fc9e739a89b...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 08:58:15 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+d119a89 docs: update RUN_TESTS.md to cover test [18] policy_update
+6d1420d wal: fix WAL.clear() order — unlink before clear, use missing_ok
+a3926cc test_event_gate: add [18] policy_update coverage — gate acceptance and reducer no-op verification
+ac65dde test_g2_replay: guard checkpoint loop against negative num_ticks from ops overshoot
+a20995e hermes_bridge: clarify rejection is logged with reason, not silent
+===== CYCLE END Sat May 23 08:58:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 08:58:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:03:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   f1e26cc1cc2537391ed7e55dfbc6d2b8c3f40e1b6ac1267b33bf206d4f6d4851
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Forbidden field: state
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=8085cccd105889ce..., verify=8085cccd105889ce...
+[14b] wal_hash stable across multiple calls: True — first=8085cccd105889ce..., second=8085cccd105889ce...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 09:03:16 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+cdeb5ac test_g2_replay: add coaccess_graph edge integrity check after G2 pass
+d119a89 docs: update RUN_TESTS.md to cover test [18] policy_update
+6d1420d wal: fix WAL.clear() order — unlink before clear, use missing_ok
+a3926cc test_event_gate: add [18] policy_update coverage — gate acceptance and reducer no-op verification
+ac65dde test_g2_replay: guard checkpoint loop against negative num_ticks from ops overshoot
+===== CYCLE END Sat May 23 09:03:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 09:03:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:08:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   7a957413ac4ea6fa545575b0356120f63ee6c13e876a12d2159bb4bde6950289
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Unexpected payload fields for memory_store: ['state']
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=1645a19762c49770..., verify=1645a19762c49770...
+[14b] wal_hash stable across multiple calls: True — first=1645a19762c49770..., second=1645a19762c49770...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+[19a] extra field rejected: True — OK (Unexpected payload fields for memory_store: ['metadata'])
+[19b] extra field on empty-schema event rejected: True — OK (Unexpected payload fields for memory_access: ['score'])
+[19c] schema-only fields accepted: True — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 09:08:16 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+005e0b3 event_gate: add Rule 8 — reject payloads with fields outside event schema
+cdeb5ac test_g2_replay: add coaccess_graph edge integrity check after G2 pass
+d119a89 docs: update RUN_TESTS.md to cover test [18] policy_update
+6d1420d wal: fix WAL.clear() order — unlink before clear, use missing_ok
+a3926cc test_event_gate: add [18] policy_update coverage — gate acceptance and reducer no-op verification
+===== CYCLE END Sat May 23 09:08:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 09:08:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:13:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   05799cdfe832524a9181da5e86bf3a324bc1ac574df3505e6e7896a5ebfa7dc5
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Unexpected payload fields for memory_store: ['state']
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=eef5bf60ff23df0b..., verify=eef5bf60ff23df0b...
+[14b] wal_hash stable across multiple calls: True — first=eef5bf60ff23df0b..., second=eef5bf60ff23df0b...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+[19a] extra field rejected: True — OK (Unexpected payload fields for memory_store: ['metadata'])
+[19b] extra field on empty-schema event rejected: True — OK (Unexpected payload fields for memory_access: ['score'])
+[19c] schema-only fields accepted: True — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 09:13:16 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+b2959f2 docs: update RUN_TESTS.md to cover test [19] Rule 8 extra-field rejection
+005e0b3 event_gate: add Rule 8 — reject payloads with fields outside event schema
+cdeb5ac test_g2_replay: add coaccess_graph edge integrity check after G2 pass
+d119a89 docs: update RUN_TESTS.md to cover test [18] policy_update
+6d1420d wal: fix WAL.clear() order — unlink before clear, use missing_ok
+===== CYCLE END Sat May 23 09:13:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 09:13:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:18:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   c6d9460c952c7dc28b823ce1417f4e57d8af7841e3833e97438c932075a559e6
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Unexpected payload fields for memory_store: ['state']
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=17adaab06e8d1303..., verify=17adaab06e8d1303...
+[14b] wal_hash stable across multiple calls: True — first=17adaab06e8d1303..., second=17adaab06e8d1303...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+[19a] extra field rejected: True — OK (Unexpected payload fields for memory_store: ['metadata'])
+[19b] extra field on empty-schema event rejected: True — OK (Unexpected payload fields for memory_access: ['score'])
+[19c] schema-only fields accepted: True — OK
+[20a] memory_archive gate accepted: True — OK
+[20b] memory retained with tier=archive: True — OK
+[20c] coaccess_graph edges preserved after archive: True — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 09:18:16 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+e3705aa test_event_gate: add [20] memory_archive behavioral verification
+b2959f2 docs: update RUN_TESTS.md to cover test [19] Rule 8 extra-field rejection
+005e0b3 event_gate: add Rule 8 — reject payloads with fields outside event schema
+cdeb5ac test_g2_replay: add coaccess_graph edge integrity check after G2 pass
+d119a89 docs: update RUN_TESTS.md to cover test [18] policy_update
+===== CYCLE END Sat May 23 09:18:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 09:18:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:23:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   3a8d6fa79bb19322de1759f32d6103475e752933930162aaddda80897ee7662e
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Unexpected payload fields for memory_store: ['state']
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=10e2205a6ed293a0..., verify=10e2205a6ed293a0...
+[14b] wal_hash stable across multiple calls: True — first=10e2205a6ed293a0..., second=10e2205a6ed293a0...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+[19a] extra field rejected: True — OK (Unexpected payload fields for memory_store: ['metadata'])
+[19b] extra field on empty-schema event rejected: True — OK (Unexpected payload fields for memory_access: ['score'])
+[19c] schema-only fields accepted: True — OK
+[20a] memory_archive gate accepted: True — OK
+[20b] memory retained with tier=archive: True — OK
+[20c] coaccess_graph edges preserved after archive: True — OK
+[21a] memory_purge gate accepted: True — OK
+[21b] memory removed from dict: True — OK
+[21c] coaccess_graph edges preserved after purge: True — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 09:23:16 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+89a0d29 test_event_gate: add [20] memory_archive and [21] memory_purge behavioral verification
+e3705aa test_event_gate: add [20] memory_archive behavioral verification
+b2959f2 docs: update RUN_TESTS.md to cover test [19] Rule 8 extra-field rejection
+005e0b3 event_gate: add Rule 8 — reject payloads with fields outside event schema
+cdeb5ac test_g2_replay: add coaccess_graph edge integrity check after G2 pass
+===== CYCLE END Sat May 23 09:23:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 09:23:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:28:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   21340cbc678a04f1d3ef044387964725e3668431913994aa99b016486a9dfbfa
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Unexpected payload fields for memory_store: ['state']
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=595c2902e89886ad..., verify=595c2902e89886ad...
+[14b] wal_hash stable across multiple calls: True — first=595c2902e89886ad..., second=595c2902e89886ad...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+[19a] extra field rejected: True — OK (Unexpected payload fields for memory_store: ['metadata'])
+[19b] extra field on empty-schema event rejected: True — OK (Unexpected payload fields for memory_access: ['score'])
+[19c] schema-only fields accepted: True — OK
+[20a] memory_archive gate accepted: True — OK
+[20b] memory retained with tier=archive: True — OK
+[20c] coaccess_graph edges preserved after archive: True — OK
+[21a] memory_purge gate accepted: True — OK
+[21b] memory removed from dict: True — OK
+[21c] coaccess_graph edges preserved after purge: True — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 09:28:16 CST 2026 =====
+ M runtime/hermes_bridge.py
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+89a0d29 test_event_gate: add [20] memory_archive and [21] memory_purge behavioral verification
+e3705aa test_event_gate: add [20] memory_archive behavioral verification
+b2959f2 docs: update RUN_TESTS.md to cover test [19] Rule 8 extra-field rejection
+005e0b3 event_gate: add Rule 8 — reject payloads with fields outside event schema
+cdeb5ac test_g2_replay: add coaccess_graph edge integrity check after G2 pass
+===== CYCLE END Sat May 23 09:28:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 09:28:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:33:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   f903b3cb4a643b127cbf4eb1a981f040c263819dd8a58a1f1ccef03947071682
+[memory] content integrity: PASS
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Unexpected payload fields for memory_store: ['state']
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=2769804f53561c9f..., verify=2769804f53561c9f...
+[14b] wal_hash stable across multiple calls: True — first=2769804f53561c9f..., second=2769804f53561c9f...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+[19a] extra field rejected: True — OK (Unexpected payload fields for memory_store: ['metadata'])
+[19b] extra field on empty-schema event rejected: True — OK (Unexpected payload fields for memory_access: ['score'])
+[19c] schema-only fields accepted: True — OK
+[20a] memory_archive gate accepted: True — OK
+[20b] memory retained with tier=archive: True — OK
+[20c] coaccess_graph edges preserved after archive: True — OK
+[21a] memory_purge gate accepted: True — OK
+[21b] memory removed from dict: True — OK
+[21c] coaccess_graph edges preserved after purge: True — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS
+===== DRIVER GIT STATUS Sat May 23 09:33:16 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+b3bdb8c test_g2_replay: add explicit memory content integrity check after G2
+8cf9244 hermes_bridge: remove misleading tick default from llm_to_proposals
+89a0d29 test_event_gate: add [20] memory_archive and [21] memory_purge behavioral verification
+e3705aa test_event_gate: add [20] memory_archive behavioral verification
+b2959f2 docs: update RUN_TESTS.md to cover test [19] Rule 8 extra-field rejection
+===== CYCLE END Sat May 23 09:33:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 09:33:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:38:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   88a3ac55415a3fe72846bf43685965e7c2ca620fc8fa38c1d404c4a640573a72
+[memory] content integrity: PASS
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Unexpected payload fields for memory_store: ['state']
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=968d558e4a874bd0..., verify=968d558e4a874bd0...
+[14b] wal_hash stable across multiple calls: True — first=968d558e4a874bd0..., second=968d558e4a874bd0...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+[19a] extra field rejected: True — OK (Unexpected payload fields for memory_store: ['metadata'])
+[19b] extra field on empty-schema event rejected: True — OK (Unexpected payload fields for memory_access: ['score'])
+[19c] schema-only fields accepted: True — OK
+[20a] memory_archive gate accepted: True — OK
+[20b] memory retained with tier=archive: True — OK
+[20c] coaccess_graph edges preserved after archive: True — OK
+[21a] memory_purge gate accepted: True — OK
+[21b] memory removed from dict: True — OK
+[21c] coaccess_graph edges preserved after purge: True — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+[4] state.wal_length=3 == wal.len()=3 — OK
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS + WAL LENGTH OK
+===== DRIVER GIT STATUS Sat May 23 09:38:16 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+9c93664 test_event_gate: verify state.wal_length matches actual WAL event count in full integration
+b3bdb8c test_g2_replay: add explicit memory content integrity check after G2
+8cf9244 hermes_bridge: remove misleading tick default from llm_to_proposals
+89a0d29 test_event_gate: add [20] memory_archive and [21] memory_purge behavioral verification
+e3705aa test_event_gate: add [20] memory_archive behavioral verification
+===== CYCLE END Sat May 23 09:38:16 CST 2026 =====
+
+===== CYCLE START Sat May 23 09:38:46 CST 2026 =====
+===== DRIVER TESTS Sat May 23 09:43:16 CST 2026 =====
+=== G2 Replay Equivalence Test ===
+
+[G2 OK] tick=50 hash=25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+
+--- Final State ---
+tick: 46
+memory items: 9
+access_history: 0
+WAL events: 46
+[tick] WAL ticks 1..46 monotonically sequential — OK
+
+--- G2 Verification ---
+match: True
+runtime_hash: 25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+replay_hash:  25b20fc28be5ff73e8798e63c80903c52bd9fc2830b39136c25c04fadbea3f74
+wal_length: 46
+wal_hash:   63b0728f8ba3a8783fc53a35cd6f89308a1b71a6bf3a40362c04c408fd636d0b
+[memory] content integrity: PASS
+[coaccess] edge integrity: PASS
+
+✅ G2-COMPLETE: runtime_state == replay(WAL)
+=== Event Gate Validation Tests ===
+
+[1] Valid proposal: True — Accepted
+[2] Invalid type: False — Unknown event type: INVALID_TYPE
+[3] Missing field: False — Missing required field: content
+[4] Forbidden field: False — Unexpected payload fields for memory_store: ['state']
+[5] Non-monotonic tick: True — Accepted
+[6] Empty memory_id: False — memory_id must be a non-empty string for memory_store, got str
+[7] None memory_id: False — memory_id must be a non-empty string for memory_access, got NoneType
+[8] coaccess_graph isolation: True — clone mutation leaked: False, history leaked: False
+[9] WAL corrupted load: True — loaded 2/2 events, skipped 2 malformed lines
+[10] None coaccess_group_id: False — Invalid coaccess_group_id: None
+[11] curriculum_task_create: gate=True, reducer_tick=11
+[11] curriculum_task_complete: gate=True, reducer_tick=11
+[11] failure_record: gate=True, reducer_tick=11
+[12] payload=NoneType: False — OK
+[12] payload=list: False — OK
+[12] payload=str: False — OK
+[12] payload=int: False — OK
+[13] snapshot access_history cap: 20 <= 20 — OK
+[14a] public wal_hash() == verify() wal_hash: True — public=66c57c369d438648..., verify=66c57c369d438648...
+[14b] wal_hash stable across multiple calls: True — first=66c57c369d438648..., second=66c57c369d438648...
+[15] WAL.is_empty() fresh=True, after_append=True — OK
+[16] Event.equals() same_content_different_hash=True, different_content=False — OK
+[17b] Invalid UUID '1' rejected: Invalid coaccess_group_id: 1 — OK
+[17b] Invalid UUID '123' rejected: Invalid coaccess_group_id: 123 — OK
+[17b] Invalid UUID '' rejected: Invalid coaccess_group_id:  — OK
+[17b] Invalid UUID 'not-a-uuid' rejected: Invalid coaccess_group_id: not-a-uuid — OK
+[17b] Valid UUID accepted, WAL length=5 >= 4 — OK
+[17c] coaccess_graph neighbors: False — mem_17b->set(), mem_17c->set()
+[18] policy_update: gate=True, tick=18, memory=0, wal_length=1 — OK
+[19a] extra field rejected: True — OK (Unexpected payload fields for memory_store: ['metadata'])
+[19b] extra field on empty-schema event rejected: True — OK (Unexpected payload fields for memory_access: ['score'])
+[19c] schema-only fields accepted: True — OK
+[20a] memory_archive gate accepted: True — OK
+[20b] memory retained with tier=archive: True — OK
+[20c] coaccess_graph edges preserved after archive: True — OK
+[21a] memory_purge gate accepted: True — OK
+[21b] memory removed from dict: True — OK
+[21c] coaccess_graph edges preserved after purge: True — OK
+[22a] tampered event skipped, valid event retained: True — OK (1 events, first event_id=e22a)
+[22b] retained event is untampered e22a (memory_id=m22a): True — OK
+
+=== Hermes Bridge Tests ===
+
+[1] Parsed 2 proposals from LLM output
+[2] Accepted: 2, Rejected: 0
+[3] WAL length: 2
+[4] Memory items: 1
+
+=== Full Integration Test ===
+
+[1] Submitted 3 proposals: 3 accepted
+[2] G2 check: True
+[3] runtime_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3, replay_hash=ca6d6410309da0d14876e59788b2dd166ec724a9beed0e6a04a4dfc9612b37f3
+[4] state.wal_length=3 == wal.len()=3 — OK
+
+✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS + WAL LENGTH OK
+===== DRIVER GIT STATUS Sat May 23 09:43:16 CST 2026 =====
+?? mcr5h_driver.sh
+?? runtime_loop.log
+===== DRIVER RECENT COMMITS =====
+c98f6de test_event_gate: add [22] WAL replay_hash integrity — post-write tampering detection
+9c93664 test_event_gate: verify state.wal_length matches actual WAL event count in full integration
+b3bdb8c test_g2_replay: add explicit memory content integrity check after G2
+8cf9244 hermes_bridge: remove misleading tick default from llm_to_proposals
+89a0d29 test_event_gate: add [20] memory_archive and [21] memory_purge behavioral verification
+===== CYCLE END Sat May 23 09:43:16 CST 2026 =====
+===== MCR 5H SUPERVISED LOOP COMPLETE Sat May 23 09:43:46 CST 2026 =====
