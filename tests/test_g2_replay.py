@@ -27,8 +27,9 @@ def test_g2_replay():
     engine = MCRRuntimeEngine(wal_path=wal_path)
 
     num_operations = 50
+    ops = ['store', 'access', 'store', 'access', 'archive', 'purge']
     for i in range(num_operations):
-        op = random.choice(['store', 'access', 'store', 'access'])
+        op = random.choice(ops)
         group_id = str(random.randint(1, 5))
         mem_id = random_memory_id()
 
@@ -39,6 +40,26 @@ def test_g2_replay():
                 coaccess_group_id=group_id,
                 payload={'content': f'content_{i}', 'tier': 'episodic'}
             )
+        elif op == 'archive':
+            # archive a random previously stored memory if any exist
+            if engine.state.memory:
+                target = random.choice(list(engine.state.memory.keys()))
+                engine.emit(
+                    event_type='memory_archive',
+                    memory_id=target,
+                    coaccess_group_id=group_id,
+                    payload={'reason': f'archive_{i}'}
+                )
+        elif op == 'purge':
+            # purge a random memory if any exist
+            if engine.state.memory:
+                target = random.choice(list(engine.state.memory.keys()))
+                engine.emit(
+                    event_type='memory_purge',
+                    memory_id=target,
+                    coaccess_group_id=group_id,
+                    payload={}
+                )
         else:
             engine.emit(
                 event_type='memory_access',
