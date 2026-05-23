@@ -417,6 +417,44 @@ def test_event_gate_validation():
     r19c = gate19.validate(valid_proposal)
     print(f"[19c] schema-only fields accepted: {r19c.accepted} — {'OK' if r19c.accepted else 'FAIL'}")
 
+    # Test 20: memory_archive behavioral correctness.
+    # Archive must: (a) retain memory in dict with updated tier, (b) NOT clear
+    # coaccess_graph edges. Reducer._handle_archive sets tier='archive' and returns
+    # without del/mutation. Gate schema allows the event. Verify reducer behavior.
+    gate20 = EventGate()
+    archive_proposal = EventProposal(
+        event_type="memory_archive", tick=20,
+        memory_id="mem_archive_test", coaccess_group_id="550e8400-e29b-41d4-a716-446655440000",
+        payload={"reason": "cold_storage"},
+    )
+    vr20 = gate20.validate(archive_proposal)
+    evt20 = Event(event_id='x20', event_type='memory_archive', tick=20,
+                  memory_id='mem_archive_test', coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+                  payload={"reason": "cold_storage"}, timestamp=1.0, replay_hash='')
+    # Build state with coaccess edges before archiving
+    s20 = SystemState.empty()
+    s20.memory['mem_archive_test'] = {'content': 'test', 'tier': 'episodic', 'created_tick': 1}
+    s20.coaccess_graph['mem_archive_test'] = {'mem_other'}
+    s20.access_history.append({'memory_id': 'mem_archive_test', 'tick': 1,
+                                'coaccess_group_id': '550e8400-e29b-41d4-a716-446655440000'})
+    s20_after = DeterministicReducer().reduce(evt20, s20)
+    # Memory must still exist with tier=archive (not deleted, not cleared)
+    archive_ok = (
+        vr20.accepted == True
+        and 'mem_archive_test' in s20_after.memory
+        and s20_after.memory['mem_archive_test']['tier'] == 'archive'
+        # coaccess_graph edges must NOT be cleared by archive operation
+        and s20_after.coaccess_graph.get('mem_archive_test', set()) == {'mem_other'}
+        and len(s20_after.access_history) == 1
+    )
+    print(f"[20a] memory_archive gate accepted: {vr20.accepted} — {'OK' if vr20.accepted else 'FAIL'}")
+    print(f"[20b] memory retained with tier=archive: "
+          f"{'mem_archive_test' in s20_after.memory and s20_after.memory['mem_archive_test']['tier'] == 'archive'} — "
+          f"{'OK' if archive_ok else 'FAIL'}")
+    print(f"[20c] coaccess_graph edges preserved after archive: "
+          f"{s20_after.coaccess_graph.get('mem_archive_test', set()) == {'mem_other'}} — "
+          f"{'OK' if archive_ok else 'FAIL'}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
