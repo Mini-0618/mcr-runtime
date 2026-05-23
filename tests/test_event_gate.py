@@ -351,6 +351,38 @@ def test_event_gate_validation():
           f"mem_17b->{eng17.state.coaccess_graph.get('mem_17b', set())}, "
           f"mem_17c->{eng17.state.coaccess_graph.get('mem_17c', set())}")
 
+    # Test 18: policy_update — defined in ALLOWED_EVENT_TYPES and EVENT_SCHEMAS
+    # (requires policy_weights and reason fields), maps to _handle_noop in reducer.
+    # Must be accepted by gate and produce no state mutation beyond wal_length/tick.
+    gate18 = EventGate()
+    policy_proposal = EventProposal(
+        event_type="policy_update",
+        tick=18,
+        memory_id=None,
+        coaccess_group_id="550e8400-e29b-41d4-a716-446655440000",
+        payload={"policy_weights": {"retrieval": 0.8}, "reason": "test"},
+    )
+    vr18 = gate18.validate(policy_proposal)
+    from runtime.reducer import DeterministicReducer
+    from runtime.state import SystemState
+    evt18 = Event(event_id='x18', event_type='policy_update', tick=18,
+                  memory_id=None, coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+                  payload={"policy_weights": {"retrieval": 0.8}, "reason": "test"},
+                  timestamp=1.0, replay_hash='')
+    s_before = SystemState.empty()
+    s_after = DeterministicReducer().reduce(evt18, s_before)
+    # tick should advance by 1, memory/coaccess_graph unchanged, wal_length = 1
+    policy_ok = (
+        vr18.accepted == True
+        and s_after.tick == 18
+        and len(s_after.memory) == 0
+        and len(s_after.coaccess_graph) == 0
+        and s_after.wal_length == 1
+    )
+    print(f"[18] policy_update: gate={vr18.accepted}, tick={s_after.tick}, "
+          f"memory={len(s_after.memory)}, wal_length={s_after.wal_length} — "
+          f"{'OK' if policy_ok else 'FAIL'}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
