@@ -34,7 +34,7 @@ Also validates:
 
 Three sub-tests covering EventGate and HermesBridge:
 
-**test_event_gate_validation** (tests 1–17):
+**test_event_gate_validation** (tests 1–18):
 - Rule 1: unknown event type → reject
 - Rule 2: missing required payload fields → reject
 - Rule 3: forbidden payload fields (state, timestamp, replay_hash, etc.) → reject
@@ -49,6 +49,7 @@ Three sub-tests covering EventGate and HermesBridge:
 - Test 15: WAL.is_empty() — True for fresh WAL, False after append
 - Test 16: Event.equals() — content equality excluding replay_hash
 - Tests 17a/17b/17c: EventGate UUID Rule 4 via full HermesBridge pipeline — invalid UUIDs rejected, valid UUID accepted, coaccess_graph built correctly
+- Test 18: policy_update event type — gate accepts with policy_weights+reason, reducer produces no state mutation (noop)
 
 **test_hermes_bridge**: LLM JSON parsing → proposals → accepted/rejected counts
 
