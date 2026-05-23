@@ -592,10 +592,22 @@ def test_full_integration():
     print(f"[2] G2 check: {result['match']}")
     print(f"[3] runtime_hash={result['runtime_hash']}, replay_hash={result['replay_hash']}")
 
-    if result['match']:
-        print("\n✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS")
-    else:
+    # Explicit WAL length vs state.wal_length field verification.
+    # G2 only checks runtime_state == replay(WAL). If both diverge from WAL identically
+    # (e.g., wal_length field accumulation bug), G2 still passes. Verify that the
+    # state.wal_length field matches the actual WAL event count to confirm WAL is the
+    # authoritative source of truth, not just that runtime and replay agree.
+    wal_event_count = engine.wal.len()
+    field_ok = engine.state.wal_length == wal_event_count
+    print(f"[4] state.wal_length={engine.state.wal_length} == wal.len()={wal_event_count} — "
+          f"{'OK' if field_ok else 'FAIL'}")
+
+    if result['match'] and field_ok:
+        print("\n✅ FULL INTEGRATION: EventGate + HermesBridge + Reducer + WAL — G2 PASS + WAL LENGTH OK")
+    elif not result['match']:
         print("\n❌ G2 FAIL")
+    else:
+        print("\n❌ WAL LENGTH MISMATCH")
 
 
 if __name__ == '__main__':
