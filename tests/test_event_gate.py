@@ -492,6 +492,44 @@ def test_event_gate_validation():
           f"{s21_after.coaccess_graph.get('mem_purge_test', set()) == {'mem_purge_neighbor'}} — "
           f"{'OK' if purge_ok else 'FAIL'}")
 
+    # Test 22: WAL replay_hash integrity — post-write content tampering is detected.
+    # WAL._load() validates replay_hash on each event and skips corrupted entries.
+    # Test [9] covered malformed JSON (parse failure). Test [22] covers the
+    # integrity property: valid JSON with a tampered payload and mismatched replay_hash.
+    import tempfile, json
+    from runtime.wal import WAL, Event
+    tmp22 = tempfile.NamedTemporaryFile(mode='w', suffix='.jsonl', delete=False)
+    # Write two valid events with correct replay_hash
+    for event_id, tick, memory_id in [('e22a', 1, 'm22a'), ('e22b', 2, 'm22b')]:
+        e = Event(
+            event_id=event_id, event_type='memory_store', tick=tick,
+            memory_id=memory_id, coaccess_group_id='550e8400-e29b-41d4-a716-446655440000',
+            payload={'content': f'c_{memory_id}'}, timestamp=1.0, replay_hash=''
+        )
+        e.replay_hash = e._compute_replay_hash()
+        tmp22.write(json.dumps(e.to_dict()) + '\n')
+    tmp22.close()
+    # Tamper with the second event: change memory_id but keep original replay_hash
+    with open(tmp22.name, 'r') as f:
+        lines = f.readlines()
+    # Line 1 is event e22a (unchanged), Line 2 is e22b (will be tampered)
+    tampered = json.loads(lines[1])
+    tampered['memory_id'] = 'TAMPERED'  # payload changed after write
+    lines[1] = json.dumps(tampered) + '\n'
+    with open(tmp22.name, 'w') as f:
+        f.writelines(lines)
+    # Load WAL — tampered event must be skipped, leaving only e22a
+    w22 = WAL(tmp22.name)
+    events22 = w22.get_all()
+    os.unlink(tmp22.name)
+    ok22a = len(events22) == 1 and events22[0].event_id == 'e22a'
+    ok22b = len(events22) == 1 and events22[0].memory_id == 'm22a'  # e22a's memory_id, not e22b's
+    ok22 = ok22a and ok22b
+    print(f"[22a] tampered event skipped, valid event retained: {ok22a} — "
+          f"{'OK' if ok22 else 'FAIL'} ({len(events22)} events, first event_id={events22[0].event_id if events22 else 'none'})")
+    print(f"[22b] retained event is untampered e22a (memory_id=m22a): {ok22b} — "
+          f"{'OK' if ok22 else 'FAIL'}")
+
 
 def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
