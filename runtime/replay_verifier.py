@@ -68,6 +68,8 @@ class ReplayVerifier:
             reasons = []
             if runtime_state.tick != replayed.tick:
                 reasons.append(f"tick:{runtime_state.tick}!={replayed.tick}")
+            if runtime_state.wal_length != replayed.wal_length:
+                reasons.append(f"wal_length:{runtime_state.wal_length}!={replayed.wal_length}")
             if set(runtime_state.memory.keys()) != set(replayed.memory.keys()):
                 reasons.append(f"memory_keys:{len(runtime_state.memory)}!={len(replayed.memory)}")
             if len(runtime_state.access_history) != len(replayed.access_history):
