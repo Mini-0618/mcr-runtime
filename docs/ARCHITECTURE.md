@@ -98,6 +98,32 @@ compare state hashes
 Result: PASS
 ```
 
+## Trust boundaries
+
+MCR separates proposal generation from state authority:
+
+| Layer | Trusted to mutate state? | Role |
+| --- | --- | --- |
+| HermesBridge / LLM text | No | Produces candidate proposals |
+| EventGate | No direct mutation | Validates proposals |
+| WAL | Records accepted events | Source of truth |
+| Reducer | Yes, through events | Applies state transitions |
+| ReplayVerifier | No mutation | Checks reconstructability |
+
+This boundary is the main safety property of the current architecture. LLM-like output is treated as input, not as runtime authority.
+
+## Failure model
+
+MCR is designed to make several failures visible:
+
+- malformed proposal rejected by EventGate
+- corrupted or changed WAL detected by replay/hash checks
+- reducer mismatch exposed by replay verification
+- missing demo dependency surfaced by verification script
+- state drift exposed by hash/equality mismatch
+
+It does not claim to prevent every possible failure. It gives the runtime a way to detect and localize important classes of state inconsistency.
+
 ## 10. Why deterministic replay matters
 
 Deterministic replay gives the runtime an integrity check. If replay cannot reconstruct the same state, the runtime has evidence of drift, corruption, unsupported mutation, or nondeterministic behavior.

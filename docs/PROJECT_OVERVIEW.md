@@ -126,6 +126,29 @@ The repository verifies:
 - replay hash integrity
 - token leak regression checks
 
+## Evaluation-oriented summary
+
+For external reviewers, MCR can be evaluated through three concrete surfaces:
+
+1. **Code surface**: `runtime/` contains the event gate, WAL, reducer, state, engine, bridge, and verifier.
+2. **Demo surface**: `examples/` contains runnable demos that do not require external services.
+3. **Verification surface**: `tests/` and `scripts/verify_all.sh` provide regression checks.
+
+This separation is intentional. A reviewer should be able to understand the project without first reading every line of runtime code.
+
+## Non-goals
+
+The project deliberately avoids several directions:
+
+- no live LLM dependency in the demos
+- no hidden remote service requirement
+- no broad agent orchestration layer
+- no UI layer
+- no model training path
+- no claims of autonomy or AGI
+
+The narrow scope is what makes the replay invariant easy to inspect.
+
 ## Next milestones
 
 Near-term milestones:

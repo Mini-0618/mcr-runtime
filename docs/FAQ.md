@@ -66,6 +66,29 @@ A replay failure means the runtime could not reconstruct the expected state. Tha
 
 Only for the full verification suite. The minimal demo does not require pytest.
 
+## 16. Why does the README emphasize what MCR is not?
+
+Because runtime verification projects are easy to overstate. MCR is deliberately described as a research runtime artifact. Clear non-goals make the project easier to evaluate technically.
+
+## 17. Can I inspect the full flow without reading the whole codebase?
+
+Yes. Start with:
+
+```bash
+python3 examples/minimal_mcr.py
+```
+
+Then read:
+
+- `README.md`
+- `docs/PROJECT_OVERVIEW.md`
+- `docs/ARCHITECTURE.md`
+- `examples/minimal_mcr.py`
+
+## 18. Why does MCR avoid external services in demos?
+
+External services make demos harder to reproduce. MCR keeps the demo path local so replay verification can be evaluated without API keys, network access, or model availability.
+
 ## 15. What is next?
 
 The next work is documentation clarity, external validation, replay verification hardening, and keeping the demo/test path stable.

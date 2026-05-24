@@ -8,6 +8,30 @@ A replayable memory runtime for long-running AI agents.
 
 MCR is a small event-sourced runtime kernel for studying how long-running AI agents can keep memory state observable, replayable, and recoverable. It does not train models and it does not try to be a complete agent framework. Its focus is narrower: make agent memory state changes explicit, logged, replayable, and testable.
 
+## 30-Second Overview
+
+If you only read one section, read this:
+
+| Question | Answer |
+| --- | --- |
+| What is this? | A replayable memory runtime for long-running AI agents. |
+| What does it prove? | Agent memory state can be represented as events and verified through replay. |
+| What is the core invariant? | `runtime_state == replay(WAL)` |
+| Does it need an LLM? | No. Demos run without an external LLM or API key. |
+| Is it production-ready? | No. It is a research runtime artifact. |
+| Where should I start? | Run `python3 examples/minimal_mcr.py`. |
+
+## Why This Repository Exists
+
+Most agent demos focus on task completion. MCR focuses on the runtime question behind long-running agents: can the system explain, recover, and verify its own memory state after many transitions?
+
+The repository is organized to make that question inspectable:
+
+- demos show the minimal flow
+- runtime files show the kernel boundaries
+- tests protect replay and validation behavior
+- docs explain what is implemented and what is intentionally out of scope
+
 ## The Problem
 
 Long-running agents do not only need better prompts. They need a runtime discipline for memory state.
@@ -127,6 +151,29 @@ Replay Verifier
 PASS / FAIL
 ```
 
+## Validation Snapshot
+
+| Validation target | Evidence in repo | Expected result |
+| --- | --- | --- |
+| Minimal replay demo | `examples/minimal_mcr.py` | `Result: PASS` |
+| Modular runtime demo | `examples/quickstart.py` | G2 verification passes |
+| Replay hash demo | `examples/replay_verification_demo.py` | original state equals replayed state |
+| Hermes bridge demo | `examples/hermes_bridge_demo.py` | mock proposals pass through EventGate and replay |
+| Full verification | `scripts/verify_all.sh` | `=== ALL PASS ===` |
+
+The project is intentionally easy to verify from a fresh clone. The fastest check is:
+
+```bash
+python3 examples/minimal_mcr.py
+```
+
+The stricter check is:
+
+```bash
+python3 -m pip install pytest
+bash scripts/verify_all.sh
+```
+
 ## What Has Been Verified
 
 The current repository includes regression coverage for:
@@ -219,6 +266,18 @@ scripts/verify_all.sh    Full demo + test verification
 | `docs/FAQ.md` | Common questions |
 | `CHANGELOG.md` | Version history |
 | `docs/RELEASES.md` | Release notes |
+
+## Design Principles
+
+MCR follows a few strict engineering principles:
+
+- Proposals are not state authority.
+- State changes must be represented as events.
+- Accepted events must be written to the WAL.
+- Runtime state must be reconstructable by replay.
+- Demos should run without external services.
+- Documentation should state limitations clearly.
+- The project should avoid AGI, self-evolution, or production-readiness claims.
 
 ## Known Limitations
 
