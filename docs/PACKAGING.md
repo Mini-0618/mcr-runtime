@@ -7,20 +7,30 @@ It is not yet published to PyPI.
 
 ---
 
-## Developer Installation
+## Recommended Installation (venv)
+
+Use a virtual environment to avoid system-wide package conflicts:
 
 ```bash
 git clone https://github.com/Mini-0618/mcr-runtime.git
 cd mcr-runtime
+python3 -m venv .venv
+source .venv/bin/activate          # Linux/macOS
+# .\.venv\\Scripts\\Activate.ps1   # Windows PowerShell
+python3 -m pip install -U pip
 python3 -m pip install -e ".[dev]"
 ```
 
 ### Verify installation
 
 ```bash
-python3 examples/library_usage.py
-python3 -m pytest -q
 bash scripts/verify_all.sh
+```
+
+### Build locally
+
+```bash
+bash scripts/build_check.sh
 ```
 
 ---
@@ -51,16 +61,18 @@ python3 examples/minimal_mcr.py
 
 ---
 
-## Known Limitation
+## Current Namespace
 
 Current public module namespace is `runtime`.
-This may conflict with other packages that use a generic `runtime` name.
+This is a generic name that may conflict with other packages.
 
-Future versions may expose `mcr_runtime` as a stable, unambiguous namespace.
+**Known limitation:** Future v1.x may expose `mcr_runtime` as a stable namespace. v0.9.x keeps `runtime` for compatibility.
 
 ---
 
-## Not on PyPI Yet
+## PyPI Status
+
+MCR is **not published to PyPI yet**.
 
 Do **not** run:
 
@@ -68,7 +80,7 @@ Do **not** run:
 pip install mcr-runtime
 ```
 
-until a PyPI release is explicitly announced.
+until an official PyPI release is explicitly announced.
 
 ---
 
@@ -87,6 +99,16 @@ mcr-runtime/
 │   └── hermes_bridge.py  # HermesBridge
 ├── examples/          # Demo scripts (not part of package)
 ├── tests/             # Test suite
+├── scripts/           # Verification scripts
 ├── pyproject.toml     # Package metadata
-└── LICENSE            # MIT License
+├── LICENSE            # MIT License
+└── README.md          # Project documentation
 ```
+
+---
+
+## CI / Build Verification
+
+The project uses GitHub Actions to verify builds on Python 3.10, 3.11, and 3.12.
+
+See `.github/workflows/python-tests.yml` for the full CI pipeline.

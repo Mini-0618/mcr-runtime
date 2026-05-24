@@ -2,32 +2,47 @@ name: Tests
 
 on:
   push:
-    branches: [master]
+    branches: [master, main]
   pull_request:
-    branches: [master]
+    branches: [master, main]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
 
     steps:
       - uses: actions/checkout@v4
 
-      - name: Set up Python
+      - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
-          python-version: "3.11"
+          python-version: ${{ matrix.python-version }}
 
-      - name: Install pytest
-        run: /usr/bin/python3 -m pip install pytest -q --break-system-packages
-
-      - name: Run tests/
-        run: /usr/bin/python3 -m pytest tests/ -q
-
-      - name: Run demo verification
+      - name: Create venv and install package
         run: |
-          python3 examples/minimal_mcr.py
-          python3 examples/quickstart.py
-          python3 examples/replay_verification_demo.py
-          python3 examples/hermes_bridge_demo.py
+          python${{ matrix.python-version }} -m venv .venv
+          .venv/bin/pip install -U pip -q
+          .venv/bin/pip install -e ".[dev]" -q
+          .venv/bin/pip install build -q
+
+      - name: Verify installation
+        run: |
+          .venv/bin/python3 -c "import runtime; print('import PASS')"
+
+      - name: Run verify_all.sh
+        run: |
+          .venv/bin/bash scripts/verify_all.sh
+
+      - name: Build wheel
+        run: |
+          .venv/bin/python3 -m build
+          ls -lh dist/
+
+      - name: Wheel smoke test
+        run: |
+          .venv/bin/pip install --force-reinstall dist/*.whl -q
+          .venv/bin/python3 -c "import runtime; import runtime.engine; import runtime.wal; import runtime.replay_verifier; print('wheel import PASS')"

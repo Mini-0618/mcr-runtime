@@ -115,11 +115,20 @@ The verification script runs the demos and the regression tests. pytest is only 
 ```bash
 git clone https://github.com/Mini-0618/mcr-runtime.git
 cd mcr-runtime
+python3 -m venv .venv
+source .venv/bin/activate
+python3 -m pip install -U pip
 python3 -m pip install -e ".[dev]"
 bash scripts/verify_all.sh
 ```
 
-This is optional. For the minimal demo, no installation is required. For development and testing, editable install is recommended.
+This is optional. For the minimal demo, no installation is required. For development and testing, editable install with venv is recommended.
+
+For build verification:
+
+```bash
+bash scripts/build_check.sh
+```
 
 ## Demo Matrix
 

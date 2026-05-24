@@ -14,3 +14,9 @@ Thumbs.db
 __pycache__/
 run_data/
 traces/
+
+# Build artifacts
+dist/
+build/
+.venv/
+.pytest_cache/
