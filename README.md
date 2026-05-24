@@ -1,8 +1,8 @@
-# MCR — Memory-augmented Cognitive Runtime
+# MCR — Memory-Augmented Cognitive Runtime
 
-> **GitHub:** https://github.com/Mini-0618/mcr-runtime  
-> **Author:** 刘永甜  
-> **一个有边界、可观测、持久的认知运行时，专为长周期 AI Agent 循环设计。**
+> **GitHub:** https://github.com/Mini-0618/mcr-runtime
+> **Author:** 刘永甜
+> A replayable memory runtime for long-running AI agents.
 
 ---
 
