@@ -1,0 +1,33 @@
+name: Tests
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install pytest
+        run: /usr/bin/python3 -m pip install pytest -q --break-system-packages
+
+      - name: Run tests/
+        run: /usr/bin/python3 -m pytest tests/ -q
+
+      - name: Run demo verification
+        run: |
+          python3 examples/minimal_mcr.py
+          python3 examples/quickstart.py
+          python3 examples/replay_verification_demo.py
+          python3 examples/hermes_bridge_demo.py
