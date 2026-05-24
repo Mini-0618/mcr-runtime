@@ -22,6 +22,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from runtime.engine import MCRRuntimeEngine
 from runtime.replay_verifier import ReplayVerifier
 from runtime.state import SystemState
+from pathlib import Path
 
 
 def main():
@@ -32,7 +33,9 @@ def main():
     # ── 1. Create runtime ────────────────────────────────────────
     print("\n[1] Create runtime...")
     wal_path = "/tmp/mcr_quickstart_wal.jsonl"
-    # Use isolated WAL path so each run is clean
+    # Clean WAL so each run starts fresh — residual events from previous runs
+    # would cause wal_length mismatch in G2 verification.
+    Path(wal_path).unlink(missing_ok=True)
     engine = MCRRuntimeEngine(wal_path=wal_path)
     verifier = ReplayVerifier()
 

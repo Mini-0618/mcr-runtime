@@ -11,6 +11,7 @@ No external LLM API required. No network access. Runs in ~1 second.
 """
 import sys
 import os
+from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -25,6 +26,7 @@ def run_and_verify():
       runtime_state == replay(WAL)
     """
     wal_path = "/tmp/mcr_replay_demo_wal.jsonl"
+    Path(wal_path).unlink(missing_ok=True)
 
     engine = MCRRuntimeEngine(wal_path=wal_path)
     verifier = ReplayVerifier()

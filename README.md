@@ -119,16 +119,23 @@ latency (ms)
 ## 4. 快速开始 / Quick Start
 
 ```bash
-git clone https://github.com/Mini-0618/mcr-runtime
+git clone git@github.com:Mini-0618/mcr-runtime.git
 cd mcr-runtime
 
-# Demo 1: event-sourced runtime basics (~1 second)
+# Demo 1: self-contained concept demo (~1 second)
+#   Shows core loop: Event → WAL → Reducer → State → Replay Verification
+python3 examples/minimal_mcr.py
+
+# Demo 2: modular runtime demo (~1 second)
+#   Full MCRRuntimeEngine with G2 verification
 python3 examples/quickstart.py
 
-# Demo 2: deterministic replay verification (~1 second)
+# Demo 3: deterministic replay verification (~1 second)
+#   Proves runtime state == replayed state via hash comparison
 python3 examples/replay_verification_demo.py
 
-# Demo 3: Hermes Bridge integration (~1 second)
+# Demo 4: Hermes Bridge integration (~1 second, no real LLM)
+#   Shows how LLM proposals enter the event gate
 python3 examples/hermes_bridge_demo.py
 
 # Benchmark: 50k tick bounded latency run (~minutes)

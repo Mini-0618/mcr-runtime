@@ -13,6 +13,7 @@ No external LLM API required. Uses a mock Hermes response.
 """
 import sys
 import os
+from pathlib import Path
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
@@ -55,6 +56,7 @@ def main():
     # ── 1. Create engine + bridge ──────────────────────────────────
     print("\n[1] Initialize runtime + Hermes Bridge...")
     wal_path = "/tmp/mcr_bridge_demo_wal.jsonl"
+    Path(wal_path).unlink(missing_ok=True)
     engine = MCRRuntimeEngine(wal_path=wal_path)
     bridge = HermesBridge(engine)
     print("  ✓ Engine created")
