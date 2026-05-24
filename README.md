@@ -119,7 +119,7 @@ latency (ms)
 ## 4. 快速开始 / Quick Start
 
 ```bash
-git clone git@github.com:Mini-0618/mcr-runtime.git
+git clone https://github.com/Mini-0618/mcr-runtime.git
 cd mcr-runtime
 
 # Demo 1: self-contained concept demo (~1 second)
@@ -147,10 +147,18 @@ python3 runtime_phys_observation/run_physics_50k.py
 ### Developer Verification
 
 After pulling changes, run:
+
 ```bash
+# Install pytest if not present
+python3 -m pip install pytest
+
+# Run all demos + tests
 bash scripts/verify_all.sh
 ```
+
 This executes all 4 demos + pytest in sequence. All must PASS.
+
+> **Note:** `minimal_mcr.py` runs without pytest. Only install pytest if you want the full test suite.
 
 ---
 
