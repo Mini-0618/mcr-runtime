@@ -160,7 +160,7 @@ def test_g2_replay():
         print("\n❌ G2 VIOLATION DETECTED")
         raise AssertionError(f"G2 replay mismatch: {result}")
 
-    return result
+    # No return — pytest requires test functions to return None
 
 
 if __name__ == '__main__':
