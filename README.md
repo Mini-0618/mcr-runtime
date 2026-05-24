@@ -75,8 +75,8 @@ If replay produces the same state, the runtime has a verifiable state history. I
 
 | Field | Value |
 | --- | --- |
-| Release | v0.9.3 |
-| Status | Research runtime artifact / demo-ready / regression-protected |
+| Release | v0.9.5 |
+| Status | Installable package prototype / library-ready |
 | Language | Python |
 | External services | None required for demos |
 | API key required | No |
@@ -109,6 +109,17 @@ bash scripts/verify_all.sh
 ```
 
 The verification script runs the demos and the regression tests. pytest is only required for the full verification suite.
+
+## Developer Installation
+
+```bash
+git clone https://github.com/Mini-0618/mcr-runtime.git
+cd mcr-runtime
+python3 -m pip install -e ".[dev]"
+bash scripts/verify_all.sh
+```
+
+This is optional. For the minimal demo, no installation is required. For development and testing, editable install is recommended.
 
 ## Demo Matrix
 
@@ -281,6 +292,7 @@ scripts/verify_all.sh    Full demo + test verification
 | `docs/KNOWN_ISSUES.md` | Current limitations |
 | `docs/ROADMAP.md` | Project roadmap |
 | `docs/FAQ.md` | Common questions |
+| `docs/PACKAGING.md` | Packaging and editable install guide |
 | `CHANGELOG.md` | Version history |
 | `docs/RELEASES.md` | Release notes |
 

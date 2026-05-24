@@ -1,10 +1,13 @@
 #!/bin/bash
-# scripts/verify_all.sh — MCR v0.9.4 local verification
+# scripts/verify_all.sh — MCR v0.9.5 local verification
 set -e
 
 cd "$(dirname "$0")/.."
 
-echo "=== MCR v0.9.4 Verification ==="
+echo "=== MCR v0.9.5 Verification ==="
+echo ""
+echo "Developer install (optional):"
+echo "  python3 -m pip install -e \".[dev]\""
 echo ""
 
 echo "[1/5] minimal_mcr.py"

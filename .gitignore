@@ -1,18 +1,16 @@
-# Runtime data (generated during benchmark runs)
-run_data/
-traces/
-*.jsonl
-
+# IDE
+# OS
 # Python cache
-__pycache__/
+# Runtime data (generated during benchmark runs)
+*.egg-info/
+*.jsonl
 *.pyc
 *.pyo
-
-# OS
-.DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
 *.swp
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+__pycache__/
+run_data/
+traces/
