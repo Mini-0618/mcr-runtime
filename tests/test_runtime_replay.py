@@ -11,7 +11,7 @@ def test_runtime_replay():
         [sys.executable, "examples/quickstart.py"],
         capture_output=True,
         text=True,
-        cwd="/home/minimak/mcr",
+        cwd=".",
     )
     output = result.stdout + result.stderr
     assert result.returncode == 0, f"quickstart.py failed:\n{output}"

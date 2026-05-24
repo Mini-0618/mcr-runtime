@@ -7,7 +7,7 @@ Event Gate + Hermes Bridge Integration Test
 4. Rejected events are blocked
 """
 import sys, os, uuid
-sys.path.insert(0, '/home/minimak/mcr')
+sys.path.insert(0, '.')
 
 from runtime import (
     MCRRuntimeEngine, EventGate, HermesBridge,
@@ -200,7 +200,7 @@ def test_event_gate_validation():
     # Test 13: get_state_snapshot() caps access_history to MAX_SNAPSHOT_ACCESS_HISTORY (20).
     # WAL has unbounded access_history but snapshot is context-only and must not grow unboundedly.
     from runtime.hermes_bridge import HermesBridge
-    wal_path13 = "/home/minimak/mcr/.wal/test_snapshot_cap.jsonl"
+    wal_path13 = "./.wal/test_snapshot_cap.jsonl"
     if os.path.exists(wal_path13):
         os.remove(wal_path13)
     eng13 = MCRRuntimeEngine(wal_path=wal_path13)
@@ -221,7 +221,7 @@ def test_event_gate_validation():
     # Verify: (a) public API matches wal_hash returned in verify() result;
     # (b) two identical WALs produce the same hash across separate verifier instances.
     from runtime.replay_verifier import ReplayVerifier
-    wal_path14 = "/home/minimak/mcr/.wal/test_wal_hash.jsonl"
+    wal_path14 = "./.wal/test_wal_hash.jsonl"
     if os.path.exists(wal_path14):
         os.remove(wal_path14)
     eng14 = MCRRuntimeEngine(wal_path=wal_path14)
@@ -249,7 +249,7 @@ def test_event_gate_validation():
     # Test 15: WAL.is_empty() returns True for fresh empty WAL, False after events.
     # Confirms the convenience method works correctly.
     from runtime.wal import WAL
-    tmp15 = "/home/minimak/mcr/.wal/test_is_empty.jsonl"
+    tmp15 = "./.wal/test_is_empty.jsonl"
     if os.path.exists(tmp15):
         os.unlink(tmp15)
     w15 = WAL(tmp15)
@@ -281,7 +281,7 @@ def test_event_gate_validation():
     # test_g2_replay uses engine.emit() which bypasses EventGate, so coaccess_group_id
     # UUID enforcement has no coverage via the bridge. Bare integers "1","2","3" in
     # test_g2_replay never go through EventGate.validate() Rule 4.
-    wal_path17 = "/home/minimak/mcr/.wal/test_coaccess_uuid.jsonl"
+    wal_path17 = "./.wal/test_coaccess_uuid.jsonl"
     if os.path.exists(wal_path17):
         os.remove(wal_path17)
     eng17 = MCRRuntimeEngine(wal_path=wal_path17)
@@ -535,7 +535,7 @@ def test_hermes_bridge():
     print("\n=== Hermes Bridge Tests ===\n")
 
     # clean WAL
-    wal_path = "/home/minimak/mcr/.wal/test_bridge.jsonl"
+    wal_path = "./.wal/test_bridge.jsonl"
     if os.path.exists(wal_path):
         os.remove(wal_path)
 
@@ -583,7 +583,7 @@ def test_hermes_bridge():
 def test_full_integration():
     print("\n=== Full Integration Test ===\n")
 
-    wal_path = "/home/minimak/mcr/.wal/test_integration.jsonl"
+    wal_path = "./.wal/test_integration.jsonl"
     if os.path.exists(wal_path):
         os.remove(wal_path)
 

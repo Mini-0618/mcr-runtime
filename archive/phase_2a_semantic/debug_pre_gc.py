@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import sys
-sys.path.insert(0, '/home/minimak/mcr')
+sys.path.insert(0, '.')
 from semantic_governance_v19g import *
 
 episodic = MockEpisodic()

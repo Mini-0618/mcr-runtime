@@ -17,8 +17,8 @@ Metrics tracked:
   - Archive pressure
 """
 import sys, os, random, shutil, time
-sys.path.insert(0, '/home/minimak/mcr/stable')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction')
+sys.path.insert(0, './stable')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_B_compaction')
 
 from semantic_compaction import CompactionRuntime
 

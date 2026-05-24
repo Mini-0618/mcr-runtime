@@ -1,5 +1,5 @@
 #!/bin/bash
-cd /home/minimak/mcr
+cd .
 
 END=$((SECONDS+18000))
 

@@ -145,7 +145,7 @@ Total Pathologies: 12
 Status: ACTIVE
 
 Pathologies are being tracked in:
-/home/minimak/mcr/observability/pathology/pathology_catalog.md
+./observability/pathology/pathology_catalog.md
 ```
 
 ---
@@ -203,7 +203,7 @@ Phase 2.5 完成度:
 
 ```
 Active Version: v0.19f
-Entry Point: /home/minimak/mcr/stable/semantic_governance_v19f.py
+Entry Point: ./stable/semantic_governance_v19f.py
 LKG: VERIFIED
 Status: MAINTENANCE_MODE
 Rollback: AVAILABLE

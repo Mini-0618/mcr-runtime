@@ -9,12 +9,12 @@ def test_no_token_leak():
     # Check for ghp_ classic tokens
     r1 = subprocess.run(
         ["git", "grep", "-E", "ghp_[a-zA-Z0-9]{36}"],
-        capture_output=True, text=True, cwd="/home/minimak/mcr"
+        capture_output=True, text=True, cwd="."
     )
     # Check for github_pat_ PATs
     r2 = subprocess.run(
         ["git", "grep", "-E", "github_pat_[a-zA-Z0-9_]{20,}"],
-        capture_output=True, text=True, cwd="/home/minimak/mcr"
+        capture_output=True, text=True, cwd="."
     )
     # Filter out false positives (this test file itself should be clean)
     leaks_ghp = [l for l in r1.stdout.splitlines() if "ghp_" in l and "test_no_token_leak" not in l]

@@ -17,7 +17,7 @@ owner: Hermes-MCR
 benchmark: v0.19f
 verdict: PASS
 source_file: semantic_governance_v19f.py
-runtime_path: /home/minimak/mcr/stable/
+runtime_path: ./stable/
 ```
 
 ---
@@ -74,7 +74,7 @@ date: 2026-05-12
 
 ```bash
 # If v0.19f runtime is needed:
-cd /home/minimak/mcr/stable/
+cd ./stable/
 python semantic_governance_v19f.py
 
 # If benchmark is needed:
@@ -86,10 +86,10 @@ python semantic_governance_v19f.py
 ## Entry Point
 
 ```
-main entry: /home/minimak/mcr/stable/semantic_governance_v19f.py
-config: /home/minimak/mcr/stable/config.py
-memory: /home/minimak/mcr/stable/memory.py
-trace: /home/minimak/mcr/stable/memory_trace.py
+main entry: ./stable/semantic_governance_v19f.py
+config: ./stable/config.py
+memory: ./stable/memory.py
+trace: ./stable/memory_trace.py
 ```
 
 ---

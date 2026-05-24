@@ -14,7 +14,7 @@ def test_minimal_mcr_replay_hash():
         [sys.executable, "examples/minimal_mcr.py"],
         capture_output=True,
         text=True,
-        cwd="/home/minimak/mcr",
+        cwd=".",
     )
     output = result.stdout + result.stderr
 
@@ -26,7 +26,7 @@ def test_minimal_mcr_replay_hash():
         f"Expected PASS in output:\n{output}"
 
     # WAL file must exist and have content
-    wal_path = "/home/minimak/mcr/tmp/mcr_demo.wal.jsonl"
+    wal_path = "./tmp/mcr_demo.wal.jsonl"
     with open(wal_path) as f:
         lines = [json.loads(line) for line in f if line.strip()]
     assert len(lines) > 0, "WAL is empty"

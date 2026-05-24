@@ -11,7 +11,7 @@ def test_hermes_bridge_mock():
         [sys.executable, "examples/hermes_bridge_demo.py"],
         capture_output=True,
         text=True,
-        cwd="/home/minimak/mcr",
+        cwd=".",
     )
     output = result.stdout + result.stderr
     assert result.returncode == 0, f"hermes_bridge_demo.py failed:\n{output}"

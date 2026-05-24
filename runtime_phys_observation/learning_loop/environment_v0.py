@@ -4,7 +4,7 @@ Tests: does π(a|s) learn to choose better retrieval configs?"""
 import sys, random, itertools
 from dataclasses import dataclass
 
-sys.path.insert(0, '/home/minimak/mcr/stable')
+sys.path.insert(0, './stable')
 
 # ═══ ORACLE (external anchor) ════════════════════════════════════════════
 GOLD = {

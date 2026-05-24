@@ -2,7 +2,7 @@
 """MCR Learning Loop v2 — prev_action in state + fixed difficulty (clean comparison)
 Tests: can π learn conditional action sequence (A on step1, B on step2+)?"""
 import sys, random, itertools
-sys.path.insert(0, '/home/minimak/mcr/stable')
+sys.path.insert(0, './stable')
 
 # ═══ ORACLE ════════════════════════════════════════════════════════════
 GOLD = {

@@ -118,7 +118,7 @@ The periodic_review function reports ~14,700 "demotions" per 5k window — but t
 
 ### Release Snapshot: `v0.19g_stable_runtime`
 ```
-/home/minimak/mcr/releases/v0.19g_stable_runtime/
+./releases/v0.19g_stable_runtime/
 ├── RELEASE_NOTES.md          5,066 bytes
 ├── LKG.md                    2,331 bytes
 ├── semantic_governance_v19g.py  60,834 bytes (hash: 637a11c907e8a889b909513522dfab8c)

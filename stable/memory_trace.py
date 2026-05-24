@@ -31,10 +31,10 @@ from collections import defaultdict
 from dataclasses import dataclass, field, asdict
 from typing import Optional
 
-sys.path.insert(0, '/home/minimak/mcr')
+sys.path.insert(0, '.')
 from layered_memory import LayeredMemory
 
-TRACE_DIR = Path('/home/minimak/mcr/traces')
+TRACE_DIR = Path('./traces')
 TRACE_DIR.mkdir(exist_ok=True)
 
 # ─── Trace Event Types ────────────────────────────────────────────────────────

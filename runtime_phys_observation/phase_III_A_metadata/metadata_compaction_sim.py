@@ -145,7 +145,7 @@ for name, r in results.items():
     print(f"  {name}: alpha_diff={alpha_diff:+.4f} bytes_reduced={compaction_benefit:.1f}% cpu_cost={r['cpu_cost']:.0f}")
 
 # Export
-OUTPUT_DIR = "/home/minimak/mcr/runtime_phys_observation/phase_III_A_metadata"
+OUTPUT_DIR = "./runtime_phys_observation/phase_III_A_metadata"
 data = {
     "max_tick": MAX_TICK,
     "strategies": results,

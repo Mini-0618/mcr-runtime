@@ -1,7 +1,7 @@
 # MCR: Memory-augmented Cognitive Runtime
 
-**GitHub:** https://github.com/Mini-0618/mcr-runtime  
-**Author:** 刘永甜  
+**GitHub:** https://github.com/Mini-0618/mcr-runtime
+**Author:** Mini
 **Version:** v0.9
 
 ---
@@ -10,19 +10,19 @@
 
 Building long-running AI agents, developers face these fundamental problems:
 
-**Unbounded Latency Growth**  
+**Unbounded Latency Growth**
 Flat-list memory stores all interactions. As the agent runs longer, retrieval scans more items — slower every day.
 
-**No Latency Guarantee**  
+**No Latency Guarantee**
 Vector DB + RAG approaches optimize for recall quality, not retrieval speed. Latency grows with history size, no upper bound.
 
-**Memory Pressure Cascade**  
+**Memory Pressure Cascade**
 Without tiered eviction, working memory fills up and the agent starts losing context mid-task.
 
-**Unobservable State Transitions**  
+**Unobservable State Transitions**
 When the agent forgets something, you can't trace why. No visibility into what was evicted, when, and by what.
 
-**Semantic Layer Never Activates**  
+**Semantic Layer Never Activates**
 Most layered memory designs have a semantic/topics layer that never gets populated — the promotion threshold is never met in practice.
 
 ---
@@ -31,16 +31,16 @@ Most layered memory designs have a semantic/topics layer that never gets populat
 
 MCR is an open-source layered memory runtime that **provably bounds retrieval latency** regardless of agent lifetime.
 
-**Bounded Retrieval Latency**  
+**Bounded Retrieval Latency**
 Working + Episodic tiers have hard caps (W and HARD_CAP). Archive is write-only for retrieval. Complexity is always O(W+CAP+K) — never grows with agent lifetime.
 
-**Tiered Eviction with WAL**  
+**Tiered Eviction with WAL**
 Every state transition (store/evict/promote/archive) is logged to a Write-Ahead Log. The G2 deterministic replay kernel can reconstruct any past state.
 
-**Observable Memory Lifecycle**  
+**Observable Memory Lifecycle**
 MCR emits structured lifecycle traces: TRANSITION events, rerank modifications, W shrink events — every decision is logged and queryable.
 
-**Semantic Layer That Actually Activates**  
+**Semantic Layer That Actually Activates**
 Intent analysis expands the retrieval prefilter to include current_goal + goal_history characters, not just the bare query. This ensures the semantic layer activates even when query and memory content have low direct string overlap.
 
 ---
@@ -101,7 +101,7 @@ latency (ms)
   Phase1(W=10) Phase2(W=5) Phase3(W=3)
 ```
 
-W=10→5 transition: +54% spike, recovers in 1 tick  
+W=10→5 transition: +54% spike, recovers in 1 tick
 W=5→3 transition: +30% spike, recovers in 1 tick
 
 ### 5. Semantic Layer Trade-off
@@ -241,7 +241,7 @@ Therefore retrieval latency is bounded — independent of T.
 
 ```bibtex
 @misc{mcr2025,
-  author = {刘永甜},
+  author = {Mini},
   title = {MCR: Memory-augmented Cognitive Runtime},
   year = {2025},
   url = {https://github.com/Mini-0618/mcr-runtime}

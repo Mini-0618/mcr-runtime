@@ -2,7 +2,7 @@
 """MCR Learning Loop v1 — Fixed credit assignment + large action gap
 Tests: can π(a|s) learn the optimal 3-step retrieval strategy?"""
 import sys, random, itertools
-sys.path.insert(0, '/home/minimak/mcr/stable')
+sys.path.insert(0, './stable')
 
 # ═══ ORACLE ════════════════════════════════════════════════════════════
 GOLD = {

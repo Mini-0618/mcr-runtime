@@ -88,6 +88,6 @@ print(f"MemoryImmune actions: {dict((a, sum(1 for r in results if r['memory_immu
 print(f"Vaccine 触发次数: {sum(1 for r in results if r['vaccine_triggered'])}")
 
 # 保存详细结果
-with open('/home/minimak/mcr/stability_test_results.json', 'w') as f:
+with open('./stability_test_results.json', 'w') as f:
     json.dump(results, f, ensure_ascii=False, indent=2)
 print('\n详细结果已保存到 stability_test_results.json')

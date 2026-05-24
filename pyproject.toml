@@ -10,7 +10,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = {text = "MIT"}
 authors = [
-    {name = "Mini-0618"}
+    {name = "Mini"}
 ]
 keywords = [
     "ai-agent",

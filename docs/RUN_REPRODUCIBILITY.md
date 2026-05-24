@@ -18,7 +18,7 @@ runtime_hash:      [COMPUTE AFTER RUN]
 
 ## Config Hash
 ```
-config_snapshot:   /home/minimak/mcr/stable/config.py
+config_snapshot:   ./stable/config.py
 config_hash:      [COMPUTE AFTER RUN]
 ```
 
@@ -50,7 +50,7 @@ post_run_hash:      [SHA256]
 ```
 python_version:     3.x.x
 platform:           Linux-5.x.x-wsl2
-working_dir:        /home/minimak/mcr
+working_dir:        .
 venv:               [IF USED]
 ```
 

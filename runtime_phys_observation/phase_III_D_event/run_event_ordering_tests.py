@@ -19,12 +19,12 @@ Event Taxonomy:
 
 import sys, os, json, time, random, shutil, hashlib
 from pathlib import Path
-sys.path.insert(0, '/home/minimak/mcr/stable')
+sys.path.insert(0, './stable')
 
 from layered_memory import LayeredMemory
 from wal_manager import WALManager
 
-BASE_DIR = Path("/home/minimak/mcr/runtime_phys_observation/phase_III_D_event")
+BASE_DIR = Path("./runtime_phys_observation/phase_III_D_event")
 RUNS_DIR = BASE_DIR / "runs"; TRACES_DIR = BASE_DIR / "traces"
 REPLAY_DIR = BASE_DIR / "replay"; METRICS_DIR = BASE_DIR / "metrics"
 for d in [RUNS_DIR, TRACES_DIR, REPLAY_DIR, METRICS_DIR]:

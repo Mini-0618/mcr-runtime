@@ -36,7 +36,7 @@ import math
 import random
 from collections import defaultdict
 
-_MCR_ROOT = '/home/minimak/mcr'
+_MCR_ROOT = '.'
 sys.path.insert(0, _MCR_ROOT)
 sys.path.insert(0, os.path.join(_MCR_ROOT, 'stable'))
 
@@ -44,7 +44,7 @@ from layered_memory import LayeredMemory
 
 # ─── Output ─────────────────────────────────────────────────────────────────
 
-PHASE_DIR = '/home/minimak/mcr/runtime_phys_observation/phase_III_A_metadata'
+PHASE_DIR = './runtime_phys_observation/phase_III_A_metadata'
 RUN_DIR = os.path.join(PHASE_DIR, 'runs/metadata_100k')
 METRICS_FILE = os.path.join(PHASE_DIR, 'metrics/metadata_metrics.json')
 CURVES_FILE = os.path.join(PHASE_DIR, 'metrics/growth_curves.csv')

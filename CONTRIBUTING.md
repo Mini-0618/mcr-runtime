@@ -131,11 +131,11 @@ git push origin feature/your-feature-name
 
 | 领域 | 主要联系人 | 备份 |
 |------|-----------|------|
-| G2 Event-Sourced Kernel / WAL | @Mini-0618 | — |
-| layered_memory / eviction | @Mini-0618 | — |
-| EventGate / HermesBridge | @Mini-0618 | — |
-| Benchmark / Stress Test | @Mini-0618 | — |
-| 可观察性 / Memory Trace | @Mini-0618 | — |
+| G2 Event-Sourced Kernel / WAL | @Mini | — |
+| layered_memory / eviction | @Mini | — |
+| EventGate / HermesBridge | @Mini | — |
+| Benchmark / Stress Test | @Mini | — |
+| 可观察性 / Memory Trace | @Mini | — |
 
 ---
 

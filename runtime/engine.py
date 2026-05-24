@@ -10,7 +10,7 @@ from .replay_verifier import ReplayVerifier
 
 
 class MCRRuntimeEngine:
-    def __init__(self, wal_path: str = "/home/minimak/mcr/.wal/events.jsonl"):
+    def __init__(self, wal_path: str = "./.wal/events.jsonl"):
         self.wal = WAL(wal_path)
         self.state = SystemState.empty()
         self.initial_state = self.state.clone()

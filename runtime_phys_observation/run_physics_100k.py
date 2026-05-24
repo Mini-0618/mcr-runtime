@@ -16,13 +16,13 @@ RUNTIME PHYSICS TAXONOMY:
 import sys, os, time, json, random, math
 from collections import defaultdict
 
-_MCR_ROOT = '/home/minimak/mcr'
+_MCR_ROOT = '.'
 sys.path.insert(0, _MCR_ROOT)
 sys.path.insert(0, os.path.join(_MCR_ROOT, 'stable'))
 from layered_memory import LayeredMemory
 
 # Output directory — separate from 10k run
-PERSIST_DIR = '/home/minimak/mcr/run_data/run_data_100k'
+PERSIST_DIR = './run_data/run_data_100k'
 os.makedirs(PERSIST_DIR, exist_ok=True)
 
 # Synthetic workload configuration

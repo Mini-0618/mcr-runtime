@@ -22,12 +22,12 @@ import signal
 import tempfile
 from pathlib import Path
 
-sys.path.insert(0, '/home/minimak/mcr/stable')
+sys.path.insert(0, './stable')
 from layered_memory import LayeredMemory
 from wal_manager import WALManager
 
 # ─── Directory Setup ─────────────────────────────────────────────────────────
-BASE_DIR = Path("/home/minimak/mcr/runtime_phys_observation/phase_III_C_crash")
+BASE_DIR = Path("./runtime_phys_observation/phase_III_C_crash")
 RUNS_DIR = BASE_DIR / "runs"
 CORRUPT_DIR = BASE_DIR / "corrupted_wal"
 SNAP_DIR = BASE_DIR / "snapshots"

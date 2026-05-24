@@ -26,20 +26,20 @@ import sys, os, time, json, random, math, shutil
 from pathlib import Path
 from collections import defaultdict
 
-sys.path.insert(0, '/home/minimak/mcr')
+sys.path.insert(0, '.')
 sys.path.insert(0, '/home/minimax/mcr/stable')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_B_compaction')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_B_compaction')
 
 try:
     from layered_memory import LayeredMemory
     from semantic_compaction import SemanticCompaction, CompactionRuntime
 except ModuleNotFoundError:
-    sys.path[0] = '/home/minimak/mcr/stable'
+    sys.path[0] = './stable'
     from layered_memory import LayeredMemory
     from semantic_compaction import SemanticCompaction, CompactionRuntime
 
-BASE = Path("/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction")
+BASE = Path("./runtime_phys_observation/phase_IV_B_compaction")
 RUNS = BASE / "runs"
 OUT = RUNS / "phase_VI_patch_validation"
 OUT.mkdir(parents=True, exist_ok=True)

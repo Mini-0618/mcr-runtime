@@ -69,7 +69,7 @@ LOW:      0.70  # ~267 ticks to collapse
 ## ROLLBACK COMMAND
 ```bash
 # If v0.19g is broken, rollback to this snapshot:
-cp /home/minimak/mcr/snapshot_v19g_pass/semantic_governance_v19g.py /home/minimak/mcr/semantic_governance_v19g.py
+cp ./snapshot_v19g_pass/semantic_governance_v19g.py ./semantic_governance_v19g.py
 
 # Verify hash after rollback:
 md5sum /home/minimax/mcr/semantic_governance_v19g.py

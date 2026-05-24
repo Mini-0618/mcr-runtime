@@ -12,8 +12,8 @@ G4: Archive size bounded + purge_count > 0
 Run time: ~90 seconds
 """
 import sys, os, random, shutil, json
-sys.path.insert(0, '/home/minimak/mcr/stable')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction')
+sys.path.insert(0, './stable')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_B_compaction')
 
 from semantic_compaction import CompactionRuntime
 

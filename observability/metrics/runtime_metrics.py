@@ -5,8 +5,8 @@ Runtime Metrics Collector v1.0
 Reads trace files from MemoryTracer and produces time-series metrics.
 
 Usage:
-  python runtime_metrics.py --trace /home/minimak/mcr/traces/trace_XXXX.jsonl
-  python runtime_metrics.py --dir /home/minimak/mcr/traces/
+  python runtime_metrics.py --trace ./traces/trace_XXXX.jsonl
+  python runtime_metrics.py --dir ./traces/
 """
 
 import json

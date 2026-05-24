@@ -588,7 +588,7 @@ if __name__ == "__main__":
               f"{r['memory_delta']:>+11.1f} {r['noise_delta']:>+11.1%} {r.get('spike_rate_new', 0):>8.3f} {r.get('semantic_activations', 0):>12}")
 
     # Save results
-    results_file = "/home/minimak/mcr/benchmark_results.json"
+    results_file = "./benchmark_results.json"
     with open(results_file, "w") as f:
         json.dump(all_results, f, indent=2)
     print(f"\nResults saved to {results_file}")

@@ -11,7 +11,7 @@ def test_library_usage():
         [sys.executable, "examples/library_usage.py"],
         capture_output=True,
         text=True,
-        cwd="/home/minimak/mcr"
+        cwd="."
     )
     assert result.returncode == 0, f"library_usage.py failed with code {result.returncode}\n{result.stderr}"
     assert "PASS" in result.stdout, f"No PASS in output:\n{result.stdout}"

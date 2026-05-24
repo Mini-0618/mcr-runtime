@@ -13,9 +13,9 @@ G2: Weight divergence — at least one channel weight != 1.0
 G3: Learning signal — weight change correlates with retrieval quality
 """
 import sys, os, random, shutil, json
-sys.path.insert(0, '/home/minimak/mcr/stable')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_A_adaptation')
+sys.path.insert(0, './stable')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_B_compaction')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_A_adaptation')
 
 from semantic_compaction import CompactionRuntime
 from adaptive_policy import AdaptivePolicy

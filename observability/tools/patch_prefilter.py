@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-with open('/home/minimak/mcr/layered_memory.py') as f:
+with open('./layered_memory.py') as f:
     content = f.read()
 
 old = '''        semantic_scored = []
@@ -33,7 +33,7 @@ new = '''        semantic_scored = []
 
 if old in content:
     content = content.replace(old, new, 1)
-    open('/home/minimak/mcr/layered_memory.py', 'w').write(content)
+    open('./layered_memory.py', 'w').write(content)
     print('PATCHED semantic prefilter')
 else:
     print('NOT FOUND - searching...')

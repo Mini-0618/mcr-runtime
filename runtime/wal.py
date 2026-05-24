@@ -72,7 +72,7 @@ class Event:
 
 
 class WAL:
-    def __init__(self, path: str = "/home/minimak/mcr/.wal/events.jsonl"):
+    def __init__(self, path: str = "./.wal/events.jsonl"):
         self.path = Path(path)
         self.path.parent.mkdir(parents=True, exist_ok=True)
         self._events: List[Event] = []

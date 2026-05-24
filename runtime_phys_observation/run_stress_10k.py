@@ -16,13 +16,13 @@ Key metrics:
 import sys, os, time, json, random, math
 from collections import defaultdict
 
-_MCR_ROOT = '/home/minimak/mcr'
+_MCR_ROOT = '.'
 sys.path.insert(0, _MCR_ROOT)
 sys.path.insert(0, os.path.join(_MCR_ROOT, 'stable'))
 from layered_memory import LayeredMemory
 
 # Output
-PERSIST_DIR = '/home/minimak/mcr/runtime_phys_observation/run_data_stress_10k'
+PERSIST_DIR = './runtime_phys_observation/run_data_stress_10k'
 os.makedirs(PERSIST_DIR, exist_ok=True)
 
 # Same workload as run_physics_50k.py (identical random seed for fair comparison)

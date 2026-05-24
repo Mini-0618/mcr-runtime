@@ -21,7 +21,7 @@ import sys, os, time, json, random, hashlib, shutil
 from pathlib import Path
 from collections import defaultdict
 
-_MCR = '/home/minimak/mcr'
+_MCR = '.'
 sys.path.insert(0, _MCR)
 sys.path.insert(0, os.path.join(_MCR, 'stable'))
 sys.path.insert(0, os.path.join(_MCR, 'runtime_phys_observation/phase_IV_B_compaction'))
@@ -31,7 +31,7 @@ from wal_manager import WALManager
 from semantic_compaction import SemanticCompaction, CompactionRuntime
 
 # ─── OUTPUT ───────────────────────────────────────────────────────────────────
-BASE = Path("/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction")
+BASE = Path("./runtime_phys_observation/phase_IV_B_compaction")
 RUNS = BASE / "runs"; FINDINGS = BASE / "findings"; METRICS = BASE / "metrics"
 OUT = RUNS / "phase_V_continuous"; OUT.mkdir(parents=True, exist_ok=True)
 for d in [FINDINGS, METRICS]: d.mkdir(parents=True, exist_ok=True)

@@ -27,13 +27,13 @@ import random
 import statistics
 from pathlib import Path
 
-sys.path.insert(0, '/home/minimak/mcr')
+sys.path.insert(0, '.')
 
 from layered_memory import LayeredMemory
 
 # ─── Configuration ────────────────────────────────────────────────────────────
-SAVE_DIR = Path('/home/minimak/mcr/val_save')
-PROFILE_DIR = Path('/home/minimak/mcr/val_profile')
+SAVE_DIR = Path('./val_save')
+PROFILE_DIR = Path('./val_profile')
 SAVE_DIR.mkdir(exist_ok=True)
 PROFILE_DIR.mkdir(exist_ok=True)
 

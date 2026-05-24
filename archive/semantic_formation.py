@@ -38,13 +38,13 @@ from collections import defaultdict
 from dataclasses import dataclass, field, asdict
 from typing import Optional
 
-sys.path.insert(0, '/home/minimak/mcr')
+sys.path.insert(0, '.')
 from layered_memory import LayeredMemory
 from memory_trace import TRACE_DIR
 
 # ─── Experiment Config ────────────────────────────────────────────────────────
 
-FORM_EXP_DIR = Path('/home/minimak/mcr/sem_exp')
+FORM_EXP_DIR = Path('./sem_exp')
 FORM_EXP_DIR.mkdir(exist_ok=True)
 
 

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 import json
 
-with open('/home/minimak/mcr/stability_test_results.json') as f:
+with open('./stability_test_results.json') as f:
     results = json.load(f)
 
 noises = [r['noise_ratio'] for r in results]

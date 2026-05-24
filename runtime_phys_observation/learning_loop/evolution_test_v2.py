@@ -6,9 +6,9 @@ Same as v1 but with enough memory pressure to force episodic promotion,
 so all 3 channels (working/episodic/semantic) are active and can learn.
 """
 import sys, os, random, shutil, json
-sys.path.insert(0, '/home/minimak/mcr/stable')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_A_adaptation')
+sys.path.insert(0, './stable')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_B_compaction')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_A_adaptation')
 
 from semantic_compaction import CompactionRuntime
 from adaptive_policy import AdaptivePolicy

@@ -7,11 +7,11 @@ A/B test: same workload, observer OFF vs ON.
 import sys, os, json, time, random, shutil, hashlib, csv
 from pathlib import Path
 
-sys.path.insert(0, '/home/minimak/mcr/stable')
+sys.path.insert(0, './stable')
 from layered_memory import LayeredMemory
 from wal_manager import WALManager
 
-BASE = Path("/home/minimak/mcr/runtime_phys_observation/phase_III_E_interference")
+BASE = Path("./runtime_phys_observation/phase_III_E_interference")
 OFF_DIR = BASE / "runs" / "observer_off"
 ON_DIR  = BASE / "runs" / "observer_on"
 METRICS_DIR = BASE / "metrics"

@@ -11,8 +11,8 @@ Naive Agent Baseline — 50k Tick
 import sys, os, time, json, random, math
 from collections import defaultdict
 
-_MCR_ROOT = '/home/minimak/mcr'
-PERSIST_DIR = '/home/minimak/mcr/run_data/run_data_baseline_naive_10k'
+_MCR_ROOT = '.'
+PERSIST_DIR = './run_data/run_data_baseline_naive_10k'
 os.makedirs(PERSIST_DIR, exist_ok=True)
 
 # Same workload as run_physics_50k.py (identical TOPICS, TEMPLATES, params)

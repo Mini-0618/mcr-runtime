@@ -6,7 +6,7 @@ Compares two runtime snapshots and outputs a diff report.
 
 Usage:
   python snapshot_compare.py --a snapshot_a.json --b snapshot_b.json
-  python snapshot_compare.py --dir /home/minimak/mcr/snapshots/
+  python snapshot_compare.py --dir ./snapshots/
 """
 
 import json

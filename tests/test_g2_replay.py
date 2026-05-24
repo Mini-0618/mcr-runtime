@@ -3,7 +3,7 @@ G2 Replay Equivalence Test
 验证: runtime_state == replay(WAL)
 """
 import sys, os, random
-sys.path.insert(0, '/home/minimak/mcr')
+sys.path.insert(0, '.')
 
 from runtime import MCRRuntimeEngine, SystemState, WAL
 from runtime.replay_verifier import ReplayVerifier
@@ -20,7 +20,7 @@ def test_g2_replay():
     print("=== G2 Replay Equivalence Test ===\n")
 
     # fresh WAL
-    wal_path = "/home/minimak/mcr/.wal/test_events.jsonl"
+    wal_path = "./.wal/test_events.jsonl"
     if os.path.exists(wal_path):
         os.remove(wal_path)
 

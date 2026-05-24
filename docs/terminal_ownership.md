@@ -22,13 +22,13 @@ SYSTEM TERMINAL (L1 Orchestrator)
 └── Reads: All other terminals
 
 MCR TERMINAL (L1 Leaf)
-├── Owns: /home/minimak/mcr/stable/
-├── Owns: /home/minimak/mcr/experimental/
-├── Owns: /home/minimak/mcr/archive/
-├── Owns: /home/minimak/mcr/logs/
-├── Owns: /home/minimak/mcr/integration/
-├── Owns: /home/minimak/mcr/observability/pathology/
-├── Owns: /home/minimak/mcr/observability/metrics/
+├── Owns: ./stable/
+├── Owns: ./experimental/
+├── Owns: ./archive/
+├── Owns: ./logs/
+├── Owns: ./integration/
+├── Owns: ./observability/pathology/
+├── Owns: ./observability/metrics/
 ├── Owns: BENCHMARKS/MCR/
 ├── Writes: observability/traces/
 └── Reads: RUNTIME_POLICY.md, TERMINAL_BOUNDARY.md

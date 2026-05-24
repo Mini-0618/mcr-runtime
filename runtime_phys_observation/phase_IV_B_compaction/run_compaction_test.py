@@ -23,12 +23,12 @@ import sys, os, json, time, random, shutil
 from pathlib import Path
 from collections import defaultdict
 
-sys.path.insert(0, '/home/minimak/mcr/stable')
-sys.path.insert(0, '/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction')
+sys.path.insert(0, './stable')
+sys.path.insert(0, './runtime_phys_observation/phase_IV_B_compaction')
 from layered_memory import LayeredMemory
 from semantic_compaction import SemanticCompaction, CompactionRuntime
 
-BASE = Path("/home/minimak/mcr/runtime_phys_observation/phase_IV_B_compaction")
+BASE = Path("./runtime_phys_observation/phase_IV_B_compaction")
 RUNS = BASE / "runs"; FINDINGS = BASE / "findings"; METRICS = BASE / "metrics"
 for d in [RUNS, FINDINGS, METRICS]: d.mkdir(parents=True, exist_ok=True)
 

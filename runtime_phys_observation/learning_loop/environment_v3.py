@@ -2,7 +2,7 @@
 """MCR Learning Loop v3 — per-step importance-sampled credit assignment
 Key fix: each action gets weighted update based on its step importance."""
 import sys, random, itertools
-sys.path.insert(0, '/home/minimak/mcr/stable')
+sys.path.insert(0, './stable')
 
 GOLD = {"python_gc":"python_gc","sql_query":"sql_query","docker_runtime":"docker_runtime",
         "wal_replay":"wal_replay","semantic_search":"semantic_search","crash_recovery":"crash_recovery",

@@ -5,7 +5,7 @@
 ```
 active_version: v0.19f
 status: MAINTENANCE_MODE
-entry_point: /home/minimak/mcr/stable/semantic_governance_v19f.py
+entry_point: ./stable/semantic_governance_v19f.py
 LKG: VERIFIED
 ```
 
@@ -14,7 +14,7 @@ LKG: VERIFIED
 ## Directory Structure
 
 ```
-/home/minimak/mcr/
+./
 ├── stable/              ← LKG v0.19f（当前生产版本）
 │   ├── semantic_governance_v19f.py
 │   ├── semantic_necessity_v19b.py
@@ -160,11 +160,11 @@ STATUS: REACHED ✅
 rollback: AVAILABLE ✅
 
 LKG: v0.19f
-snapshot: /home/minimak/mcr/stable/CURRENT_LKG.md
+snapshot: ./stable/CURRENT_LKG.md
 benchmark: D:\AI\BENCHMARKS\MCR\v0.19f\
 
 rollback command:
-cd /home/minimak/mcr/stable/
+cd ./stable/
 python semantic_governance_v19f.py
 ```
 
