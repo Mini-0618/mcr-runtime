@@ -2,7 +2,7 @@
 
 > **GitHub:** https://github.com/Mini-0618/mcr-runtime
 > **Author:** 刘永甜
-> A replayable memory runtime for long-running AI agents.
+> **Current release:** v0.9.3 | **Status:** Research runtime artifact / demo-ready / regression-protected
 
 ---
 
@@ -17,6 +17,32 @@ python3 examples/minimal_mcr.py
 **What this does:** Demonstrates the core MCR loop — Event → WAL → Reducer → State → Replay Verification.
 **Success indicator:** Look for `Result: PASS` in the output.
 **No setup required:** No API key, no external LLM, no database, no pytest. Runs in ~1 second.
+
+---
+
+### Demo Matrix
+
+| Demo | Lines | Purpose | pytest required? |
+|------|-------|---------|-----------------|
+| `examples/minimal_mcr.py` | ~200 | Self-contained concept demo | No |
+| `examples/quickstart.py` | ~100 | Modular runtime demo | No |
+| `examples/replay_verification_demo.py` | ~100 | Replay hash verification | No |
+| `examples/hermes_bridge_demo.py` | ~130 | Mock LLM bridge | No |
+
+**First time?** Start with `python3 examples/minimal_mcr.py`.
+
+### What MCR is / is not
+
+**MCR is:**
+- A replayable memory runtime
+- An event-sourced agent memory substrate
+- A research artifact for long-running agent state verification
+
+**MCR is NOT:**
+- AGI
+- A production-ready agent framework
+- A chatbot framework
+- A model training system
 
 ---
 
@@ -331,6 +357,23 @@ Look for `Result: PASS` or `G2 VERIFICATION PASSED` in the output. If replay has
 | **MCR** | **Working+Episodic hard cap** | **Yes (runtime)** |
 
 **MCR vs OpenViking:** OpenViking operates at the application layer (external semantic context management). MCR operates at the runtime layer (retrieval latency bound). They are complementary — MCR provides the bounded retrieval substrate that OpenViking-style context management can be built on top of.
+
+---
+
+## Documentation
+
+| Document | Purpose |
+|----------|---------|
+| docs/PROJECT_OVERVIEW.md | Full project overview |
+| docs/GETTING_STARTED.md | First-time user guide |
+| docs/ARCHITECTURE.md | Runtime architecture |
+| docs/DEMO_WALKTHROUGH.md | Demo explanation |
+| docs/EXTERNAL_VALIDATION.md | External feedback process |
+| docs/KNOWN_ISSUES.md | Current limitations |
+| docs/ROADMAP.md | Project roadmap |
+| docs/FAQ.md | Common questions |
+| CHANGELOG.md | Version history |
+| docs/RELEASES.md | Release notes |
 
 ---
 
