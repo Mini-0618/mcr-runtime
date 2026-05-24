@@ -18,8 +18,7 @@ A database can store data, but MCR is focused on state transition auditability a
 
 ## 5. What is the difference between minimal_mcr.py and quickstart.py?
 
-examples/minimal_mcr.py is a self-contained concept demo. It is the easiest way to understand the core loop. examples/quickstart.py uses the modular runtime files under
-untime/.
+`examples/minimal_mcr.py` is a self-contained concept demo. It is the easiest way to understand the core loop. `examples/quickstart.py` uses the modular runtime files under `runtime/`.
 
 ## 6. Do I need an API key?
 
@@ -37,6 +36,36 @@ MCR is for developers and researchers interested in long-running agents, memory 
 
 No. The current project is a research runtime artifact and demo-ready engineering artifact. It is not a production-ready agent framework.
 
-## 10. What is next?
+## 10. What should I run first?
+
+Run:
+
+```bash
+python3 examples/minimal_mcr.py
+```
+
+Look for:
+
+```text
+Result: PASS
+```
+
+## 11. Why is HermesBridge mocked?
+
+The bridge is mocked so the runtime can be tested without requiring an external LLM or API key. This keeps the replay demo deterministic and easy to run.
+
+## 12. What does PASS mean?
+
+PASS means replay verification succeeded for the demo: the runtime state matches the state reconstructed from the WAL.
+
+## 13. What happens if replay fails?
+
+A replay failure means the runtime could not reconstruct the expected state. That can indicate corrupted history, nondeterministic transition logic, or unsupported direct mutation.
+
+## 14. Is pytest required?
+
+Only for the full verification suite. The minimal demo does not require pytest.
+
+## 15. What is next?
 
 The next work is documentation clarity, external validation, replay verification hardening, and keeping the demo/test path stable.

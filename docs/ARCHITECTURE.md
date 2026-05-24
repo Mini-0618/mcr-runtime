@@ -1,64 +1,105 @@
 # MCR Architecture
 
+MCR is built around a small event-sourced runtime kernel. The architecture is intentionally narrow: validate events, append them to a WAL, reduce them into state, and verify replay.
+
+## Architecture diagram
+
+```text
+User / Agent Event
+        |
+        v
+Event Gate
+        |
+        v
+WAL
+        |
+        v
+Reducer
+        |
+        v
+Runtime State
+        |
+        v
+Replay Verifier
+        |
+        v
+PASS / FAIL
+```
+
 ## 1. Event-sourced runtime kernel
 
-MCR uses an event-sourced runtime kernel. State is not treated as an opaque snapshot. Instead, accepted events are written to a WAL and reduced into runtime state. The same WAL can be replayed to verify state reconstruction.
+The runtime does not treat state as an untraceable mutable object. Accepted events become the historical source of truth. State is derived by applying those events.
 
-## 2. WAL
+This matters because long-running agents can fail in ways that are hard to diagnose from a final snapshot. Event sourcing gives the runtime a history that can be replayed and inspected.
 
+## 2. Event Gate
 
-untime/wal.py provides the write-ahead log. It is the single source of truth for accepted runtime events.
+File: `runtime/event_gate.py`
 
-## 3. Reducer
+The EventGate validates event proposals before they enter the state transition path. It is responsible for rejecting malformed or forbidden inputs. This keeps LLM-generated proposals outside the trusted core until they pass validation.
 
+## 3. WAL
 
-untime/reducer.py applies events to runtime state. The reducer is intended to be a pure state transition layer: given the same prior state and event sequence, replay should produce the same result.
+File: `runtime/wal.py`
 
-## 4. Runtime state
+The write-ahead log stores accepted events. In MCR, the WAL is the source of truth for replay. Runtime state should be reconstructable from the WAL.
 
+## 4. Reducer
 
-untime/state.py defines the runtime state container. State is derived from accepted events rather than directly mutated by an LLM.
+File: `runtime/reducer.py`
 
-## 5. Replay verifier
+The reducer applies accepted events to runtime state. It is the state transition layer. The design goal is that a given event sequence produces the same state during replay.
 
+## 5. Runtime state
 
-untime/replay_verifier.py checks whether replaying the WAL reconstructs the expected runtime state. This is the G2 verification path.
+File: `runtime/state.py`
 
-## 6. Event gate
+Runtime state contains the derived memory state. It also supports equality and hashing behavior used by replay verification.
 
+## 6. Runtime engine
 
-untime/event_gate.py validates incoming event proposals before they enter the WAL/reducer path. This keeps malformed or forbidden proposals outside the state transition path.
+File: `runtime/engine.py`
 
-## 7. Hermes Bridge
+The engine coordinates event acceptance and state transition. It is the wrapper that connects EventGate, WAL, Reducer, State, and ReplayVerifier.
 
+## 7. Replay verifier
 
-untime/hermes_bridge.py demonstrates how LLM-like text can be parsed into structured proposals. It is a bridge layer, not a state authority. Hermes/LLM output must still pass the event gate.
+File: `runtime/replay_verifier.py`
 
-## 8. Demo flow
+The ReplayVerifier checks whether the WAL reconstructs the expected state. It is the main mechanism for proving replay consistency.
 
-`	ext
-User / Agent Event
-        ↓
-Event Gate
-        ↓
-WAL
-        ↓
-Reducer
-        ↓
-Runtime State
-        ↓
-Replay Verifier
-        ↓
-PASS / FAIL
-`
+## 8. Hermes Bridge
 
-The demos in examples/ show this flow at different levels:
+File: `runtime/hermes_bridge.py`
 
-- examples/minimal_mcr.py: self-contained concept demo
-- examples/quickstart.py: modular runtime demo
-- examples/replay_verification_demo.py: replay hash verification
-- examples/hermes_bridge_demo.py: mock LLM bridge demo
+The HermesBridge is a mock LLM bridge. It parses LLM-like output into event proposals. It is not a state authority. Its output must still pass EventGate validation.
 
-## 9. Why deterministic replay matters
+## 9. Demo flow
 
-Deterministic replay gives the runtime a way to verify whether memory state can be recovered from the event log. This matters for long-running agents because state drift, crashes, and memory lifecycle changes need to be auditable rather than inferred from a final snapshot.
+```text
+examples/minimal_mcr.py
+        |
+        v
+create events
+        |
+        v
+write WAL
+        |
+        v
+reduce state
+        |
+        v
+replay WAL
+        |
+        v
+compare state hashes
+        |
+        v
+Result: PASS
+```
+
+## 10. Why deterministic replay matters
+
+Deterministic replay gives the runtime an integrity check. If replay cannot reconstruct the same state, the runtime has evidence of drift, corruption, unsupported mutation, or nondeterministic behavior.
+
+For long-running agents, this matters more than a single successful tool call. The runtime must be able to explain and recover its memory state over time.

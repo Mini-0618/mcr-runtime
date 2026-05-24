@@ -1,100 +1,137 @@
 # MCR Project Overview
 
-## 1. What is MCR?
+MCR, or Memory-Augmented Cognitive Runtime, is a replayable memory runtime for long-running AI agents. It is designed as a research runtime artifact: small enough to inspect, deterministic enough to test, and explicit enough to show how memory state changes over time.
 
-MCR, or Memory-Augmented Cognitive Runtime, is a replayable memory runtime for long-running AI agents. It focuses on runtime state verification rather than model training, chatbot behavior, or autonomous agent claims.
+## What is MCR?
 
-## 2. Why does it exist?
+MCR is an event-sourced runtime kernel for agent memory state. It accepts structured events, validates them, writes them to a WAL, reduces them into runtime state, and verifies whether replay reconstructs the same state.
 
-Long-running agents need more than a prompt history. Their memory state changes over time, and those changes need to be traceable, recoverable, and testable. Without a runtime layer, memory state can drift, grow without bounds, or become unrecoverable after a crash.
+The central invariant is:
 
-## 3. Core problem
+```text
+runtime_state == replay(WAL)
+```
 
-The core problem is long-running agent memory state:
+This is the main difference between MCR and a normal demo script. MCR is not only interested in what state exists now. It is interested in whether that state can be reconstructed from a traceable history.
 
-- memory can grow without a lifecycle
-- retrieval behavior can drift over time
-- state changes may not be attributable
-- crash recovery may produce unverifiable state
-- demos may work once but fail to prove replayability
+## Why does it exist?
 
-## 4. Core idea
+Long-running agents accumulate state. That state may include memory items, access history, tier transitions, archive/purge events, and tool-driven updates. Without a runtime layer, it becomes hard to answer basic questions:
 
-MCR uses an event-sourced architecture:
+- Why does this memory exist?
+- When did it change?
+- Can the state be recovered after a crash?
+- Did replay produce the same result?
+- Did the LLM directly mutate state without validation?
 
-`	ext
-Event -> WAL -> Reducer -> Runtime State -> Replay Verification
-`
+MCR exists to make those questions testable.
 
-Every accepted state transition is represented as an event, written to a write-ahead log, reduced into runtime state, and checked through deterministic replay.
+## Core problem
 
-## 5. System architecture
+The core problem is not only memory retrieval. It is memory state governance over time.
 
-The current runtime consists of:
+MCR focuses on:
 
--
-untime/event_gate.py for event validation
--
-untime/wal.py for append-only event storage
--
-untime/reducer.py for pure state transitions
--
-untime/state.py for runtime state
--
-untime/engine.py for runtime orchestration
--
-untime/replay_verifier.py for replay verification
--
-untime/hermes_bridge.py for mock LLM proposal parsing
+- memory lifecycle traceability
+- replayable state transitions
+- event validation before state mutation
+- crash recovery verification
+- bounded demos that can be tested by external users
 
-## 6. Runtime flow
+## Core idea
 
-`	ext
+MCR uses a small event-sourced pipeline:
+
+```text
+Event -> EventGate -> WAL -> Reducer -> Runtime State -> ReplayVerifier
+```
+
+Each layer has a narrow responsibility. The LLM or bridge layer can propose events, but it does not own state. The runtime owns state transitions.
+
+## System architecture
+
+The main files are:
+
+| File | Responsibility |
+| --- | --- |
+| `runtime/event_gate.py` | Validates proposals and rejects malformed events |
+| `runtime/wal.py` | Stores accepted events as the source of truth |
+| `runtime/reducer.py` | Applies event transitions to state |
+| `runtime/state.py` | Holds runtime state and equality/hash logic |
+| `runtime/engine.py` | Coordinates the runtime pipeline |
+| `runtime/replay_verifier.py` | Replays WAL and checks state equivalence |
+| `runtime/hermes_bridge.py` | Parses mock LLM output into event proposals |
+
+## Runtime flow
+
+```text
 User / Agent Event
-        ↓
+        |
+        v
 Event Gate
-        ↓
+        |
+        v
 WAL
-        ↓
+        |
+        v
 Reducer
-        ↓
+        |
+        v
 Runtime State
-        ↓
+        |
+        v
 Replay Verifier
-        ↓
+        |
+        v
 PASS / FAIL
-`
+```
 
-## 7. What can it be used for?
+## What can it be used for?
 
-MCR can be used to study:
+MCR can be used for:
 
-- replayable agent memory state
-- event-sourced memory lifecycle tracking
-- deterministic replay verification
-- mock LLM proposal routing through a validation layer
-- regression-protected runtime demos
+- learning event sourcing in an agent-memory context
+- testing replayable memory state designs
+- demonstrating WAL-based recovery
+- evaluating event validation boundaries
+- building small deterministic runtime experiments
+- comparing snapshot-style state with replayable state
 
-## 8. What it is not
+## What it is not
 
 MCR is not:
 
 - AGI
-- a production-ready agent framework
+- an autonomous agent product
+- a production-ready framework
 - a chatbot framework
-- a model training system
-- a replacement for a database
+- a training system
+- a complete memory database
 
-## 9. Current status
+## Current status
 
-Current release: v0.9.3. The project is a research runtime artifact with demos, regression tests, and an external onboarding path.
+Current release: v0.9.3.
 
-## 10. Next milestones
+The project is demo-ready and regression-protected. It includes four demos, a verification script, GitHub Actions coverage, release notes, and onboarding documentation.
+
+## Verification summary
+
+The repository verifies:
+
+- G2 replay determinism
+- EventGate validation behavior
+- HermesBridge proposal parsing
+- full bridge/gate/WAL/reducer/replay integration
+- archive and purge behavior
+- replay hash integrity
+- token leak regression checks
+
+## Next milestones
 
 Near-term milestones:
 
-- improve documentation clarity
-- strengthen external validation flow
-- keep demos stable
-- keep replay verification regression-protected
-- document known limitations clearly
+- improve external validation notes
+- keep demo output stable
+- expand known limitations
+- improve replay mismatch diagnostics
+- preserve the narrow runtime scope
