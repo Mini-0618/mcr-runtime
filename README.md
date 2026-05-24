@@ -122,14 +122,17 @@ latency (ms)
 git clone https://github.com/Mini-0618/mcr-runtime
 cd mcr-runtime
 
-# Run naive baseline (flat list, 10k ticks)
-python3 runtime_phys_observation/run_baseline_naive.py
+# Demo 1: event-sourced runtime basics (~1 second)
+python3 examples/quickstart.py
 
-# Run MCR physics benchmark (50k ticks)
+# Demo 2: deterministic replay verification (~1 second)
+python3 examples/replay_verification_demo.py
+
+# Demo 3: Hermes Bridge integration (~1 second)
+python3 examples/hermes_bridge_demo.py
+
+# Benchmark: 50k tick bounded latency run (~minutes)
 python3 runtime_phys_observation/run_physics_50k.py
-
-# Run stress test (W=10→5→3, 10k ticks)
-python3 runtime_phys_observation/run_stress_10k.py
 ```
 
 **Requirements:** Python 3 / Pure stdlib core / No external AI APIs required
