@@ -1,81 +1,123 @@
 # MCR — Memory-Augmented Cognitive Runtime
 
-A bounded, observable, persistent cognitive runtime for long-horizon AI agent loops.
+A replayable memory runtime for long-running AI agents.
 
----
+> Current release: **v0.9.3**
+> Status: **Research runtime artifact / demo-ready / regression-protected**
+> GitHub: <https://github.com/Mini-0618/mcr-runtime>
 
-## What is MCR?
+## Why MCR Exists
 
-MCR is a research platform studying how AI agents maintain bounded, stable memory over thousands of operational ticks. It is NOT a general-purpose agent framework — it is a runtime system with hard boundedness guarantees.
+Long-running AI agents eventually run into runtime-state problems that are not solved by a larger prompt window or a simple vector store:
 
-**Core problem MCR solves:** Memory explosion, retrieval drift, and cognitive degradation in long-running AI loops.
+- memory explosion
+- retrieval drift
+- state unrecoverability
+- untraceable memory lifecycle changes
+- crash recovery that cannot be verified
 
----
+MCR addresses these problems with an event-sourced runtime kernel: **WAL + reducer + replay verifier**. Agent memory state is recorded, replayable, and verifiable.
 
-## Architecture
+## Quickstart for External Users
 
-```
-Layered Memory
-├── episodic    — raw interaction records, time-stamped
-├── semantic    — promoted, abstracted, time-independent
-└── archive     — decayed, tombstoned, compacted
+`ash
+git clone https://github.com/Mini-0618/mcr-runtime.git
+cd mcr-runtime
+python3 examples/minimal_mcr.py
+`
 
-Bounded Retrieval
-├── access_history capped @ N
-├── goal_relevance cached
-└── retrieval_count <= 20/tick
+Expected success indicator:
 
-Runtime Properties
-├── memory decay (edge decay = 0.995)
-├── persistence batching (flush_interval = 10)
-├── incremental compaction
-└── full lifecycle observability (memory_trace.py)
-```
+`	ext
+Result: PASS
+`
 
----
+The minimal demo requires no API key, no external LLM, no database, and no pytest.
 
-## Benchmark
+## Full Verification
 
-| Property | Bound | Status |
-|----------|-------|--------|
-| retrieval_count | <= 20/tick | VERIFIED |
-| semantic_ratio | < 0.8 | VERIFIED |
-| active_bridges | <= 150 | VERIFIED |
-| latency | < 500ms | VERIFIED |
-| drift | Bounded | VERIFIED |
+`ash
+python3 -m pip install pytest
+bash scripts/verify_all.sh
+`
 
----
+pytest is only required for the full verification suite. The minimal demo runs with the Python standard library.
+
+## Demo Matrix
+
+| Demo | Purpose |
+| --- | --- |
+| examples/minimal_mcr.py | 200-line self-contained concept demo |
+| examples/quickstart.py | Modular runtime demo |
+| examples/replay_verification_demo.py | Replay hash verification |
+| examples/hermes_bridge_demo.py | Mock LLM bridge demo |
+
+## Core Runtime Flow
+
+`	ext
+User / Agent Event
+        ↓
+Event Gate
+        ↓
+WAL
+        ↓
+Reducer
+        ↓
+Runtime State
+        ↓
+Replay Verifier
+        ↓
+PASS / FAIL
+`
+
+## What MCR Is / Is Not
+
+MCR is not:
+
+- AGI
+- a production-ready agent framework
+- a chatbot framework
+- a model training system
+
+MCR is:
+
+- a replayable memory runtime
+- an event-sourced agent memory substrate
+- a research artifact for long-running agent state verification
+
+## Documentation
+
+| Document | Purpose |
+| --- | --- |
+| docs/PROJECT_OVERVIEW.md | Full project overview |
+| docs/GETTING_STARTED.md | First-time user guide |
+| docs/ARCHITECTURE.md | Runtime architecture |
+| docs/DEMO_WALKTHROUGH.md | Demo explanation |
+| docs/EXTERNAL_VALIDATION.md | External feedback process |
+| docs/KNOWN_ISSUES.md | Current limitations |
+| docs/ROADMAP.md | Project roadmap |
+| docs/FAQ.md | Common questions |
+| CHANGELOG.md | Version history |
+| docs/RELEASES.md | Release notes |
+
+## Repository Layout
+
+`	ext
+runtime/                 Core runtime kernel
+  wal.py                 Write-ahead log
+  state.py               Runtime state container
+  reducer.py             Pure state transition logic
+  engine.py              Runtime engine wrapper
+  event_gate.py          Event validation layer
+  hermes_bridge.py       Mock LLM proposal bridge
+  replay_verifier.py     Replay verification
+
+examples/                User-facing demos
+docs/                    Project documentation
+tests/                   Regression tests
+scripts/verify_all.sh    Full demo + test verification
+`
 
 ## Current Status
 
-- **v0.9** — Observability layer (memory_trace.py, 800+ lines)
-- **Phase VII** — Tombstone Lifecycle (G1/G4 PASS, G2/G3 WIP)
-- **LKG** — snapshot_v19g_pass (hash: 637a11c907e8a889b909513522dfab8c)
-- **Mode** — Maintenance / Iterative hardening
-
----
-
-## Roadmap
-
-| Phase | Status |
-|-------|--------|
-| Core Loop | ✅ Done |
-| Bounded Governance | ✅ Done |
-| Observability | ✅ Done |
-| Tombstone Lifecycle | 🔄 WIP |
-| Retrieval Scaling (P0) | 🔄 WIP |
-| Semantic Consolidation | 🔄 WIP |
-| Bounded Cognition Policy | 🔄 WIP |
-| Agent Integration | 🔜 Next |
-
----
-
-## Tech Stack
-
-Python 3 / Pure stdlib core / No external AI APIs required
-
----
-
-## License
-
-MIT
+v0.9.3 is intended as an external onboarding release. It is demo-ready and regression-protected, but it is still a research runtime artifact. Use it to study replayable agent memory state, not as a production agent framework.
