@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-# scripts/build_check.sh — MCR v0.9.6 build verification
+# scripts/build_check.sh — MCR v0.9.7 build verification
 set -euo pipefail
 
 cd "$(dirname "$0")/.."
 
-echo "=== MCR v0.9.6 Build Check ==="
+echo "=== MCR v0.9.7 Build Check ==="
 echo ""
 
 # Use venv to avoid system package conflicts

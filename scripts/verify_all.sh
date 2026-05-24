@@ -1,10 +1,10 @@
 #!/bin/bash
-# scripts/verify_all.sh — MCR v0.9.6 local verification
+# scripts/verify_all.sh — MCR v0.9.7 local verification
 set -e
 
 cd "$(dirname "$0")/.."
 
-echo "=== MCR v0.9.6 Verification ==="
+echo "=== MCR v0.9.7 Verification ==="
 echo ""
 echo "For package build verification, run:"
 echo "  bash scripts/build_check.sh"

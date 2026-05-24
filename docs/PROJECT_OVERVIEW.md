@@ -110,7 +110,7 @@ MCR is not:
 
 ## Current status
 
-Current release: v0.9.3.
+Current release: v0.9.7.
 
 The project is demo-ready and regression-protected. It includes four demos, a verification script, GitHub Actions coverage, release notes, and onboarding documentation.
 

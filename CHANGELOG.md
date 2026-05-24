@@ -2,6 +2,24 @@
 
 This changelog summarizes the public release history. Tags currently present in the repository: v0.9.0, v0.9.1, v0.9.2, v0.9.3.
 
+
+## v0.9.7 — Metadata consistency hotfix
+
+- Synced pyproject.toml version with release tag (was 0.9.5, now 0.9.7)
+- Ensured wheel filename reports 0.9.7
+- Preserved v0.9.6 build/CI hardening behavior
+- No runtime logic changes
+
+## v0.9.6 — Build and CI hardening
+
+- Added GitHub Actions Python 3.10/3.11/3.12 matrix
+- Added scripts/build_check.sh for wheel verification
+- Added docs/PACKAGING.md for install instructions
+- Added LICENSE (MIT)
+- Updated .gitignore (dist/, build/, .venv/, .pytest_cache/)
+- Updated verify_all.sh to v0.9.6 header
+- No runtime logic changes
+
 ## v0.9.3 — External onboarding hotfix
 
 - README Quickstart switched to HTTPS clone

@@ -2,6 +2,31 @@
 
 This page provides a human-readable release guide for users who are not familiar with GitHub Releases.
 
+
+## v0.9.7
+
+- Version: v0.9.7
+- Date: tagged if available in Git
+- Type: Metadata consistency hotfix
+- What changed:
+  - Synced pyproject.toml version (was 0.9.5, now 0.9.7)
+  - No runtime logic changes
+  - Preserved all v0.9.6 build/CI hardening behavior
+- Recommended for users? Yes — use this for clean version metadata.
+
+## v0.9.6
+
+- Version: v0.9.6 (metadata version was 0.9.5 — use v0.9.7 instead)
+- Date: tagged if available in Git
+- Type: Build and CI hardening
+- What changed:
+  - GitHub Actions Python 3.10/3.11/3.12 matrix
+  - scripts/build_check.sh for wheel verification
+  - docs/PACKAGING.md
+  - LICENSE (MIT)
+  - Updated .gitignore
+- Recommended for users? Use v0.9.7 instead (v0.9.6 wheel metadata was inconsistent).
+
 ## v0.9.3
 
 - Version: v0.9.3

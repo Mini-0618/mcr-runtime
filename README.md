@@ -75,7 +75,7 @@ If replay produces the same state, the runtime has a verifiable state history. I
 
 | Field | Value |
 | --- | --- |
-| Release | v0.9.5 |
+| Release | v0.9.7 |
 | Status | Installable package prototype / library-ready |
 | Language | Python |
 | External services | None required for demos |
