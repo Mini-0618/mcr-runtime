@@ -6,6 +6,20 @@
 
 ---
 
+## Quickstart for External Users
+
+```bash
+git clone https://github.com/Mini-0618/mcr-runtime.git
+cd mcr-runtime
+python3 examples/minimal_mcr.py
+```
+
+**What this does:** Demonstrates the core MCR loop — Event → WAL → Reducer → State → Replay Verification.
+**Success indicator:** Look for `Result: PASS` in the output.
+**No setup required:** No API key, no external LLM, no database, no pytest. Runs in ~1 second.
+
+---
+
 ## 1. 挑战 / Challenges in Long-Running Agent Memory
 
 Building long-running AI agents, developers face these fundamental problems:
@@ -142,7 +156,25 @@ python3 examples/hermes_bridge_demo.py
 python3 runtime_phys_observation/run_physics_50k.py
 ```
 
-**Requirements:** Python 3 / Pure stdlib core / No external AI APIs required
+**Requirements:** Python 3.10+ / Pure stdlib core / No external AI APIs required / No API key / No database
+
+### Recommended Demo Order
+
+1. `python3 examples/minimal_mcr.py` — **start here**
+   - Self-contained concept demo (~1 second)
+   - Shows: Event → WAL → Reducer → State → Replay Verification
+   - No pytest needed
+
+2. `python3 examples/quickstart.py`
+   - Modular runtime demo with G2 verification (~1 second)
+
+3. `python3 examples/replay_verification_demo.py`
+   - Deterministic replay hash verification (~1 second)
+
+4. `python3 examples/hermes_bridge_demo.py`
+   - Mock LLM bridge integration (~1 second, no real LLM)
+
+**First time?** Just run the first one. Each demo is independent.
 
 ### Developer Verification
 
@@ -234,6 +266,48 @@ Therefore retrieval latency is bounded — independent of T.
 | EVICT | id, from_layer, to_layer, tick, reason | Tier transition |
 | FLUSH | tick, working_count, episodic_count | Periodic persistence |
 | TRANSITION | id, from, to, reason, tick | State change |
+
+---
+
+## Troubleshooting
+
+### `Permission denied (publickey)` when cloning
+
+**Cause:** You used SSH clone (`git@github.com:...`) but have no GitHub SSH key configured.
+
+**Fix:** Use HTTPS clone instead:
+
+```bash
+git clone https://github.com/Mini-0618/mcr-runtime.git
+```
+
+### `No module named pytest`
+
+**Cause:** You're running the full test suite but pytest is not installed.
+
+**Fix:**
+
+```bash
+python3 -m pip install pytest
+bash scripts/verify_all.sh
+```
+
+**Note:** Running `python3 examples/minimal_mcr.py` alone does NOT require pytest.
+
+### `python3: command not found`
+
+**Cause:** Python 3 is not installed, or the command is `python` instead of `python3`.
+
+**Check:**
+
+```bash
+python --version
+python3 --version
+```
+
+### How do I know a demo succeeded?
+
+Look for `Result: PASS` or `G2 VERIFICATION PASSED` in the output. If replay hashes match, the demo succeeded.
 
 ---
 
