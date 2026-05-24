@@ -127,3 +127,81 @@ Step 4 (60秒): 阅读 INTRODUCTION.md
 - 至少 1 个"有意思，我想深入看看"的反馈
 
 达到以上标准，说明 MCR 的外部验证通过。
+
+---
+
+## Feedback Log Template
+
+每个测试用户的反馈记录，追加于此：
+
+```markdown
+---
+
+## 用户 [#]
+
+**日期：**
+**背景：**
+- 经验水平 (学生/初级/中高级/架构):
+- 对 AI Agent 的了解程度:
+- 是否熟悉 event sourcing / WAL:
+
+**环境：**
+- OS:
+- Python version:
+- Git available: ✓/✗
+
+**试跑结果：**
+- quickstart.py: ✓ PASS / ✗ FAIL / ⚠ 卡在
+- replay_verification_demo.py: ✓ PASS / ✗ FAIL / ⚠ 卡在
+- hermes_bridge_demo.py: ✓ PASS / ✗ FAIL / ⚠ 未跑
+
+**4 个问题回答：**
+
+1. 30秒内能看懂 MCR 是什么吗？
+   回答：
+
+2. quickstart 跑通了吗？
+   回答：
+
+3. replay verifier 的价值能理解吗？
+   回答：
+
+4. 它更像哪类工具？
+   回答：Agent memory backend / observability tool / research artifact / 其他：
+
+**最有价值的部分：**
+
+**最不清楚的部分：**
+
+**改进建议：**
+
+**下一步：**
+
+**跟进动作：**
+```
+
+---
+
+## Feedback Targets
+
+**目标：** 找 3–5 个 Python / AI Agent / 工程朋友试跑 MCR v0.9.0
+
+**标准：**
+- 每个人只需要 3 分钟（clone + quickstart + replay demo）
+- 重点验证：
+  1. quickstart 是否能跑通
+  2. MCR 是什么是否能被理解
+  3. replay verifier 的价值是否有感知
+
+**不在本阶段验证的内容：**
+- 不验证 semantic promotion 是否激活
+- 不验证 benchmark 数据是否合理
+- 不验证 Hermes Bridge 是否可用
+
+**成功标准：**
+- 至少 3 个外部用户跑通 quickstart.py
+- 至少 2 个用户能准确描述 MCR 解决了什么问题
+- 至少 1 个用户给出"有意思，想深入看看"的反馈
+
+**下一步行动：**
+拿到第一个真实反馈前，不新增 runtime 功能。
