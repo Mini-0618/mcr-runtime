@@ -2,95 +2,99 @@
 
 ## 1. What is MCR?
 
-MCR (Memory-Augmented Cognitive Runtime) is a replayable memory runtime for long-running AI agents. It implements an event-sourced kernel with deterministic replay verification.
-
-Core loop:
-```
-Event → WAL → Reducer → Runtime State → Replay Verification
-```
+MCR, or Memory-Augmented Cognitive Runtime, is a replayable memory runtime for long-running AI agents. It focuses on runtime state verification rather than model training, chatbot behavior, or autonomous agent claims.
 
 ## 2. Why does it exist?
 
-Long-running AI agents face fundamental problems that standard memory designs don't address:
-
-- **Memory explosion**: flat-list memory grows unbounded, retrieval slows over time
-- **Retrieval drift**: retrieval quality degrades as context window fills
-- **State unrecoverability**: crashes lose in-progress state with no verification
-- **Unobservable lifecycle**: no visibility into what was evicted, when, and why
-- **No replay guarantee**: no way to verify that reconstructed state is correct
-
-MCR provides a bounded-retrieval substrate with full state replayability.
+Long-running agents need more than a prompt history. Their memory state changes over time, and those changes need to be traceable, recoverable, and testable. Without a runtime layer, memory state can drift, grow without bounds, or become unrecoverable after a crash.
 
 ## 3. Core problem
 
-Standard memory stores grow with agent lifetime. Vector DB + RAG optimizes for recall quality, not retrieval speed. Latency has no upper bound.
+The core problem is long-running agent memory state:
 
-MCR's bounded retrieval theorem: given fixed W (working cap), CAP (episodic cap), K (retrieval candidates), retrieval complexity is O(W+CAP+K) — independent of agent lifetime T.
+- memory can grow without a lifecycle
+- retrieval behavior can drift over time
+- state changes may not be attributable
+- crash recovery may produce unverifiable state
+- demos may work once but fail to prove replayability
 
 ## 4. Core idea
 
-Every state transition (store/evict/promote/archive) is logged to a Write-Ahead Log. The G2 deterministic replay kernel can reconstruct any past state by replaying WAL events from initial state.
+MCR uses an event-sourced architecture:
 
-If runtime state ≠ replayed state at any checkpoint, the system detects the divergence.
+`	ext
+Event -> WAL -> Reducer -> Runtime State -> Replay Verification
+`
+
+Every accepted state transition is represented as an event, written to a write-ahead log, reduced into runtime state, and checked through deterministic replay.
 
 ## 5. System architecture
 
-```
-runtime/
-├── wal.py              # Write-Ahead Log — append-only event journal
-├── state.py            # Runtime state: memory tiers, access history, coaccess graph
-├── reducer.py          # Pure function: Event + State → State
-├── engine.py           # Runtime engine: orchestrates WAL → Reducer → State
-├── event_gate.py       # Validates event proposals before WAL write
-├── hermes_bridge.py    # Parses LLM output → EventProposal list
-└── replay_verifier.py  # G2: verifies runtime_state == replay(WAL)
-```
+The current runtime consists of:
+
+-
+untime/event_gate.py for event validation
+-
+untime/wal.py for append-only event storage
+-
+untime/reducer.py for pure state transitions
+-
+untime/state.py for runtime state
+-
+untime/engine.py for runtime orchestration
+-
+untime/replay_verifier.py for replay verification
+-
+untime/hermes_bridge.py for mock LLM proposal parsing
 
 ## 6. Runtime flow
 
-1. **Event proposal** — an event (store/access/archive/purge) is proposed
-2. **Event gate** — validates the proposal (format, authorization)
-3. **WAL write** — event is appended to WAL before applying to state
-4. **Reducer** — applies event to current state (pure function, no side effects)
-5. **State update** — runtime state reflects the event
-6. **Replay verification** — periodically, WAL is replayed from initial state and compared to runtime state (G2)
+`	ext
+User / Agent Event
+        ↓
+Event Gate
+        ↓
+WAL
+        ↓
+Reducer
+        ↓
+Runtime State
+        ↓
+Replay Verifier
+        ↓
+PASS / FAIL
+`
 
 ## 7. What can it be used for?
 
-- Bounded-retrieval memory backend for AI agents
-- Crash-recovery substrate for long-running agent services
-- Deterministic state replay for debugging / auditing
-- Research prototype for event-sourced agent memory
+MCR can be used to study:
+
+- replayable agent memory state
+- event-sourced memory lifecycle tracking
+- deterministic replay verification
+- mock LLM proposal routing through a validation layer
+- regression-protected runtime demos
 
 ## 8. What it is not
 
-- NOT AGI
-- NOT a production-ready agent framework
-- NOT a chatbot framework
-- NOT a model training system
-- NOT a vector DB / semantic search system
+MCR is not:
+
+- AGI
+- a production-ready agent framework
+- a chatbot framework
+- a model training system
+- a replacement for a database
 
 ## 9. Current status
 
-- **Release:** v0.9.3 (onboarding hotfix)
-- **Status:** Research runtime artifact / demo-ready / regression-protected
-- **Demos:** 4 independent demos, all pass
-- **Tests:** 8 regression tests, all pass
-- **CI:** GitHub Actions on push/PR
-- **External users:** Actively seeking first external trial feedback
+Current release: v0.9.3. The project is a research runtime artifact with demos, regression tests, and an external onboarding path.
 
 ## 10. Next milestones
 
-1. **External User Trial** — collect first real user feedback
-2. **Runtime Physics** — WAL compaction, tombstone lifecycle, time-travel debugging
-3. **Observability** — OpenTelemetry integration, structured logging
-4. **Edge Validation** — verify knowledge graph edges in docs/KNOWLEDGE/
+Near-term milestones:
 
-Not in scope for v0.9.x: agent evolution, self-reinforcement, semantic emergence, AGI narratives.
-
-## Key invariants
-
-- **G2 Determinism:** `runtime_state == replay(WAL)` must hold at all checkpoints
-- **Bounded retrieval:** O(W+CAP+K) complexity, independent of agent lifetime
-- **WAL isolation:** WAL is append-only; no in-place mutation after write
-- **No AGI claims:** MCR is a runtime substrate, not an intelligent agent
+- improve documentation clarity
+- strengthen external validation flow
+- keep demos stable
+- keep replay verification regression-protected
+- document known limitations clearly
