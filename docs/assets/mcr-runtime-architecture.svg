@@ -1,0 +1,55 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='520' viewBox='0 0 1200 520' role='img' aria-label='MCR runtime architecture diagram'>
+  <rect width='1200' height='520' fill='#f8fafc'/>
+  <text x='50' y='58' font-family='Arial, sans-serif' font-size='34' font-weight='700' fill='#0f172a'>MCR Runtime Architecture</text>
+  <text x='52' y='92' font-family='Arial, sans-serif' font-size='18' fill='#475569'>Replayable memory state for long-running AI agents</text>
+  <defs>
+    <marker id='arrow' markerWidth='12' markerHeight='12' refX='10' refY='6' orient='auto'>
+      <path d='M2,2 L10,6 L2,10 Z' fill='#2563eb'/>
+    </marker>
+    <style>
+      .box { fill: #ffffff; stroke: #cbd5e1; stroke-width: 2; rx: 12; }
+      .title { font-family: Arial, sans-serif; font-size: 21px; font-weight: 700; fill: #1e40af; }
+      .sub { font-family: Arial, sans-serif; font-size: 14px; fill: #475569; }
+      .arrow { stroke: #2563eb; stroke-width: 3; fill: none; marker-end: url(#arrow); }
+      .note { font-family: Arial, sans-serif; font-size: 18px; fill: #0f172a; }
+    </style>
+  </defs>
+  <g>
+    <rect class='box' x='50' y='155' width='155' height='82' rx='12'/>
+    <text class='title' x='70' y='190'>Agent Event</text>
+    <text class='sub' x='70' y='215'>user/tool action</text>
+
+    <rect class='box' x='250' y='155' width='155' height='82' rx='12'/>
+    <text class='title' x='275' y='190'>EventGate</text>
+    <text class='sub' x='275' y='215'>validate proposal</text>
+
+    <rect class='box' x='450' y='155' width='155' height='82' rx='12'/>
+    <text class='title' x='505' y='190'>WAL</text>
+    <text class='sub' x='475' y='215'>source of truth</text>
+
+    <rect class='box' x='650' y='155' width='155' height='82' rx='12'/>
+    <text class='title' x='685' y='190'>Reducer</text>
+    <text class='sub' x='675' y='215'>state transition</text>
+
+    <rect class='box' x='850' y='155' width='155' height='82' rx='12'/>
+    <text class='title' x='900' y='190'>State</text>
+    <text class='sub' x='878' y='215'>derived memory</text>
+
+    <rect class='box' x='650' y='315' width='220' height='82' rx='12'/>
+    <text class='title' x='682' y='350'>ReplayVerifier</text>
+    <text class='sub' x='690' y='375'>runtime_state == replay(WAL)</text>
+
+    <rect class='box' x='930' y='315' width='155' height='82' rx='12'/>
+    <text class='title' x='975' y='350'>PASS</text>
+    <text class='sub' x='958' y='375'>or explicit FAIL</text>
+
+    <path class='arrow' d='M205 196 H250'/>
+    <path class='arrow' d='M405 196 H450'/>
+    <path class='arrow' d='M605 196 H650'/>
+    <path class='arrow' d='M805 196 H850'/>
+    <path class='arrow' d='M928 238 C925 295 850 335 870 356'/>
+    <path class='arrow' d='M870 356 H930'/>
+  </g>
+  <rect x='50' y='445' width='1100' height='42' rx='10' fill='#eff6ff' stroke='#93c5fd'/>
+  <text class='note' x='75' y='472'>Core invariant: events are validated, logged, reduced into state, and checked through deterministic replay.</text>
+</svg>

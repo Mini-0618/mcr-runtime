@@ -2,6 +2,14 @@
 
 A replayable memory runtime for long-running AI agents.
 
+![release](https://img.shields.io/badge/release-v0.9.3-blue)
+![status](https://img.shields.io/badge/status-research%20runtime%20artifact-orange)
+![python](https://img.shields.io/badge/python-3.10%2B-blue)
+![verification](https://img.shields.io/badge/verification-replay%20PASS-brightgreen)
+![license](https://img.shields.io/badge/license-research-lightgrey)
+
+![MCR runtime architecture](docs/assets/mcr-runtime-architecture.svg)
+
 > Current release: **v0.9.3**
 > Status: **Research runtime artifact / demo-ready / regression-protected**
 > Repository: <https://github.com/Mini-0618/mcr-runtime>
@@ -88,6 +96,8 @@ Expected success indicator:
 ```text
 Result: PASS
 ```
+
+![Minimal demo output](docs/assets/minimal-demo-output.svg)
 
 The minimal demo is self-contained. It requires no API key, no external LLM, no database, and no pytest.
 
