@@ -115,6 +115,7 @@ The verification script runs the demos and the regression tests. pytest is only 
 | Demo | Purpose | External dependency |
 | --- | --- | --- |
 | `examples/minimal_mcr.py` | 200-line self-contained concept demo | None |
+| `examples/library_usage.py` | Using MCR as a library | None |
 | `examples/quickstart.py` | Modular runtime demo | None |
 | `examples/replay_verification_demo.py` | Replay hash verification | None |
 | `examples/hermes_bridge_demo.py` | Mock LLM bridge demo | None |
@@ -123,6 +124,12 @@ Recommended first command:
 
 ```bash
 python3 examples/minimal_mcr.py
+```
+
+To use MCR as a library in your own project:
+
+```bash
+python3 examples/library_usage.py
 ```
 
 ## What Each Component Does
