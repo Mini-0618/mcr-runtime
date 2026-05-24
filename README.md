@@ -144,6 +144,14 @@ python3 runtime_phys_observation/run_physics_50k.py
 
 **Requirements:** Python 3 / Pure stdlib core / No external AI APIs required
 
+### Developer Verification
+
+After pulling changes, run:
+```bash
+bash scripts/verify_all.sh
+```
+This executes all 4 demos + pytest in sequence. All must PASS.
+
 ---
 
 ## 5. 基准测试结果 / Benchmark Results
