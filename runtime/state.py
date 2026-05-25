@@ -1,21 +1,36 @@
 """
-State — Immutable Clone Model
+state.py — MCR Runtime State
+
+Immutable-clone model. State is never mutated in place — every reducer
+call returns a new State object with the requested changes applied.
+
+This makes it possible to:
+  1. Replay WAL from any point in time
+  2. Compare states across replay vs runtime
+  3. Detect mutation bugs via G2 invariant
+
+Deterministic hash:
+  - SHA-256 with fixed salt b"MCR_STATE_v1"
+  - Covers tick, wal_length, memory keys+values, access_history count,
+    and full coaccess_graph edge structure
+  - Stable across Python sessions (unlike built-in hash() which is salted)
 """
 import copy
 import hashlib
 from dataclasses import dataclass, field
-from typing import Dict, List, Any, Optional
+from typing import Dict, List
 
-# Fixed salt makes state.hash() deterministic across Python sessions.
-# Python's built-in hash() uses a random per-process seed (PYTHONHASHSEED),
-# so the same state produces different ints in different sessions — fine for
-# in-session G2 comparison, but fragile for reproducible artifacts, logs,
-# and cross-process verification. SHA-256 with a fixed salt is stable.
 _STATE_HASH_SALT = b"MCR_STATE_v1"
 
 
 @dataclass
 class SystemState:
+    """
+    Runtime state snapshot.
+
+    Clone model: all mutating operations return a new SystemState.
+    The original is never modified in place.
+    """
     tick: int = 0
     memory: Dict[str, dict] = field(default_factory=dict)
     access_history: List[dict] = field(default_factory=list)
@@ -30,21 +45,21 @@ class SystemState:
         return s
 
     def clone(self):
-        new_state = SystemState(
+        """
+        Return a deep copy. coaccess_graph sets are deep-copied so mutations
+        on the clone cannot leak back to the original.
+        """
+        return SystemState(
             tick=self.tick,
             memory=copy.deepcopy(self.memory),
             access_history=copy.deepcopy(self.access_history),
-            # Deep-copy set values so mutations on the cloned coaccess_graph
-            # cannot leak back to the original state. Shallow copy (set(v))
-            # shares mutable set references with the original, violating the
-            # immutable clone invariant that underpins G2 verification.
             coaccess_graph={k: copy.deepcopy(set(v)) for k, v in self.coaccess_graph.items()},
             wal_length=self.wal_length,
-            _initial=self._initial
+            _initial=self._initial,
         )
-        return new_state
 
     def equals(self, other: 'SystemState') -> bool:
+        """Deep equality — all fields must match."""
         if self.tick != other.tick:
             return False
         if self.wal_length != other.wal_length:
@@ -64,15 +79,14 @@ class SystemState:
         return True
 
     def hash(self) -> str:
-        # Include edge structure (not just keys) so that two states with the
-        # same coaccess_graph keys but different edges produce different hashes.
-        # Without this, the ReplayVerifier's hash fast-path would skip equals()
-        # on a collision, masking a state divergence that equals() would catch.
+        """
+        SHA-256 state fingerprint with fixed salt.
+        Includes full coaccess_graph edge structure, not just keys.
+        Stable across Python sessions.
+        """
         coaccess_edges = tuple(
             sorted((k, tuple(sorted(v))) for k, v in self.coaccess_graph.items())
         )
-        # Fixed salt ensures the same state always produces the same hash
-        # across Python sessions (unlike built-in hash() which is per-process salted).
         raw = (
             self.tick,
             self.wal_length,
