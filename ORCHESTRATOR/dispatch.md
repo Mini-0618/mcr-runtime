@@ -1,0 +1,48 @@
+# Dispatch
+
+Generated: 2026-05-25T02:23:13+00:00
+
+## codex
+
+### T-db92ee62
+
+- status: pending
+- goal: 实现并最小化修改代码以完成需求：我要做 MCR 的 access_history cap
+- input_files: ORCHESTRATOR/inbox.md, runtime/, tests/test_g2_replay.py, tests/test_event_gate.py
+- expected_output: 代码补丁，保持 G2 replay 和 event gate 约束不破坏。
+
+## hermes
+
+### T-6373a573
+
+- status: pending
+- goal: 运行验证并准备提交：我要做 MCR 的 access_history cap
+- input_files: ORCHESTRATOR/inbox.md, runtime/, tests/test_g2_replay.py, tests/test_event_gate.py
+- expected_output: 测试结果、git diff 摘要、commit/push 状态建议。
+
+## claude
+
+### T-9bad6dc7
+
+- status: pending
+- goal: 审查需求、风险和说明文档是否一致：我要做 MCR 的 access_history cap
+- input_files: ORCHESTRATOR/inbox.md, runtime/, tests/test_g2_replay.py, tests/test_event_gate.py
+- expected_output: 审查意见，重点列出风险、遗漏测试和 README 修改建议。
+
+## github
+
+### T-b2b7cd97
+
+- status: pending
+- goal: 在实现和验证完成后提交并推送：我要做 MCR 的 access_history cap
+- input_files: ORCHESTRATOR/inbox.md, runtime/, tests/test_g2_replay.py, tests/test_event_gate.py
+- expected_output: commit hash、push 结果、PR 或分支状态。
+
+## human
+
+### T-d107536f
+
+- status: pending
+- goal: 确认调度结果是否符合真实意图：我要做 MCR 的 access_history cap
+- input_files: ORCHESTRATOR/inbox.md, runtime/, tests/test_g2_replay.py, tests/test_event_gate.py
+- expected_output: 批准、改写或取消该任务。
