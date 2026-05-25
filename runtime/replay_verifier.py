@@ -1,18 +1,37 @@
 """
-ReplayVerifier — G2 Core: verify runtime_state == replay(WAL)
+replay_verifier.py — MCR Replay Verifier (G2 Core)
+
+Provides:
+  - replay(initial_state, WAL) → final state
+  - verify(runtime_state, initial_state, WAL) → result dict
+  - wal_hash(WAL) → deterministic SHA-256 of WAL contents
+
+The core G2 invariant:
+    runtime_state == replay(initial_state, WAL)
+
+If this holds, the runtime state is verifiable: it was constructed by
+reducing every event in order from the WAL. No hidden mutations, no
+state drift, no lost events.
+
+The verifier does NOT mutate its inputs. replay() clones initial_state
+before reducing, so multiple replay() calls on the same verifier instance
+do not accumulate wal_length.
 """
 import hashlib
 import json
 from .reducer import DeterministicReducer
 from .state import SystemState
-from .wal import Event, WAL
+from .wal import WAL
 
 
 class ReplayVerifier:
+    """G2 replay equivalence verifier."""
+
     def __init__(self):
         self.reducer = DeterministicReducer()
 
     def replay(self, initial_state: SystemState, wal: WAL) -> SystemState:
+        """Replay WAL from initial_state. Returns new state object."""
         state = initial_state.clone()
         for event in wal.get_all():
             state = self.reducer.reduce(event, state)
@@ -20,12 +39,9 @@ class ReplayVerifier:
 
     def wal_hash(self, wal: WAL) -> str:
         """
-        Compute SHA-256 WAL integrity hash over canonical JSON event lines, in order.
+        Deterministic SHA-256 hash of WAL contents.
+        Stable across Python sessions.
         Empty string if WAL is empty.
-
-        This hash is deterministic across Python sessions (uses sorted JSON keys
-        and fixed separator) — the same WAL always produces the same hash.
-        Call this to verify WAL integrity without running a full G2 state verification.
         """
         if wal.len() == 0:
             return ""
@@ -38,15 +54,18 @@ class ReplayVerifier:
         return hashlib.sha256(combined).hexdigest()
 
     def verify(self, runtime_state: SystemState, initial_state: SystemState, wal: WAL) -> dict:
-        # Note: state.hash() returns SHA-256 hex str (was int with per-process salted
-        # built-in hash). All hash fields below are now deterministic hex strings.
+        """
+        Verify G2 invariant: runtime_state == replay(initial_state, WAL).
+
+        Returns dict with:
+          match: bool
+          reason: str (ok | state_mismatch | replay_exception)
+          detail: str (field-level divergence info)
+          runtime_hash, replay_hash, runtime_tick, replay_tick, etc.
+        """
         wal_len = wal.len()
         wal_hash = self.wal_hash(wal)
         try:
-            # Clone initial_state before replay to prevent mutation of the caller's
-            # object. reduce() sets new_state.wal_length = state.wal_length + 1 on
-            # each event, so replay() would otherwise accumulate wal_length into
-            # initial_state across multiple replay() calls on the same verifier.
             replayed = self.replay(initial_state.clone(), wal)
         except Exception as exc:
             return {
@@ -64,7 +83,6 @@ class ReplayVerifier:
             }
         match = runtime_state.equals(replayed)
         if not match:
-            # Surface which fields diverge for faster diagnosis.
             reasons = []
             if runtime_state.tick != replayed.tick:
                 reasons.append(f"tick:{runtime_state.tick}!={replayed.tick}")
