@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# scripts/build_check.sh — MCR v0.9.7 build verification
+# scripts/build_check.sh — MCR v0.10.0rc1 build verification
 set -euo pipefail
 
 cd "$(dirname "$0")/.."

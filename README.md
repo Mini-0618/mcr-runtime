@@ -2,7 +2,7 @@
 
 A replayable memory runtime for long-running AI agents.
 
-![release](https://img.shields.io/badge/release-v0.9.3-blue)
+![release](https://img.shields.io/badge/release-v0.10.0rc1-blue)
 ![status](https://img.shields.io/badge/status-research%20runtime%20artifact-orange)
 ![python](https://img.shields.io/badge/python-3.10%2B-blue)
 ![verification](https://img.shields.io/badge/verification-replay%20PASS-brightgreen)
@@ -10,7 +10,7 @@ A replayable memory runtime for long-running AI agents.
 
 ![MCR runtime architecture](docs/assets/mcr-runtime-architecture.svg)
 
-> Current release: **v0.9.3**
+> Current release: **v0.10.0rc1**
 > Status: **Research runtime artifact / demo-ready / regression-protected**
 > Repository: <https://github.com/Mini-0618/mcr-runtime>
 
@@ -75,7 +75,7 @@ If replay produces the same state, the runtime has a verifiable state history. I
 
 | Field | Value |
 | --- | --- |
-| Release | v0.9.7 |
+| Release | v0.10.0rc1 |
 | Status | Installable package prototype / library-ready |
 | Language | Python |
 | External services | None required for demos |

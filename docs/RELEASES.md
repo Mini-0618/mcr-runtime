@@ -3,6 +3,24 @@
 This page provides a human-readable release guide for users who are not familiar with GitHub Releases.
 
 
+## v0.10.0rc1
+
+- Version: v0.10.0rc1
+- Date: candidate (not yet tagged)
+- Type: Core rewrite candidate
+- What changed:
+  - Core runtime rewrite: event model moved from wal.py to runtime/events.py
+  - Refactored WAL, State, Reducer, Engine, EventGate, HermesBridge, ReplayVerifier
+  - Added 40 rewrite-specific regression tests
+  - Fixed WAL.append caller mutation bug
+  - Fixed GitHub Actions verify_all.sh bash invocation
+  - Core invariant preserved: Event → WAL → Reducer → State → Replay Verification
+- Recommended for users? Yes — this is the current candidate.
+- Known limitations:
+  - This is a candidate, not a stable release
+  - Do not claim this is AGI
+  - Research runtime artifact
+
 ## v0.9.7
 
 - Version: v0.9.7

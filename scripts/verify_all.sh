@@ -1,5 +1,5 @@
 #!/bin/bash
-# scripts/verify_all.sh — MCR v0.9.7 local verification
+# scripts/verify_all.sh — MCR v0.10.0rc1 local verification
 set -e
 
 cd "$(dirname "$0")/.."
