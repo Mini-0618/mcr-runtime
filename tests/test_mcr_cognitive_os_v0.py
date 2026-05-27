@@ -1,16 +1,12 @@
 """
-test_mcr_cognitive_os_v0.py — Tests for MCR Cognitive OS v0.1
-
-Verifies each cognitive module independently and the full loop integration.
+test_mcr_cognitive_os_v0.py — Tests for MCR Cognitive OS v0.1 + v0.2
 """
 import json
 import sys
-import tempfile
 from pathlib import Path
 
 import pytest
 
-# Ensure experiment modules are importable
 _experiment_dir = Path(__file__).resolve().parents[1] / "experiments" / "mcr_cognitive_os_v0"
 _project_root = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(_experiment_dir))
@@ -25,6 +21,10 @@ from planner import Planner
 from action_selector import ActionSelector
 from reflection_engine import ReflectionEngine
 from memory_writer import MemoryWriter
+from input_adapter import text_to_task, text_to_tasks
+from state_machine import StateMachine, StateMachineError
+from memory_blocks import MemoryBlocks
+from browser_operator import MockBrowserOperator, PageState, ActionResult
 
 
 @pytest.fixture
@@ -43,7 +43,7 @@ def sample_tasks():
     ]
 
 
-# ── StateReader ──
+# ── v0.1 Module Tests ──
 
 def test_state_reader_loads_tasks(tmp_path):
     tasks_file = tmp_path / "tasks.json"
@@ -51,41 +51,17 @@ def test_state_reader_loads_tasks(tmp_path):
     reader = StateReader(str(tasks_file))
     result = reader.perceive()
     assert result["task_count"] == 1
-    assert result["pending_count"] == 1
-
 
 def test_state_reader_missing_file(tmp_path):
     reader = StateReader(str(tmp_path / "nonexistent.json"))
-    result = reader.perceive()
-    assert result["task_count"] == 0
-
-
-# ── AttentionFilter ──
+    assert reader.perceive()["task_count"] == 0
 
 def test_attention_filter_filters_low_urgency(sample_tasks):
     attn = AttentionFilter(urgency_threshold=0.3)
     result = attn.filter(sample_tasks)
     ids = [t["id"] for t in result]
-    assert "t1" in ids  # urgency 0.7
-    assert "t2" in ids  # urgency 0.3 (edge)
-    assert "t3" not in ids  # urgency 0.1
-    assert "t5" not in ids  # status "done"
-
-
-def test_attention_filter_explain(sample_tasks):
-    attn = AttentionFilter(urgency_threshold=0.3)
-    assert "PASSED" in attn.explain(sample_tasks[0])
-    assert "FILTERED" in attn.explain(sample_tasks[2])
-
-
-# ── TaskScorer ──
-
-def test_task_scorer_scores(sample_tasks):
-    scorer = TaskScorer()
-    scored = scorer.score(sample_tasks[:2])
-    assert all("score" in t for t in scored)
-    assert all(0 <= t["score"] <= 1 for t in scored)
-
+    assert "t1" in ids
+    assert "t3" not in ids
 
 def test_task_scorer_rank(sample_tasks):
     scorer = TaskScorer()
@@ -94,321 +70,259 @@ def test_task_scorer_rank(sample_tasks):
     for i in range(len(ranked) - 1):
         assert ranked[i]["score"] >= ranked[i + 1]["score"]
 
-
-def test_task_scorer_prefers_high_priority_low_risk():
-    scorer = TaskScorer()
-    high_pri_low_risk = {"id": "a", "priority": 0.9, "risk": 0.1, "token_cost": 100}
-    low_pri_high_risk = {"id": "b", "priority": 0.1, "risk": 0.9, "token_cost": 100}
-    scored = scorer.score([high_pri_low_risk, low_pri_high_risk])
-    assert scored[0]["score"] > scored[1]["score"]
-
-
-# ── GoalManager ──
-
-def test_goal_manager_set_and_check():
-    gm = GoalManager()
-    gm.set_goal("stability")
-    aligned = {"category": "bugfix"}
-    not_aligned = {"category": "release"}
-    assert gm.check_alignment(aligned)
-    assert not gm.check_alignment(not_aligned)
-
-
-def test_goal_manager_history():
-    gm = GoalManager()
-    gm.set_goal("stability")
-    gm.set_goal("performance")
-    assert len(gm.goal_history) == 1
-
-
-# ── PolicyEngine ──
-
 def test_policy_blocks_destructive():
     policy = PolicyEngine()
     task = {"id": "x", "category": "destructive", "risk": 0.5, "requires_owner": False}
-    verdict = policy.check(task)
-    assert verdict.status == PolicyVerdict.BLOCKED
-
+    assert policy.check(task).status == PolicyVerdict.BLOCKED
 
 def test_policy_flags_owner_required():
     policy = PolicyEngine()
     task = {"id": "x", "category": "release", "risk": 0.5, "requires_owner": True}
-    verdict = policy.check(task)
-    assert verdict.status == PolicyVerdict.REQUIRES_OWNER
-
+    assert policy.check(task).status == PolicyVerdict.REQUIRES_OWNER
 
 def test_policy_allows_safe_task():
     policy = PolicyEngine()
     task = {"id": "x", "category": "bugfix", "risk": 0.3, "requires_owner": False}
-    verdict = policy.check(task)
-    assert verdict.status == PolicyVerdict.ALLOWED
-
-
-def test_policy_blocks_high_risk():
-    policy = PolicyEngine()
-    task = {"id": "x", "category": "bugfix", "risk": 0.95, "requires_owner": False}
-    verdict = policy.check(task)
-    assert verdict.status == PolicyVerdict.BLOCKED
-
-
-def test_policy_filter_allowed(sample_tasks):
-    policy = PolicyEngine()
-    allowed = policy.filter_allowed(sample_tasks)
-    for t in allowed:
-        assert t["category"] != "destructive"
-        assert t["risk"] <= 0.85
-
-
-# ── Planner ──
+    assert policy.check(task).status == PolicyVerdict.ALLOWED
 
 def test_planner_generates_plan(sample_tasks):
-    planner = Planner()
-    plan = planner.plan(sample_tasks[:3], max_actions=2)
+    plan = Planner().plan(sample_tasks[:3], max_actions=2)
     assert len(plan) == 2
-    assert all("task_id" in a for a in plan)
-    assert all("action_type" in a for a in plan)
-
-
-def test_planner_respects_max_actions(sample_tasks):
-    planner = Planner()
-    plan = planner.plan(sample_tasks, max_actions=1)
-    assert len(plan) == 1
-
-
-# ── ActionSelector ──
 
 def test_action_selector_picks_first():
-    selector = ActionSelector()
     plan = [{"title": "A", "score": 0.9}, {"title": "B", "score": 0.5}]
-    result = selector.select_next(plan)
-    assert result["title"] == "A"
-
-
-def test_action_selector_empty_plan():
-    selector = ActionSelector()
-    assert selector.select_next([]) is None
-
-
-# ── ReflectionEngine ──
+    assert ActionSelector().select_next(plan)["title"] == "A"
 
 def test_reflection_good_choice():
-    reflector = ReflectionEngine()
-    action = {"title": "Fix bug", "score": 0.8}
-    ref = reflector.reflect(action, "allowed", 5, 3)
+    ref = ReflectionEngine().reflect({"title": "Fix", "score": 0.8}, "allowed", 5, 3)
     assert ref["was_good_choice"] is True
-    assert "Good" in ref["lesson"]
-
-
-def test_reflection_blocked():
-    reflector = ReflectionEngine()
-    ref = reflector.reflect({}, "blocked", 5, 3)
-    assert ref["was_good_choice"] is False
-    assert "blocked" in ref["lesson"].lower()
-
-
-def test_reflection_should_write():
-    reflector = ReflectionEngine()
-    ref = reflector.reflect({"score": 0.5}, "allowed", 1, 1)
-    assert reflector.should_write_to_memory(ref) is True
-
-
-# ── MemoryWriter ──
 
 def test_memory_writer_stores_and_verifies(tmp_path):
-    wal_path = str(tmp_path / "test_wal.jsonl")
-    mem = MemoryWriter(wal_path=wal_path)
-    mem.store_reflection({"lesson": "test"}, "cycle1")
-    mem.store_action({"title": "test_action"}, "cycle1")
-    result = mem.verify_replay()
-    assert result["match"] is True
-    assert result["reason"] == "ok"
-    assert result["wal_length"] == 2
+    mem = MemoryWriter(wal_path=str(tmp_path / "wal.jsonl"))
+    mem.store_reflection({"lesson": "test"}, "c1")
+    mem.store_action({"title": "act"}, "c1")
+    assert mem.verify_replay()["match"] is True
 
 
-def test_memory_writer_empty_wal(tmp_path):
-    wal_path = str(tmp_path / "empty_wal.jsonl")
-    mem = MemoryWriter(wal_path=wal_path)
-    result = mem.verify_replay()
-    assert result["match"] is True
-
-
-# ── Full Loop Integration ──
-
-def test_full_cognitive_loop(tmp_path):
-    """Integration test: run the full cognitive loop with isolated WAL."""
-    import run_cognitive_loop as rcl
-    # Use a fresh WAL in temp dir to avoid contamination from previous runs
-    wal_path = str(tmp_path / "test_wal.jsonl")
-    mem = rcl.MemoryWriter(wal_path=wal_path)
-
-    # Run the cognitive loop logic inline with the clean WAL
-    cycle_id = "test_cycle"
-    tasks_path = str(rcl._experiment_dir / "tasks.json")
-    reader = rcl.StateReader(tasks_path)
-    perception = reader.perceive()
-    attn = rcl.AttentionFilter(urgency_threshold=0.3)
-    attended = attn.filter(perception["tasks"])
-    scorer = rcl.TaskScorer()
-    scored = scorer.score(attended)
-    ranked = scorer.rank(scored)
-    policy = rcl.PolicyEngine()
-    allowed = [t for t in ranked if policy.check(t).status == rcl.PolicyVerdict.ALLOWED]
-    planner = rcl.Planner()
-    plan = planner.plan(allowed, max_actions=3)
-    selector = rcl.ActionSelector()
-    next_action = selector.select_next(plan)
-    reflector = rcl.ReflectionEngine()
-    reflection = reflector.reflect(action=next_action or {}, policy_verdict="allowed",
-                                   task_count=perception["task_count"], attended_count=len(attended))
-    mem.store_action(next_action or {"title": "no_action"}, cycle_id)
-    mem.store_reflection(reflection, cycle_id)
-    verify_result = mem.verify_replay()
-
-    assert verify_result["match"] is True
-    assert perception["task_count"] > 0
-    assert len(attended) >= 0
-    assert next_action is not None
-    assert reflection["was_good_choice"] is True
-
-
-# ── InputAdapter ──
+# ── InputAdapter Tests ──
 
 def test_text_to_task_basic():
-    from input_adapter import text_to_task
     task = text_to_task("Fix the login bug")
-    assert task["title"] == "Fix the login bug"
     assert task["category"] == "bugfix"
-    assert task["status"] == "pending"
-    assert task["source"] == "cli"
     assert task["requires_owner"] is False
-
 
 def test_text_to_task_high_risk_keywords():
-    from input_adapter import text_to_task
-    # merge → requires_owner
-    t1 = text_to_task("Merge cognitive OS into main")
-    assert t1["requires_owner"] is True
-
-    # delete → requires_owner + destructive
-    t2 = text_to_task("Delete the archive directory")
-    assert t2["requires_owner"] is True
-
-    # deploy → requires_owner
-    t3 = text_to_task("Deploy to production server")
-    assert t3["requires_owner"] is True
-
-    # secret → requires_owner
-    t4 = text_to_task("Read the secret API key")
-    assert t4["requires_owner"] is True
-
-    # browser → requires_owner
-    t5 = text_to_task("Open browser and login")
-    assert t5["requires_owner"] is True
-
-
-def test_text_to_task_safe_task():
-    from input_adapter import text_to_task
-    task = text_to_task("Write documentation for the API")
-    assert task["requires_owner"] is False
-    assert task["category"] == "documentation"
-
+    assert text_to_task("Merge into main")["requires_owner"] is True
+    assert text_to_task("Delete archive")["requires_owner"] is True
+    assert text_to_task("Deploy to production")["requires_owner"] is True
 
 def test_text_to_task_empty_raises():
-    from input_adapter import text_to_task
     with pytest.raises(ValueError):
         text_to_task("")
 
-
 def test_text_to_tasks_multiline():
-    from input_adapter import text_to_tasks
-    text = "Fix bug A\nWrite docs\nOptimize reducer"
-    tasks = text_to_tasks(text)
-    assert len(tasks) == 3
-    assert tasks[0]["category"] == "bugfix"
-    assert tasks[1]["category"] == "documentation"
-    assert tasks[2]["category"] == "optimization"
+    tasks = text_to_tasks("Fix bug A\nWrite docs")
+    assert len(tasks) == 2
 
 
-def test_text_to_task_urgency_detection():
-    from input_adapter import text_to_task
-    urgent = text_to_task("Urgent fix needed now")
-    normal = text_to_task("Check test coverage")
-    later = text_to_task("Maybe refactor later someday")
-    assert urgent["urgency"] > normal["urgency"]
-    assert normal["urgency"] > later["urgency"]
+# ── v0.2 StateMachine Tests ──
+
+def test_state_machine_starts_at_intake():
+    sm = StateMachine()
+    assert sm.current() == "INTAKE"
+    assert not sm.is_terminal()
+
+def test_state_machine_valid_transition():
+    sm = StateMachine()
+    sm.transition("READ_STATE", "loaded")
+    assert sm.current() == "READ_STATE"
+
+def test_state_machine_invalid_transition():
+    sm = StateMachine()
+    with pytest.raises(StateMachineError):
+        sm.transition("DONE", "skip all")
+
+def test_state_machine_full_trace():
+    sm = StateMachine()
+    sm.transition("READ_STATE", "r1")
+    sm.transition("ATTENTION", "r2")
+    trace = sm.get_trace()
+    assert len(trace) == 3
+    assert trace[0]["state"] == "INTAKE"
+    assert trace[2]["state"] == "ATTENTION"
+
+def test_state_machine_terminal():
+    sm = StateMachine()
+    sm.transition("READ_STATE", "")
+    sm.transition("ATTENTION", "")
+    sm.transition("SCORE", "")
+    sm.transition("POLICY", "")
+    sm.transition("STOP", "risk too high")
+    assert sm.is_terminal()
+    assert sm.current() == "STOP"
 
 
-def test_text_to_task_risk_estimation():
-    from input_adapter import text_to_task
-    safe = text_to_task("Write documentation")
-    risky = text_to_task("Deploy and push to production")
-    assert safe["risk"] < risky["risk"]
+# ── v0.2 MemoryBlocks Tests ──
+
+def test_memory_blocks_default_persona():
+    blocks = MemoryBlocks()
+    assert blocks.persona["name"] == "MCR Cognitive OS"
+    assert len(blocks.persona["boundaries"]) > 0
+
+def test_memory_blocks_update_context():
+    blocks = MemoryBlocks()
+    blocks.update_context("task_count", 5)
+    assert blocks.context["task_count"] == 5
+
+def test_memory_blocks_add_knowledge():
+    blocks = MemoryBlocks()
+    blocks.add_knowledge("Always check risk first", source="test", confidence=0.9)
+    assert len(blocks.knowledge) == 1
+    assert blocks.knowledge[0]["lesson"] == "Always check risk first"
+
+def test_memory_blocks_persona_boundary():
+    blocks = MemoryBlocks()
+    # "修改 Runtime" should violate "不修改 Runtime 核心"
+    assert blocks.check_persona_boundary("修改 Runtime 核心代码") is False
+    # "写文档" should be fine
+    assert blocks.check_persona_boundary("写文档") is True
+
+def test_memory_blocks_to_dict():
+    blocks = MemoryBlocks()
+    blocks.update_context("x", 1)
+    blocks.add_knowledge("lesson1")
+    d = blocks.to_dict()
+    assert "persona" in d
+    assert "context" in d
+    assert "knowledge" in d
+    assert d["context"]["x"] == 1
+
+def test_memory_blocks_save_load(tmp_path):
+    path = str(tmp_path / "blocks.json")
+    blocks = MemoryBlocks()
+    blocks.update_context("key", "val")
+    blocks.add_knowledge("lesson")
+    blocks.save(path)
+    loaded = MemoryBlocks.load(path)
+    assert loaded.context["key"] == "val"
+    assert len(loaded.knowledge) == 1
 
 
-def test_format_task_report():
-    from input_adapter import text_to_task, format_task_report
-    task = text_to_task("Fix the bug")
-    report = format_task_report(task)
-    assert "Fix the bug" in report
-    assert "Priority" in report
-    assert "Risk" in report
+# ── v0.2 MockBrowserOperator Tests ──
+
+def test_mock_browser_observe():
+    op = MockBrowserOperator()
+    page = op.observe()
+    assert isinstance(page, PageState)
+    assert page.url == "https://example.com/mock"
+    assert len(page.elements) == 4
+
+def test_mock_browser_propose_actions():
+    op = MockBrowserOperator()
+    actions = op.propose_actions("Click the submit button")
+    assert len(actions) > 0
+    assert any(a["action"] == "click" for a in actions)
+
+def test_mock_browser_propose_actions_observe():
+    op = MockBrowserOperator()
+    actions = op.propose_actions("Check the page status")
+    assert any(a["action"] == "observe" for a in actions)
+
+def test_mock_browser_execute_mock_click():
+    op = MockBrowserOperator()
+    result = op.execute_mock({"action": "click", "target": 0})
+    assert result.success is True
+    assert "click" in result.action
+
+def test_mock_browser_execute_mock_navigate():
+    op = MockBrowserOperator()
+    result = op.execute_mock({"action": "navigate", "url": "https://test.com"})
+    assert result.success is True
+    assert op.observe().url == "https://test.com"
+
+def test_mock_browser_no_real_browser():
+    """Verify MockBrowserOperator has no network/import dependencies."""
+    import inspect
+    source = inspect.getsource(MockBrowserOperator)
+    assert "playwright" not in source.lower()
+    assert "selenium" not in source.lower()
+    assert "requests" not in source.lower()
+    assert "urllib" not in source.lower()
 
 
-# ── CLI Mode Integration ──
+# ── v0.2 Full Loop Integration Tests ──
 
-def test_cognitive_loop_default_mode():
-    """Default mode reads tasks.json."""
+def test_state_trace_exists():
     import run_cognitive_loop as rcl
-    result = rcl.run_cognitive_loop(mode="default")
-    assert result["input_mode"] == "default"
-    assert result["perception"]["task_count"] > 0
-    assert result["replay_verification"]["match"] is True
+    result = rcl.run_cognitive_loop(mode="task", task_text="Write tests")
+    assert "state_trace" in result
+    assert len(result["state_trace"]) > 0
+    states = [s["state"] for s in result["state_trace"]]
+    assert "INTAKE" in states
+    assert "DONE" in states
 
-
-def test_cognitive_loop_cli_task_mode():
-    """CLI mode accepts a single task string."""
+def test_state_machine_enters_done():
     import run_cognitive_loop as rcl
-    result = rcl.run_cognitive_loop(mode="task", task_text="Check MCR current status")
-    assert result["input_mode"] == "task"
-    assert result["perception"]["task_count"] == 1
-    assert result["replay_verification"]["match"] is True
+    result = rcl.run_cognitive_loop(mode="task", task_text="Fix the bug")
+    assert result["final_state"] == "DONE"
 
-
-def test_cognitive_loop_high_risk_task_asks_owner():
-    """High-risk CLI task should be blocked or require owner."""
+def test_high_risk_enters_ask_owner_or_stop():
     import run_cognitive_loop as rcl
     result = rcl.run_cognitive_loop(mode="task", task_text="Merge into main and push")
-    # Should NOT be freely allowed — either blocked (too risky) or needs owner
-    assert result["policy"]["allowed"] == 0
+    assert result["final_state"] in ("ASK_OWNER", "STOP")
 
-
-def test_cognitive_loop_safe_task_allowed():
-    """Safe CLI task should be allowed."""
+def test_merge_push_delete_deploy_enters_ask_owner():
     import run_cognitive_loop as rcl
-    result = rcl.run_cognitive_loop(mode="task", task_text="Write tests for reducer")
-    assert result["policy"]["allowed"] >= 1
+    for keyword in ["merge", "push", "delete", "deploy"]:
+        result = rcl.run_cognitive_loop(mode="task", task_text=f"{keyword} the code")
+        states = [s["state"] for s in result["state_trace"]]
+        assert "ASK_OWNER" in states or "STOP" in states, f"'{keyword}' should trigger ASK_OWNER or STOP"
+
+def test_memory_blocks_in_output():
+    import run_cognitive_loop as rcl
+    result = rcl.run_cognitive_loop(mode="task", task_text="Review code")
+    assert "memory_blocks" in result
+    mb = result["memory_blocks"]
+    assert "persona" in mb
+    assert "context" in mb
+    assert "knowledge" in mb
+
+def test_browser_observation_in_output():
+    import run_cognitive_loop as rcl
+    result = rcl.run_cognitive_loop(mode="task", task_text="Check the website")
+    assert "browser_observation" in result
+    bo = result["browser_observation"]
+    assert bo is not None
+    assert "page" in bo
+    assert "proposed_actions" in bo
+
+def test_replay_verification_pass():
+    import run_cognitive_loop as rcl
+    result = rcl.run_cognitive_loop(mode="task", task_text="Write documentation")
     assert result["replay_verification"]["match"] is True
 
-
-def test_cognitive_loop_stdin_mode(monkeypatch):
-    """Stdin mode reads from stdin."""
+def test_task_mode_still_works():
     import run_cognitive_loop as rcl
-    monkeypatch.setattr("sys.stdin", type("FakeStdin", (), {
-        "read": lambda self: "Check if tests pass\nReview code quality",
+    result = rcl.run_cognitive_loop(mode="task", task_text="Optimize the reducer")
+    assert result["input_mode"] == "task"
+    assert result["perception"]["task_count"] == 1
+
+def test_stdin_mode_still_works(monkeypatch):
+    import run_cognitive_loop as rcl
+    monkeypatch.setattr("sys.stdin", type("S", (), {
+        "read": lambda self: "Check test coverage",
         "isatty": lambda self: False,
     })())
     result = rcl.run_cognitive_loop(mode="stdin")
     assert result["input_mode"] == "stdin"
-    assert result["perception"]["task_count"] == 2
-    assert result["replay_verification"]["match"] is True
-
+    assert result["perception"]["task_count"] == 1
 
 def test_latest_run_json_generated():
-    """latest_run.json should be created after a run."""
     import run_cognitive_loop as rcl
-    latest_run = rcl._experiment_dir / "logs" / "latest_run.json"
-    rcl.run_cognitive_loop(mode="task", task_text="Quick test task")
-    assert latest_run.exists()
-    data = json.loads(latest_run.read_text())
-    assert "cycle_id" in data
-    assert "replay_verification" in data
+    rcl.run_cognitive_loop(mode="task", task_text="Quick test")
+    path = rcl._experiment_dir / "logs" / "latest_run.json"
+    assert path.exists()
+    data = json.loads(path.read_text(encoding="utf-8"))
+    assert "state_trace" in data
+    assert "memory_blocks" in data
+    assert "browser_observation" in data

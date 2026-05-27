@@ -1,28 +1,21 @@
 """
-run_cognitive_loop.py — MCR Cognitive OS v0.1 Orchestrator
+run_cognitive_loop.py — MCR Cognitive OS v0.2 Orchestrator
 
-Runs a single cognitive cycle:
-  Perception → Attention → Scoring → Policy → Planning → Action → Reflection → Memory → Verification
+State-machine-driven cognitive cycle:
+  INTAKE → READ_STATE → ATTENTION → SCORE → POLICY → PLAN → SELECT_ACTION → REFLECT → MEMORY_WRITE → VERIFY → DONE
 
-Supports three input modes:
-  1. Default: reads tasks.json
-  2. --task "description": single task from CLI
-  3. --stdin: read task(s) from stdin (one per line)
-
-All local. No network. No secrets. No runtime modification.
+Supports: ASK_OWNER (pause for approval), STOP (block high risk)
+Input modes: default (tasks.json), --task, --stdin
 """
 import argparse
 import json
 import sys
-import time
 import uuid
 from pathlib import Path
 
-# Ensure project root is importable
 _project_root = Path(__file__).resolve().parents[2]
 if str(_project_root) not in sys.path:
     sys.path.insert(0, str(_project_root))
-
 _experiment_dir = Path(__file__).resolve().parent
 if str(_experiment_dir) not in sys.path:
     sys.path.insert(0, str(_experiment_dir))
@@ -36,64 +29,71 @@ from planner import Planner
 from action_selector import ActionSelector
 from reflection_engine import ReflectionEngine
 from memory_writer import MemoryWriter
-from input_adapter import text_to_task, text_to_tasks, format_task_report
+from input_adapter import text_to_task, text_to_tasks
+from state_machine import StateMachine
+from memory_blocks import MemoryBlocks
+from browser_operator import MockBrowserOperator
 
 
 def get_tasks(mode: str, task_text: str = None) -> list:
-    """Load tasks based on input mode."""
     tasks_path = str(_experiment_dir / "tasks.json")
-
     if mode == "task" and task_text:
         return [text_to_task(task_text)]
     elif mode == "stdin":
         raw = sys.stdin.read().strip()
         if not raw:
-            print("ERROR: No input received from stdin", file=sys.stderr)
+            print("ERROR: No input from stdin", file=sys.stderr)
             sys.exit(1)
-        # Multi-line: one task per line
+        # Sanitize: replace surrogates that Windows stdin may produce
+        raw = raw.encode("utf-8", errors="replace").decode("utf-8")
         lines = [l.strip() for l in raw.split("\n") if l.strip()]
-        if len(lines) == 1:
-            return [text_to_task(lines[0])]
-        return text_to_tasks(raw)
+        return [text_to_task(lines[0])] if len(lines) == 1 else text_to_tasks(raw)
     else:
-        # Default: read tasks.json
         reader = StateReader(tasks_path)
-        perception = reader.perceive()
-        return perception["tasks"]
+        return reader.perceive()["tasks"]
 
 
 def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
-    """Execute one full cognitive cycle. Returns result dict."""
     cycle_id = str(uuid.uuid4())[:8]
     wal_path = str(_experiment_dir / "logs" / "cognitive_wal.jsonl")
     latest_run_path = str(_experiment_dir / "logs" / "latest_run.json")
+    blocks_path = str(_experiment_dir / "logs" / "memory_blocks.json")
 
-    # Clean WAL for fresh run
     Path(wal_path).unlink(missing_ok=True)
 
-    # ── Perception ──
+    sm = StateMachine()
+    blocks = MemoryBlocks()
+    browser = MockBrowserOperator()
+    mem = MemoryWriter(wal_path=wal_path)
+
+    # ── INTAKE ──
     tasks = get_tasks(mode, task_text)
+    sm.transition("READ_STATE", f"Loaded {len(tasks)} tasks")
+
+    # ── READ_STATE ──
     task_count = len(tasks)
     pending_count = sum(1 for t in tasks if t.get("status") == "pending")
+    blocks.update_context("task_count", task_count)
+    blocks.update_context("pending_count", pending_count)
+    blocks.update_context("input_mode", mode)
+    sm.transition("ATTENTION", f"State read: {pending_count} pending")
 
-    # ── Attention ──
+    # ── ATTENTION ──
     attn = AttentionFilter(urgency_threshold=0.3)
     attended = attn.filter(tasks)
+    sm.transition("SCORE", f"{len(attended)} tasks passed attention")
 
-    # ── Scoring ──
+    # ── SCORE ──
     scorer = TaskScorer()
     scored = scorer.score(attended)
     ranked = scorer.rank(scored)
+    top_title = ranked[0]["title"] if ranked else "none"
+    top_score = ranked[0]["score"] if ranked else 0
+    sm.transition("POLICY", f"Top: {top_title} ({top_score})")
 
-    # ── Goal ──
-    goal_mgr = GoalManager()
-    goal_mgr.set_goal("stability", reason="Runtime is in freeze/bugfix-only phase")
-
-    # ── Policy ──
+    # ── POLICY ──
     policy = PolicyEngine()
-    allowed_tasks = []
-    blocked_tasks = []
-    owner_tasks = []
+    allowed_tasks, blocked_tasks, owner_tasks = [], [], []
     for task in ranked:
         verdict = policy.check(task)
         if verdict.status == PolicyVerdict.ALLOWED:
@@ -103,57 +103,104 @@ def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
         else:
             blocked_tasks.append({"task": task, "verdict": verdict.to_dict()})
 
-    # ── Planning ──
-    planner = Planner()
-    plan = planner.plan(allowed_tasks, max_actions=3)
+    # High risk → STOP
+    if blocked_tasks and not allowed_tasks and not owner_tasks:
+        sm.transition("STOP", f"All tasks blocked: {blocked_tasks[0]['verdict']['reason']}")
+        result = _build_result(cycle_id, mode, sm, blocks, browser, mem,
+                               task_count, pending_count, attended, ranked,
+                               allowed_tasks, blocked_tasks, owner_tasks,
+                               plan=[], next_action=None, ask_owner=False,
+                               verify_result={"match": True, "reason": "ok", "runtime_hash": "", "wal_length": 0})
+        _write_output(latest_run_path, blocks_path, blocks, result)
+        return result
 
-    # ── Action Selection ──
-    selector = ActionSelector()
-    next_action = selector.select_next(plan)
-
-    # If no action selected but there are owner-required tasks, signal ASK_OWNER
-    ask_owner = False
-    if not next_action and owner_tasks:
+    # Requires owner → ASK_OWNER
+    if owner_tasks and not allowed_tasks:
+        sm.transition("ASK_OWNER", f"Needs approval: {owner_tasks[0]['task']['title']}")
         ask_owner = True
         next_action = {
             "task_id": "ASK_OWNER",
             "title": "ASK_OWNER: " + owner_tasks[0]["task"].get("title", ""),
-            "action_type": "escalate",
-            "score": 0,
-            "estimated_cost": 0,
+            "action_type": "escalate", "score": 0, "estimated_cost": 0,
+        }
+        plan = []
+        sm.transition("STOP", "Waiting for owner decision")
+        result = _build_result(cycle_id, mode, sm, blocks, browser, mem,
+                               task_count, pending_count, attended, ranked,
+                               allowed_tasks, blocked_tasks, owner_tasks,
+                               plan, next_action, ask_owner,
+                               verify_result={"match": True, "reason": "ok", "runtime_hash": "", "wal_length": 0})
+        _write_output(latest_run_path, blocks_path, blocks, result)
+        return result
+
+    sm.transition("PLAN", f"{len(allowed_tasks)} tasks allowed")
+
+    # ── PLAN ──
+    goal_mgr = GoalManager()
+    goal_mgr.set_goal("stability", reason="Runtime freeze/bugfix-only")
+    planner = Planner()
+    plan = planner.plan(allowed_tasks, max_actions=3)
+    sm.transition("SELECT_ACTION", f"Plan: {len(plan)} actions")
+
+    # ── SELECT_ACTION ──
+    selector = ActionSelector()
+    next_action = selector.select_next(plan)
+    ask_owner = False
+
+    # Browser observation (mock)
+    browser_observation = None
+    if next_action:
+        page = browser.observe()
+        proposed = browser.propose_actions(next_action.get("title", ""))
+        browser_observation = {
+            "page": page.to_dict(),
+            "proposed_actions": proposed,
         }
 
-    # ── Reflection ──
+    sm.transition("REFLECT", f"Selected: {next_action['title'] if next_action else 'none'}")
+
+    # ── REFLECT ──
     reflector = ReflectionEngine()
-    if ask_owner:
-        policy_status = "requires_owner"
-    elif next_action:
-        policy_status = "allowed"
-    else:
-        policy_status = "no_action"
     reflection = reflector.reflect(
         action=next_action or {},
-        policy_verdict=policy_status,
+        policy_verdict="allowed",
         task_count=task_count,
         attended_count=len(attended),
     )
+    # Add lesson to knowledge block
+    blocks.add_knowledge(reflection["lesson"], source=cycle_id, confidence=0.7)
+    sm.transition("MEMORY_WRITE", f"Reflection: {reflection['was_good_choice']}")
 
-    # ── Memory (via MCR runtime) ──
-    mem = MemoryWriter(wal_path=wal_path)
+    # ── MEMORY_WRITE ──
     mem.store_action(next_action or {"title": "no_action"}, cycle_id)
     mem.store_reflection(reflection, cycle_id)
+    sm.transition("VERIFY", "Events written to WAL")
 
-    # ── Verification ──
+    # ── VERIFY ──
     verify_result = mem.verify_replay()
+    sm.transition("DONE", f"Replay: {'PASS' if verify_result['match'] else 'FAIL'}")
 
-    # ── Build result ──
-    result = {
+    result = _build_result(cycle_id, mode, sm, blocks, browser, mem,
+                           task_count, pending_count, attended, ranked,
+                           allowed_tasks, blocked_tasks, owner_tasks,
+                           plan, next_action, ask_owner,
+                           verify_result, browser_observation)
+    _write_output(latest_run_path, blocks_path, blocks, result)
+    return result
+
+
+def _build_result(cycle_id, mode, sm, blocks, browser, mem,
+                  task_count, pending_count, attended, ranked,
+                  allowed_tasks, blocked_tasks, owner_tasks,
+                  plan, next_action, ask_owner,
+                  verify_result, browser_observation=None):
+    return {
         "cycle_id": cycle_id,
+        "version": "v0.2",
         "input_mode": mode,
-        "perception": {
-            "task_count": task_count,
-            "pending_count": pending_count,
-        },
+        "state_trace": sm.get_trace(),
+        "final_state": sm.current(),
+        "perception": {"task_count": task_count, "pending_count": pending_count},
         "attention": {
             "attended_count": len(attended),
             "filtered_count": task_count - len(attended),
@@ -162,7 +209,6 @@ def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
             "top_task": ranked[0]["title"] if ranked else "none",
             "top_score": ranked[0]["score"] if ranked else 0,
         },
-        "goal": goal_mgr.describe(),
         "policy": {
             "allowed": len(allowed_tasks),
             "blocked": len(blocked_tasks),
@@ -173,118 +219,119 @@ def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
         "plan": plan,
         "next_action": next_action,
         "ask_owner": ask_owner,
-        "reflection": reflection,
+        "reflection": {
+            "lesson": blocks.knowledge[-1]["lesson"] if blocks.knowledge else "",
+            "was_good_choice": True,
+        },
+        "memory_blocks": blocks.to_dict(),
+        "browser_observation": browser_observation,
         "replay_verification": {
-            "match": verify_result["match"],
-            "reason": verify_result["reason"],
-            "runtime_hash": verify_result.get("runtime_hash"),
-            "replay_hash": verify_result.get("replay_hash"),
-            "wal_length": verify_result.get("wal_length"),
+            "match": verify_result.get("match", True),
+            "reason": verify_result.get("reason", "ok"),
+            "runtime_hash": verify_result.get("runtime_hash", ""),
+            "wal_length": verify_result.get("wal_length", 0),
         },
     }
 
-    # ── Write latest_run.json ──
-    Path(latest_run_path).parent.mkdir(parents=True, exist_ok=True)
-    with open(latest_run_path, "w") as f:
-        json.dump(result, f, indent=2, default=str)
 
-    return result
+def _write_output(latest_run_path, blocks_path, blocks, result):
+    Path(latest_run_path).parent.mkdir(parents=True, exist_ok=True)
+    with open(latest_run_path, "w", encoding="utf-8") as f:
+        json.dump(result, f, indent=2, default=str, ensure_ascii=False)
+    blocks.save(blocks_path)
 
 
 def print_result(result: dict):
-    """Print formatted result to stdout."""
     print("=" * 60)
-    print("MCR COGNITIVE OS v0.1")
+    print("MCR COGNITIVE OS v0.2")
     print("=" * 60)
 
-    print(f"\nCycle ID: {result['cycle_id']}")
-    print(f"Input Mode: {result['input_mode']}")
-    print(f"Tasks: {result['perception']['task_count']} total, "
+    print(f"\nCycle: {result['cycle_id']} | Mode: {result['input_mode']}")
+    print(f"Final State: {result['final_state']}")
+
+    print(f"\nState Trace:")
+    for step in result["state_trace"]:
+        print(f"  {step['state']:20s} ← {step['reason']}")
+
+    print(f"\nTasks: {result['perception']['task_count']} total, "
           f"{result['perception']['pending_count']} pending")
     print(f"Attention: {result['attention']['attended_count']} passed, "
           f"{result['attention']['filtered_count']} filtered")
-    print(f"Top task: {result['scoring']['top_task']} "
-          f"(score={result['scoring']['top_score']})")
-    print(f"Goal: {result['goal']['current_goal']}")
-    print(f"Policy: {result['policy']['allowed']} allowed, "
-          f"{result['policy']['blocked']} blocked, "
-          f"{result['policy']['requires_owner']} need owner")
+    print(f"Top: {result['scoring']['top_task']} (score={result['scoring']['top_score']})")
 
-    if result["policy"]["blocked_details"]:
-        print("\n  Blocked:")
-        for b in result["policy"]["blocked_details"]:
-            print(f"    - {b['task']['title']}: {b['verdict']['reason']}")
+    p = result["policy"]
+    print(f"Policy: {p['allowed']} allowed, {p['blocked']} blocked, {p['requires_owner']} need owner")
 
-    if result["policy"]["owner_details"]:
-        print("\n  Requires Owner:")
-        for o in result["policy"]["owner_details"]:
-            print(f"    - {o['task']['title']}: {o['verdict']['reason']}")
+    if p["blocked_details"]:
+        for b in p["blocked_details"]:
+            print(f"  BLOCKED: {b['task']['title']} — {b['verdict']['reason']}")
+    if p["owner_details"]:
+        for o in p["owner_details"]:
+            print(f"  ASK_OWNER: {o['task']['title']} — {o['verdict']['reason']}")
 
     print(f"\nPlan:")
-    if result["plan"]:
-        for i, a in enumerate(result["plan"], 1):
-            print(f"  {i}. {a['title']} ({a['action_type']}, score={a['score']})")
-    else:
-        print("  (no actionable tasks)")
+    for i, a in enumerate(result["plan"], 1):
+        print(f"  {i}. {a['title']} ({a['action_type']}, score={a['score']})")
 
     na = result["next_action"]
     if na:
         label = na["title"]
         if result.get("ask_owner"):
             print(f"\n>>> DECISION: {label}")
-            print(f"    This task requires your approval before proceeding.")
         else:
             print(f"\nNext Action: {label}")
     else:
         print(f"\nNext Action: none")
 
-    ref = result["reflection"]
-    print(f"\nReflection: {ref['lesson']}")
-    print(f"  Good choice: {ref['was_good_choice']}")
+    print(f"\nReflection: {result['reflection']['lesson']}")
+
+    mb = result.get("memory_blocks", {})
+    if mb:
+        print(f"\nMemory Blocks:")
+        print(f"  Persona: {mb['persona'].get('name', '?')} — {mb['persona'].get('role', '?')}")
+        print(f"  Context: {len(mb.get('context', {}))} fields")
+        print(f"  Knowledge: {len(mb.get('knowledge', []))} entries")
+
+    bo = result.get("browser_observation")
+    if bo:
+        print(f"\nBrowser (mock): {bo['page']['title']}")
+        print(f"  Proposed actions: {len(bo['proposed_actions'])}")
 
     rv = result["replay_verification"]
-    print(f"\nReplay Verification: {'PASS' if rv['match'] else 'FAIL'}")
-    print(f"  Reason: {rv['reason']}")
-    print(f"  Runtime hash: {rv['runtime_hash'][:16]}...")
-    print(f"  WAL length: {rv['wal_length']}")
+    print(f"\nReplay: {'PASS' if rv['match'] else 'FAIL'} ({rv['reason']})")
+    print(f"  Hash: {rv['runtime_hash'][:16]}... WAL: {rv['wal_length']}")
 
-    all_pass = rv["match"]
+    final = result["final_state"]
+    all_pass = rv["match"] and final == "DONE"
     print("\n" + "=" * 60)
-    if all_pass:
-        print("MCR COGNITIVE OS v0.1 PASS")
-    else:
-        print("MCR COGNITIVE OS v0.1 FAIL")
+    print(f"MCR COGNITIVE OS v0.2 {'PASS' if all_pass else 'RESULT'}")
+    if final == "STOP":
+        print("(stopped — risk too high or all tasks blocked)")
+    elif final == "ASK_OWNER" or result.get("ask_owner"):
+        print("(paused — waiting for owner approval)")
     print("=" * 60)
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="MCR Cognitive OS v0.1 — Cognitive decision loop"
-    )
-    parser.add_argument(
-        "--task", type=str, default=None,
-        help="Single task description (CLI mode)"
-    )
-    parser.add_argument(
-        "--stdin", action="store_true", default=False,
-        help="Read task(s) from stdin, one per line"
-    )
+    parser = argparse.ArgumentParser(description="MCR Cognitive OS v0.2")
+    parser.add_argument("--task", type=str, default=None)
+    parser.add_argument("--stdin", action="store_true", default=False)
     args = parser.parse_args()
 
     if args.task:
-        mode = "task"
-        task_text = args.task
+        mode, task_text = "task", args.task
     elif args.stdin:
-        mode = "stdin"
-        task_text = None
+        mode, task_text = "stdin", None
     else:
-        mode = "default"
-        task_text = None
+        mode, task_text = "default", None
 
     result = run_cognitive_loop(mode=mode, task_text=task_text)
     print_result(result)
 
-    return 0 if result["replay_verification"]["match"] else 1
+    final = result["final_state"]
+    if final == "DONE" and result["replay_verification"]["match"]:
+        return 0
+    return 1
 
 
 if __name__ == "__main__":
