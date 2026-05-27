@@ -1,0 +1,76 @@
+{
+  "tasks": [
+    {
+      "id": "task_001",
+      "title": "Review runtime test coverage",
+      "description": "Check if runtime tests cover all event types and edge cases",
+      "priority": 0.8,
+      "risk": 0.2,
+      "token_cost": 500,
+      "urgency": 0.7,
+      "category": "maintenance",
+      "requires_owner": false,
+      "status": "pending"
+    },
+    {
+      "id": "task_002",
+      "title": "Deploy to production",
+      "description": "Push latest release to PyPI and create git tag",
+      "priority": 0.9,
+      "risk": 0.9,
+      "token_cost": 200,
+      "urgency": 0.3,
+      "category": "release",
+      "requires_owner": true,
+      "status": "pending"
+    },
+    {
+      "id": "task_003",
+      "title": "Write documentation for cognitive OS",
+      "description": "Document the cognitive architecture and module interactions",
+      "priority": 0.6,
+      "risk": 0.1,
+      "token_cost": 800,
+      "urgency": 0.4,
+      "category": "documentation",
+      "requires_owner": false,
+      "status": "pending"
+    },
+    {
+      "id": "task_004",
+      "title": "Fix WAL replay edge case",
+      "description": "Handle empty WAL gracefully in replay verifier",
+      "priority": 0.7,
+      "risk": 0.3,
+      "token_cost": 300,
+      "urgency": 0.8,
+      "category": "bugfix",
+      "requires_owner": false,
+      "status": "pending"
+    },
+    {
+      "id": "task_005",
+      "title": "Delete all user data",
+      "description": "Purge all memory and state from production",
+      "priority": 0.1,
+      "risk": 1.0,
+      "token_cost": 50,
+      "urgency": 0.1,
+      "category": "destructive",
+      "requires_owner": true,
+      "status": "pending"
+    },
+    {
+      "id": "task_006",
+      "title": "Optimize reducer performance",
+      "description": "Profile and optimize deterministic reducer for large WALs",
+      "priority": 0.5,
+      "risk": 0.4,
+      "token_cost": 600,
+      "urgency": 0.5,
+      "category": "optimization",
+      "requires_owner": false,
+      "status": "pending"
+    }
+  ]
+}

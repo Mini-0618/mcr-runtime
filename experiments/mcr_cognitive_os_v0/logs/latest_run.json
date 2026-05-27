@@ -1,0 +1,93 @@
+{
+  "cycle_id": "4462620b",
+  "perception": {
+    "task_count": 6,
+    "pending_count": 6
+  },
+  "attention": {
+    "attended_count": 5,
+    "filtered_count": 1
+  },
+  "scoring": {
+    "top_task": "Review runtime test coverage",
+    "top_score": 0.74
+  },
+  "goal": {
+    "current_goal": "stability",
+    "history_count": 0
+  },
+  "policy": {
+    "allowed": 4,
+    "blocked": 1,
+    "requires_owner": 0,
+    "blocked_details": [
+      {
+        "task": {
+          "id": "task_002",
+          "title": "Deploy to production",
+          "description": "Push latest release to PyPI and create git tag",
+          "priority": 0.9,
+          "risk": 0.9,
+          "token_cost": 200,
+          "urgency": 0.3,
+          "category": "release",
+          "requires_owner": true,
+          "status": "pending",
+          "score": 0.64
+        },
+        "verdict": {
+          "status": "blocked",
+          "reason": "Risk 0.90 exceeds threshold 0.85",
+          "task_id": "task_002"
+        }
+      }
+    ],
+    "owner_details": []
+  },
+  "plan": [
+    {
+      "task_id": "task_001",
+      "title": "Review runtime test coverage",
+      "action_type": "investigate",
+      "score": 0.74,
+      "estimated_cost": 500
+    },
+    {
+      "task_id": "task_004",
+      "title": "Fix WAL replay edge case",
+      "action_type": "fix",
+      "score": 0.7,
+      "estimated_cost": 300
+    },
+    {
+      "task_id": "task_003",
+      "title": "Write documentation for cognitive OS",
+      "action_type": "write",
+      "score": 0.61,
+      "estimated_cost": 800
+    }
+  ],
+  "next_action": {
+    "task_id": "task_001",
+    "title": "Review runtime test coverage",
+    "action_type": "investigate",
+    "score": 0.74,
+    "estimated_cost": 500
+  },
+  "reflection": {
+    "action_taken": "Review runtime test coverage",
+    "was_good_choice": true,
+    "score": 0.74,
+    "policy_status": "allowed",
+    "tasks_total": 6,
+    "tasks_attended": 5,
+    "lesson": "Good action selection (score=0.74). Continue prioritizing high-score, low-risk tasks."
+  },
+  "replay_verification": {
+    "match": true,
+    "reason": "ok",
+    "runtime_hash": "953fd42ef908f2ca3f234047508c854717e66fad155f2260eb29443408fe5a94",
+    "replay_hash": "953fd42ef908f2ca3f234047508c854717e66fad155f2260eb29443408fe5a94",
+    "wal_length": 2
+  }
+}
