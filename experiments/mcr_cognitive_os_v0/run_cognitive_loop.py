@@ -39,6 +39,9 @@ def run_cognitive_loop() -> dict:
     wal_path = str(_experiment_dir / "logs" / "cognitive_wal.jsonl")
     latest_run_path = str(_experiment_dir / "logs" / "latest_run.json")
 
+    # Clean WAL for fresh run
+    Path(wal_path).unlink(missing_ok=True)
+
     # ── Perception ──
     reader = StateReader(tasks_path)
     perception = reader.perceive()
