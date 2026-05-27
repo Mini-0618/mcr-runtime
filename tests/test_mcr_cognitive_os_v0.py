@@ -326,3 +326,66 @@ def test_latest_run_json_generated():
     assert "state_trace" in data
     assert "memory_blocks" in data
     assert "browser_observation" in data
+
+
+# ── v0.2 MemoryEvolution Tests ──
+
+def test_memory_evolution_success_pattern():
+    from memory_evolution import MemoryEvolution
+    evolver = MemoryEvolution()
+    run = {
+        "reflection": {"lesson": "Good selection", "was_good_choice": True},
+        "policy": {"allowed": 3, "blocked": 0, "requires_owner": 0},
+        "execution": {"success": True, "output": "Done"},
+        "final_state": "DONE",
+        "scoring": {"top_task": "Fix bug", "top_score": 0.8},
+        "attention": {"attended_count": 5, "filtered_count": 1},
+    }
+    record = evolver.evolve(run)
+    assert record.success_pattern != ""
+    assert record.reuse_next_time != ""
+    assert record.confidence > 0.5
+
+def test_memory_evolution_failure_pattern():
+    from memory_evolution import MemoryEvolution
+    evolver = MemoryEvolution()
+    run = {
+        "reflection": {"lesson": "Action blocked by policy", "was_good_choice": False},
+        "policy": {"allowed": 0, "blocked": 3, "requires_owner": 0},
+        "execution": {"success": False, "output": "Blocked"},
+        "final_state": "STOP",
+        "scoring": {"top_task": "Deploy", "top_score": 0.3},
+        "attention": {"attended_count": 3, "filtered_count": 0},
+    }
+    record = evolver.evolve(run)
+    assert record.failure_pattern != ""
+    assert record.avoid_next_time != ""
+
+def test_memory_evolution_policy_adjustments():
+    from memory_evolution import MemoryEvolution
+    evolver = MemoryEvolution()
+    run = {
+        "reflection": {"lesson": "blocked", "was_good_choice": False},
+        "policy": {"allowed": 1, "blocked": 5, "requires_owner": 0},
+        "execution": None,
+        "final_state": "STOP",
+        "scoring": {"top_task": "?", "top_score": 0},
+        "attention": {"attended_count": 2, "filtered_count": 8},
+    }
+    record = evolver.evolve(run)
+    assert len(record.policy_adjustments) > 0
+
+def test_memory_evolution_to_dict():
+    from memory_evolution import MemoryEvolution, EvolutionRecord
+    record = EvolutionRecord(success_pattern="test", failure_pattern="fail")
+    d = record.to_dict()
+    assert d["success_pattern"] == "test"
+    assert d["failure_pattern"] == "fail"
+
+def test_memory_evolution_in_cognitive_loop():
+    import run_cognitive_loop as rcl
+    result = rcl.run_cognitive_loop(mode="task", task_text="Write tests")
+    assert "memory_evolution" in result
+    me = result["memory_evolution"]
+    assert me is not None
+    assert "success_pattern" in me

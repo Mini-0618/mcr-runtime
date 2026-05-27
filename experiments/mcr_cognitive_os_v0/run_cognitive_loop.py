@@ -33,6 +33,7 @@ from input_adapter import text_to_task, text_to_tasks
 from state_machine import StateMachine
 from memory_blocks import MemoryBlocks
 from browser_operator import MockBrowserOperator
+from memory_evolution import MemoryEvolution
 
 
 def get_tasks(mode: str, task_text: str = None) -> list:
@@ -110,7 +111,8 @@ def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
                                task_count, pending_count, attended, ranked,
                                allowed_tasks, blocked_tasks, owner_tasks,
                                plan=[], next_action=None, ask_owner=False,
-                               verify_result={"match": True, "reason": "ok", "runtime_hash": "", "wal_length": 0})
+                               verify_result={"match": True, "reason": "ok", "runtime_hash": "", "wal_length": 0},
+                               memory_evolution=None)
         _write_output(latest_run_path, blocks_path, blocks, result)
         return result
 
@@ -129,7 +131,8 @@ def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
                                task_count, pending_count, attended, ranked,
                                allowed_tasks, blocked_tasks, owner_tasks,
                                plan, next_action, ask_owner,
-                               verify_result={"match": True, "reason": "ok", "runtime_hash": "", "wal_length": 0})
+                               verify_result={"match": True, "reason": "ok", "runtime_hash": "", "wal_length": 0},
+                               memory_evolution=None)
         _write_output(latest_run_path, blocks_path, blocks, result)
         return result
 
@@ -169,6 +172,23 @@ def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
     )
     # Add lesson to knowledge block
     blocks.add_knowledge(reflection["lesson"], source=cycle_id, confidence=0.7)
+
+    # ── MEMORY EVOLUTION ──
+    evolution_path = str(_experiment_dir / "logs" / "latest_run.json")
+    evolver = MemoryEvolution(history_path=evolution_path if Path(evolution_path).exists() else None)
+    # Build partial result for evolution analysis
+    partial_result = {
+        "reflection": reflection,
+        "policy": {"allowed": len(allowed_tasks), "blocked": len(blocked_tasks), "requires_owner": len(owner_tasks)},
+        "execution": None,
+        "final_state": sm.current(),
+        "scoring": {"top_task": ranked[0]["title"] if ranked else "none", "top_score": ranked[0]["score"] if ranked else 0},
+        "attention": {"attended_count": len(attended), "filtered_count": task_count - len(attended)},
+    }
+    evolution_record = evolver.evolve(partial_result)
+    blocks.add_knowledge(f"Evolution: {evolution_record.reuse_next_time or evolution_record.avoid_next_time or 'no pattern'}",
+                         source=cycle_id, confidence=evolution_record.confidence)
+
     sm.transition("MEMORY_WRITE", f"Reflection: {reflection['was_good_choice']}")
 
     # ── MEMORY_WRITE ──
@@ -184,7 +204,7 @@ def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
                            task_count, pending_count, attended, ranked,
                            allowed_tasks, blocked_tasks, owner_tasks,
                            plan, next_action, ask_owner,
-                           verify_result, browser_observation)
+                           verify_result, browser_observation, memory_evolution=evolution_record)
     _write_output(latest_run_path, blocks_path, blocks, result)
     return result
 
@@ -193,7 +213,7 @@ def _build_result(cycle_id, mode, sm, blocks, browser, mem,
                   task_count, pending_count, attended, ranked,
                   allowed_tasks, blocked_tasks, owner_tasks,
                   plan, next_action, ask_owner,
-                  verify_result, browser_observation=None):
+                  verify_result, browser_observation=None, memory_evolution=None):
     return {
         "cycle_id": cycle_id,
         "version": "v0.2",
@@ -225,6 +245,7 @@ def _build_result(cycle_id, mode, sm, blocks, browser, mem,
         },
         "memory_blocks": blocks.to_dict(),
         "browser_observation": browser_observation,
+        "memory_evolution": memory_evolution.to_dict() if memory_evolution else None,
         "replay_verification": {
             "match": verify_result.get("match", True),
             "reason": verify_result.get("reason", "ok"),
@@ -300,6 +321,19 @@ def print_result(result: dict):
     rv = result["replay_verification"]
     print(f"\nReplay: {'PASS' if rv['match'] else 'FAIL'} ({rv['reason']})")
     print(f"  Hash: {rv['runtime_hash'][:16]}... WAL: {rv['wal_length']}")
+
+    me = result.get("memory_evolution")
+    if me:
+        print(f"\nMemory Evolution:")
+        print(f"  Success: {me['success_pattern'][:60]}")
+        if me['failure_pattern']:
+            print(f"  Failure: {me['failure_pattern'][:60]}")
+        if me['avoid_next_time']:
+            print(f"  Avoid:   {me['avoid_next_time'][:60]}")
+        if me['reuse_next_time']:
+            print(f"  Reuse:   {me['reuse_next_time'][:60]}")
+        if me['policy_adjustments']:
+            print(f"  Adjustments: {len(me['policy_adjustments'])}")
 
     final = result["final_state"]
     all_pass = rv["match"] and final == "DONE"
