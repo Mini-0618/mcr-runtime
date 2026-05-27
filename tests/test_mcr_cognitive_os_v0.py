@@ -269,3 +269,146 @@ def test_full_cognitive_loop(tmp_path):
     assert len(attended) >= 0
     assert next_action is not None
     assert reflection["was_good_choice"] is True
+
+
+# ── InputAdapter ──
+
+def test_text_to_task_basic():
+    from input_adapter import text_to_task
+    task = text_to_task("Fix the login bug")
+    assert task["title"] == "Fix the login bug"
+    assert task["category"] == "bugfix"
+    assert task["status"] == "pending"
+    assert task["source"] == "cli"
+    assert task["requires_owner"] is False
+
+
+def test_text_to_task_high_risk_keywords():
+    from input_adapter import text_to_task
+    # merge → requires_owner
+    t1 = text_to_task("Merge cognitive OS into main")
+    assert t1["requires_owner"] is True
+
+    # delete → requires_owner + destructive
+    t2 = text_to_task("Delete the archive directory")
+    assert t2["requires_owner"] is True
+
+    # deploy → requires_owner
+    t3 = text_to_task("Deploy to production server")
+    assert t3["requires_owner"] is True
+
+    # secret → requires_owner
+    t4 = text_to_task("Read the secret API key")
+    assert t4["requires_owner"] is True
+
+    # browser → requires_owner
+    t5 = text_to_task("Open browser and login")
+    assert t5["requires_owner"] is True
+
+
+def test_text_to_task_safe_task():
+    from input_adapter import text_to_task
+    task = text_to_task("Write documentation for the API")
+    assert task["requires_owner"] is False
+    assert task["category"] == "documentation"
+
+
+def test_text_to_task_empty_raises():
+    from input_adapter import text_to_task
+    with pytest.raises(ValueError):
+        text_to_task("")
+
+
+def test_text_to_tasks_multiline():
+    from input_adapter import text_to_tasks
+    text = "Fix bug A\nWrite docs\nOptimize reducer"
+    tasks = text_to_tasks(text)
+    assert len(tasks) == 3
+    assert tasks[0]["category"] == "bugfix"
+    assert tasks[1]["category"] == "documentation"
+    assert tasks[2]["category"] == "optimization"
+
+
+def test_text_to_task_urgency_detection():
+    from input_adapter import text_to_task
+    urgent = text_to_task("Urgent fix needed now")
+    normal = text_to_task("Check test coverage")
+    later = text_to_task("Maybe refactor later someday")
+    assert urgent["urgency"] > normal["urgency"]
+    assert normal["urgency"] > later["urgency"]
+
+
+def test_text_to_task_risk_estimation():
+    from input_adapter import text_to_task
+    safe = text_to_task("Write documentation")
+    risky = text_to_task("Deploy and push to production")
+    assert safe["risk"] < risky["risk"]
+
+
+def test_format_task_report():
+    from input_adapter import text_to_task, format_task_report
+    task = text_to_task("Fix the bug")
+    report = format_task_report(task)
+    assert "Fix the bug" in report
+    assert "Priority" in report
+    assert "Risk" in report
+
+
+# ── CLI Mode Integration ──
+
+def test_cognitive_loop_default_mode():
+    """Default mode reads tasks.json."""
+    import run_cognitive_loop as rcl
+    result = rcl.run_cognitive_loop(mode="default")
+    assert result["input_mode"] == "default"
+    assert result["perception"]["task_count"] > 0
+    assert result["replay_verification"]["match"] is True
+
+
+def test_cognitive_loop_cli_task_mode():
+    """CLI mode accepts a single task string."""
+    import run_cognitive_loop as rcl
+    result = rcl.run_cognitive_loop(mode="task", task_text="Check MCR current status")
+    assert result["input_mode"] == "task"
+    assert result["perception"]["task_count"] == 1
+    assert result["replay_verification"]["match"] is True
+
+
+def test_cognitive_loop_high_risk_task_asks_owner():
+    """High-risk CLI task should be blocked or require owner."""
+    import run_cognitive_loop as rcl
+    result = rcl.run_cognitive_loop(mode="task", task_text="Merge into main and push")
+    # Should NOT be freely allowed — either blocked (too risky) or needs owner
+    assert result["policy"]["allowed"] == 0
+
+
+def test_cognitive_loop_safe_task_allowed():
+    """Safe CLI task should be allowed."""
+    import run_cognitive_loop as rcl
+    result = rcl.run_cognitive_loop(mode="task", task_text="Write tests for reducer")
+    assert result["policy"]["allowed"] >= 1
+    assert result["replay_verification"]["match"] is True
+
+
+def test_cognitive_loop_stdin_mode(monkeypatch):
+    """Stdin mode reads from stdin."""
+    import run_cognitive_loop as rcl
+    monkeypatch.setattr("sys.stdin", type("FakeStdin", (), {
+        "read": lambda self: "Check if tests pass\nReview code quality",
+        "isatty": lambda self: False,
+    })())
+    result = rcl.run_cognitive_loop(mode="stdin")
+    assert result["input_mode"] == "stdin"
+    assert result["perception"]["task_count"] == 2
+    assert result["replay_verification"]["match"] is True
+
+
+def test_latest_run_json_generated():
+    """latest_run.json should be created after a run."""
+    import run_cognitive_loop as rcl
+    latest_run = rcl._experiment_dir / "logs" / "latest_run.json"
+    rcl.run_cognitive_loop(mode="task", task_text="Quick test task")
+    assert latest_run.exists()
+    data = json.loads(latest_run.read_text())
+    assert "cycle_id" in data
+    assert "replay_verification" in data

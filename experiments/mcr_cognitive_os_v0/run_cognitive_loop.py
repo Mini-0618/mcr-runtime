@@ -4,8 +4,14 @@ run_cognitive_loop.py — MCR Cognitive OS v0.1 Orchestrator
 Runs a single cognitive cycle:
   Perception → Attention → Scoring → Policy → Planning → Action → Reflection → Memory → Verification
 
+Supports three input modes:
+  1. Default: reads tasks.json
+  2. --task "description": single task from CLI
+  3. --stdin: read task(s) from stdin (one per line)
+
 All local. No network. No secrets. No runtime modification.
 """
+import argparse
 import json
 import sys
 import time
@@ -30,12 +36,35 @@ from planner import Planner
 from action_selector import ActionSelector
 from reflection_engine import ReflectionEngine
 from memory_writer import MemoryWriter
+from input_adapter import text_to_task, text_to_tasks, format_task_report
 
 
-def run_cognitive_loop() -> dict:
+def get_tasks(mode: str, task_text: str = None) -> list:
+    """Load tasks based on input mode."""
+    tasks_path = str(_experiment_dir / "tasks.json")
+
+    if mode == "task" and task_text:
+        return [text_to_task(task_text)]
+    elif mode == "stdin":
+        raw = sys.stdin.read().strip()
+        if not raw:
+            print("ERROR: No input received from stdin", file=sys.stderr)
+            sys.exit(1)
+        # Multi-line: one task per line
+        lines = [l.strip() for l in raw.split("\n") if l.strip()]
+        if len(lines) == 1:
+            return [text_to_task(lines[0])]
+        return text_to_tasks(raw)
+    else:
+        # Default: read tasks.json
+        reader = StateReader(tasks_path)
+        perception = reader.perceive()
+        return perception["tasks"]
+
+
+def run_cognitive_loop(mode: str = "default", task_text: str = None) -> dict:
     """Execute one full cognitive cycle. Returns result dict."""
     cycle_id = str(uuid.uuid4())[:8]
-    tasks_path = str(_experiment_dir / "tasks.json")
     wal_path = str(_experiment_dir / "logs" / "cognitive_wal.jsonl")
     latest_run_path = str(_experiment_dir / "logs" / "latest_run.json")
 
@@ -43,12 +72,13 @@ def run_cognitive_loop() -> dict:
     Path(wal_path).unlink(missing_ok=True)
 
     # ── Perception ──
-    reader = StateReader(tasks_path)
-    perception = reader.perceive()
+    tasks = get_tasks(mode, task_text)
+    task_count = len(tasks)
+    pending_count = sum(1 for t in tasks if t.get("status") == "pending")
 
     # ── Attention ──
     attn = AttentionFilter(urgency_threshold=0.3)
-    attended = attn.filter(perception["tasks"])
+    attended = attn.filter(tasks)
 
     # ── Scoring ──
     scorer = TaskScorer()
@@ -81,13 +111,30 @@ def run_cognitive_loop() -> dict:
     selector = ActionSelector()
     next_action = selector.select_next(plan)
 
+    # If no action selected but there are owner-required tasks, signal ASK_OWNER
+    ask_owner = False
+    if not next_action and owner_tasks:
+        ask_owner = True
+        next_action = {
+            "task_id": "ASK_OWNER",
+            "title": "ASK_OWNER: " + owner_tasks[0]["task"].get("title", ""),
+            "action_type": "escalate",
+            "score": 0,
+            "estimated_cost": 0,
+        }
+
     # ── Reflection ──
     reflector = ReflectionEngine()
-    policy_status = "allowed" if next_action else "no_action"
+    if ask_owner:
+        policy_status = "requires_owner"
+    elif next_action:
+        policy_status = "allowed"
+    else:
+        policy_status = "no_action"
     reflection = reflector.reflect(
         action=next_action or {},
         policy_verdict=policy_status,
-        task_count=perception["task_count"],
+        task_count=task_count,
         attended_count=len(attended),
     )
 
@@ -102,13 +149,14 @@ def run_cognitive_loop() -> dict:
     # ── Build result ──
     result = {
         "cycle_id": cycle_id,
+        "input_mode": mode,
         "perception": {
-            "task_count": perception["task_count"],
-            "pending_count": perception["pending_count"],
+            "task_count": task_count,
+            "pending_count": pending_count,
         },
         "attention": {
             "attended_count": len(attended),
-            "filtered_count": perception["task_count"] - len(attended),
+            "filtered_count": task_count - len(attended),
         },
         "scoring": {
             "top_task": ranked[0]["title"] if ranked else "none",
@@ -124,6 +172,7 @@ def run_cognitive_loop() -> dict:
         },
         "plan": plan,
         "next_action": next_action,
+        "ask_owner": ask_owner,
         "reflection": reflection,
         "replay_verification": {
             "match": verify_result["match"],
@@ -142,16 +191,14 @@ def run_cognitive_loop() -> dict:
     return result
 
 
-def main():
-    """Run the cognitive loop and print results."""
+def print_result(result: dict):
+    """Print formatted result to stdout."""
     print("=" * 60)
     print("MCR COGNITIVE OS v0.1")
     print("=" * 60)
 
-    result = run_cognitive_loop()
-
-    # Print summary
     print(f"\nCycle ID: {result['cycle_id']}")
+    print(f"Input Mode: {result['input_mode']}")
     print(f"Tasks: {result['perception']['task_count']} total, "
           f"{result['perception']['pending_count']} pending")
     print(f"Attention: {result['attention']['attended_count']} passed, "
@@ -174,12 +221,20 @@ def main():
             print(f"    - {o['task']['title']}: {o['verdict']['reason']}")
 
     print(f"\nPlan:")
-    for i, a in enumerate(result["plan"], 1):
-        print(f"  {i}. {a['title']} ({a['action_type']}, score={a['score']})")
+    if result["plan"]:
+        for i, a in enumerate(result["plan"], 1):
+            print(f"  {i}. {a['title']} ({a['action_type']}, score={a['score']})")
+    else:
+        print("  (no actionable tasks)")
 
     na = result["next_action"]
     if na:
-        print(f"\nNext Action: {na['title']}")
+        label = na["title"]
+        if result.get("ask_owner"):
+            print(f"\n>>> DECISION: {label}")
+            print(f"    This task requires your approval before proceeding.")
+        else:
+            print(f"\nNext Action: {label}")
     else:
         print(f"\nNext Action: none")
 
@@ -193,7 +248,6 @@ def main():
     print(f"  Runtime hash: {rv['runtime_hash'][:16]}...")
     print(f"  WAL length: {rv['wal_length']}")
 
-    # Final verdict
     all_pass = rv["match"]
     print("\n" + "=" * 60)
     if all_pass:
@@ -202,7 +256,35 @@ def main():
         print("MCR COGNITIVE OS v0.1 FAIL")
     print("=" * 60)
 
-    return 0 if all_pass else 1
+
+def main():
+    parser = argparse.ArgumentParser(
+        description="MCR Cognitive OS v0.1 — Cognitive decision loop"
+    )
+    parser.add_argument(
+        "--task", type=str, default=None,
+        help="Single task description (CLI mode)"
+    )
+    parser.add_argument(
+        "--stdin", action="store_true", default=False,
+        help="Read task(s) from stdin, one per line"
+    )
+    args = parser.parse_args()
+
+    if args.task:
+        mode = "task"
+        task_text = args.task
+    elif args.stdin:
+        mode = "stdin"
+        task_text = None
+    else:
+        mode = "default"
+        task_text = None
+
+    result = run_cognitive_loop(mode=mode, task_text=task_text)
+    print_result(result)
+
+    return 0 if result["replay_verification"]["match"] else 1
 
 
 if __name__ == "__main__":

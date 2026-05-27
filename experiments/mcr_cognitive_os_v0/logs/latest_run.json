@@ -1,93 +1,60 @@
 {
-  "cycle_id": "4462620b",
+  "cycle_id": "a75cc849",
+  "input_mode": "task",
   "perception": {
-    "task_count": 6,
-    "pending_count": 6
+    "task_count": 1,
+    "pending_count": 1
   },
   "attention": {
-    "attended_count": 5,
-    "filtered_count": 1
+    "attended_count": 1,
+    "filtered_count": 0
   },
   "scoring": {
-    "top_task": "Review runtime test coverage",
-    "top_score": 0.74
+    "top_task": "Quick test task",
+    "top_score": 0.86
   },
   "goal": {
     "current_goal": "stability",
     "history_count": 0
   },
   "policy": {
-    "allowed": 4,
-    "blocked": 1,
+    "allowed": 1,
+    "blocked": 0,
     "requires_owner": 0,
-    "blocked_details": [
-      {
-        "task": {
-          "id": "task_002",
-          "title": "Deploy to production",
-          "description": "Push latest release to PyPI and create git tag",
-          "priority": 0.9,
-          "risk": 0.9,
-          "token_cost": 200,
-          "urgency": 0.3,
-          "category": "release",
-          "requires_owner": true,
-          "status": "pending",
-          "score": 0.64
-        },
-        "verdict": {
-          "status": "blocked",
-          "reason": "Risk 0.90 exceeds threshold 0.85",
-          "task_id": "task_002"
-        }
-      }
-    ],
+    "blocked_details": [],
     "owner_details": []
   },
   "plan": [
     {
-      "task_id": "task_001",
-      "title": "Review runtime test coverage",
+      "task_id": "cli_9539505a",
+      "title": "Quick test task",
       "action_type": "investigate",
-      "score": 0.74,
-      "estimated_cost": 500
-    },
-    {
-      "task_id": "task_004",
-      "title": "Fix WAL replay edge case",
-      "action_type": "fix",
-      "score": 0.7,
-      "estimated_cost": 300
-    },
-    {
-      "task_id": "task_003",
-      "title": "Write documentation for cognitive OS",
-      "action_type": "write",
-      "score": 0.61,
-      "estimated_cost": 800
+      "score": 0.86,
+      "estimated_cost": 150
     }
   ],
   "next_action": {
-    "task_id": "task_001",
-    "title": "Review runtime test coverage",
+    "task_id": "cli_9539505a",
+    "title": "Quick test task",
     "action_type": "investigate",
-    "score": 0.74,
-    "estimated_cost": 500
+    "score": 0.86,
+    "estimated_cost": 150
   },
+  "ask_owner": false,
   "reflection": {
-    "action_taken": "Review runtime test coverage",
+    "action_taken": "Quick test task",
     "was_good_choice": true,
-    "score": 0.74,
+    "score": 0.86,
     "policy_status": "allowed",
-    "tasks_total": 6,
-    "tasks_attended": 5,
-    "lesson": "Good action selection (score=0.74). Continue prioritizing high-score, low-risk tasks."
+    "tasks_total": 1,
+    "tasks_attended": 1,
+    "lesson": "Good action selection (score=0.86). Continue prioritizing high-score, low-risk tasks."
   },
   "replay_verification": {
     "match": true,
     "reason": "ok",
-    "runtime_hash": "953fd42ef908f2ca3f234047508c854717e66fad155f2260eb29443408fe5a94",
-    "replay_hash": "953fd42ef908f2ca3f234047508c854717e66fad155f2260eb29443408fe5a94",
+    "runtime_hash": "aea4892c6531bec393580db448ebd863fac2bb0a71adde5fb29c93162b083bb3",
+    "replay_hash": "aea4892c6531bec393580db448ebd863fac2bb0a71adde5fb29c93162b083bb3",
     "wal_length": 2
   }
 }
