@@ -36,6 +36,8 @@ from .engine import MCRRuntimeEngine
 from .event_gate import EventGate
 from .hermes_bridge import HermesBridge
 from .replay_verifier import ReplayVerifier
+from .memory_index import MemoryIndex
+from .memory_retriever import MemoryRetriever
 
 __all__ = [
     # events
@@ -53,4 +55,7 @@ __all__ = [
     'EventGate',
     'HermesBridge',
     'ReplayVerifier',
+    # memory retrieval
+    'MemoryIndex',
+    'MemoryRetriever',
 ]

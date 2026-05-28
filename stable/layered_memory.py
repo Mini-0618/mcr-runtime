@@ -245,11 +245,6 @@ class LayeredMemory:
 
         self._index_dirty = False
 
-    def _save_index(self) -> None:
-        # Don't persist full index (too large), just mark clean
-        with open(self.index_path, "w") as f:
-            json.dump({"dirty": False, "timestamp": datetime.now().isoformat()}, f)
-
     def _ensure_index(self) -> None:
         if self._index is None or self._index_dirty:
             self._rebuild_index()
@@ -277,9 +272,11 @@ class LayeredMemory:
 
     def store(self, content: str, memory_type: str = "general",
               importance: float = 0.5, tags: list = None,
-              current_tick: int = 0) -> str:
+              current_tick: int = 0, memory_id: str = None) -> str:
         """Add a new memory to working set. Handles overflow."""
         memory = new_memory(content, memory_type, importance, tags, current_tick)
+        if memory_id:
+            memory["id"] = memory_id
 
         # Check if working is full (use dynamic max_working)
         if len(self.working) >= self.max_working:

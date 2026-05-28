@@ -28,20 +28,27 @@ class MCRRuntimeEngine:
     """
     MCR runtime engine with G2 verification hook.
 
-    All events pass through:
-      Event → Engine.emit_raw() → Reducer.reduce() → WAL.append()
+    All events pass through (WAL-first):
+      Event → Engine.emit_raw() → WAL.append() → Reducer.reduce()
 
     Engine owns tick authority: LLM cannot assign tick values.
     """
 
-    def __init__(self, wal_path: str = "./.wal/events.jsonl"):
+    def __init__(self, wal_path: str = "./.wal/events.jsonl", memory_adapter=None):
         self.wal = WAL(wal_path)
-        self.state = SystemState.empty()
-        self.initial_state = self.state.clone()
-        self.reducer = DeterministicReducer()
+        self.reducer = DeterministicReducer(memory_adapter=memory_adapter)
         self.verifier = ReplayVerifier()
         self.tick_count = 0
         self.tick_interval = 10  # verify every N ticks
+
+        # Replay existing WAL to restore state (supports multi-cycle persistence)
+        # initial_state stays empty — verifier replays WAL from empty to verify
+        self.initial_state = SystemState.empty()
+        self.state = self.initial_state.clone()
+        for event in self.wal.get_all():
+            self.state = self.reducer.reduce(event, self.state)
+            if event.tick > self.tick_count:
+                self.tick_count = event.tick
 
     def emit(self, event_type: str, memory_id: str, coaccess_group_id: str, payload: dict) -> MCREvent:
         """Emit a typed memory event."""
@@ -64,12 +71,12 @@ class MCRRuntimeEngine:
             timestamp=event.timestamp,
             replay_hash="",
         )
-        self.state = self.reducer.reduce(event, self.state)
         self.wal.append(event)
+        self.state = self.reducer.reduce(event, self.state)
         return event
 
     def _emit(self, event_type: str, memory_id: str, coaccess_group_id: str, payload: dict) -> MCREvent:
-        """Internal emit: assign tick, reduce, WAL."""
+        """Internal emit: assign tick, WAL-first, then reduce."""
         self.tick_count += 1
         event = MCREvent(
             event_id=str(uuid.uuid4()),
@@ -81,8 +88,8 @@ class MCRRuntimeEngine:
             timestamp=time.time(),
             replay_hash="",  # computed in WAL.append()
         )
-        self.state = self.reducer.reduce(event, self.state)
         self.wal.append(event)
+        self.state = self.reducer.reduce(event, self.state)
         return event
 
     def tick(self) -> int:

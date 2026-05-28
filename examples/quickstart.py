@@ -42,7 +42,7 @@ def main():
     # Save clean initial state for replay verification
     initial_state = engine.state.clone()
     print(f"  tick={engine.state.tick}, memory items={len(engine.state.memory)}")
-    print("  ✓ Runtime created")
+    print("  [OK] Runtime created")
 
     # ── 2. Append memory events ───────────────────────────────────
     print("\n[2] Append memory events...")
@@ -59,7 +59,7 @@ def main():
         event = engine.emit(evt_type, mem_id, coaccess_id, payload)
         print(f"  tick={event.tick}  {evt_type:16s}  memory_id={mem_id}")
 
-    print(f"  ✓ {len(events)} events emitted")
+    print(f"  [OK] {len(events)} events emitted")
 
     # ── 3. Inspect state ───────────────────────────────────────────
     print("\n[3] Inspect current state...")
@@ -81,7 +81,7 @@ def main():
     print(f"  replayed memory items:  {len(replayed_state.memory)}")
     print(f"  replayed access_history:{len(replayed_state.access_history)}")
     print(f"  replayed state hash:    {replayed_state.hash()[:16]}...")
-    print("  ✓ WAL replayed")
+    print("  [OK] WAL replayed")
 
     # ── 5. Verify replay consistency ───────────────────────────────
     print("\n[5] Verify G2 consistency (original == replayed)...")
@@ -93,10 +93,10 @@ def main():
     print(f"  WAL hash:       {result['wal_hash'][:16]}...")
 
     if result['match']:
-        print("\n  ✓ G2 VERIFICATION PASSED")
+        print("\n  [OK] G2 VERIFICATION PASSED")
         print("  Runtime state == Replayed state (deterministic replay confirmed)")
     else:
-        print(f"\n  ✗ G2 VERIFICATION FAILED: {result['reason']} — {result['detail']}")
+        print(f"\n  [FAIL] G2 VERIFICATION FAILED: {result['reason']} -- {result['detail']}")
 
     print("\n" + "=" * 60)
     print("Quickstart complete. MCR runtime is working correctly.")

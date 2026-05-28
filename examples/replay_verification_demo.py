@@ -72,7 +72,7 @@ def main():
     print(f"  replay_hash:        {result['replay_hash'][:20]}...")
     print(f"  wal_hash:           {result['wal_hash'][:20]}...")
     print()
-    print(f"  verification:       {'PASS ✓' if result['match'] else 'FAIL ✗'}")
+    print(f"  verification:       {'PASS [OK]' if result['match'] else 'FAIL [X]'}")
     if not result['match']:
         print(f"  reason:             {result['reason']}")
         print(f"  detail:             {result['detail']}")

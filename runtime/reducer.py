@@ -25,7 +25,8 @@ from .events import MCREvent
 class DeterministicReducer:
     """Pure event reducer with typed handlers for each event type."""
 
-    def __init__(self):
+    def __init__(self, memory_adapter=None):
+        self.memory_adapter = memory_adapter
         self.handlers = {
             'memory_store': self._handle_store,
             'memory_access': self._handle_access,
@@ -35,6 +36,8 @@ class DeterministicReducer:
             'curriculum_task_create': self._handle_noop,
             'curriculum_task_complete': self._handle_noop,
             'failure_record': self._handle_noop,
+            'memory_retrieve': self._handle_noop,
+            'memory_lifecycle': self._handle_lifecycle,
         }
 
     def reduce(self, event: MCREvent, state: SystemState) -> SystemState:
@@ -54,6 +57,8 @@ class DeterministicReducer:
     # -------------------------------------------------------------------------
 
     def _handle_store(self, event: MCREvent, state: SystemState) -> SystemState:
+        if self.memory_adapter:
+            return self.memory_adapter.store(state, event)
         if not event.memory_id:
             return state
         state.memory[event.memory_id] = {
@@ -64,6 +69,8 @@ class DeterministicReducer:
         return state
 
     def _handle_access(self, event: MCREvent, state: SystemState) -> SystemState:
+        if self.memory_adapter:
+            return self.memory_adapter.access(state, event)
         if event.memory_id not in state.memory:
             return state
         state.access_history.append({
@@ -88,17 +95,27 @@ class DeterministicReducer:
         return state
 
     def _handle_archive(self, event: MCREvent, state: SystemState) -> SystemState:
+        if self.memory_adapter:
+            return self.memory_adapter.archive(state, event)
         if event.memory_id in state.memory:
             state.memory[event.memory_id]['tier'] = 'archive'
         return state
 
     def _handle_purge(self, event: MCREvent, state: SystemState) -> SystemState:
+        if self.memory_adapter:
+            return self.memory_adapter.purge(state, event)
         if event.memory_id in state.memory:
             del state.memory[event.memory_id]
         return state
 
     def _handle_policy(self, event: MCREvent, state: SystemState) -> SystemState:
         """policy_update is validated by gate but has no state-side effect."""
+        return state
+
+    def _handle_lifecycle(self, event: MCREvent, state: SystemState) -> SystemState:
+        """memory_lifecycle: run decay buffer + incremental review + flush."""
+        if self.memory_adapter:
+            return self.memory_adapter.lifecycle_tick(state, event.tick)
         return state
 
     def _handle_noop(self, event: MCREvent, state: SystemState) -> SystemState:

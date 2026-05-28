@@ -2,7 +2,7 @@
 MCR Minimal Demo — examples/minimal_mcr.py
 
 MCR core concept in ~200 lines:
-  Memory Event → WAL → Reducer → Runtime State → Replay Verification
+  Memory Event -> WAL -> Reducer -> Runtime State -> Replay Verification
 
 This is a self-contained, dependency-free implementation.
 Use this to understand the fundamental MCR guarantee.

@@ -107,10 +107,10 @@ def main():
     # ── 6. Verify replay consistency ─────────────────────────────────
     print("\n[6] G2 replay verification...")
     from runtime.replay_verifier import ReplayVerifier
+    from runtime.state import SystemState
     verifier = ReplayVerifier()
-    # Reload WAL from disk to simulate fresh load
-    engine_verify = MCRRuntimeEngine(wal_path=wal_path)
-    initial_state = engine_verify.state.clone()
+    # G2: runtime_state == replay(empty_initial, WAL)
+    initial_state = SystemState.empty()
     result = verifier.verify(engine.state, initial_state, engine.wal)
 
     if result['match']:
