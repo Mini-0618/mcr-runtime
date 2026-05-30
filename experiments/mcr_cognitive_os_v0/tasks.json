@@ -1,0 +1,88 @@
+{
+  "tasks": [
+    {
+      "id": "real_001",
+      "title": "Push experiment branch to remote",
+      "description": "Backup the cognitive OS v0.1 experiment branch to GitHub",
+      "priority": 0.6,
+      "risk": 0.1,
+      "token_cost": 100,
+      "urgency": 0.5,
+      "category": "maintenance",
+      "requires_owner": false,
+      "status": "pending"
+    },
+    {
+      "id": "real_002",
+      "title": "Merge cognitive OS into main",
+      "description": "Merge experiment branch into main branch",
+      "priority": 0.7,
+      "risk": 0.6,
+      "token_cost": 200,
+      "urgency": 0.3,
+      "category": "release",
+      "requires_owner": true,
+      "status": "pending"
+    },
+    {
+      "id": "real_003",
+      "title": "Add real task input to cognitive loop",
+      "description": "Let cognitive OS accept tasks from stdin or CLI instead of hardcoded tasks.json",
+      "priority": 0.8,
+      "risk": 0.2,
+      "token_cost": 400,
+      "urgency": 0.7,
+      "category": "optimization",
+      "requires_owner": false,
+      "status": "pending"
+    },
+    {
+      "id": "real_004",
+      "title": "Connect cognitive OS to MCR-Auto loop",
+      "description": "Wire cognitive OS as the decision layer inside MCR-Auto's task cycle",
+      "priority": 0.9,
+      "risk": 0.5,
+      "token_cost": 800,
+      "urgency": 0.6,
+      "category": "optimization",
+      "requires_owner": false,
+      "status": "pending"
+    },
+    {
+      "id": "real_005",
+      "title": "Publish MCR to PyPI",
+      "description": "Release v0.10.0rc1 to PyPI",
+      "priority": 0.5,
+      "risk": 0.8,
+      "token_cost": 200,
+      "urgency": 0.2,
+      "category": "release",
+      "requires_owner": true,
+      "status": "pending"
+    },
+    {
+      "id": "real_006",
+      "title": "Write MCR paper for NeurIPS",
+      "description": "Draft the workshop paper based on runtime benchmarks",
+      "priority": 0.7,
+      "risk": 0.3,
+      "token_cost": 1000,
+      "urgency": 0.4,
+      "category": "documentation",
+      "requires_owner": false,
+      "status": "pending"
+    },
+    {
+      "id": "real_007",
+      "title": "Delete entire archive directory",
+      "description": "Remove all legacy code in archive/",
+      "priority": 0.2,
+      "risk": 0.95,
+      "token_cost": 50,
+      "urgency": 0.1,
+      "category": "destructive",
+      "requires_owner": true,
+      "status": "pending"
+    }
+  ]
+}

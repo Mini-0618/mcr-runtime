@@ -1,0 +1,168 @@
+{
+  "cycle_id": "de0fad47",
+  "version": "v0.2",
+  "input_mode": "task",
+  "state_trace": [
+    {
+      "state": "INTAKE",
+      "reason": "Cycle started"
+    },
+    {
+      "state": "READ_STATE",
+      "reason": "Loaded 1 tasks"
+    },
+    {
+      "state": "ATTENTION",
+      "reason": "State read: 1 pending"
+    },
+    {
+      "state": "SCORE",
+      "reason": "1 tasks passed attention"
+    },
+    {
+      "state": "POLICY",
+      "reason": "Top: Quick test (0.87)"
+    },
+    {
+      "state": "PLAN",
+      "reason": "1 tasks allowed"
+    },
+    {
+      "state": "SELECT_ACTION",
+      "reason": "Plan: 1 actions"
+    },
+    {
+      "state": "REFLECT",
+      "reason": "Selected: Quick test"
+    },
+    {
+      "state": "MEMORY_WRITE",
+      "reason": "Reflection: True"
+    },
+    {
+      "state": "VERIFY",
+      "reason": "Events written to WAL"
+    },
+    {
+      "state": "DONE",
+      "reason": "Replay: PASS"
+    }
+  ],
+  "final_state": "DONE",
+  "perception": {
+    "task_count": 1,
+    "pending_count": 1
+  },
+  "attention": {
+    "attended_count": 1,
+    "filtered_count": 0
+  },
+  "scoring": {
+    "top_task": "Quick test",
+    "top_score": 0.87
+  },
+  "policy": {
+    "allowed": 1,
+    "blocked": 0,
+    "requires_owner": 0,
+    "blocked_details": [],
+    "owner_details": []
+  },
+  "plan": [
+    {
+      "task_id": "cli_ebcc6d31",
+      "title": "Quick test",
+      "action_type": "investigate",
+      "score": 0.87,
+      "estimated_cost": 100
+    }
+  ],
+  "next_action": {
+    "task_id": "cli_ebcc6d31",
+    "title": "Quick test",
+    "action_type": "investigate",
+    "score": 0.87,
+    "estimated_cost": 100
+  },
+  "ask_owner": false,
+  "reflection": {
+    "lesson": "Good action selection (score=0.87). Continue prioritizing high-score, low-risk tasks.",
+    "was_good_choice": true
+  },
+  "memory_blocks": {
+    "persona": {
+      "name": "MCR Cognitive OS",
+      "role": "认知判断层",
+      "boundaries": [
+        "不自行决定高风险操作",
+        "不绕过 Owner 批准",
+        "不修改 Runtime 核心",
+        "不联网执行未知代码",
+        "不真实控制浏览器",
+        "不真实发送社交媒体消息"
+      ],
+      "values": [
+        "安全优先",
+        "可验证性",
+        "最小惊讶原则"
+      ]
+    },
+    "context": {
+      "task_count": 1,
+      "pending_count": 1,
+      "input_mode": "task"
+    },
+    "knowledge": [
+      {
+        "lesson": "Good action selection (score=0.87). Continue prioritizing high-score, low-risk tasks.",
+        "source": "de0fad47",
+        "confidence": 0.7
+      }
+    ]
+  },
+  "browser_observation": {
+    "page": {
+      "url": "https://example.com/mock",
+      "title": "Mock Browser — MCR Cognitive OS v0.2",
+      "elements": [
+        {
+          "index": 0,
+          "tag": "button",
+          "text": "Submit",
+          "type": "button"
+        },
+        {
+          "index": 1,
+          "tag": "a",
+          "text": "Home",
+          "type": "link"
+        },
+        {
+          "index": 2,
+          "tag": "input",
+          "text": "",
+          "type": "input"
+        },
+        {
+          "index": 3,
+          "tag": "button",
+          "text": "Cancel",
+          "type": "button"
+        }
+      ],
+      "has_screenshot": false
+    },
+    "proposed_actions": [
+      {
+        "action": "observe",
+        "reason": "Default observation"
+      }
+    ]
+  },
+  "replay_verification": {
+    "match": true,
+    "reason": "ok",
+    "runtime_hash": "8a45ba3377b51094cc1aef02159d0a81f54f92db80ecb15732574aeb1f372f15",
+    "wal_length": 2
+  }
+}

@@ -1,0 +1,442 @@
+# HERMES SEC DVWA 100K Security Mission
+# Authorized local lab environment only — DVWA/CTF target
+# Phase 1: Environment Recon (0-10K)
+# Phase 2: Vulnerability Discovery (10K-40K)
+# Phase 3: Exploitation Chain (40K-70K)
+# Phase 4: Remediation & Defense (70K-90K)
+# Phase 5: Knowledge沉淀 (90K-100K)
+
+mission:
+  id: hermes_sec_dvwa_100k
+  version: "0.1"
+  description: |
+    100K cycle security research mission against local DVWA lab.
+    5 phases, 30 tasks, 8 mandatory reflection nodes.
+    Authorized scope: localhost/127.0.0.1 only.
+  scope: localhost/127.0.0.1
+  lab: DVWA (Docker or XAMPP)
+  dry_run: false
+  reflection:
+    depth: auto
+    trigger_modes:
+      - on_completion
+      - every_failure
+      - milestone
+      - every_100_cycles
+
+constraints:
+  max_frequency: 10 scans per hour
+  real_targets: false
+  escalation_after_consecutive_failures: 3
+  owner_checkpoint: 10000
+
+# ── Phase 1: Environment Recon (0-10K) ──
+phases:
+  phase_1:
+    name: Environment Recon
+    cycles: "0-10000"
+    milestone: 5000
+    tasks:
+      - id: p1_t1
+        title: DVWA Environment Map
+        description: Enumerate all DVWA pages, buttons, and links. Build a complete feature map.
+        category: recon
+        action_type: investigate
+        reflection_trigger: on_completion
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "import socket; [print(f'Port {p}') for p in [80, 443, 8080, 3306]]"]
+          - ["python", "-c", "print('localhost:8080 DVWA')"]
+        risk_level: low
+
+      - id: p1_t2
+        title: Security Level Analysis
+        description: Analyze low/medium/high security levels — find the exact filter differences for each.
+        category: recon
+        action_type: investigate
+        reflection_trigger: on_completion
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('Security level: low/medium/high')"]
+        risk_level: low
+
+      - id: p1_t3
+        title: User Role Model Understanding
+        description: Understand admin/guest/user permission model — session cookies, CSRF tokens.
+        category: recon
+        action_type: investigate
+        reflection_trigger: on_completion
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('DVWA roles: admin/guest')"]
+        risk_level: low
+
+      - id: p1_t4
+        title: Input Point Inventory
+        description: Enumerate ALL user input points — forms, URLs, cookies, headers.
+        category: recon
+        action_type: investigate
+        reflection_trigger: on_completion
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('Input points: SQLi, XSS, File Upload, CSRF, Brute Force')"]
+        risk_level: low
+
+      - id: p1_t5
+        title: Baseline Behavior Record
+        description: Record normal behavior at each security level — expected responses, error messages.
+        category: recon
+        action_type: investigate
+        reflection_trigger: on_completion
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('Baseline: normal response patterns')"]
+        risk_level: low
+
+  phase_2:
+    name: Vulnerability Discovery
+    cycles: "10000-40000"
+    milestone: 25000
+    tasks:
+      - id: p2_t1
+        title: SQLi Discovery — Low
+        description: Find SQL injection in low security mode. Test classic payloads.
+        category: sqli
+        action_type: exploit_attempt
+        reflection_trigger: every_failure
+        reuse_previous_skills: false
+        skill_matching_threshold: 0.85
+        escalation_on_repeated_failure: 3
+        commands:
+          - ["python", "-c", "print('SQLi test: low level')"]
+        risk_level: medium
+
+      - id: p2_t2
+        title: SQLi Discovery — Medium
+        description: Find SQL injection with medium-level filters. Bypass techniques.
+        category: sqli
+        action_type: exploit_attempt
+        reflection_trigger: every_failure
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        escalation_on_repeated_failure: 3
+        commands:
+          - ["python", "-c", "print('SQLi test: medium level')"]
+        risk_level: medium
+
+      - id: p2_t3
+        title: SQLi Discovery — High
+        description: Find SQL injection with high-level filters. Advanced evasion.
+        category: sqli
+        action_type: exploit_attempt
+        reflection_trigger: every_failure
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        escalation_on_repeated_failure: 3
+        commands:
+          - ["python", "-c", "print('SQLi test: high level')"]
+        risk_level: high
+
+      - id: p2_t4
+        title: XSS Discovery — All Levels
+        description: Find Reflected/Stored/DOM XSS across all security levels.
+        category: xss
+        action_type: exploit_attempt
+        reflection_trigger: every_failure
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        escalation_on_repeated_failure: 3
+        commands:
+          - ["python", "-c", "print('XSS test: reflected/stored/dom')"]
+        risk_level: medium
+
+      - id: p2_t5
+        title: File Upload Discovery
+        description: Find file upload vulnerability. Test extensions, MIME types, content.
+        category: file_upload
+        action_type: exploit_attempt
+        reflection_trigger: every_failure
+        reuse_previous_skills: false
+        skill_matching_threshold: 0.85
+        escalation_on_repeated_failure: 3
+        commands:
+          - ["python", "-c", "print('File upload test')"]
+        risk_level: high
+
+      - id: p2_t6
+        title: CSRF Discovery
+        description: Find CSRF vulnerability. Test token absence, token reuse.
+        category: csrf
+        action_type: exploit_attempt
+        reflection_trigger: every_failure
+        reuse_previous_skills: false
+        skill_matching_threshold: 0.85
+        escalation_on_repeated_failure: 3
+        commands:
+          - ["python", "-c", "print('CSRF test')"]
+        risk_level: medium
+
+      - id: p2_t7
+        title: Brute Force Discovery
+        description: Find weak credential/login brute force vulnerability.
+        category: brute_force
+        action_type: exploit_attempt
+        reflection_trigger: every_failure
+        reuse_previous_skills: false
+        skill_matching_threshold: 0.85
+        escalation_on_repeated_failure: 3
+        commands:
+          - ["python", "-c", "print('Brute force test')"]
+        risk_level: medium
+
+  phase_3:
+    name: Exploitation Chain
+    cycles: "40000-70000"
+    milestone: 55000
+    tasks:
+      - id: p3_t1
+        title: SQLi to Data Extraction
+        description: Escalate SQLi to extract database content — users, passwords, version.
+        category: sqli
+        action_type: exploit
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('SQLi data extraction')"]
+        risk_level: high
+
+      - id: p3_t2
+        title: SQLi to File Write
+        description: Use SQLi INTO OUTFILE to write a file on the server.
+        category: sqli
+        action_type: exploit
+        reflection_trigger: every_failure
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('SQLi file write attempt')"]
+        risk_level: critical
+
+      - id: p3_t3
+        title: File Upload to WebShell
+        description: Upload a working web shell via file upload vulnerability.
+        category: file_upload
+        action_type: exploit
+        reflection_trigger: every_failure
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('WebShell upload attempt')"]
+        risk_level: critical
+
+      - id: p3_t4
+        title: WebShell to RCE
+        description: Execute commands via uploaded web shell. Confirm remote code execution.
+        category: webshell
+        action_type: exploit
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('WebShell RCE')"]
+        risk_level: critical
+
+      - id: p3_t5
+        title: Privilege Escalation Attempt
+        description: Try to escalate from www-data to root/admin via kernel exploits or sudo.
+        category: privilege_escalation
+        action_type: exploit
+        reflection_trigger: every_failure
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('Privilege escalation attempt')"]
+        risk_level: critical
+
+      - id: p3_t6
+        title: Chain Optimization
+        description: Optimize the full exploit chain — fewer steps, higher success rate.
+        category: optimization
+        action_type: optimize
+        reflection_trigger: every_failure
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('Chain optimization')"]
+        risk_level: medium
+
+  phase_4:
+    name: Remediation & Defense
+    cycles: "70000-90000"
+    milestone: 80000
+    tasks:
+      - id: p4_t1
+        title: Remediation Design
+        description: Design fix for each vulnerability found — input validation, parameterization, CSRF tokens.
+        category: remediation
+        action_type: design
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('Remediation design')"]
+        risk_level: low
+
+      - id: p4_t2
+        title: Remediation Verification
+        description: Verify each fix actually works — retest the original vulnerability.
+        category: remediation
+        action_type: verify
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('Remediation verification')"]
+        risk_level: low
+
+      - id: p4_t3
+        title: Bypass Attempt
+        description: Try to bypass the applied fix with new techniques.
+        category: bypass
+        action_type: exploit_attempt
+        reflection_trigger: every_failure
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('Bypass attempt')"]
+        risk_level: medium
+
+      - id: p4_t4
+        title: Defense Depth Validation
+        description: Validate defense-in-depth — single fix is not enough, layer security.
+        category: defense
+        action_type: investigate
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.85
+        commands:
+          - ["python", "-c", "print('Defense depth validation')"]
+        risk_level: low
+
+  phase_5:
+    name: Knowledge沉淀
+    cycles: "90000-100000"
+    milestone: 100000
+    tasks:
+      - id: p5_t1
+        title: Knowledge Graph Construction
+        description: Build vulnerability knowledge graph — patterns, bypass techniques, fix effectiveness.
+        category: knowledge
+        action_type: synthesize
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.9
+        commands:
+          - ["python", "-c", "print('Knowledge graph construction')"]
+        risk_level: low
+
+      - id: p5_t2
+        title: Skill Library Finalization
+        description: Finalize skill library — all successful exploits and techniques.
+        category: knowledge
+        action_type: synthesize
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        skill_matching_threshold: 0.9
+        commands:
+          - ["python", "-c", "print('Skill library finalization')"]
+        risk_level: low
+
+      - id: p5_t3
+        title: Report Template Generation
+        description: Generate standard vulnerability report template for future use.
+        category: documentation
+        action_type: write
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        commands:
+          - ["python", "-c", "print('Report template generation')"]
+        risk_level: low
+
+      - id: p5_t4
+        title: Automated Test Suite
+        description: Build regression test suite — automate vulnerability checks for future deployments.
+        category: automation
+        action_type: write
+        reflection_trigger: on_completion
+        reuse_previous_skills: true
+        commands:
+          - ["python", "-c", "print('Automated test suite')"]
+        risk_level: low
+
+      - id: p5_t5
+        title: Narrative Summary
+        description: Generate 100K narrative — what happened, what was learned, what changed.
+        category: reflection
+        action_type: reflect
+        reflection_trigger: milestone
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('Narrative summary')"]
+        risk_level: low
+
+      - id: p5_t6
+        title: Identity Evolution Report
+        description: Report identity evolution — who was I at 0K, who am I at 100K, what changed.
+        category: reflection
+        action_type: reflect
+        reflection_trigger: milestone
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('Identity evolution report')"]
+        risk_level: low
+
+      - id: p5_t7
+        title: Next Mission Recommendation
+        description: Recommend next mission based on capabilities gained and gaps identified.
+        category: planning
+        action_type: plan
+        reflection_trigger: on_completion
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('Next mission recommendation')"]
+        risk_level: low
+
+      - id: p5_t8
+        title: Owner Handover Package
+        description: Generate owner handover package — all artifacts, logs, skills, reports.
+        category: documentation
+        action_type: write
+        reflection_trigger: milestone
+        reuse_previous_skills: false
+        commands:
+          - ["python", "-c", "print('Owner handover package')"]
+        risk_level: low
+
+# ── Skill Reuse Configuration ──
+skill_reuse:
+  default_threshold: 0.85
+  reuse_mode: adapt  # reuse | adapt | explore
+  adaptation_threshold: 0.1  # env_change > 0.1 → adapt
+  record_reuse_events: true
+  escalation:
+    consecutive_failures_threshold: 3
+    action: notify_owner
+
+# ── Reflection Configuration ──
+reflection:
+  depth_mapping:
+    on_completion: L1
+    every_failure: L2
+    milestone: L3
+    every_100_cycles: L2
+  depth_behavior:
+    L1: "Instant — one sentence lesson"
+    L2: "Task-level — what worked, what didn't"
+    L3: "Phase-level — pattern analysis"
+    L4: "Mission-level — identity and strategy"
+  trigger_on_consecutive_failures: true
+  trigger_on_milestone: true
+  trigger_every_n_cycles: 100
+  narrative_generation: true
+  identity_tracking: true
